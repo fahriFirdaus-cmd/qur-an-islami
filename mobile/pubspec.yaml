@@ -1,0 +1,38 @@
+name: nur_alquran_mobile
+description: "Aplikasi Al-Qur'an & Peradaban Islam — Flutter Cross-Platform"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.1
+  just_audio: ^0.9.36
+  audio_session: ^0.1.18
+  provider: ^6.1.2
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  share_plus: ^9.0.0
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/icons/
+
+  fonts:
+    - family: UthmanicHafs
+      fonts:
+        - asset: assets/fonts/UthmanicHafs.ttf
+    - family: LPMQIsepMisbah
+      fonts:
+        - asset: assets/fonts/LPMQIsepMisbah.ttf
