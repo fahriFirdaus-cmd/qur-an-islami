@@ -3,75 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nur Al-Qur'an — Pusat Ibadah & Peradaban Islam</title>
-  <meta name="description" content="Aplikasi Al-Qur'an interaktif lengkap dengan audio qori, modul sejarah Islam imersif, peta peradaban, dan fitur Jejak Sejarah dalam Ayat." />
+  <title>Quran Harmony — Spiritual Journey</title>
+  <meta name="description" content="Aplikasi Al-Qur'an interaktif lengkap dengan audio qori, terjemahan, dan pengalaman membaca yang harmonis." />
+  
+  <!-- Google Fonts: Playfair Display (Elegant Serif), Inter (Clean UI), Amiri Quran (Mushaf) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ═══════════════════ SIDEBAR NAVIGATION ═══════════════════ -->
+<!-- ═══════════════════ LEFT SIDEBAR ═══════════════════ -->
 <aside class="sidebar" id="sidebar">
   <div class="sidebar-header">
-    <div class="logo">
+    <div class="logo" onclick="navigateTo('beranda')" style="cursor: pointer;" title="Kembali ke Beranda">
       <div class="logo-icon">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="18" stroke="url(#gold)" stroke-width="2"/>
-          <path d="M12 20 Q20 8 28 20 Q20 32 12 20Z" fill="url(#gold)" opacity="0.8"/>
-          <circle cx="20" cy="20" r="3" fill="url(#gold)"/>
-          <defs>
-            <linearGradient id="gold" x1="0" y1="0" x2="40" y2="40">
-              <stop offset="0%" stop-color="#F4D03F"/>
-              <stop offset="100%" stop-color="#C9A227"/>
-            </linearGradient>
-          </defs>
+        <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="38" height="38" rx="9" fill="#1b4332"/>
+          <!-- Clean holy book outline -->
+          <rect x="10" y="8" width="18" height="22" rx="2.5" stroke="white" stroke-width="2" fill="none"/>
+          <line x1="10" y1="14" x2="28" y2="14" stroke="white" stroke-width="2"/>
         </svg>
       </div>
       <div class="logo-text">
-        <span class="logo-arabic">نور القرآن</span>
-        <span class="logo-latin">Nur Al-Qur'an</span>
+        <span class="logo-title">Quran Harmony</span>
+        <span class="logo-subtitle">SPIRITUAL JOURNEY</span>
       </div>
     </div>
   </div>
 
-  <nav class="sidebar-nav">
-    <div class="nav-section-label">Menu Utama</div>
-    <a href="#" class="nav-item active" data-page="beranda" id="nav-beranda">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
-      <span>Beranda</span>
-    </a>
-    <a href="#" class="nav-item" data-page="quran" id="nav-quran">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-      <span>Al-Qur'an</span>
-      <span class="nav-badge">114</span>
-    </a>
-    <a href="#" class="nav-item" data-page="audio" id="nav-audio">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16 10,8"/></svg>
-      <span>Audio Qori</span>
-    </a>
-    <a href="#" class="nav-item" data-page="sejarah" id="nav-sejarah">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-      <span>Sejarah Islam</span>
-    </a>
-    <a href="#" class="nav-item" data-page="jejak" id="nav-jejak">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <span>Jejak Sejarah</span>
-      <span class="nav-badge new">Baru</span>
-    </a>
-    <div class="nav-section-label">Pengaturan</div>
-    <a href="#" class="nav-item" data-page="pengaturan" id="nav-pengaturan">
-      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-      <span>Pengaturan</span>
-    </a>
-  </nav>
+  <!-- Surah Search -->
+  <div class="sidebar-search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+    <input type="text" placeholder="Search surah..." id="sidebar-surah-search" />
+  </div>
 
-  <div class="sidebar-footer">
-    <div class="hijri-date" id="hijri-date">
-      <div class="hijri-label">Tanggal Hijriah</div>
-      <div class="hijri-value">17 Rabi' al-Akhir 1448 H</div>
-    </div>
+  <!-- Surah List -->
+  <div class="sidebar-surah-list" id="sidebar-surah-list">
+    <!-- Populated by JS -->
   </div>
 </aside>
 
@@ -82,13 +53,82 @@
     <button class="hamburger" id="hamburger-btn" aria-label="Toggle Sidebar">
       <span></span><span></span><span></span>
     </button>
-    <div class="topbar-title" id="topbar-title">Beranda</div>
+    <div class="topbar-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      <input type="text" placeholder="Jump to surah, verse (e.g. 2:255) or page..." id="main-search" autocomplete="off" />
+      <div class="search-dropdown" id="search-dropdown" style="display:none;"></div>
+    </div>
+
+    <!-- Navigation Pills -->
+    <nav class="topbar-nav" id="topbar-nav">
+      <button class="nav-pill active" id="nav-pill-beranda" data-page="beranda" onclick="navigateTo('beranda')">Home</button>
+      <button class="nav-pill" id="nav-pill-quran" data-page="quran" onclick="navigateTo('quran')">Quran</button>
+      <button class="nav-pill" id="nav-pill-audio" data-page="audio" onclick="navigateTo('audio')">Audio</button>
+      <button class="nav-pill" id="nav-pill-sejarah" data-page="sejarah" onclick="navigateTo('sejarah')">History</button>
+      <button class="nav-pill" id="nav-pill-jejak" data-page="jejak" onclick="navigateTo('jejak')">Revelations</button>
+    </nav>
+
     <div class="topbar-actions">
-      <button class="icon-btn" id="search-btn" aria-label="Cari">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <!-- Language Switcher Button -->
+      <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language / Ganti Bahasa (EN / ID)">
+        <span class="lang-flag">🌐</span>
+        <span class="lang-code" id="lang-indicator">EN</span>
       </button>
-      <button class="icon-btn" id="bookmark-btn" aria-label="Bookmark">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+
+      <button class="topbar-icon-btn" id="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme (Dark / Light)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <!-- Notification Dropdown Container -->
+      <div class="notif-wrapper" style="position:relative;">
+        <button class="topbar-icon-btn" id="notification-btn" aria-label="Notifications" title="Pemberitahuan">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          <span class="notif-dot"></span>
+        </button>
+        <div class="notification-dropdown" id="notification-dropdown" style="display:none;">
+          <div class="notif-dropdown-header">
+            <span id="notif-title">Daily Notifications</span>
+            <button class="notif-close-btn" id="notif-close-btn">✕</button>
+          </div>
+          <div class="notif-dropdown-list">
+            <div class="notif-item" onclick="loadSurah(18); navigateTo('quran'); toggleNotification(false);">
+              <div class="notif-item-icon">🕌</div>
+              <div class="notif-item-content">
+                <div class="notif-item-title" id="notif-title-1">Surah Al-Kahf (18)</div>
+                <div class="notif-item-desc" id="notif-desc-1">Sunnah reading and reflection on Friday</div>
+              </div>
+            </div>
+            <div class="notif-item" onclick="loadSurah(36); navigateTo('quran'); toggleNotification(false);">
+              <div class="notif-item-icon">📖</div>
+              <div class="notif-item-content">
+                <div class="notif-item-title" id="notif-title-2">Daily Tilawah: Ya-Sin (36)</div>
+                <div class="notif-item-desc" id="notif-desc-2">Continue your daily Quran tilawah today</div>
+              </div>
+            </div>
+            <div class="notif-item" onclick="navigateTo('audio'); toggleNotification(false);">
+              <div class="notif-item-icon">🎧</div>
+              <div class="notif-item-content">
+                <div class="notif-item-title" id="notif-title-3">World-Renowned Reciters</div>
+                <div class="notif-item-desc" id="notif-desc-3">Listen to sweet recitations from Al-Afasy & As-Sudais</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="reader-settings-btn" id="reader-settings-btn" title="Reader Preferences">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="21" x2="4" y2="14"/>
+          <line x1="4" y1="10" x2="4" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="12"/>
+          <line x1="12" y1="8" x2="12" y2="3"/>
+          <line x1="20" y1="21" x2="20" y2="16"/>
+          <line x1="20" y1="12" x2="20" y2="3"/>
+          <line x1="1" y1="14" x2="7" y2="14"/>
+          <line x1="9" y1="8" x2="15" y2="8"/>
+          <line x1="17" y1="16" x2="23" y2="16"/>
+        </svg>
+        <span id="reader-settings-label">Reader Settings</span>
       </button>
     </div>
   </header>
@@ -98,143 +138,166 @@
 
     <!-- ═══════ PAGE: BERANDA ═══════ -->
     <section class="page active" id="page-beranda">
+      <!-- Hero Banner with Mosque Background -->
       <div class="hero-section">
-        <div class="hero-pattern"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-          <div class="bismillah-text">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
-          <h1 class="hero-title">Pusat Ibadah &<br/>Peradaban Islam</h1>
-          <p class="hero-subtitle">Jelajahi Al-Qur'an dengan audio qori pilihan, dalami sejarah Islam yang kaya, dan temukan hubungan ayat suci dengan peristiwa bersejarah.</p>
+          <div class="hero-icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3c0 4.5 4.5 9 9 9-4.5 0-9 4.5-9 9 0-4.5-4.5-9-9-9 4.5 0 9-4.5 9-9z" fill="white" fill-opacity="0.25"/>
+              <path d="M19 3v4M21 5h-4" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h1 class="hero-title">Quran Harmony</h1>
+          <p class="hero-quote" id="hero-quote"><em>"Verily, in the remembrance of Allah do hearts find rest."</em> (13:28)</p>
           <div class="hero-cta">
             <button class="btn-primary" onclick="navigateTo('quran')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-              Buka Al-Qur'an
+              <span id="hero-btn-read-text">Start Reading</span>
             </button>
-            <button class="btn-secondary" onclick="navigateTo('sejarah')">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-              Eksplorasi Sejarah
+            <button class="btn-secondary" onclick="navigateTo('audio')" aria-label="Explore Audio">
+              <span id="hero-btn-audio-text">Explore Audio</span>
             </button>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="quran-book-anim">
-            <div class="book-glow"></div>
-            <div class="book-icon">📖</div>
-            <div class="orbit orbit-1"><span>🕌</span></div>
-            <div class="orbit orbit-2"><span>⭐</span></div>
-            <div class="orbit orbit-3"><span>🌙</span></div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="features-grid">
+        <div class="feature-card" onclick="navigateTo('quran')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="3" width="14" height="18" rx="2.5"/>
+              <line x1="5" y1="8" x2="19" y2="8"/>
+            </svg>
+          </div>
+          <h3 class="feature-title" id="feat-quran-title">Full Quran Text</h3>
+          <p class="feature-desc" id="feat-quran-desc">Access all 114 surahs with beautiful Uthmani script and translations.</p>
+        </div>
+        <div class="feature-card" onclick="navigateTo('audio')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="6,4 19,12 6,20 6,4"/>
+            </svg>
+          </div>
+          <h3 class="feature-title" id="feat-audio-title">Audio Recitations</h3>
+          <p class="feature-desc" id="feat-audio-desc">Listen to high-quality audio from world-renowned reciters verse by verse.</p>
+        </div>
+        <div class="feature-card" onclick="navigateTo('jejak')">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title" id="feat-spiritual-title">Spiritual Growth</h3>
+          <p class="feature-desc" id="feat-spiritual-desc">A modern, distraction-free interface designed for deep reflection and peace.</p>
+        </div>
+      </div>
+
+      <!-- Daily Verse Section -->
+      <div class="daily-verse-section">
+        <div class="section-header-bar">
+          <h3 class="section-title" id="daily-title">Daily Inspiration</h3>
+          <span class="section-badge" id="daily-badge">Today</span>
+        </div>
+        <div class="daily-verse-card">
+          <div class="daily-verse-arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+          <div class="daily-verse-translation" id="daily-verse-trans">"In the name of Allah, the Most Gracious, the Most Merciful."</div>
+          <div class="daily-verse-footer">
+            <div class="daily-verse-ref" id="daily-verse-ref">— Al-Faatiha 1:1</div>
+            <div class="daily-verse-actions">
+              <button class="btn-verse-action" id="daily-btn-play" onclick="playVerse(1, 1)" title="Play Audio">▶ Play</button>
+              <button class="btn-verse-action" id="daily-btn-read" onclick="loadSurah(1); navigateTo('quran')" title="Read Full Surah">📖 Read Surah</button>
+              <button class="btn-verse-action" id="daily-btn-copy" onclick="copyVerse(this, 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ — Al-Faatiha 1:1')" title="Copy Verse">📋 Copy</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Stats -->
-      <div class="stats-row">
-        <div class="stat-card">
-          <div class="stat-icon">📖</div>
-          <div class="stat-number">6,236</div>
-          <div class="stat-label">Ayat Al-Qur'an</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">🎙️</div>
-          <div class="stat-number">24</div>
-          <div class="stat-label">Pilihan Qori</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">🏛️</div>
-          <div class="stat-number">150+</div>
-          <div class="stat-label">Peristiwa Sejarah</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-icon">🔗</div>
-          <div class="stat-number">89</div>
-          <div class="stat-label">Jejak Sejarah dalam Ayat</div>
-        </div>
+      <!-- Quick Access Surahs -->
+      <div class="section-header-bar">
+        <h3 class="section-title" id="popular-title">Popular Surahs</h3>
+        <button class="view-all-btn" id="popular-view-all" onclick="navigateTo('quran')">View All →</button>
       </div>
-
-      <!-- Quick Access -->
-      <div class="section-title">Akses Cepat</div>
-      <div class="quick-access-grid">
-        <div class="qa-card" onclick="navigateTo('quran')">
-          <div class="qa-icon gradient-green">📗</div>
-          <div class="qa-content">
-            <div class="qa-title">Al-Fatihah</div>
-            <div class="qa-sub">Surah 1 • 7 Ayat</div>
+      <div class="popular-surahs-grid">
+        <div class="popular-surah-card" onclick="loadSurah(1); navigateTo('quran')">
+          <div class="ps-number">1</div>
+          <div class="ps-info">
+            <div class="ps-name">Al-Fatihah</div>
+            <div class="ps-meta" id="ps-meta-1">Meccan · 7 verses</div>
           </div>
-          <svg class="qa-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
+          <div class="ps-arabic">الفَاتِحَة</div>
         </div>
-        <div class="qa-card" onclick="navigateTo('quran')">
-          <div class="qa-icon gradient-blue">💙</div>
-          <div class="qa-content">
-            <div class="qa-title">Al-Baqarah</div>
-            <div class="qa-sub">Surah 2 • 286 Ayat</div>
+        <div class="popular-surah-card" onclick="loadSurah(36); navigateTo('quran')">
+          <div class="ps-number">36</div>
+          <div class="ps-info">
+            <div class="ps-name">Ya-Sin</div>
+            <div class="ps-meta" id="ps-meta-36">Meccan · 83 verses</div>
           </div>
-          <svg class="qa-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
+          <div class="ps-arabic">يسٓ</div>
         </div>
-        <div class="qa-card" onclick="navigateTo('quran')">
-          <div class="qa-icon gradient-purple">💜</div>
-          <div class="qa-content">
-            <div class="qa-title">Yasin</div>
-            <div class="qa-sub">Surah 36 • 83 Ayat</div>
+        <div class="popular-surah-card" onclick="loadSurah(67); navigateTo('quran')">
+          <div class="ps-number">67</div>
+          <div class="ps-info">
+            <div class="ps-name">Al-Mulk</div>
+            <div class="ps-meta" id="ps-meta-67">Meccan · 30 verses</div>
           </div>
-          <svg class="qa-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
+          <div class="ps-arabic">المُلْك</div>
         </div>
-        <div class="qa-card" onclick="navigateTo('quran')">
-          <div class="qa-icon gradient-gold">🌟</div>
-          <div class="qa-content">
-            <div class="qa-title">Al-Mulk</div>
-            <div class="qa-sub">Surah 67 • 30 Ayat</div>
+        <div class="popular-surah-card" onclick="loadSurah(55); navigateTo('quran')">
+          <div class="ps-number">55</div>
+          <div class="ps-info">
+            <div class="ps-name">Ar-Rahman</div>
+            <div class="ps-meta" id="ps-meta-55">Medinan · 78 verses</div>
           </div>
-          <svg class="qa-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
-        </div>
-      </div>
-
-      <!-- Featured Article -->
-      <div class="section-title">Peristiwa Sejarah Terkini</div>
-      <div class="featured-card" onclick="navigateTo('sejarah')">
-        <div class="featured-badge">🏆 Unggulan</div>
-        <div class="featured-title">Perang Badar: Kemenangan Pertama Umat Islam</div>
-        <div class="featured-desc">17 Ramadhan 2 H / 624 M — Pertempuran yang mengubah sejarah peradaban Islam, di mana 313 pasukan Muslim mengalahkan 1.000 pasukan Quraisy.</div>
-        <div class="featured-meta">
-          <span class="meta-tag">⚔️ Militer</span>
-          <span class="meta-tag">📖 Terkait Al-Qur'an</span>
-          <span class="read-more">Baca Selengkapnya →</span>
+          <div class="ps-arabic">الرَّحْمٰن</div>
         </div>
       </div>
     </section>
 
     <!-- ═══════ PAGE: AL-QUR'AN ═══════ -->
     <section class="page" id="page-quran">
-      <div class="quran-layout">
-        <!-- Surah List -->
-        <div class="surah-panel" id="surah-panel">
-          <div class="panel-search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <input type="text" placeholder="Cari surah..." id="surah-search" />
-          </div>
-          <div class="surah-list" id="surah-list">
-            <!-- Populated by JS -->
-          </div>
-        </div>
-
-        <!-- Verse Reader -->
+      <div class="quran-reader-layout">
+        <!-- Verse Reader Panel -->
         <div class="verse-panel">
           <!-- Surah Header -->
           <div class="surah-header" id="surah-header">
+            <div class="surah-nav-group">
+              <button class="btn-surah-nav" id="prev-surah-btn" title="Previous Surah">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                <span id="prev-surah-label">Prev</span>
+              </button>
+              <button class="btn-surah-nav btn-home-nav" onclick="navigateTo('beranda')" title="Back to Home">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span id="home-surah-label">Home</span>
+              </button>
+              <button class="btn-surah-nav" id="next-surah-btn" title="Next Surah">
+                <span id="next-surah-label">Next</span>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
             <div class="surah-meta">
               <div class="surah-number-badge" id="surah-num-badge">1</div>
               <div>
-                <div class="surah-name-ar" id="surah-name-ar">الْفَاتِحَة</div>
-                <div class="surah-name-id" id="surah-name-id">Al-Fatihah • Makkiyah • 7 Ayat</div>
+                <div class="surah-name-main" id="surah-name-id">Al-Faatiha</div>
+                <div class="surah-name-sub" id="surah-meta-sub">Meccan · 7 Verses</div>
               </div>
             </div>
+            <div class="surah-name-ar" id="surah-name-ar">سُوْرَةُ الفَاتِحَةِ</div>
             <div class="surah-controls">
               <div class="font-control">
-                <label>Ukuran Teks</label>
-                <input type="range" id="font-slider" min="24" max="52" value="36" class="font-slider" />
-                <span id="font-size-label">36px</span>
+                <span class="control-label" id="font-control-label">Font:</span>
+                <input type="range" id="font-slider" min="26" max="54" value="38" class="font-slider" />
+                <span id="font-size-label" class="font-size-tag">38px</span>
               </div>
-              <button class="btn-icon-sm" id="play-all-btn" title="Putar Semua">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16 10,8"/></svg>
+              <button class="btn-play-surah" id="play-all-btn" title="Play Full Surah Audio">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+                <span id="play-all-label">Play Audio</span>
               </button>
+              <button class="btn-upload-surah" id="btn-upload-reader-audio" title="Upload custom audio for this Surah">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <span id="reader-upload-label">Upload MP3</span>
+              </button>
+              <input type="file" id="reader-audio-file-input" accept="audio/*" style="display:none;" />
             </div>
           </div>
 
@@ -243,7 +306,7 @@
             <div class="bismillah-ar">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
           </div>
 
-          <!-- Verses Container -->
+          <!-- Verses -->
           <div class="verses-container" id="verses-container">
             <!-- Populated by JS -->
           </div>
@@ -254,38 +317,80 @@
     <!-- ═══════ PAGE: AUDIO QORI ═══════ -->
     <section class="page" id="page-audio">
       <div class="page-header">
-        <h2>🎙️ Audio Qori Pilihan</h2>
-        <p>Pilih qori favorit Anda untuk pengalaman tilawah yang khusyuk</p>
+        <div class="section-kicker" id="audio-kicker">TILAWATUL QUR'AN</div>
+        <h2 id="audio-title">Audio Recitations</h2>
+        <p id="audio-desc">Listen to beautiful Quran recitations from world-renowned reciters with crystal clear audio quality.</p>
       </div>
 
       <!-- Now Playing -->
       <div class="now-playing-card" id="now-playing-card">
         <div class="np-visual">
-          <div class="np-avatar" id="np-avatar">🎙️</div>
+          <div class="np-avatar" id="np-avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          </div>
           <div class="np-wave">
-            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
         </div>
+
         <div class="np-info">
-          <div class="np-title" id="np-title">Pilih Qori untuk Memulai</div>
-          <div class="np-subtitle" id="np-subtitle">Murattal Al-Qur'an</div>
+          <div class="np-title" id="np-title">Select a Reciter to Start</div>
+          <div class="np-subtitle" id="np-subtitle">Murattal Al-Qur'an · Rasm Uthmani</div>
         </div>
+
         <div class="np-controls">
-          <button class="np-btn" id="np-prev">⏮</button>
-          <button class="np-btn np-btn-main" id="np-play">▶</button>
-          <button class="np-btn" id="np-next">⏭</button>
+          <button class="np-btn" id="np-prev" title="Previous">⏮</button>
+          <button class="np-btn np-btn-main" id="np-play" title="Play / Pause">▶</button>
+          <button class="np-btn" id="np-next" title="Next">⏭</button>
         </div>
+
         <div class="np-progress">
           <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
           <div class="progress-times"><span>0:00</span><span>3:24</span></div>
         </div>
       </div>
 
-      <!-- Mode Selection -->
+      <!-- Custom Audio Uploader Card -->
+      <div class="custom-audio-uploader-card" id="custom-audio-uploader-card">
+        <div class="cau-header">
+          <div class="cau-title-group">
+            <div class="cau-icon">📁</div>
+            <div>
+              <h4 class="cau-title" id="cau-title">Putar Audio MP3 Sendiri (Upload File Lokal)</h4>
+              <p class="cau-desc" id="cau-desc">Unggah file rekaman atau lantunan MP3 dari komputer Anda untuk langsung diputar atau dihubungkan ke Surah.</p>
+            </div>
+          </div>
+          <button class="btn-primary cau-btn" id="cau-trigger-btn" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <span id="cau-btn-text">Pilih File MP3</span>
+          </button>
+          <input type="file" id="cau-file-input" accept="audio/*" style="display:none;" />
+        </div>
+
+        <div class="cau-controls" id="cau-controls" style="display:none;">
+          <div class="cau-file-info">
+            <span class="cau-file-icon">🎵</span>
+            <div class="cau-file-meta">
+              <span class="cau-file-name" id="cau-file-name">filename.mp3</span>
+              <span class="cau-file-size" id="cau-file-size">0 MB</span>
+            </div>
+          </div>
+          <div class="cau-assign-row">
+            <label for="cau-surah-select" id="cau-assign-label">Hubungkan ke Surah:</label>
+            <select class="setting-select cau-select" id="cau-surah-select">
+              <!-- Populated by JS with 114 Surahs -->
+            </select>
+            <button class="btn-primary cau-action-btn" id="cau-play-now-btn">▶ Putar Sekarang</button>
+            <button class="btn-secondary cau-action-btn cau-clear-btn" id="cau-clear-btn" title="Hapus audio kustom">✕ Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Style Tabs -->
       <div class="mode-tabs">
-        <button class="mode-tab active" data-mode="murattal">🎵 Murattal</button>
-        <button class="mode-tab" data-mode="mujawwad">🌊 Mujawwad</button>
-        <button class="mode-tab" data-mode="nusantara">🇮🇩 Nusantara</button>
+        <button class="mode-tab active" data-mode="murattal" id="tab-mode-murattal">Murattal</button>
+        <button class="mode-tab" data-mode="mujawwad" id="tab-mode-mujawwad">Mujawwad</button>
+        <button class="mode-tab" data-mode="nusantara" id="tab-mode-nusantara">Nusantara</button>
       </div>
 
       <!-- Qori Grid -->
@@ -297,20 +402,19 @@
     <!-- ═══════ PAGE: SEJARAH ISLAM ═══════ -->
     <section class="page" id="page-sejarah">
       <div class="page-header">
-        <h2>🏛️ Sejarah Peradaban Islam</h2>
-        <p>Jelajahi perjalanan Islam dari wahyu pertama hingga era kekhalifahan</p>
+        <div class="section-kicker" id="sejarah-kicker">CHRONICLE</div>
+        <h2 id="sejarah-title">Islamic History</h2>
+        <p id="sejarah-desc">Explore the glorious journey of Islam from the first revelation at Gua Hira to the golden age of science.</p>
       </div>
 
-      <!-- Era Tabs -->
       <div class="era-tabs" id="era-tabs">
-        <button class="era-tab active" data-era="kenabian">☀️ Era Kenabian</button>
-        <button class="era-tab" data-era="khulafa">🌙 Khulafaur Rasyidin</button>
-        <button class="era-tab" data-era="umayyah">⚡ Dinasti Umayyah</button>
-        <button class="era-tab" data-era="abbasiyah">📚 Dinasti Abbasiyah</button>
-        <button class="era-tab" data-era="ilmuwan">🔬 Ilmuwan Islam</button>
+        <button class="era-tab active" data-era="kenabian" id="tab-era-kenabian">Prophetic Era</button>
+        <button class="era-tab" data-era="khulafa" id="tab-era-khulafa">Rightly Guided Caliphs</button>
+        <button class="era-tab" data-era="umayyah" id="tab-era-umayyah">Umayyad Dynasty</button>
+        <button class="era-tab" data-era="abbasiyah" id="tab-era-abbasiyah">Abbasid Dynasty</button>
+        <button class="era-tab" data-era="ilmuwan" id="tab-era-ilmuwan">Islamic Scholars</button>
       </div>
 
-      <!-- Timeline -->
       <div class="timeline-container" id="timeline-container">
         <!-- Populated by JS -->
       </div>
@@ -319,14 +423,17 @@
     <!-- ═══════ PAGE: JEJAK SEJARAH ═══════ -->
     <section class="page" id="page-jejak">
       <div class="page-header">
-        <h2>🔗 Jejak Sejarah dalam Ayat</h2>
-        <p>Temukan koneksi mendalam antara ayat Al-Qur'an dengan peristiwa bersejarah (Asbabun Nuzul)</p>
+        <div class="section-kicker" id="jejak-kicker">ASBABUN NUZUL</div>
+        <h2 id="jejak-title">Verse History</h2>
+        <p id="jejak-desc">Every verse has a story. Discover the historical events behind the revelation of the Quran.</p>
       </div>
 
       <div class="jejak-intro">
-        <div class="jejak-intro-icon">🌟</div>
-        <div class="jejak-intro-text">
-          Fitur eksklusif ini menghubungkan setiap ayat dengan konteks historisnya — dari sebab-sebab turunnya wahyu (Asbabun Nuzul) hingga peristiwa penting yang melatarbelakangi suatu ayat.
+        <div class="jejak-intro-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="jejak-intro-text" id="jejak-intro-text">
+          This exclusive feature reconstructs the connections between Quran verses and real historical events (Asbabun Nuzul). Supported by authentic hadith references (Bukhari, Muslim) and classical tafsir works.
         </div>
       </div>
 
@@ -338,63 +445,64 @@
     <!-- ═══════ PAGE: PENGATURAN ═══════ -->
     <section class="page" id="page-pengaturan">
       <div class="page-header">
-        <h2>⚙️ Pengaturan</h2>
-        <p>Sesuaikan pengalaman membaca dan mendengarkan Anda</p>
+        <div class="section-kicker" id="settings-kicker">PREFERENCES</div>
+        <h2 id="settings-title">Reader Settings</h2>
+        <p id="settings-desc">Customize your reading experience for maximum comfort and spiritual focus.</p>
       </div>
 
       <div class="settings-grid">
         <div class="settings-card">
-          <div class="settings-section-title">Tampilan Teks</div>
+          <div class="settings-section-title" id="settings-sec-typography">Typography & Text</div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Font Mushaf</div>
-              <div class="setting-desc">Pilih font teks Arab Uthmani</div>
+              <div class="setting-name" id="setting-name-app-lang">Application Language</div>
+              <div class="setting-desc" id="setting-desc-app-lang">Choose interface & translation language</div>
+            </div>
+            <select class="setting-select" id="app-lang-select">
+              <option value="en">English (US)</option>
+              <option value="id">Bahasa Indonesia</option>
+            </select>
+          </div>
+          <div class="setting-item">
+            <div class="setting-label">
+              <div class="setting-name" id="setting-name-font">Arabic Font</div>
+              <div class="setting-desc" id="setting-desc-font">Choose Uthmani script style</div>
             </div>
             <select class="setting-select" id="font-select">
-              <option value="amiri-quran">Amiri Quran (Default)</option>
+              <option value="amiri-quran">Amiri Quran</option>
               <option value="uthmanic">UthmanicHafs</option>
               <option value="lpmq">LPMQ Isep Misbah</option>
             </select>
           </div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Terjemahan</div>
-              <div class="setting-desc">Bahasa terjemahan yang ditampilkan</div>
+              <div class="setting-name" id="setting-name-trans">Translation</div>
+              <div class="setting-desc" id="setting-desc-trans">Active translation version</div>
             </div>
             <select class="setting-select" id="trans-select">
-              <option>Indonesia (Kemenag)</option>
-              <option>Inggris (Sahih International)</option>
-              <option>Arab (Tafsir Jalalayn)</option>
+              <option value="sahih">Sahih International (English)</option>
+              <option value="kemenag">Kemenag RI (Bahasa Indonesia)</option>
+              <option value="jalalayn">Tafsir Jalalayn</option>
             </select>
           </div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Tampilkan Transliterasi</div>
-              <div class="setting-desc">Latin dari teks Arab</div>
+              <div class="setting-name" id="setting-name-latin">Transliteration</div>
+              <div class="setting-desc" id="setting-desc-latin">Show Latin pronunciation</div>
             </div>
             <label class="toggle-switch">
               <input type="checkbox" id="toggle-transliterasi" />
               <span class="toggle-slider"></span>
             </label>
           </div>
-          <div class="setting-item">
-            <div class="setting-label">
-              <div class="setting-name">Tampilkan Nomor Ayat</div>
-              <div class="setting-desc">Nomor di setiap akhir ayat</div>
-            </div>
-            <label class="toggle-switch">
-              <input type="checkbox" id="toggle-nomor" checked />
-              <span class="toggle-slider"></span>
-            </label>
-          </div>
         </div>
 
         <div class="settings-card">
-          <div class="settings-section-title">Audio & Qori</div>
+          <div class="settings-section-title" id="settings-sec-audio">Audio & Playback</div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Auto-Play Ayat Berikut</div>
-              <div class="setting-desc">Lanjut otomatis ke ayat selanjutnya</div>
+              <div class="setting-name" id="setting-name-autoplay">Auto-Play Next</div>
+              <div class="setting-desc" id="setting-desc-autoplay">Automatically continue to next verse</div>
             </div>
             <label class="toggle-switch">
               <input type="checkbox" id="toggle-autoplay" checked />
@@ -403,40 +511,40 @@
           </div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Mode Repeat</div>
-              <div class="setting-desc">Ulangi ayat yang sama</div>
+              <div class="setting-name" id="setting-name-repeat">Repeat Mode</div>
+              <div class="setting-desc" id="setting-desc-repeat">Repeat verses for memorization</div>
             </div>
-            <select class="setting-select">
-              <option>Tidak Diulang</option>
-              <option>Ulangi 1x</option>
-              <option>Ulangi 3x</option>
-              <option>Ulangi Terus</option>
+            <select class="setting-select" id="repeat-select">
+              <option value="none" id="opt-repeat-none">No Repeat</option>
+              <option value="3" id="opt-repeat-3">Repeat 3x</option>
+              <option value="5" id="opt-repeat-5">Repeat 5x</option>
+              <option value="continuous" id="opt-repeat-cont">Repeat Continuously</option>
             </select>
           </div>
           <div class="setting-item">
             <div class="setting-label">
-              <div class="setting-name">Kecepatan Putar</div>
-              <div class="setting-desc">Ubah kecepatan tilawah</div>
+              <div class="setting-name" id="setting-name-speed">Playback Speed</div>
+              <div class="setting-desc" id="setting-desc-speed">Adjust recitation tempo</div>
             </div>
-            <select class="setting-select">
-              <option>0.75x</option>
-              <option selected>1.0x (Normal)</option>
-              <option>1.25x</option>
-              <option>1.5x</option>
+            <select class="setting-select" id="speed-select">
+              <option value="0.75" id="opt-speed-slow">0.75x (Slow)</option>
+              <option value="1.0" id="opt-speed-normal" selected>1.0x (Normal)</option>
+              <option value="1.25" id="opt-speed-fast">1.25x (Fast)</option>
+              <option value="1.5" id="opt-speed-vfast">1.5x (Very Fast)</option>
             </select>
           </div>
         </div>
 
         <div class="settings-card">
-          <div class="settings-section-title">Tema & Warna</div>
+          <div class="settings-section-title">Theme</div>
           <div class="theme-options">
-            <div class="theme-opt active" data-theme="dark" id="theme-dark">
-              <div class="theme-preview dark-theme-preview"></div>
-              <span>Gelap (Default)</span>
-            </div>
-            <div class="theme-opt" data-theme="light" id="theme-light">
+            <div class="theme-opt active" data-theme="light" id="theme-light">
               <div class="theme-preview light-theme-preview"></div>
-              <span>Terang</span>
+              <span>Light</span>
+            </div>
+            <div class="theme-opt" data-theme="dark" id="theme-dark">
+              <div class="theme-preview dark-theme-preview"></div>
+              <span>Dark</span>
             </div>
             <div class="theme-opt" data-theme="sepia" id="theme-sepia">
               <div class="theme-preview sepia-theme-preview"></div>
@@ -453,20 +561,23 @@
 <!-- ═══════════════════ HISTORY DETAIL MODAL ═══════════════════ -->
 <div class="modal-overlay" id="modal-overlay">
   <div class="modal-box" id="modal-box">
-    <button class="modal-close" id="modal-close">✕</button>
+    <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
     <div class="modal-content" id="modal-content"></div>
   </div>
 </div>
 
 <!-- ═══════════════════ MINI AUDIO PLAYER ═══════════════════ -->
 <div class="mini-player" id="mini-player" style="display:none">
-  <div class="mp-info">
-    <div class="mp-surah" id="mp-surah">Al-Fatihah : 1</div>
-    <div class="mp-qori" id="mp-qori">Mishary Rashid</div>
-  </div>
-  <div class="mp-controls">
-    <button class="mp-btn" id="mp-play-pause">▶</button>
-    <button class="mp-btn" id="mp-close-player">✕</button>
+  <div class="mp-inner">
+    <div class="mp-visual-dot"></div>
+    <div class="mp-info">
+      <div class="mp-surah" id="mp-surah">Al-Fatihah : 1</div>
+      <div class="mp-qori" id="mp-qori">Mishary Rashid Al-Afasy</div>
+    </div>
+    <div class="mp-controls">
+      <button class="mp-btn" id="mp-play-pause" title="Play/Pause">▶</button>
+      <button class="mp-btn mp-btn-close" id="mp-close-player" title="Close">✕</button>
+    </div>
   </div>
   <div class="mp-progress-bar"><div class="mp-fill" id="mp-fill"></div></div>
 </div>
