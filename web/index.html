@@ -62,8 +62,9 @@
           <span class="lang-code" id="lang-indicator">EN</span>
         </button>
 
-        <button class="icon-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme (Dark / Light)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <button class="icon-toggle-btn theme-phase-btn" id="theme-toggle-btn" aria-label="Toggle Theme" title="Tema Otomatis Berdasarkan Waktu (Pagi / Siang / Sore / Malam) • Klik untuk beralih">
+          <span class="theme-time-icon" id="theme-time-icon">🌙</span>
+          <span class="theme-time-badge" id="theme-time-badge">Malam</span>
         </button>
 
         <div class="notif-wrapper" style="position:relative;">
@@ -158,14 +159,15 @@
         <div class="beranda-content-col">
 
           <!-- 1. Hero Card -->
-          <div class="hero-card">
-            <!-- Geometric Islamic Star SVG Pattern Background -->
+          <div class="hero-card" id="hero-card">
+            <!-- Geometric Islamic Star SVG Pattern Background & Sky Layers -->
             <div class="hero-pattern-bg"></div>
+            <div class="hero-stars-layer" id="hero-stars-layer"></div>
 
             <!-- Mosque Silhouette with warm glowing crescent finials & arched windows -->
             <div class="hero-mosque">
               <svg viewBox="0 0 1000 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <g fill="#07261c">
+                <g fill="#07261c" class="mosque-body">
                   <!-- Minaret left -->
                   <rect x="50" y="80" width="14" height="140" rx="2"/>
                   <rect x="46" y="110" width="22" height="6" rx="2"/>
@@ -196,7 +198,7 @@
                   <rect x="0" y="195" width="1000" height="25"/>
                 </g>
                 <!-- Glowing Yellow Finials & Crescent Lights -->
-                <g fill="#e5c07b">
+                <g fill="#e5c07b" class="mosque-lights">
                   <circle cx="57" cy="48" r="3.5"/>
                   <circle cx="500" cy="14" r="4.5"/>
                   <circle cx="937" cy="48" r="3.5"/>
@@ -224,7 +226,14 @@
 
             <!-- Left Hero Content -->
             <div class="hero-left-content">
-              <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+              <div class="hero-top-meta">
+                <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <button class="hero-time-badge" id="hero-time-badge" onclick="cycleTimeTheme()" title="Ganti suasana: Pagi, Siang, Sore, Malam, atau Otomatis">
+                  <span class="time-badge-icon" id="time-badge-icon">🌙</span>
+                  <span class="time-badge-text" id="time-badge-text">Malam (Otomatis)</span>
+                  <span class="time-badge-switch-hint">⇄</span>
+                </button>
+              </div>
               <h1 class="hero-title">Quran<br>Harmony</h1>
               <p class="hero-quote" id="hero-quote"><em>"Verily, in the remembrance of Allah do hearts find rest."</em></p>
               <div class="hero-quote-ref">13:28</div>
@@ -315,7 +324,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- ═══════ PAGE: AL-QUR'AN ═══════ -->
@@ -560,24 +568,253 @@
 
     <!-- ═══════ PAGE: SEJARAH ISLAM ═══════ -->
     <section class="page" id="page-sejarah">
-      <div class="page-header">
-        <div class="section-kicker" id="sejarah-kicker">CHRONICLE</div>
-        <h2 id="sejarah-title">Islamic History</h2>
-        <p id="sejarah-desc">Explore the glorious journey of Islam from the first revelation at Gua Hira to the golden age of science.</p>
+      <!-- Historical Theme Hero Showcase -->
+      <div class="sejarah-hero-banner">
+        <div class="sejarah-hero-overlay"></div>
+        <div class="sejarah-hero-content">
+          <div class="sejarah-badge-row">
+            <span class="sejarah-pill-badge" id="sejarah-kicker">CHRONICLE OF ISLAM</span>
+            <span class="sejarah-pill-badge gold">🏛️ 1400+ TAHUN SEJARAH</span>
+          </div>
+          <h2 class="sejarah-hero-title" id="sejarah-title">Khazanah & Jejak Peradaban Islam</h2>
+          <p class="sejarah-hero-desc" id="sejarah-desc">
+            Menelusuri perjalanan agung risalah Islam dari wahyu pertama di Gua Hira, kepemimpinan Khulafaur Rasyidin, masa keemasan sains & perpustakaan Baitul Hikmah, hingga warisan intelektual para ilmuwan dunia.
+          </p>
+
+          <!-- Historical Highlights Stat Grid -->
+          <div class="sejarah-stats-grid">
+            <div class="sejarah-stat-card">
+              <div class="stat-icon-wrap">🕋</div>
+              <div class="stat-info">
+                <span class="stat-number">7 Era</span>
+                <span class="stat-label" id="stat-lbl-eras">Peradaban Utama</span>
+              </div>
+            </div>
+            <div class="sejarah-stat-card">
+              <div class="stat-icon-wrap">📜</div>
+              <div class="stat-info">
+                <span class="stat-number">14+ Abad</span>
+                <span class="stat-label" id="stat-lbl-centuries">570 M s/d Modern</span>
+              </div>
+            </div>
+            <div class="sejarah-stat-card">
+              <div class="stat-icon-wrap">🔭</div>
+              <div class="stat-info">
+                <span class="stat-number">Golden Age</span>
+                <span class="stat-label" id="stat-lbl-science">Kedokteran & Sains</span>
+              </div>
+            </div>
+            <div class="sejarah-stat-card">
+              <div class="stat-icon-wrap">🎓</div>
+              <div class="stat-info">
+                <span class="stat-number">Sahih & DOI</span>
+                <span class="stat-label" id="stat-lbl-sources">Rujukan & Jurnal</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- ═══════ NATIONAL GEOGRAPHIC EDITORIAL PHOTO GALLERY ═══════ -->
+      <div class="natgeo-gallery-container">
+        <!-- NatGeo Editorial Header -->
+        <div class="natgeo-header">
+          <div class="natgeo-brand-badge">
+            <span class="natgeo-yellow-box"></span>
+            <span class="natgeo-brand-text">GALERI EDITORIAL • VISUAL CHRONICLE</span>
+          </div>
+          <div class="natgeo-header-row">
+            <div>
+              <h3 class="natgeo-main-title">Jejak Agung & Artefak Peradaban Islam</h3>
+              <p class="natgeo-main-subtitle">Fotografi dokumenter & mahakarya sejarah dari Makkah, Damaskus, hingga pusat sains Baitul Hikmah Baghdad</p>
+            </div>
+            <div class="natgeo-badge-tag">
+              <span class="natgeo-badge-icon">🏛️</span>
+              <span>5 Koleksi Visual Terpilih</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- NatGeo Magazine Mosaic Grid -->
+        <div class="natgeo-mosaic-grid">
+          <!-- Lead Feature Card -->
+          <div class="natgeo-card natgeo-card-lead" onclick="openNatGeoModal(0)">
+            <div class="natgeo-card-media" style="background-image: url('images/history/card_kaabah.jpg');"></div>
+            <div class="natgeo-card-scrim"></div>
+            <div class="natgeo-card-content">
+              <div class="natgeo-tag-row">
+                <span class="natgeo-pill gold">KIBLAT & SPIRITUALITAS</span>
+                <span class="natgeo-time-tag">Makkah Al-Mukarramah</span>
+              </div>
+              <h4 class="natgeo-card-title">Masjidil Haram & Tawaf Abadi</h4>
+              <p class="natgeo-card-desc">Jutaan jamaah dari penjuru bumi bersatu dalam satu lingkaran thawaf mengelilingi Ka'bah — manifestasi tauhid dan persaudaraan tanpa batas ras selama 14 abad.</p>
+              <div class="natgeo-card-action">
+                <span class="natgeo-view-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  Buka Dokumentasi & Narasi Lengkap
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Card 1: Umayyah -->
+          <div class="natgeo-card" onclick="openNatGeoModal(1)">
+            <div class="natgeo-card-media" style="background-image: url('images/history/card_umayyah.jpg');"></div>
+            <div class="natgeo-card-scrim"></div>
+            <div class="natgeo-card-content">
+              <div class="natgeo-tag-row">
+                <span class="natgeo-pill">705 M • DINASTI UMAYYAH</span>
+              </div>
+              <h4 class="natgeo-card-title">Kemegahan Masjid Agung Damaskus</h4>
+              <p class="natgeo-card-desc">Mahakarya arsitektur Islam awal peninggalan Khalifah Al-Walid I dengan mozaik emas megah.</p>
+              <div class="natgeo-card-action">
+                <span class="natgeo-view-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg> Lihat Detail</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Card 2: Manuskrip Kuno -->
+          <div class="natgeo-card" onclick="openNatGeoModal(2)">
+            <div class="natgeo-card-media" style="background-image: url('images/history/card_manuscript.jpg');"></div>
+            <div class="natgeo-card-scrim"></div>
+            <div class="natgeo-card-content">
+              <div class="natgeo-tag-row">
+                <span class="natgeo-pill">KODIKOLOGI & ARSIP</span>
+              </div>
+              <h4 class="natgeo-card-title">Khazanah Manuskrip Emas</h4>
+              <p class="natgeo-card-desc">Lembaran tinta emas dan kaligrafi mushaf kuno yang terjaga melintasi generasi.</p>
+              <div class="natgeo-card-action">
+                <span class="natgeo-view-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg> Lihat Detail</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Card 3: Baitul Hikmah -->
+          <div class="natgeo-card natgeo-card-wide" onclick="openNatGeoModal(3)">
+            <div class="natgeo-card-media" style="background-image: url('images/history/card_abbasiyah.jpg');"></div>
+            <div class="natgeo-card-scrim"></div>
+            <div class="natgeo-card-content">
+              <div class="natgeo-tag-row">
+                <span class="natgeo-pill gold">ABASISIYAH • BAGHDAD</span>
+                <span class="natgeo-time-tag">Abad ke-8 s/d 13 M</span>
+              </div>
+              <h4 class="natgeo-card-title">Baitul Hikmah — Rumah Kebijaksanaan Dunia</h4>
+              <p class="natgeo-card-desc">Pusat translasi dan riset sains terbesar di zamannya, tempat lahirnya Aljabar oleh Al-Khwarizmi dan metodologi kedokteran modern.</p>
+              <div class="natgeo-card-action">
+                <span class="natgeo-view-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg> Lihat Detail</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Card 4: Astronomi -->
+          <div class="natgeo-card" onclick="openNatGeoModal(4)">
+            <div class="natgeo-card-media" style="background-image: url('images/history/card_astronomy.jpg');"></div>
+            <div class="natgeo-card-scrim"></div>
+            <div class="natgeo-card-content">
+              <div class="natgeo-tag-row">
+                <span class="natgeo-pill">SAINS & OBSERVATORIUM</span>
+              </div>
+              <h4 class="natgeo-card-title">Para Astronom Muslim & Astrolab</h4>
+              <p class="natgeo-card-desc">Memetakan rasi bintang dan mengukur keliling bumi berabad-abad mendahului zaman Renaisans.</p>
+              <div class="natgeo-card-action">
+                <span class="natgeo-view-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg> Lihat Detail</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NatGeo High-Res Lightbox Modal -->
+      <div class="natgeo-modal-backdrop" id="natgeo-modal-backdrop" onclick="closeNatGeoModal()">
+        <div class="natgeo-modal-dialog" onclick="event.stopPropagation()">
+          <button class="natgeo-modal-close" onclick="closeNatGeoModal()" aria-label="Tutup">&times;</button>
+          
+          <div class="natgeo-modal-body">
+            <div class="natgeo-modal-image-wrap">
+              <img id="natgeo-modal-img" src="" alt="Sejarah Islam Dokumentasi" />
+              <button class="natgeo-nav-arrow prev" onclick="navigateNatGeoModal(-1)" aria-label="Foto Sebelumnya">&#10094;</button>
+              <button class="natgeo-nav-arrow next" onclick="navigateNatGeoModal(1)" aria-label="Foto Berikutnya">&#10095;</button>
+            </div>
+            
+            <div class="natgeo-modal-info">
+              <div class="natgeo-modal-kicker-row">
+                <span class="natgeo-pill gold" id="natgeo-modal-tag">KATEGORI</span>
+                <span class="natgeo-modal-counter" id="natgeo-modal-counter">1 / 5</span>
+              </div>
+              <h3 class="natgeo-modal-title" id="natgeo-modal-title">Judul Sejarah</h3>
+              <p class="natgeo-modal-desc" id="natgeo-modal-desc">Deskripsi narasi</p>
+              <div class="natgeo-modal-source" id="natgeo-modal-source">
+                <strong>🏛️ Rujukan Sejarah & Artefak:</strong>
+                <span id="natgeo-modal-source-text">Koleksi Visual Peradaban Islam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- History Interactive Control Bar: Search & Quick Counts -->
+      <div class="sejarah-controls-bar">
+        <div class="sejarah-search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+          <input type="text" id="sejarah-search-input" placeholder="Cari peristiwa, tokoh, tahun, atau ayat (misal: Badar, Ibnu Sina, Al-Fatih, Hira)..." autocomplete="off" />
+          <button class="sejarah-clear-search" id="sejarah-clear-search" style="display:none;" title="Bersihkan pencarian">✕</button>
+        </div>
+        <div class="sejarah-count-badge" id="sejarah-count-badge">Menampilkan 8 peristiwa</div>
+      </div>
+
+      <!-- Historical Era Filter Tabs -->
       <div class="era-tabs" id="era-tabs">
-        <button class="era-tab active" data-era="kenabian" id="tab-era-kenabian">Prophetic Era</button>
-        <button class="era-tab" data-era="khulafa" id="tab-era-khulafa">Rightly Guided Caliphs</button>
-        <button class="era-tab" data-era="umayyah" id="tab-era-umayyah">Umayyad Dynasty</button>
-        <button class="era-tab" data-era="abbasiyah" id="tab-era-abbasiyah">Abbasid Dynasty</button>
-        <button class="era-tab" data-era="pasca" id="tab-era-pasca">Post-Abbasid & Ottoman</button>
-        <button class="era-tab" data-era="ilmuwan" id="tab-era-ilmuwan">Islamic Scholars</button>
-        <button class="era-tab" data-era="sumber" id="tab-era-sumber">📚 Primary Sources</button>
+        <button class="era-tab active" data-era="kenabian" id="tab-era-kenabian">
+          <span class="era-tab-icon">🕋</span>
+          <span class="era-tab-text">Masa Kenabian</span>
+          <span class="era-tab-count">8</span>
+        </button>
+        <button class="era-tab" data-era="khulafa" id="tab-era-khulafa">
+          <span class="era-tab-icon">⚖️</span>
+          <span class="era-tab-text">Khulafaur Rasyidin</span>
+          <span class="era-tab-count">6</span>
+        </button>
+        <button class="era-tab" data-era="umayyah" id="tab-era-umayyah">
+          <span class="era-tab-icon">🏰</span>
+          <span class="era-tab-text">Dinasti Umayyah</span>
+          <span class="era-tab-count">5</span>
+        </button>
+        <button class="era-tab" data-era="abbasiyah" id="tab-era-abbasiyah">
+          <span class="era-tab-icon">📜</span>
+          <span class="era-tab-text">Dinasti Abbasiyah</span>
+          <span class="era-tab-count">6</span>
+        </button>
+        <button class="era-tab" data-era="pasca" id="tab-era-pasca">
+          <span class="era-tab-icon">🕌</span>
+          <span class="era-tab-text">Pasca & Utsmani</span>
+          <span class="era-tab-count">4</span>
+        </button>
+        <button class="era-tab" data-era="ilmuwan" id="tab-era-ilmuwan">
+          <span class="era-tab-icon">🔭</span>
+          <span class="era-tab-text">Cendekiawan & Ilmuwan</span>
+          <span class="era-tab-count">6</span>
+        </button>
+        <button class="era-tab" data-era="sumber" id="tab-era-sumber">
+          <span class="era-tab-icon">📚</span>
+          <span class="era-tab-text">Sumber & Manuskrip</span>
+          <span class="era-tab-count">4</span>
+        </button>
       </div>
 
+      <!-- Era Contextual Info Card -->
+      <div class="era-context-card" id="era-context-card">
+        <div class="era-context-icon" id="era-context-icon">🕋</div>
+        <div class="era-context-body">
+          <div class="era-context-title" id="era-context-title">Periode Kenabian (570 - 632 M)</div>
+          <div class="era-context-desc" id="era-context-desc">
+            Awal mula turunnya wahyu Al-Qur'an di Gua Hira, perjuangan dakwah tauhid di Makkah, hijrah ke Madinah yang menjadi titik tolak kalender Hijriyah, hingga pembentukan Piagam Madinah yang meletakkan sendi-sendi keadilan dan toleransi.
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Chronological Timeline Container -->
       <div class="timeline-container" id="timeline-container">
-        <!-- Populated by JS -->
+        <!-- Populated dynamically by JS -->
       </div>
     </section>
 
@@ -707,19 +944,30 @@
         </div>
 
         <div class="settings-card">
-          <div class="settings-section-title">Theme</div>
+          <div class="settings-section-title" id="settings-sec-theme">Tema & Waktu (Day & Night)</div>
+          <div class="setting-desc" style="margin-bottom: 12px;" id="theme-card-desc">
+            Aplikasi menyesuaikan suasana secara otomatis sesuai fase waktu lokal (Pagi, Siang, Sore, dan Malam), atau Anda dapat memilih tema favorit secara manual.
+          </div>
           <div class="theme-options">
-            <div class="theme-opt active" data-theme="light" id="theme-light">
-              <div class="theme-preview light-theme-preview"></div>
-              <span>Light</span>
+            <div class="theme-opt active" data-theme="auto" id="theme-auto" title="Berganti otomatis mengikuti jam lokal (Pagi, Siang, Sore, Malam)">
+              <div class="theme-preview auto-theme-preview">⏱️</div>
+              <span>Otomatis Waktu</span>
             </div>
-            <div class="theme-opt" data-theme="dark" id="theme-dark">
-              <div class="theme-preview dark-theme-preview"></div>
-              <span>Dark</span>
+            <div class="theme-opt" data-theme="pagi" id="theme-pagi" title="Tema Fajar & Pagi yang sejuk dengan semburat emas keemasan">
+              <div class="theme-preview pagi-theme-preview"></div>
+              <span>🌅 Pagi</span>
             </div>
-            <div class="theme-opt" data-theme="sepia" id="theme-sepia">
-              <div class="theme-preview sepia-theme-preview"></div>
-              <span>Sepia</span>
+            <div class="theme-opt" data-theme="siang" id="theme-siang" title="Tema Siang hari yang terang dan jernih">
+              <div class="theme-preview siang-theme-preview"></div>
+              <span>☀️ Siang</span>
+            </div>
+            <div class="theme-opt" data-theme="sore" id="theme-sore" title="Tema Sore & Maghrib bernuansa hangat tembaga (Golden Hour)">
+              <div class="theme-preview sore-theme-preview"></div>
+              <span>🌇 Sore</span>
+            </div>
+            <div class="theme-opt" data-theme="malam" id="theme-malam" title="Tema Malam pekat menyejukkan mata untuk tilawah malam hari">
+              <div class="theme-preview malam-theme-preview"></div>
+              <span>🌙 Malam</span>
             </div>
           </div>
         </div>

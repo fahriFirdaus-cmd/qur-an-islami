@@ -705,9 +705,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initMiniPlayer();
   initAudioEvents();
 
-  // Restore saved theme
-  const savedTheme = localStorage.getItem('qh_theme') || 'light';
+  // Restore saved theme mode (defaults to auto dynamic time-based theme)
+  const savedTheme = localStorage.getItem('qh_theme_mode') || localStorage.getItem('qh_theme') || 'auto';
   applyTheme(savedTheme, false);
+  startTimeThemeHeartbeat();
 
   // Apply active or saved language on startup
   applyLanguage(state.language, false);
@@ -776,10 +777,9 @@ function initNavigation() {
     navigateTo('pengaturan');
   });
 
-  // Theme Toggle Button
+  // Theme Toggle Button (Cycles through Auto -> Pagi -> Siang -> Sore -> Malam)
   document.getElementById('theme-toggle-btn')?.addEventListener('click', () => {
-    const isDark = document.body.classList.contains('theme-dark');
-    applyTheme(isDark ? 'light' : 'dark');
+    cycleThemeMode();
   });
 
   // Notification Button & Dropdown
@@ -2085,46 +2085,186 @@ function selectQori(qoriId) {
 }
 
 // ══════════════════════════════════════════
-// SEJARAH ISLAM PAGE
+// SEJARAH ISLAM PAGE (Chronicle of Civilization)
 // ══════════════════════════════════════════
-function initSejarahPage() {
-  renderTimeline('kenabian');
+const ERA_INFO = {
+  kenabian: {
+    icon: '🕋',
+    title: 'Masa Kenabian (570 - 632 M)',
+    titleEn: 'Prophetic Era (570 - 632 CE)',
+    desc: 'Turunnya wahyu Al-Qur\'an di Gua Hira, perjuangan dakwah tauhid di Makkah, hijrah ke Madinah (tonggak kalender Hijriyah), pembentukan Piagam Madinah, Fathu Makkah, hingga Haji Wada\'.',
+    descEn: 'The descent of the Quran at Cave Hira, early proselytization in Mecca, the Hijrah to Medina, the Constitution of Medina, the Conquest of Mecca, and the Farewell Pilgrimage.'
+  },
+  khulafa: {
+    icon: '⚖️',
+    title: 'Khulafaur Rasyidin (632 - 661 M)',
+    titleEn: 'Rightly Guided Caliphs (632 - 661 CE)',
+    desc: 'Era kepemimpinan empat sahabat agung (Abu Bakar, Umar, Utsman, Ali RA). Kodifikasi resmi Mushaf Al-Qur\'an standar Utsmani, penyebaran ke Syam, Persia, dan Mesir, serta sistem keadilan Islam.',
+    descEn: 'The era of the four Caliphs (Abu Bakr, Umar, Uthman, Ali). Official compilation of the Uthmanic Mushaf, expansion to the Levant, Persia, Egypt, and judicial administrative frameworks.'
+  },
+  umayyah: {
+    icon: '🏰',
+    title: 'Dinasti Umayyah (661 - 750 M)',
+    titleEn: 'Umayyad Caliphate (661 - 750 CE)',
+    desc: 'Ibukota di Damaskus, ekspansi peradaban hingga Andalusia (Spanyol) dan Lembah Indus. Pembangunan mahakarya arsitektur Kubah Shakhrah (Dome of the Rock) dan Masjid Agung Damaskus.',
+    descEn: 'Centered in Damascus, stretching from Andalusia to the Indus Valley. Architectural achievements including the Dome of the Rock in Jerusalem and the Great Umayyad Mosque.'
+  },
+  abbasiyah: {
+    icon: '📜',
+    title: 'Dinasti Abbasiyah & Golden Age (750 - 1258 M)',
+    titleEn: 'Abbasid Golden Age (750 - 1258 CE)',
+    desc: 'Zaman keemasan peradaban ilmu dunia. Pendirian akademi sains & perpustakaan agung Baitul Hikmah (House of Wisdom) di Baghdad dan kodifikasi 6 kitab hadis induk (Kutubus Sittah).',
+    descEn: 'The Golden Age of science, medicine, and philosophy. Establishment of the House of Wisdom (Baitul Hikmah) in Baghdad and compilation of the major Hadith compendiums.'
+  },
+  pasca: {
+    icon: '🕌',
+    title: 'Pasca-Abbasiyah & Kekhalifahan Utsmani (1258 - 1924 M)',
+    titleEn: 'Post-Abbasid & Ottoman Empire (1258 - 1924 CE)',
+    desc: 'Pembebasan Al-Quds oleh Shalahuddin Al-Ayyubi, penaklukan Konstantinopel oleh Sultan Muhammad Al-Fatih (1453 M), hingga lahirnya ilmu sosiologi dan filsafat sejarah modern oleh Ibnu Khaldun.',
+    descEn: 'Saladin\'s liberation of Jerusalem, the conquest of Constantinople by Sultan Mehmed II (1453 CE), and Ibn Khaldun\'s groundbreaking sociological work in the Muqaddimah.'
+  },
+  ilmuwan: {
+    icon: '🔭',
+    title: 'Cendekiawan & Ilmuwan Muslim Dunia',
+    titleEn: 'Scholars, Scientists & Polymaths of Islam',
+    desc: 'Al-Khawarizmi (Bapak Aljabar & Algoritma), Ibnu Sina (Penyusun Al-Qanun fi at-Tibb), Ibnu al-Haitsam (Bapak Optik Modern), Al-Jazari (Pelopor Robotika Mekanikal), dan Ibnu Rusyd (Averroes).',
+    descEn: 'Al-Khwarizmi (Father of Algebra), Ibn Sina/Avicenna (Canon of Medicine), Ibn al-Haytham (Father of Modern Optics), Al-Jazari (Pioneer of Robotics), and Ibn Rushd/Averroes.'
+  },
+  sumber: {
+    icon: '📚',
+    title: 'Sumber Primer & Kitab Klasik Terverifikasi',
+    titleEn: 'Primary Sources & Classical Manuscripts',
+    desc: 'Rujukan sejarah otentik yang digunakan: Sirah Ibnu Hisyam, Tarikh ath-Thabari, Al-Bidayah wan-Nihayah Ibnu Katsir, Shahih Bukhari & Muslim, serta artikel jurnal ilmiah akademik ber-DOI & SINTA.',
+    descEn: 'Verified classification of authentic historical works: Ibn Hisham\'s Sirah, al-Tabari\'s History, Ibn Kathir\'s al-Bidayah, Bukhari & Muslim, and peer-reviewed journals with DOI/SINTA.'
+  }
+};
 
+let sejarahSearchQuery = '';
+
+function initSejarahPage() {
+  state.currentEra = state.currentEra || 'kenabian';
+  updateEraContextCard(state.currentEra);
+  renderTimeline(state.currentEra);
+
+  // Era Tab Buttons
   document.querySelectorAll('.era-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.era-tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       state.currentEra = tab.dataset.era;
-      renderTimeline(tab.dataset.era);
+      updateEraContextCard(state.currentEra);
+      renderTimeline(state.currentEra, sejarahSearchQuery);
     });
+  });
+
+  // History Search Box
+  const searchInput = document.getElementById('sejarah-search-input');
+  const clearBtn = document.getElementById('sejarah-clear-search');
+
+  searchInput?.addEventListener('input', (e) => {
+    sejarahSearchQuery = e.target.value.trim().toLowerCase();
+    if (clearBtn) clearBtn.style.display = sejarahSearchQuery ? 'flex' : 'none';
+    renderTimeline(state.currentEra, sejarahSearchQuery);
+  });
+
+  clearBtn?.addEventListener('click', () => {
+    if (searchInput) searchInput.value = '';
+    sejarahSearchQuery = '';
+    clearBtn.style.display = 'none';
+    renderTimeline(state.currentEra, '');
   });
 }
 
-function renderTimeline(era) {
+function updateEraContextCard(era) {
+  const info = ERA_INFO[era] || ERA_INFO.kenabian;
+  const isEn = state.language === 'en';
+  
+  const iconEl = document.getElementById('era-context-icon');
+  const titleEl = document.getElementById('era-context-title');
+  const descEl = document.getElementById('era-context-desc');
+
+  if (iconEl) iconEl.textContent = info.icon;
+  if (titleEl) titleEl.textContent = isEn && info.titleEn ? info.titleEn : info.title;
+  if (descEl) descEl.textContent = isEn && info.descEn ? info.descEn : info.desc;
+}
+
+function renderTimeline(era, query = '') {
   const container = document.getElementById('timeline-container');
+  const countBadge = document.getElementById('sejarah-count-badge');
   if (!container) return;
 
-  const events = HISTORY[era] || [];
+  let events = HISTORY[era] || [];
+  const isEn = state.language === 'en';
+
+  if (query) {
+    events = events.filter(ev => {
+      const title = (isEn && ev.titleEn ? ev.titleEn : ev.title).toLowerCase();
+      const desc = (isEn && ev.descEn ? ev.descEn : ev.desc).toLowerCase();
+      const year = (isEn && ev.yearEn ? ev.yearEn : ev.year).toLowerCase();
+      const tags = (ev.tags || []).join(' ').toLowerCase();
+      const figures = (ev.figures || []).join(' ').toLowerCase();
+      const detail = (ev.detail || '').toLowerCase();
+      return title.includes(query) || desc.includes(query) || year.includes(query) || tags.includes(query) || figures.includes(query) || detail.includes(query);
+    });
+  }
+
+  // Update Count Badge
+  if (countBadge) {
+    const total = events.length;
+    countBadge.textContent = isEn 
+      ? `Showing ${total} event${total !== 1 ? 's' : ''}` 
+      : `Menampilkan ${total} peristiwa`;
+  }
+
   if (events.length === 0) {
-    container.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-secondary);">${state.language === 'en' ? 'Data for this era is being compiled.' : 'Data era ini sedang dirangkum.'}</div>`;
+    container.innerHTML = `
+      <div style="text-align:center; padding: 50px 20px; background: var(--bg-card); border-radius: var(--radius-xl); border: 1px dashed var(--border);">
+        <div style="font-size: 2.5rem; margin-bottom: 12px;">🔍</div>
+        <div style="font-weight: 700; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 6px;">
+          ${isEn ? 'No events found matching your search' : 'Tidak ada peristiwa yang cocok dengan pencarian'}
+        </div>
+        <div style="font-size: 0.88rem; color: var(--text-muted);">
+          ${isEn ? 'Try different keywords or clear the search filter.' : 'Coba kata kunci lain atau bersihkan kotak pencarian.'}
+        </div>
+      </div>
+    `;
     return;
   }
 
-  const isEn = state.language === 'en';
   container.innerHTML = events.map(ev => {
     const title = isEn && ev.titleEn ? ev.titleEn : ev.title;
     const desc = isEn && ev.descEn ? ev.descEn : ev.desc;
     const year = isEn && ev.yearEn ? ev.yearEn : ev.year;
+    const figures = ev.figures || [];
+    const quranTag = (ev.tags || []).find(t => t.includes('🔗'));
     
     return `
       <div class="timeline-item">
-        <div class="timeline-dot"></div>
+        <div class="timeline-dot" title="${year}"></div>
         <div class="timeline-card" onclick="openEventModal('${ev.id}', '${era}')">
-          <div class="tl-year">📅 ${year}</div>
-          <div class="tl-title">${title}</div>
-          <div class="tl-desc">${desc}</div>
-          <div class="tl-tags">
-            ${ev.tags.map(t => `<span class="tl-tag ${t.includes('🔗') ? 'quran-ref' : ''}">${t}</span>`).join('')}
+          <div class="tl-header-row">
+            <span class="tl-year">📅 ${year}</span>
+            <div class="tl-tags">
+              ${(ev.tags || []).slice(0, 3).map(t => `<span class="tl-tag ${t.includes('🔗') ? 'quran-ref' : ''}">${t}</span>`).join('')}
+            </div>
+          </div>
+          <h3 class="tl-title">${title}</h3>
+          <p class="tl-desc">${desc}</p>
+          
+          ${figures.length > 0 ? `
+          <div class="tl-figures-box">
+            <span class="tl-figures-label">👥 ${isEn ? 'Figures:' : 'Tokoh:'}</span>
+            ${figures.slice(0, 4).map(f => `<span class="tl-figure-chip">${f}</span>`).join('')}
+            ${figures.length > 4 ? `<span class="tl-figure-chip">+${figures.length - 4}</span>` : ''}
+          </div>
+          ` : ''}
+
+          <div class="tl-footer-row">
+            <div>
+              ${quranTag ? `<span class="tl-tag quran-ref">${quranTag}</span>` : ''}
+              ${ev.journal ? `<span class="tl-tag" style="border-color:var(--sage-400); color:var(--sage-600);">🎓 Jurnal ${ev.journal.index || 'SINTA'}</span>` : ''}
+            </div>
+            <span class="tl-detail-action">${isEn ? 'Read Details & Sources' : 'Baca Rincian & Jurnal'} ➔</span>
           </div>
         </div>
       </div>
@@ -2263,30 +2403,108 @@ function initSettings() {
     opt.addEventListener('click', () => {
       document.querySelectorAll('.theme-opt').forEach(o => o.classList.remove('active'));
       opt.classList.add('active');
-      applyTheme(opt.dataset.theme);
+      applyTheme(opt.dataset.theme, true);
     });
   });
 }
 
-function applyTheme(theme, notify = true) {
-  document.body.classList.remove('theme-dark', 'theme-sepia');
-  
-  if (theme === 'dark') {
-    document.body.classList.add('theme-dark');
-    if (notify) showToast('🌙 Dark theme applied', 'success');
-  } else if (theme === 'sepia') {
-    document.body.classList.add('theme-sepia');
-    if (notify) showToast('📜 Sepia theme applied', 'success');
-  } else {
-    if (notify) showToast('☀️ Light theme applied', 'success');
+// ══════════════════════════════════════════
+// DYNAMIC TIME-BASED THEME ENGINE (Day & Night)
+// ══════════════════════════════════════════
+function getTimePhase() {
+  const now = new Date();
+  const hour = now.getHours();
+  const min = now.getMinutes();
+
+  // 05:00 - 10:59: Pagi (Fajar & Dhuha)
+  if (hour >= 5 && hour < 11) {
+    return { id: 'pagi', label: 'Pagi', labelEn: 'Morning', icon: '🌅', desc: 'Fajar & Dhuha (05:00 - 11:00)' };
+  }
+  // 11:00 - 14:59: Siang (Dzuhur & Daylight)
+  if (hour >= 11 && hour < 15) {
+    return { id: 'siang', label: 'Siang', labelEn: 'Daytime', icon: '☀️', desc: 'Dzuhur & Siang (11:00 - 15:00)' };
+  }
+  // 15:00 - 18:29: Sore (Ashr & Sunset)
+  if (hour >= 15 && (hour < 18 || (hour === 18 && min < 30))) {
+    return { id: 'sore', label: 'Sore', labelEn: 'Afternoon', icon: '🌇', desc: 'Ashr & Sunset (15:00 - 18:30)' };
+  }
+  // 18:30 - 04:59: Malam (Isya & Tahajjud)
+  return { id: 'malam', label: 'Malam', labelEn: 'Night', icon: '🌙', desc: 'Isya & Malam (18:30 - 05:00)' };
+}
+
+function applyTheme(themeChoice, notify = true) {
+  state.themeMode = themeChoice || 'auto';
+  localStorage.setItem('qh_theme_mode', state.themeMode);
+
+  let activeTheme = state.themeMode;
+  const currentPhase = getTimePhase();
+
+  if (state.themeMode === 'auto') {
+    activeTheme = currentPhase.id;
+  } else if (activeTheme === 'dark') {
+    activeTheme = 'malam';
+  } else if (activeTheme === 'sepia') {
+    activeTheme = 'sore';
+  } else if (activeTheme === 'light') {
+    activeTheme = 'siang';
+  }
+
+  // Remove existing theme classes
+  document.body.classList.remove('theme-pagi', 'theme-siang', 'theme-sore', 'theme-malam', 'theme-dark', 'theme-sepia');
+  document.body.classList.add(`theme-${activeTheme}`);
+  if (activeTheme === 'malam') document.body.classList.add('theme-dark');
+  if (activeTheme === 'sore') document.body.classList.add('theme-sepia');
+
+  // Update header badge and icon
+  const timeIcon = document.getElementById('theme-time-icon');
+  const timeBadge = document.getElementById('theme-time-badge');
+  const isEn = state.language === 'en';
+
+  const phaseMeta = {
+    pagi: { icon: '🌅', label: isEn ? 'Morning' : 'Pagi' },
+    siang: { icon: '☀️', label: isEn ? 'Day' : 'Siang' },
+    sore: { icon: '🌇', label: isEn ? 'Sunset' : 'Sore' },
+    malam: { icon: '🌙', label: isEn ? 'Night' : 'Malam' },
+  }[activeTheme] || { icon: '☀️', label: 'Siang' };
+
+  if (timeIcon) timeIcon.textContent = phaseMeta.icon;
+  if (timeBadge) {
+    timeBadge.textContent = state.themeMode === 'auto' 
+      ? `${phaseMeta.label} (Auto)` 
+      : phaseMeta.label;
   }
 
   // Update settings theme buttons active state
   document.querySelectorAll('.theme-opt').forEach(o => {
-    o.classList.toggle('active', o.dataset.theme === theme);
+    o.classList.toggle('active', o.dataset.theme === state.themeMode);
   });
 
-  localStorage.setItem('qh_theme', theme);
+  localStorage.setItem('qh_theme', activeTheme);
+
+  if (notify) {
+    const msg = state.themeMode === 'auto'
+      ? `${phaseMeta.icon} ${isEn ? 'Auto Theme active:' : 'Tema Otomatis aktif:'} ${phaseMeta.label} (${currentPhase.desc})`
+      : `${phaseMeta.icon} ${isEn ? 'Theme applied:' : 'Tema diterapkan:'} ${phaseMeta.label}`;
+    showToast(msg, 'success');
+  }
+}
+
+function cycleThemeMode() {
+  const modes = ['auto', 'pagi', 'siang', 'sore', 'malam'];
+  const curIdx = modes.indexOf(state.themeMode || 'auto');
+  const nextMode = modes[(curIdx + 1) % modes.length];
+  applyTheme(nextMode, true);
+}
+
+let themeHeartbeatTimer = null;
+function startTimeThemeHeartbeat() {
+  if (themeHeartbeatTimer) clearInterval(themeHeartbeatTimer);
+  // Check every 60 seconds if in auto mode and time crossed a phase threshold
+  themeHeartbeatTimer = setInterval(() => {
+    if (state.themeMode === 'auto') {
+      applyTheme('auto', false);
+    }
+  }, 60000);
 }
 
 // ══════════════════════════════════════════
@@ -2329,26 +2547,49 @@ function openEventModal(eventId, era) {
   const detail = isEn && ev.detailEn ? ev.detailEn : (ev.detail || ev.desc);
   const relatedVerses = isEn ? 'Related Verses:' : 'Ayat Terkait:';
   const keyFigures = isEn ? '👥 Key Figures' : '👥 Tokoh Terlibat';
+  const perspectiveLabel = isEn ? '⚖️ Scholarly Perspective & Consensus:' : '⚖️ Perspektif & Konsensus Ulama:';
 
   const html = `
     <div class="mh-header">
       <div class="mh-event-badge">${ev.tags[0] || (isEn ? '📅 History' : '📅 Sejarah')}</div>
-      <div class="mh-title">${title}</div>
+      <h2 class="mh-title">${title}</h2>
       <div class="mh-year">📅 ${year}</div>
     </div>
-    <p class="mh-story">${detail}</p>
+
+    <div class="mh-story">${detail}</div>
+
+    ${ev.perspective ? `
+    <div class="mh-perspective-box">
+      <strong>${perspectiveLabel}</strong><br>
+      ${ev.perspective}
+    </div>
+    ` : ''}
+
     ${ev.quranRef ? `
     <div class="mh-verse-ref">
       <div style="font-size:0.75rem; color: var(--text-muted); margin-bottom: 8px;">${relatedVerses}</div>
       <div class="mh-arabic">${ev.tags.find(t => t.includes('🔗'))?.replace('🔗 ', '') || ''}</div>
     </div>
     ` : ''}
+
     <div class="mh-figures">
       <div class="mh-figures-title">${keyFigures}</div>
       <div class="mh-figure-list">
         ${(ev.figures || (isEn ? ['Prophet Muhammad ﷺ', 'Companions RA'] : ['Nabi Muhammad ﷺ', 'Sahabat RA'])).map(f => `<span class="mh-figure">${f}</span>`).join('')}
       </div>
     </div>
+
+    ${ev.journal ? `
+    <div class="mh-journal-box">
+      <div class="mh-journal-badge">🎓 JURNAL ILMIAH TERAKREDITASI (${ev.journal.index || 'SINTA'})</div>
+      <div class="mh-journal-title">"${ev.journal.title}"</div>
+      <div class="mh-journal-meta">
+        <strong>${ev.journal.authors}</strong> · <em>${ev.journal.journal}</em>
+        ${ev.journal.doi ? ` · DOI: <code>${ev.journal.doi}</code>` : ''}
+      </div>
+      <div class="mh-journal-focus"><strong>Fokus Penelitian:</strong> ${ev.journal.focus}</div>
+    </div>
+    ` : ''}
   `;
   openModal(html);
 }
@@ -2455,3 +2696,116 @@ function showToast(message, type = 'info') {
     setTimeout(() => toast.remove(), 300);
   }, 2600);
 }
+
+// ══════════════════════════════════════════════════════════════
+// NATIONAL GEOGRAPHIC STYLE EDITORIAL GALLERY CONTROLLER
+// ══════════════════════════════════════════════════════════════
+const NATGEO_GALLERY_DATA = [
+  {
+    image: 'images/history/card_kaabah.jpg',
+    tag: 'KIBLAT & SPIRITUALITAS • MAKKAH',
+    title: 'Masjidil Haram & Tawaf Abadi',
+    desc: 'Jutaan jamaah dari penjuru belahan bumi bergerak dalam harmoni satu lingkaran tawaf mengelilingi Ka\'bah. Dibangun kembali oleh Nabi Ibrahim AS dan Nabi Ismail AS, Ka\'bah menjadi pusat orientasi shalat dan kesatuan umat Islam di seluruh dunia selama lebih dari 14 abad tanpa henti.',
+    source: 'Rujukan: QS. Ali \'Imran: 96-97; Sahih Bukhari Kitab Haji; Arsip Sejarah Kota Makkah Al-Mukarramah.'
+  },
+  {
+    image: 'images/history/card_umayyah.jpg',
+    tag: '705 M • ERA DINASTI UMAYYAH',
+    title: 'Kemegahan Masjid Agung Damaskus (Masjid Umayyah)',
+    desc: 'Didirikan oleh Khalifah Al-Walid I pada tahun 705–715 Masehi di Damaskus, Suriah. Merupakan salah satu mahakarya arsitektur Islam tertua dan termegah di dunia, terkenal dengan mozaik kaca keemasan bermotif lanskap surga Barada dan menara-menara legendaris.',
+    source: 'Rujukan: Ibn Asakir, Tarikh Dimashq; K.A.C. Creswell, Early Muslim Architecture.'
+  },
+  {
+    image: 'images/history/card_manuscript.jpg',
+    tag: 'KODIKOLOGI & ARSIP SEJARAH',
+    title: 'Khazanah Manuskrip & Mushaf Emas Kuno',
+    desc: 'Seni mushaf dan kaligrafi Islam kuno mencerminkan dedikasi tertinggi terhadap pelestarian Al-Qur\'an dan khazanah ilmu pengetahuan. Dari mushaf era Utsmani, perkamen Kufik awal di Samarkand dan Topkapi, hingga manuskrip sains bertinta emas di era keemasan Islam.',
+    source: 'Rujukan: Sheila Blair, Islamic Calligraphy; Arsip Perpustakaan Nasional & Museum Topkapi Istanbul.'
+  },
+  {
+    image: 'images/history/card_abbasiyah.jpg',
+    tag: 'ERA ABBASIYAH • BAGHDAD',
+    title: 'Baitul Hikmah — Rumah Kebijaksanaan Dunia',
+    desc: 'Pusat keilmuan dan perpustakaan akbar yang berkembang pesat di Baghdad pada era Khalifah Harun Al-Rasyid dan Al-Ma\'mun (abad ke-8–13 M). Menjadi kawah candradimuka Gerakan Penerjemahan Akbar (Graeco-Arabic Translation Movement) dan lahirnya cabang ilmu baru seperti Aljabar oleh Al-Khwarizmi.',
+    source: 'Rujukan: George Saliba, Islamic Science and the Making of the European Renaissance; Ibn an-Nadim, Al-Fihrist.'
+  },
+  {
+    image: 'images/history/card_astronomy.jpg',
+    tag: 'SAINS & OBSERVATORIUM ISLAM',
+    title: 'Para Astronom Muslim & Presisi Astrolab',
+    desc: 'Para ilmuwan seperti Al-Battani, Az-Zarqali, Al-Tusi, dan Al-Biruni menyempurnakan instrumen astrolab, mengoreksi data Ptolemaeus, menghitung kemiringan ekliptika bumi secara akurat, serta memetakan posisi rasi bintang yang nama-namanya masih digunakan dalam astronomi internasional hari ini.',
+    source: 'Rujukan: David A. King, In Synchrony with the Heavens (Studies in Astronomical Timekeeping in Islam).'
+  }
+];
+
+
+
+
+let currentNatGeoIndex = 0;
+
+function openNatGeoModal(index) {
+  if (index < 0 || index >= NATGEO_GALLERY_DATA.length) index = 0;
+  currentNatGeoIndex = index;
+  renderNatGeoModalData();
+  
+  const backdrop = document.getElementById('natgeo-modal-backdrop');
+  if (backdrop) {
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeNatGeoModal() {
+  const backdrop = document.getElementById('natgeo-modal-backdrop');
+  if (backdrop) {
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+function navigateNatGeoModal(direction) {
+  currentNatGeoIndex += direction;
+  if (currentNatGeoIndex < 0) currentNatGeoIndex = NATGEO_GALLERY_DATA.length - 1;
+  if (currentNatGeoIndex >= NATGEO_GALLERY_DATA.length) currentNatGeoIndex = 0;
+  renderNatGeoModalData();
+}
+
+function renderNatGeoModalData() {
+  const data = NATGEO_GALLERY_DATA[currentNatGeoIndex];
+  if (!data) return;
+
+  const imgEl = document.getElementById('natgeo-modal-img');
+  const tagEl = document.getElementById('natgeo-modal-tag');
+  const counterEl = document.getElementById('natgeo-modal-counter');
+  const titleEl = document.getElementById('natgeo-modal-title');
+  const descEl = document.getElementById('natgeo-modal-desc');
+  const sourceTextEl = document.getElementById('natgeo-modal-source-text');
+
+  if (imgEl) {
+    imgEl.style.opacity = '0.3';
+    imgEl.src = data.image;
+    imgEl.onload = () => { imgEl.style.opacity = '1'; };
+    imgEl.onerror = () => { imgEl.style.opacity = '1'; };
+    imgEl.style.transition = 'opacity 0.25s ease';
+  }
+  if (tagEl) tagEl.textContent = data.tag;
+  if (counterEl) counterEl.textContent = `${currentNatGeoIndex + 1} / ${NATGEO_GALLERY_DATA.length}`;
+  if (titleEl) titleEl.textContent = data.title;
+  if (descEl) descEl.textContent = data.desc;
+  if (sourceTextEl) sourceTextEl.textContent = data.source;
+}
+
+// Lightbox keyboard shortcuts: ArrowLeft, ArrowRight, Escape
+document.addEventListener('keydown', (e) => {
+  const backdrop = document.getElementById('natgeo-modal-backdrop');
+  if (!backdrop || !backdrop.classList.contains('open')) return;
+
+  if (e.key === 'Escape') {
+    closeNatGeoModal();
+  } else if (e.key === 'ArrowLeft') {
+    navigateNatGeoModal(-1);
+  } else if (e.key === 'ArrowRight') {
+    navigateNatGeoModal(1);
+  }
+});
+

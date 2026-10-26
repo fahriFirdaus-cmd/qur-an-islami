@@ -62,45 +62,103 @@
   --transition-slow:    0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ─── Themes ─── */
-body.theme-dark {
-  --bg-primary:         #121816;
-  --bg-secondary:       #192320;
-  --bg-card:            #192320;
-  --bg-card-hover:      #212e2a;
-  --bg-sidebar:         #161f1c;
-  --bg-input:           #212e2a;
-  --border:             #2a3b34;
-  --border-light:       #212e2a;
-  --border-strong:      #384f45;
-  --text-primary:       #f3f7f5;
-  --text-secondary:     #a2b5ab;
-  --text-muted:         #688074;
-  --text-arabic:        #e8f3ec;
-  --sage-50:            #1f2b27;
-  --sage-100:           #293b34;
-  --sage-200:           #3b5249;
-  --shadow-sm:          0 1px 3px rgba(0,0,0,0.3);
-  --shadow-md:          0 4px 12px rgba(0,0,0,0.35);
+/* ─── Themes (Dinamis Waktu: Pagi, Siang, Sore, Malam) ─── */
+/* 🌅 TEMA PAGI (Fajar & Dhuha: 05:00 - 10:59) */
+body.theme-pagi {
+  --bg-primary:         #faf8f2;
+  --bg-secondary:       #ffffff;
+  --bg-card:            #ffffff;
+  --bg-card-hover:      #fdfbf7;
+  --bg-sidebar:         #ffffff;
+  --bg-input:           #f3f0e6;
+  --border:             #e8e2d4;
+  --border-light:       #f2ece0;
+  --border-strong:      #d8cebc;
+  --text-primary:       #1b2723;
+  --text-secondary:     #52635d;
+  --text-muted:         #889891;
+  --text-arabic:        #152420;
+  --sage-50:            #f2f7f3;
+  --sage-100:           #e2ede5;
+  --sage-200:           #c3dcce;
+  --sage-500:           #2b6e55;
+  --sage-600:           #215944;
+  --shadow-sm:          0 1px 3px rgba(43,110,85,0.06);
+  --shadow-md:          0 4px 14px rgba(43,110,85,0.08);
 }
 
+/* ☀️ TEMA SIANG (Dzuhur & Daylight: 11:00 - 14:59) */
+body.theme-siang {
+  --bg-primary:         #f6f5ee;
+  --bg-secondary:       #ffffff;
+  --bg-card:            #ffffff;
+  --bg-card-hover:      #f9faf7;
+  --bg-sidebar:         #ffffff;
+  --bg-input:           #eff0eb;
+  --border:             #e5e4dc;
+  --border-light:       #edede5;
+  --border-strong:      #d2d0c4;
+  --text-primary:       #0f172a;
+  --text-secondary:     #475569;
+  --text-muted:         #94a3b8;
+  --text-arabic:        #0f172a;
+  --sage-50:            #edf5f1;
+  --sage-100:           #daeae1;
+  --sage-200:           #b8d8c6;
+  --sage-500:           #1b6852;
+  --sage-600:           #134e3e;
+  --shadow-sm:          0 1px 3px rgba(0,0,0,0.04);
+  --shadow-md:          0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* 🌇 TEMA SORE (Ashr & Sunset: 15:00 - 18:29) & Sepia */
+body.theme-sore,
 body.theme-sepia {
-  --bg-primary:         #f6f0e4;
-  --bg-secondary:       #fbf7ee;
-  --bg-card:            #fbf7ee;
-  --bg-card-hover:      #f4ede0;
-  --bg-sidebar:         #fbf6ec;
-  --bg-input:           #efe7d6;
-  --border:             #e2d7c3;
-  --border-light:       #ece3d3;
-  --border-strong:      #cfc0a8;
-  --text-primary:       #3b2f21;
-  --text-secondary:     #73604d;
-  --text-muted:         #9e8974;
-  --text-arabic:        #302416;
-  --sage-50:            #ede5d4;
-  --sage-100:           #e2d7c0;
-  --sage-200:           #cfc0a2;
+  --bg-primary:         #f5eee3;
+  --bg-secondary:       #fbf6ec;
+  --bg-card:            #fbf6ec;
+  --bg-card-hover:      #f5ede1;
+  --bg-sidebar:         #f8f2e7;
+  --bg-input:           #eee3cf;
+  --border:             #dfd3be;
+  --border-light:       #e8decb;
+  --border-strong:      #cca986;
+  --text-primary:       #382a1d;
+  --text-secondary:     #6f5844;
+  --text-muted:         #9a836d;
+  --text-arabic:        #2d1f13;
+  --sage-50:            #eee3d2;
+  --sage-100:           #e2d2ba;
+  --sage-200:           #cbb698;
+  --sage-500:           #8a5223;
+  --sage-600:           #6e3e16;
+  --shadow-sm:          0 1px 3px rgba(110,62,22,0.06);
+  --shadow-md:          0 4px 14px rgba(110,62,22,0.08);
+}
+
+/* 🌙 TEMA MALAM (Isya s/d Fajar: 18:30 - 04:59) & Dark */
+body.theme-malam,
+body.theme-dark {
+  --bg-primary:         #0c141a;
+  --bg-secondary:       #121d26;
+  --bg-card:            #121d26;
+  --bg-card-hover:      #182632;
+  --bg-sidebar:         #101a22;
+  --bg-input:           #182632;
+  --border:             #1f3241;
+  --border-light:       #182834;
+  --border-strong:      #2c4457;
+  --text-primary:       #f0f6fa;
+  --text-secondary:     #9bb0c1;
+  --text-muted:         #63798b;
+  --text-arabic:        #e6f4fc;
+  --sage-50:            #172a38;
+  --sage-100:           #203b4e;
+  --sage-200:           #2e526b;
+  --sage-500:           #38bdf8;
+  --sage-600:           #0ea5e9;
+  --shadow-sm:          0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:          0 4px 14px rgba(0,0,0,0.45);
 }
 
 /* ─── Reset & Base ─── */
@@ -117,7 +175,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: #f7f6f0;
+  background: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
   display: flex;
@@ -125,6 +183,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Scrollbar */
@@ -1735,118 +1794,980 @@ body {
 }
 
 /* ──────────────────────────────────────────────
-   PAGE: SEJARAH / TIMELINE
+   PAGE: SEJARAH ISLAM (Chronicle of Civilization)
 ────────────────────────────────────────────── */
-.era-tabs {
-  display: flex;
-  gap: 8px;
+.sejarah-hero-banner {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
   margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(11, 51, 40, 0.90) 0%, rgba(20, 73, 59, 0.85) 50%, rgba(30, 90, 74, 0.80) 100%),
+              url('images/history/hero_madinah.jpg') center 35% / cover no-repeat;
+  color: #ffffff;
+  padding: 38px 36px 32px;
+  box-shadow: 0 16px 36px rgba(11, 51, 40, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.theme-malam .sejarah-hero-banner,
+body.theme-dark .sejarah-hero-banner {
+  background: linear-gradient(135deg, rgba(7, 21, 30, 0.93) 0%, rgba(15, 39, 55, 0.88) 50%, rgba(21, 56, 78, 0.82) 100%),
+              url('images/history/hero_madinah.jpg') center 35% / cover no-repeat;
+  border-color: rgba(56, 189, 248, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+body.theme-sore .sejarah-hero-banner,
+body.theme-sepia .sejarah-hero-banner {
+  background: linear-gradient(135deg, rgba(66, 37, 13, 0.92) 0%, rgba(104, 57, 21, 0.88) 50%, rgba(138, 78, 29, 0.82) 100%),
+              url('images/history/hero_madinah.jpg') center 35% / cover no-repeat;
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+body.theme-pagi .sejarah-hero-banner {
+  background: linear-gradient(135deg, rgba(19, 66, 51, 0.90) 0%, rgba(32, 92, 72, 0.85) 50%, rgba(48, 117, 93, 0.80) 100%),
+              url('images/history/hero_madinah.jpg') center 35% / cover no-repeat;
+}
+
+.sejarah-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 85% 20%, rgba(250, 204, 21, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 10% 80%, rgba(52, 211, 153, 0.12) 0%, transparent 35%);
+  pointer-events: none;
+}
+
+.sejarah-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.sejarah-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
+.sejarah-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.15);
+  color: #e2f4ea;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sejarah-pill-badge.gold {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fef08a;
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.sejarah-hero-title {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.sejarah-hero-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.65;
+  max-width: 820px;
+  margin-bottom: 24px;
+}
+
+/* Historical Stats Grid */
+.sejarah-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.sejarah-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.sejarah-stat-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.stat-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+/* History Controls: Search Bar & Count Badge */
+.sejarah-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.sejarah-search-box {
+  flex: 1;
+  min-width: 280px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+
+.sejarah-search-box:focus-within {
+  border-color: var(--sage-500);
+  box-shadow: 0 0 0 3px rgba(43, 110, 85, 0.12);
+}
+
+.sejarah-search-box svg {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.sejarah-search-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.sejarah-search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.sejarah-clear-search {
+  background: var(--sage-50);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.sejarah-clear-search:hover {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.sejarah-count-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-input);
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   NATIONAL GEOGRAPHIC EDITORIAL PHOTO GALLERY
+   ══════════════════════════════════════════════════════════════ */
+.natgeo-gallery-container {
+  margin-bottom: 28px;
+  padding: 24px;
+  border-radius: var(--radius-2xl);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+body.theme-malam .natgeo-gallery-container,
+body.theme-dark .natgeo-gallery-container {
+  background: rgba(15, 23, 42, 0.7);
+  border-color: rgba(250, 204, 21, 0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+body.theme-sore .natgeo-gallery-container,
+body.theme-sepia .natgeo-gallery-container {
+  background: rgba(254, 243, 199, 0.4);
+  border-color: rgba(217, 119, 6, 0.2);
+}
+
+.natgeo-header {
+  margin-bottom: 20px;
+}
+
+.natgeo-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.natgeo-yellow-box {
+  width: 13px;
+  height: 18px;
+  background: #facc15;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(250, 204, 21, 0.5);
+  display: inline-block;
+}
+
+.natgeo-brand-text {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #eab308;
+}
+
+.natgeo-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.natgeo-main-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+  line-height: 1.25;
+}
+
+.natgeo-main-subtitle {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.45;
+  max-width: 680px;
+}
+
+.natgeo-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background: rgba(250, 204, 21, 0.12);
+  border: 1px solid rgba(250, 204, 21, 0.3);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Mosaic Magazine Grid */
+.natgeo-mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.natgeo-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  cursor: pointer;
+  grid-column: span 5;
+  min-height: 210px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s;
+}
+
+.natgeo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+  border-color: rgba(250, 204, 21, 0.6);
+}
+
+.natgeo-card-lead {
+  grid-column: span 7;
+  grid-row: span 2;
+  min-height: 436px;
+}
+
+.natgeo-card-wide {
+  grid-column: span 7;
+  min-height: 220px;
+}
+
+.natgeo-card-media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.natgeo-card:hover .natgeo-card-media {
+  transform: scale(1.06);
+}
+
+.natgeo-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0.1) 100%);
+  transition: opacity 0.3s ease;
+}
+
+.natgeo-card:hover .natgeo-card-scrim {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.50) 60%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+.natgeo-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 2;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.natgeo-card-lead .natgeo-card-content {
+  padding: 28px;
+  gap: 10px;
+}
+
+.natgeo-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.natgeo-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  color: #f1f5f9;
+  border-left: 3px solid #facc15;
+}
+
+.natgeo-pill.gold {
+  background: #facc15;
+  color: #0f172a;
+  border-left: none;
+  font-weight: 900;
+}
+
+.natgeo-time-tag {
+  font-size: 0.72rem;
+  color: #e2e8f0;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.natgeo-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: color 0.2s;
+}
+
+.natgeo-card:hover .natgeo-card-title {
+  color: #fef08a;
+}
+
+.natgeo-card-lead .natgeo-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.natgeo-card-desc {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.natgeo-card-lead .natgeo-card-desc {
+  font-size: 0.9rem;
+  -webkit-line-clamp: 3;
+}
+
+.natgeo-card-action {
+  margin-top: 4px;
+}
+
+.natgeo-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #fde047;
+  letter-spacing: 0.04em;
+  transition: all 0.2s;
+}
+
+.natgeo-card:hover .natgeo-view-btn {
+  color: #ffffff;
+  gap: 9px;
+}
+
+/* NatGeo Lightbox Modal */
+.natgeo-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.natgeo-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.natgeo-modal-dialog {
+  max-width: 980px;
+  width: 100%;
+  max-height: 92vh;
+  background: #0f172a;
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.natgeo-modal-backdrop.active .natgeo-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.natgeo-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.2s;
+}
+
+.natgeo-modal-close:hover {
+  background: #facc15;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.natgeo-modal-body {
+  display: flex;
+  flex-direction: column;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .natgeo-modal-body {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+  }
+}
+
+.natgeo-modal-image-wrap {
+  position: relative;
+  background: #000000;
+  min-height: 320px;
+  max-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .natgeo-modal-image-wrap {
+    min-height: 480px;
+    max-height: 75vh;
+  }
+}
+
+.natgeo-modal-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.natgeo-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 5;
+}
+
+.natgeo-nav-arrow:hover {
+  background: #facc15;
+  color: #000000;
+  border-color: #facc15;
+}
+
+.natgeo-nav-arrow.prev {
+  left: 14px;
+}
+
+.natgeo-nav-arrow.next {
+  right: 14px;
+}
+
+.natgeo-modal-info {
+  padding: 30px 28px;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+.natgeo-modal-kicker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.natgeo-modal-counter {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.natgeo-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  margin: 0;
+  border-left: 3px solid #facc15;
+  padding-left: 12px;
+}
+
+.natgeo-modal-desc {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.natgeo-modal-source {
+  margin-top: auto;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(250, 204, 21, 0.08);
+  border: 1px solid rgba(250, 204, 21, 0.25);
+  font-size: 0.8rem;
+  color: #fde047;
+  line-height: 1.5;
+}
+
+.natgeo-modal-source strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Responsive NatGeo Grid */
+@media (max-width: 900px) {
+  .natgeo-mosaic-grid {
+    grid-template-columns: 1fr;
+  }
+  .natgeo-card-lead,
+  .natgeo-card,
+  .natgeo-card-wide {
+    grid-column: span 1;
+    min-height: 240px;
+  }
+  .natgeo-card-lead {
+    min-height: 320px;
+  }
+}
+
+/* Era Filter Tabs */
+.era-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
 .era-tab {
-  padding: 9px 20px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
   border-radius: 50px;
   border: 1px solid var(--border);
   background: var(--bg-card);
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.82rem;
+  font-weight: 600;
   font-family: var(--font-body);
   cursor: pointer;
+  white-space: nowrap;
   transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
 }
+
+.era-tab:hover {
+  border-color: var(--sage-300);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
 .era-tab.active {
-  border-color: var(--sage-400);
+  border-color: var(--sage-500);
   color: var(--sage-700);
   background: var(--sage-50);
-}
-.era-tab:hover {
-  border-color: var(--sage-200);
+  box-shadow: 0 2px 8px rgba(43, 110, 85, 0.12);
 }
 
-.timeline-container {
-  position: relative;
-  padding-left: 32px;
+body.theme-malam .era-tab.active,
+body.theme-dark .era-tab.active {
+  color: #38bdf8;
+  background: #172a38;
+  border-color: #38bdf8;
 }
 
-.timeline-container::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 10px;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--sage-400) 0%, var(--sage-100) 100%);
-  border-radius: 2px;
+.era-tab-icon {
+  font-size: 0.95rem;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 18px;
+.era-tab-count {
+  font-size: 0.68rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: var(--bg-input);
+  color: var(--text-muted);
 }
 
-.timeline-dot {
-  position: absolute;
-  left: -30px;
-  top: 22px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+.era-tab.active .era-tab-count {
   background: var(--sage-500);
-  border: 3px solid var(--bg-primary);
+  color: #ffffff;
 }
 
-.timeline-card {
+/* Era Context Card */
+.era-context-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 22px 24px;
-  cursor: pointer;
-  transition: all var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-.timeline-card::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 3px;
-  background: var(--sage-400);
-}
-.timeline-card:hover {
-  border-color: var(--sage-200);
+  border-left: 4px solid var(--sage-500);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
   box-shadow: var(--shadow-sm);
-  transform: translateX(4px);
+  animation: pageFadeIn 0.3s ease;
 }
 
-.tl-year {
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: var(--sage-500);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  margin-bottom: 6px;
+.era-context-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+  padding: 8px;
+  background: var(--sage-50);
+  border-radius: var(--radius-md);
 }
 
-.tl-title {
+.era-context-body {
+  flex: 1;
+}
+
+.era-context-title {
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-.tl-desc {
+.era-context-desc {
   font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.65;
 }
 
+/* Main Chronological Timeline */
+.timeline-container {
+  position: relative;
+  padding-left: 36px;
+  margin-top: 10px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 14px;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--sage-500) 0%, var(--sage-200) 70%, transparent 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--sage-500);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 2px var(--sage-200);
+  transition: all var(--transition);
+}
+
+.timeline-card:hover + .timeline-dot,
+.timeline-item:hover .timeline-dot {
+  background: #f59e0b;
+  transform: scale(1.2);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.25);
+}
+
+.timeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 24px 26px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--sage-400);
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline-card:hover {
+  border-color: var(--sage-300);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px) translateX(3px);
+}
+
+.timeline-card:hover::before {
+  width: 6px;
+  background: var(--sage-500);
+}
+
+.tl-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.tl-year {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--sage-600);
+  background: var(--sage-50);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--sage-200);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+body.theme-malam .tl-year,
+body.theme-dark .tl-year {
+  color: #38bdf8;
+  background: #172a38;
+  border-color: #234257;
+}
+
+.tl-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.tl-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.tl-figures-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.tl-figures-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.tl-figure-chip {
+  font-size: 0.72rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px 9px;
+  color: var(--text-secondary);
+}
+
+.tl-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .tl-tags {
   display: flex;
   gap: 6px;
-  margin-top: 12px;
   flex-wrap: wrap;
 }
 
@@ -1858,10 +2779,136 @@ body {
   padding: 3px 10px;
   color: var(--text-muted);
 }
+
 .tl-tag.quran-ref {
   border-color: var(--sage-300);
   color: var(--sage-600);
+  background: var(--sage-50);
   font-weight: 600;
+}
+
+.tl-detail-action {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sage-600);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.timeline-card:hover .tl-detail-action {
+  gap: 8px;
+  color: var(--sage-500);
+}
+
+/* Academic & Manuscript Details in Modal */
+.mh-perspective-box {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.mh-journal-box {
+  background: var(--sage-50);
+  border: 1px solid var(--sage-200);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-top: 18px;
+}
+
+.mh-journal-badge {
+  display: inline-block;
+  background: var(--sage-500);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.mh-journal-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.mh-journal-meta {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.mh-journal-focus {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Header Time Badge Button */
+.theme-phase-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px !important;
+  width: auto !important;
+  border-radius: 50px !important;
+}
+
+.theme-time-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.theme-time-badge {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--text-secondary);
+}
+
+/* Settings Theme Previews */
+.auto-theme-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, #fef08a, #93c5fd, #fdba74, #1e293b);
+  border-radius: var(--radius-sm);
+}
+
+.pagi-theme-preview {
+  background: linear-gradient(135deg, #faf8f2 50%, #2b6e55 50%);
+  border-radius: var(--radius-sm);
+  border: 1px solid #e8e2d4;
+}
+
+.siang-theme-preview {
+  background: linear-gradient(135deg, #f6f5ee 50%, #0d382d 50%);
+  border-radius: var(--radius-sm);
+  border: 1px solid #e5e4dc;
+}
+
+.sore-theme-preview {
+  background: linear-gradient(135deg, #f5eee3 50%, #8a5223 50%);
+  border-radius: var(--radius-sm);
+  border: 1px solid #dfd3be;
+}
+
+.malam-theme-preview {
+  background: linear-gradient(135deg, #0c141a 50%, #38bdf8 50%);
+  border-radius: var(--radius-sm);
+  border: 1px solid #1f3241;
 }
 
 /* ──────────────────────────────────────────────
@@ -4340,6 +5387,7 @@ body.theme-dark .surah-revelation-tag.madan {
   align-items: flex-start;
   color: #ffffff;
   box-shadow: 0 10px 30px rgba(13, 56, 45, 0.12);
+  transition: background 0.8s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.8s ease;
 }
 
 /* Geometric Islamic Pattern Background */
@@ -4350,6 +5398,31 @@ body.theme-dark .surah-revelation-tag.madan {
   opacity: 0.09;
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M30 0l4.243 10.243L44.485 6l-4.242 10.243L50.485 20l-10.242 4.243L44.485 34.485 34.243 30.243 30 40.485l-4.243-10.242L15.515 34.485l4.242-10.242L9.515 20l10.242-4.243L15.515 6l10.242 4.243L30 0zm0 14.142L25.757 20 20 25.757l5.757 5.758L30 37.272l4.243-5.757L40 25.757l-5.757-5.757L30 14.142z'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 60px 60px;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+/* Twinkling Stars in Night Sky */
+.hero-stars-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 40px 30px, #ffffff, transparent),
+    radial-gradient(1px 1px at 120px 80px, #fef08a, transparent),
+    radial-gradient(2px 2px at 180px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 250px 70px, #bae6fd, transparent),
+    radial-gradient(1.5px 1.5px at 340px 45px, #fef08a, transparent),
+    radial-gradient(1.2px 1.2px at 430px 90px, #ffffff, transparent),
+    radial-gradient(2px 2px at 520px 35px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 640px 65px, #fef08a, transparent),
+    radial-gradient(1px 1px at 750px 40px, #ffffff, transparent),
+    radial-gradient(2px 2px at 860px 75px, #ffffff, transparent),
+    radial-gradient(1.2px 1.2px at 940px 45px, #fef08a, transparent);
+  background-size: 1000px 240px;
 }
 
 /* Mosque Silhouette */
@@ -4360,7 +5433,7 @@ body.theme-dark .surah-revelation-tag.madan {
   right: 0;
   height: 155px;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-mosque svg {
@@ -4369,20 +5442,209 @@ body.theme-dark .surah-revelation-tag.madan {
   display: block;
 }
 
+.mosque-body {
+  transition: fill 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mosque-lights {
+  transition: fill 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.8s ease;
+}
+
 .hero-left-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: 480px;
+}
+
+.hero-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 
 .hero-bismillah {
   font-family: 'Amiri Quran', 'Amiri', serif;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   color: #dfba73;
-  margin-bottom: 14px;
   direction: rtl;
   display: inline-block;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0;
+  transition: color 0.6s ease;
+}
+
+.hero-time-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 4px 11px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.hero-time-badge:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.time-badge-icon {
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.time-badge-switch-hint {
+  font-size: 0.75rem;
+  opacity: 0.65;
+  margin-left: 2px;
+}
+
+/* ─── 1. PAGI THEME (Morning: 05:00 - 11:00) ─── */
+.hero-card.time-pagi {
+  background: linear-gradient(135deg, #093c31 0%, #0d5444 40%, #156d58 75%, #1e866d 100%) !important;
+  box-shadow: 0 10px 32px rgba(13, 84, 68, 0.25);
+}
+
+.hero-card.time-pagi .hero-pattern-bg {
+  opacity: 0.11;
+}
+
+.hero-card.time-pagi .hero-bismillah {
+  color: #fef08a;
+}
+
+.hero-card.time-pagi .hero-time-badge {
+  background: rgba(254, 240, 138, 0.16);
+  border-color: rgba(254, 240, 138, 0.35);
+  color: #fef08a;
+}
+
+.hero-card.time-pagi .mosque-body {
+  fill: #062b23;
+}
+
+.hero-card.time-pagi .mosque-lights {
+  fill: #fef08a;
+  filter: drop-shadow(0 0 5px rgba(254, 240, 138, 0.7));
+}
+
+/* ─── 2. SIANG THEME (Midday: 11:00 - 15:00) ─── */
+.hero-card.time-siang {
+  background: linear-gradient(135deg, #072e24 0%, #0d382d 55%, #124c3d 100%) !important;
+  box-shadow: 0 10px 30px rgba(13, 56, 45, 0.18);
+}
+
+.hero-card.time-siang .hero-pattern-bg {
+  opacity: 0.09;
+}
+
+.hero-card.time-siang .hero-bismillah {
+  color: #dfba73;
+}
+
+.hero-card.time-siang .hero-time-badge {
+  background: rgba(223, 186, 115, 0.16);
+  border-color: rgba(223, 186, 115, 0.32);
+  color: #f0cf8e;
+}
+
+.hero-card.time-siang .mosque-body {
+  fill: #07261c;
+}
+
+.hero-card.time-siang .mosque-lights {
+  fill: #e5c07b;
+}
+
+/* ─── 3. SORE THEME (Afternoon / Sunset: 15:00 - 18:30) ─── */
+.hero-card.time-sore {
+  background: linear-gradient(135deg, #132720 0%, #203529 28%, #423521 60%, #683b16 100%) !important;
+  box-shadow: 0 10px 32px rgba(104, 59, 22, 0.28);
+}
+
+.hero-card.time-sore .hero-pattern-bg {
+  opacity: 0.08;
+}
+
+.hero-card.time-sore .hero-bismillah {
+  color: #fed7aa;
+}
+
+.hero-card.time-sore .hero-time-badge {
+  background: rgba(251, 146, 60, 0.2);
+  border-color: rgba(251, 146, 60, 0.45);
+  color: #fed7aa;
+}
+
+.hero-card.time-sore .mosque-body {
+  fill: #141c17;
+}
+
+.hero-card.time-sore .mosque-lights {
+  fill: #fbbf24;
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.85));
+}
+
+.hero-card.time-sore .continue-reading-glass {
+  background: rgba(38, 28, 20, 0.72);
+  border-color: rgba(251, 146, 60, 0.28);
+}
+
+/* ─── 4. MALAM THEME (Night: 18:30 - 05:00) ─── */
+.hero-card.time-malam {
+  background: linear-gradient(135deg, #020a08 0%, #051611 40%, #09241b 75%, #0e3226 100%) !important;
+  box-shadow: 0 10px 36px rgba(2, 10, 8, 0.4);
+}
+
+.hero-card.time-malam .hero-pattern-bg {
+  opacity: 0.07;
+}
+
+.hero-card.time-malam .hero-stars-layer {
+  opacity: 1;
+  animation: starsTwinkle 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes starsTwinkle {
+  0% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.008); }
+}
+
+.hero-card.time-malam .hero-bismillah {
+  color: #fef08a;
+  text-shadow: 0 0 12px rgba(254, 240, 138, 0.4);
+}
+
+.hero-card.time-malam .hero-time-badge {
+  background: rgba(125, 211, 252, 0.15);
+  border-color: rgba(125, 211, 252, 0.35);
+  color: #bae6fd;
+}
+
+.hero-card.time-malam .mosque-body {
+  fill: #020b08;
+}
+
+.hero-card.time-malam .mosque-lights {
+  fill: #fde047;
+  filter: drop-shadow(0 0 8px rgba(253, 224, 71, 0.95));
+}
+
+.hero-card.time-malam .continue-reading-glass {
+  background: rgba(5, 20, 15, 0.82);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 .hero-title {
@@ -4779,3 +6041,983 @@ body.theme-dark .surah-revelation-tag.madan {
 .mobile-bottom-nav {
   display: none !important;
 }
+
+/* ──────────────────────────────────────────────
+   THEME ADAPTATIONS FOR REDESIGNED CARDS
+────────────────────────────────────────────── */
+body.theme-malam .app-header,
+body.theme-dark .app-header {
+  background: rgba(18, 29, 38, 0.95) !important;
+  border-bottom-color: var(--border) !important;
+}
+
+body.theme-malam .brand-title,
+body.theme-dark .brand-title {
+  color: #f0f6fa !important;
+}
+
+body.theme-malam .surah-card-panel,
+body.theme-dark .surah-card-panel,
+body.theme-malam .surah-card-panel#sidebar,
+body.theme-dark .surah-card-panel#sidebar {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.theme-malam .surah-card-title,
+body.theme-dark .surah-card-title,
+body.theme-malam .surah-item-name,
+body.theme-dark .surah-item-name {
+  color: #f0f6fa !important;
+}
+
+body.theme-malam .surah-card-search,
+body.theme-dark .surah-card-search {
+  background: var(--bg-input) !important;
+}
+
+body.theme-malam .surah-card-search input,
+body.theme-dark .surah-card-search input {
+  color: #f0f6fa !important;
+}
+
+body.theme-malam .surah-card-filter-tabs .s-filter-btn,
+body.theme-dark .surah-card-filter-tabs .s-filter-btn {
+  background: var(--bg-input) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+}
+
+body.theme-malam .surah-card-filter-tabs .s-filter-btn.active,
+body.theme-dark .surah-card-filter-tabs .s-filter-btn.active {
+  background: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+  color: #0c141a !important;
+}
+
+body.theme-malam .surah-item:hover,
+body.theme-dark .surah-item:hover {
+  background: rgba(56, 189, 248, 0.08) !important;
+}
+
+body.theme-malam .surah-item.active,
+body.theme-dark .surah-item.active {
+  background: rgba(56, 189, 248, 0.16) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+}
+
+body.theme-malam .surah-num,
+body.theme-dark .surah-num {
+  background: var(--bg-input) !important;
+  color: var(--text-secondary) !important;
+}
+
+body.theme-malam .surah-item.active .surah-num,
+body.theme-dark .surah-item.active .surah-num {
+  background: #38bdf8 !important;
+  color: #0c141a !important;
+}
+
+body.theme-malam .fc-card,
+body.theme-dark .fc-card {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+}
+
+body.theme-malam .fc-title,
+body.theme-dark .fc-title {
+  color: #f0f6fa !important;
+}
+
+body.theme-malam .fc-cta,
+body.theme-dark .fc-cta {
+  color: #38bdf8 !important;
+}
+
+/* SORE / SEPIA ADAPTATIONS */
+body.theme-sore .surah-card-panel,
+body.theme-sepia .surah-card-panel,
+body.theme-sore .surah-card-panel#sidebar,
+body.theme-sepia .surah-card-panel#sidebar {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+}
+
+body.theme-sore .fc-card,
+body.theme-sepia .fc-card {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+}
+
+body.theme-sore .surah-card-search,
+body.theme-sepia .surah-card-search {
+  background: var(--bg-input) !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PAGE SEJARAH ISLAM — ISLAMIC HISTORY
+   NatGeo-style editorial layout with photo mosaic grid
+══════════════════════════════════════════════════════════════ */
+
+/* Override default page padding for sejarah to go full-width at top */
+#page-sejarah {
+  padding: 0 0 100px;
+}
+
+/* ── Hero Banner ── */
+.sejarah-hero-banner {
+  position: relative;
+  min-height: 480px;
+  background:
+    linear-gradient(160deg, #0d2b1e 0%, #1a4a30 40%, #0b2318 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* decorative Islamic geometric pattern overlay */
+.sejarah-hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(212,175,55,0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(212,175,55,0.08) 0%, transparent 40%),
+    repeating-conic-gradient(rgba(255,255,255,0.025) 0deg, transparent 10deg, transparent 20deg, rgba(255,255,255,0.025) 30deg);
+  background-size: cover, cover, 80px 80px;
+  pointer-events: none;
+}
+
+/* golden accent strip at top */
+.sejarah-hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f0c040, #d4af37);
+}
+
+.sejarah-hero-overlay {
+  display: none; /* handled by ::before now */
+}
+
+.sejarah-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 52px 48px 48px;
+  max-width: 900px;
+}
+
+.sejarah-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.sejarah-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #e2f0e8;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+}
+
+.sejarah-pill-badge.gold {
+  background: rgba(212,175,55,0.2);
+  border-color: rgba(212,175,55,0.45);
+  color: #f0c040;
+}
+
+.sejarah-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.sejarah-hero-desc {
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: rgba(210,235,220,0.88);
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+/* Stats Grid */
+.sejarah-stats-grid {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.sejarah-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px;
+  padding: 12px 18px;
+  backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+}
+.sejarah-stat-card:hover {
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-2px);
+}
+
+.stat-icon-wrap {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f0c040;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: rgba(200,230,210,0.75);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ── NatGeo Editorial Gallery ── */
+.natgeo-gallery-container {
+  padding: 0 32px 32px;
+}
+
+.natgeo-header {
+  padding: 32px 0 20px;
+}
+
+.natgeo-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.natgeo-yellow-box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ffcc00;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.natgeo-brand-text {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.natgeo-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.natgeo-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
+
+.natgeo-main-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.natgeo-badge-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.natgeo-badge-icon { font-size: 1rem; }
+
+/* ── Mosaic Photo Grid ── */
+.natgeo-mosaic-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-rows: 320px 240px;
+  gap: 10px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Lead card spans 2 rows on the left */
+.natgeo-card-lead {
+  grid-row: 1 / 3;
+}
+
+/* Wide card spans 2 columns on bottom-right */
+.natgeo-card-wide {
+  grid-column: 2 / 4;
+}
+
+/* Individual card */
+.natgeo-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #1a2a20;
+}
+
+.natgeo-card:hover .natgeo-card-media {
+  transform: scale(1.06);
+}
+
+.natgeo-card:hover .natgeo-card-content {
+  opacity: 1;
+}
+
+/* Photo background */
+.natgeo-card-media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Fallback gradient when image is missing */
+  background-color: #1e3a28;
+}
+
+/* Gradient scrim for readability */
+.natgeo-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5,15,10,0.9) 0%,
+    rgba(5,15,10,0.45) 45%,
+    rgba(5,15,10,0.1) 80%,
+    transparent 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.natgeo-card:hover .natgeo-card-scrim {
+  background: linear-gradient(
+    to top,
+    rgba(5,15,10,0.95) 0%,
+    rgba(5,15,10,0.6) 55%,
+    rgba(5,15,10,0.2) 85%,
+    transparent 100%
+  );
+}
+
+/* Card text content */
+.natgeo-card-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 20px 18px;
+  z-index: 2;
+}
+
+.natgeo-card-lead .natgeo-card-content {
+  padding: 28px 28px 24px;
+}
+
+.natgeo-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.natgeo-pill {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #0d1a10;
+  background: #ffcc00;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.natgeo-pill.gold {
+  background: #d4af37;
+  color: #1a0e00;
+}
+
+.natgeo-time-tag {
+  font-size: 0.65rem;
+  color: rgba(200,235,210,0.75);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.natgeo-card-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.natgeo-card-lead .natgeo-card-title {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.natgeo-card-desc {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: rgba(200,235,210,0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.natgeo-card-lead .natgeo-card-desc {
+  font-size: 0.88rem;
+  -webkit-line-clamp: 3;
+  margin-bottom: 16px;
+}
+
+.natgeo-card-action {
+  display: flex;
+  align-items: center;
+}
+
+.natgeo-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ffcc00;
+  letter-spacing: 0.3px;
+  transition: gap 0.2s ease;
+  cursor: pointer;
+}
+
+.natgeo-card:hover .natgeo-view-btn {
+  gap: 10px;
+}
+
+/* Fallback gradient backgrounds when images are missing */
+.natgeo-card:nth-child(1) .natgeo-card-media {
+  background: linear-gradient(135deg, #1a3a28 0%, #0d5a3a 50%, #093022 100%);
+}
+.natgeo-card:nth-child(2) .natgeo-card-media {
+  background: linear-gradient(135deg, #2a1a3a 0%, #4a1060 50%, #1a0830 100%);
+}
+.natgeo-card:nth-child(3) .natgeo-card-media {
+  background: linear-gradient(135deg, #3a2a10 0%, #6a4a08 50%, #2a1a04 100%);
+}
+.natgeo-card:nth-child(4) .natgeo-card-media {
+  background: linear-gradient(135deg, #0a2a40 0%, #0a4060 50%, #052030 100%);
+}
+.natgeo-card:nth-child(5) .natgeo-card-media {
+  background: linear-gradient(135deg, #1a0a30 0%, #2a0a60 50%, #100520 100%);
+}
+
+/* SVG decorative watermarks inside gradient bg cards */
+.natgeo-card-media::after {
+  content: '☽';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  opacity: 0.06;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* ── NatGeo Lightbox Modal ── */
+.natgeo-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  animation: fadeInBackdrop 0.25s ease;
+}
+
+.natgeo-modal-backdrop.open {
+  display: flex;
+}
+
+@keyframes fadeInBackdrop {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.natgeo-modal-dialog {
+  position: relative;
+  background: #0d1a12;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  width: min(900px, 92vw);
+  max-height: 92vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideUpModal 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+@keyframes slideUpModal {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.natgeo-modal-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+.natgeo-modal-close:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.natgeo-modal-body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 92vh;
+}
+
+.natgeo-modal-image-wrap {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #0a1510;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#natgeo-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* When no real image: show gradient */
+.natgeo-modal-image-wrap .natgeo-modal-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  opacity: 0.15;
+}
+
+.natgeo-nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+.natgeo-nav-arrow:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.6);
+}
+.natgeo-nav-arrow.prev { left: 14px; }
+.natgeo-nav-arrow.next { right: 14px; }
+
+.natgeo-modal-info {
+  padding: 24px 28px 28px;
+}
+
+.natgeo-modal-kicker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.natgeo-modal-counter {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(200,230,210,0.5);
+  letter-spacing: 1px;
+}
+
+.natgeo-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e8f4ec;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.natgeo-modal-desc {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: rgba(190,220,200,0.78);
+  margin-bottom: 16px;
+}
+
+.natgeo-modal-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.natgeo-modal-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.natgeo-meta-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(200,230,210,0.45);
+}
+
+.natgeo-meta-value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f0c040;
+}
+
+/* ── Era Filter Tabs ── */
+.sejarah-filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 24px 32px 0;
+}
+
+.era-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.era-tab-btn:hover {
+  background: var(--sage-50);
+  border-color: var(--sage-200);
+  color: var(--sage-700);
+}
+
+.era-tab-btn.active {
+  background: var(--sage-700);
+  border-color: var(--sage-700);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(45,80,70,0.25);
+}
+
+.era-tab-icon { font-size: 0.95rem; }
+
+.era-tab-count {
+  background: rgba(255,255,255,0.2);
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.era-tab-btn:not(.active) .era-tab-count {
+  background: var(--bg-input);
+  color: var(--text-muted);
+}
+
+/* Era Context Card */
+.era-context-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--sage-500);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 16px 32px 0;
+}
+
+.era-context-icon { font-size: 1.8rem; line-height: 1; }
+
+.era-context-body { flex: 1; }
+
+.era-context-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.era-context-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* ── Timeline ── */
+.timeline-container {
+  padding: 24px 32px 0;
+  display: grid;
+  gap: 20px;
+}
+
+.timeline-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  align-items: start;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.timeline-card:hover {
+  border-color: var(--sage-300);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.timeline-year-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline-year-badge {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--sage-600);
+  background: var(--sage-50);
+  border: 1px solid var(--sage-200);
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-align: center;
+  line-height: 1.4;
+  width: 100%;
+}
+
+.timeline-icon-big {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.timeline-body { flex: 1; }
+
+.timeline-era-tag {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--sage-600);
+  background: var(--sage-50);
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.timeline-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.timeline-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 3px 10px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .natgeo-mosaic-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 260px 200px 200px;
+  }
+  .natgeo-card-lead {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .natgeo-card-wide {
+    grid-column: 1 / 3;
+    grid-row: auto;
+  }
+  .sejarah-hero-content {
+    padding: 36px 24px 32px;
+  }
+  .natgeo-gallery-container,
+  .sejarah-filter-tabs,
+  .era-context-card,
+  .timeline-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .natgeo-mosaic-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 180px 180px 180px 180px;
+  }
+  .natgeo-card-lead,
+  .natgeo-card-wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .sejarah-stats-grid { gap: 10px; }
+  .sejarah-stat-card { padding: 10px 14px; }
+  .timeline-card {
+    grid-template-columns: 70px 1fr;
+    gap: 14px;
+  }
+}
+
+/* Dark / Malam theme adjustments */
+body.theme-malam .sejarah-hero-banner,
+body.theme-dark .sejarah-hero-banner {
+  background: linear-gradient(160deg, #060e14 0%, #0c1e2c 40%, #040c12 100%);
+}
+
+body.theme-malam .sejarah-hero-banner::before,
+body.theme-dark .sejarah-hero-banner::before {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(56,189,248,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(56,189,248,0.05) 0%, transparent 40%),
+    repeating-conic-gradient(rgba(255,255,255,0.015) 0deg, transparent 10deg, transparent 20deg, rgba(255,255,255,0.015) 30deg);
+  background-size: cover, cover, 80px 80px;
+}
+
+body.theme-malam .sejarah-hero-banner::after,
+body.theme-dark .sejarah-hero-banner::after {
+  background: linear-gradient(90deg, #38bdf8, #7dd3fc, #38bdf8);
+}
+
+body.theme-malam .era-context-card,
+body.theme-dark .era-context-card {
+  border-left-color: #38bdf8;
+}
+
+body.theme-malam .era-context-title,
+body.theme-dark .era-context-title {
+  color: var(--text-primary);
+}
+
+body.theme-malam .timeline-card:hover,
+body.theme-dark .timeline-card:hover {
+  border-color: rgba(56,189,248,0.4);
+}
+
