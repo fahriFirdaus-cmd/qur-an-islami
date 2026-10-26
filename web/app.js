@@ -2796,11 +2796,9 @@ function renderNatGeoModalData() {
   const sourceTextEl = document.getElementById('natgeo-modal-source-text');
 
   if (imgEl) {
-    imgEl.style.opacity = '0.3';
     imgEl.src = data.image;
-    imgEl.onload = () => { imgEl.style.opacity = '1'; };
-    imgEl.onerror = () => { imgEl.style.opacity = '1'; };
-    imgEl.style.transition = 'opacity 0.25s ease';
+    imgEl.alt = data.title;
+    imgEl.style.opacity = '1';
   }
   if (tagEl) tagEl.textContent = data.tag;
   if (counterEl) counterEl.textContent = `${currentNatGeoIndex + 1} / ${NATGEO_GALLERY_DATA.length}`;

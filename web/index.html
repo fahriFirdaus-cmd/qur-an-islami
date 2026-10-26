@@ -760,33 +760,7 @@
         </div>
       </div>
 
-      <!-- NatGeo High-Res Lightbox Modal -->
-      <div class="natgeo-modal-backdrop" id="natgeo-modal-backdrop" onclick="closeNatGeoModal()">
-        <div class="natgeo-modal-dialog" onclick="event.stopPropagation()">
-          <button class="natgeo-modal-close" onclick="closeNatGeoModal()" aria-label="Tutup">&times;</button>
-          
-          <div class="natgeo-modal-body">
-            <div class="natgeo-modal-image-wrap">
-              <img id="natgeo-modal-img" src="" alt="Sejarah Islam Dokumentasi" />
-              <button class="natgeo-nav-arrow prev" onclick="navigateNatGeoModal(-1)" aria-label="Foto Sebelumnya">&#10094;</button>
-              <button class="natgeo-nav-arrow next" onclick="navigateNatGeoModal(1)" aria-label="Foto Berikutnya">&#10095;</button>
-            </div>
-            
-            <div class="natgeo-modal-info">
-              <div class="natgeo-modal-kicker-row">
-                <span class="natgeo-pill gold" id="natgeo-modal-tag">KATEGORI</span>
-                <span class="natgeo-modal-counter" id="natgeo-modal-counter">1 / 5</span>
-              </div>
-              <h3 class="natgeo-modal-title" id="natgeo-modal-title">Judul Sejarah</h3>
-              <p class="natgeo-modal-desc" id="natgeo-modal-desc">Deskripsi narasi</p>
-              <div class="natgeo-modal-source" id="natgeo-modal-source">
-                <strong>🏛️ Rujukan Sejarah & Artefak:</strong>
-                <span id="natgeo-modal-source-text">Koleksi Visual Peradaban Islam</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <!-- History Interactive Control Bar: Search & Quick Counts -->
       <div class="sejarah-controls-bar">
@@ -1027,6 +1001,32 @@
     <button class="rev-modal-close" onclick="closeRevelationModal()" aria-label="Tutup">✕</button>
     <div id="rev-modal-body">
       <!-- Populated dynamically by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ NATGEO HIGH-RES LIGHTBOX MODAL ═══════════════════ -->
+<div class="natgeo-modal-backdrop" id="natgeo-modal-backdrop" onclick="closeNatGeoModal()">
+  <div class="natgeo-modal-dialog" onclick="event.stopPropagation()">
+    <button class="natgeo-modal-close" onclick="closeNatGeoModal()" aria-label="Tutup">&times;</button>
+    <div class="natgeo-modal-body">
+      <div class="natgeo-modal-image-wrap">
+        <img id="natgeo-modal-img" src="" alt="Sejarah Islam Dokumentasi" />
+        <button class="natgeo-nav-arrow prev" onclick="navigateNatGeoModal(-1)" aria-label="Foto Sebelumnya">&#10094;</button>
+        <button class="natgeo-nav-arrow next" onclick="navigateNatGeoModal(1)" aria-label="Foto Berikutnya">&#10095;</button>
+      </div>
+      <div class="natgeo-modal-info">
+        <div class="natgeo-modal-kicker-row">
+          <span class="natgeo-pill gold" id="natgeo-modal-tag">KATEGORI</span>
+          <span class="natgeo-modal-counter" id="natgeo-modal-counter">1 / 7</span>
+        </div>
+        <h3 class="natgeo-modal-title" id="natgeo-modal-title">Judul Sejarah</h3>
+        <p class="natgeo-modal-desc" id="natgeo-modal-desc">Deskripsi narasi</p>
+        <div class="natgeo-modal-source" id="natgeo-modal-source">
+          <strong>🏛️ Rujukan Sejarah & Artefak:</strong>
+          <span id="natgeo-modal-source-text">Koleksi Visual Peradaban Islam</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
