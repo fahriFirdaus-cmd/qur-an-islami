@@ -43,9 +43,9 @@
 
   <!-- Sidebar Surah Type Filter Tabs -->
   <div class="sidebar-filter-tabs" id="sidebar-filter-tabs">
-    <button class="s-filter-btn active" data-type="all">Semua</button>
-    <button class="s-filter-btn" data-type="Makkiyyah">Makkiyyah</button>
-    <button class="s-filter-btn" data-type="Madaniyyah">Madaniyyah</button>
+    <button class="s-filter-btn active" data-type="all">Semua <span class="badge-count" id="s-count-all">114</span></button>
+    <button class="s-filter-btn" data-type="Makkiyyah">🕋 Makkiyyah <span class="badge-count" id="s-count-makk">84</span></button>
+    <button class="s-filter-btn" data-type="Madaniyyah">🕌 Madaniyyah <span class="badge-count" id="s-count-madan">30</span></button>
   </div>
 
   <!-- Surah List -->
@@ -275,47 +275,80 @@
       <!-- Quick Access Surahs -->
       <div class="section-header-bar">
         <h3 class="section-title" id="popular-title">Popular Surahs</h3>
-        <button class="view-all-btn" id="popular-view-all" onclick="navigateTo('quran')">View All →</button>
+        <button class="view-all-btn" id="popular-view-all" onclick="navigateTo('quran'); switchQuranView('catalog');">Lihat Semua 114 Surah →</button>
       </div>
       <div class="popular-surahs-grid">
-        <div class="popular-surah-card" onclick="loadSurah(1); navigateTo('quran')">
+        <div class="popular-surah-card" onclick="loadSurah(1); navigateTo('quran'); switchQuranView('reader');">
           <div class="ps-number">1</div>
           <div class="ps-info">
             <div class="ps-name">Al-Fatihah</div>
-            <div class="ps-meta" id="ps-meta-1">Meccan · 7 verses</div>
+            <div class="ps-meta" id="ps-meta-1"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 7 ayat</div>
           </div>
           <div class="ps-arabic">الفَاتِحَة</div>
         </div>
-        <div class="popular-surah-card" onclick="loadSurah(36); navigateTo('quran')">
+        <div class="popular-surah-card" onclick="loadSurah(36); navigateTo('quran'); switchQuranView('reader');">
           <div class="ps-number">36</div>
           <div class="ps-info">
-            <div class="ps-name">Ya-Sin</div>
-            <div class="ps-meta" id="ps-meta-36">Meccan · 83 verses</div>
+            <div class="ps-name">Yasin</div>
+            <div class="ps-meta" id="ps-meta-36"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 83 ayat</div>
           </div>
           <div class="ps-arabic">يسٓ</div>
         </div>
-        <div class="popular-surah-card" onclick="loadSurah(67); navigateTo('quran')">
+        <div class="popular-surah-card" onclick="loadSurah(67); navigateTo('quran'); switchQuranView('reader');">
           <div class="ps-number">67</div>
           <div class="ps-info">
             <div class="ps-name">Al-Mulk</div>
-            <div class="ps-meta" id="ps-meta-67">Meccan · 30 verses</div>
+            <div class="ps-meta" id="ps-meta-67"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 30 ayat</div>
           </div>
           <div class="ps-arabic">المُلْك</div>
         </div>
-        <div class="popular-surah-card" onclick="loadSurah(55); navigateTo('quran')">
+        <div class="popular-surah-card" onclick="loadSurah(55); navigateTo('quran'); switchQuranView('reader');">
           <div class="ps-number">55</div>
           <div class="ps-info">
             <div class="ps-name">Ar-Rahman</div>
-            <div class="ps-meta" id="ps-meta-55">Medinan · 78 verses</div>
+            <div class="ps-meta" id="ps-meta-55"><span class="badge-mini-rev rev-madaniyyah">🕌 Madaniyyah</span> • 78 ayat</div>
           </div>
           <div class="ps-arabic">الرَّحْمٰن</div>
         </div>
+      </div>
+
+      <!-- Explore All 114 Surahs Banner -->
+      <div class="explore-catalog-banner" onclick="navigateTo('quran'); switchQuranView('catalog');" style="margin-top:20px; background:linear-gradient(135deg, rgba(27,67,50,0.06) 0%, rgba(217,119,6,0.06) 100%); border:1px solid var(--border); border-radius:14px; padding:18px 20px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:44px; height:44px; border-radius:12px; background:var(--sage-700); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.4rem;">📑</div>
+          <div>
+            <h4 style="margin:0 0 2px 0; font-size:1rem; font-weight:700; color:var(--text-primary);">Katalog Lengkap 114 Surah Al-Qur'an</h4>
+            <div style="font-size:0.8rem; color:var(--text-secondary); display:flex; align-items:center; gap:8px;">
+              <span class="badge-mini-rev rev-makkiyyah">🕋 84 Makkiyyah</span>
+              <span class="badge-mini-rev rev-madaniyyah">🕌 30 Madaniyyah</span>
+              <span>• Telusuri tema & periodisasi wahyu</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn-primary" style="padding:8px 16px; font-size:0.82rem; flex-shrink:0;">
+          <span>Buka Katalog 114 Surah →</span>
+        </button>
       </div>
     </section>
 
     <!-- ═══════ PAGE: AL-QUR'AN ═══════ -->
     <section class="page" id="page-quran">
-      <div class="quran-reader-layout">
+      <!-- Quran Page View Switcher -->
+      <div class="quran-view-switch-bar">
+        <div class="view-switch-pills">
+          <button class="v-switch-btn active" id="btn-view-reader" onclick="switchQuranView('reader')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            <span id="label-view-reader">Baca Surah (Ayat)</span>
+          </button>
+          <button class="v-switch-btn" id="btn-view-catalog" onclick="switchQuranView('catalog')">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            <span id="label-view-catalog">Daftar 114 Surah (Katalog)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 1. Verse Reader View -->
+      <div class="quran-reader-layout" id="quran-reader-layout">
         <!-- Verse Reader Panel -->
         <div class="verse-panel">
           <!-- Surah Header -->
@@ -337,8 +370,14 @@
             <div class="surah-meta">
               <div class="surah-number-badge" id="surah-num-badge">1</div>
               <div class="surah-title-wrap">
-                <div class="surah-name-main" id="surah-name-id">Al-Faatiha</div>
-                <div class="surah-name-sub" id="surah-meta-sub">Meccan · 7 Verses</div>
+                <div class="surah-name-main" id="surah-name-id">Al-Fatihah</div>
+                <div class="surah-name-sub-wrap" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:2px;">
+                  <button class="surah-revelation-tag makk" id="surah-revelation-badge" onclick="openRevelationModal(state.currentSurah)" title="Klik untuk info Makkiyyah / Madaniyyah">
+                    <span>🕋 Makkiyyah</span>
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  </button>
+                  <span class="surah-name-sub" id="surah-meta-sub">Makkiyyah • 7 Ayat • Arti: Pembukaan</span>
+                </div>
               </div>
               <button class="btn-choose-surah" id="btn-choose-surah" title="Pilih Surah (Buka Daftar)">
                 <span>Pilih Surah</span> ▾
@@ -374,6 +413,75 @@
           <div class="verses-container" id="verses-container">
             <!-- Populated by JS -->
           </div>
+        </div>
+      </div>
+
+      <!-- 2. Catalog 114 Surah View -->
+      <div class="quran-catalog-view" id="quran-catalog-view" style="display: none;">
+        <!-- Makkiyyah & Madaniyyah Educational Banner -->
+        <div class="catalog-edu-banner">
+          <div class="catalog-edu-header">
+            <span style="font-size: 1.5rem;">📖</span>
+            <div>
+              <h3 class="catalog-edu-title" id="edu-banner-title">Mengenal Klasifikasi Surah: Makkiyyah & Madaniyyah</h3>
+              <p style="font-size:0.82rem; color:var(--text-secondary); margin:2px 0 0 0;">Memahami konteks tempat & masa pewahyuan 114 Surah Al-Qur'an.</p>
+            </div>
+          </div>
+          <div class="catalog-edu-grid">
+            <div class="edu-card edu-card-makk">
+              <div class="edu-card-title">
+                <h4>🕋 Surah Makkiyyah</h4>
+                <span class="edu-tag-count makk">84 Surah</span>
+              </div>
+              <p><strong>Diturunkan sebelum Hijrah:</strong> Diturunkan kepada Nabi Muhammad ﷺ di Makkah (610 – 622 M) sebelum berhijrah ke Madinah.</p>
+              <ul>
+                <li>Fokus pada penanaman Aqidah, Tauhid, dan kemurnian iman.</li>
+                <li>Peringatan Hari Kiamat, pembalasan amal, Surga & Neraka.</li>
+                <li>Ayat-ayatnya umumnya ringkas, tegas, ritmis, dan puitis.</li>
+                <li>Sering memuat seruan <em>"Yā ayyuhan-nās"</em> (Wahai sekalian manusia).</li>
+              </ul>
+            </div>
+            <div class="edu-card edu-card-madan">
+              <div class="edu-card-title">
+                <h4>🕌 Surah Madaniyyah</h4>
+                <span class="edu-tag-count madan">30 Surah</span>
+              </div>
+              <p><strong>Diturunkan setelah Hijrah:</strong> Diturunkan setelah Rasulullah ﷺ hijrah ke Madinah (622 – 632 M) hingga akhir hayat beliau.</p>
+              <ul>
+                <li>Fokus pada Syariat hukum, ibadah kemasyarakatan, dan peradilan.</li>
+                <li>Aturan keluarga, waris, muamalah ekonomi, dan diplomasi politik.</li>
+                <li>Ayat-ayatnya cenderung panjang dan bernada penjelasan hukum (*tasyrī'*).</li>
+                <li>Sering memuat seruan <em>"Yā ayyuhallażīna āmanū"</em> (Wahai orang beriman).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Catalog Toolbar: Tabs & Search -->
+        <div class="catalog-toolbar">
+          <div class="catalog-tabs" id="catalog-filter-tabs">
+            <button class="c-filter-btn active" data-type="all" onclick="filterCatalog('all')">
+              <span>🌟 Semua Surah</span>
+              <span class="c-pill-count" id="cat-count-all">114</span>
+            </button>
+            <button class="c-filter-btn" data-type="Makkiyyah" onclick="filterCatalog('Makkiyyah')">
+              <span>🕋 Makkiyyah</span>
+              <span class="c-pill-count" id="cat-count-makk">84</span>
+            </button>
+            <button class="c-filter-btn" data-type="Madaniyyah" onclick="filterCatalog('Madaniyyah')">
+              <span>🕌 Madaniyyah</span>
+              <span class="c-pill-count" id="cat-count-madan">30</span>
+            </button>
+          </div>
+          <div class="catalog-search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            <input type="text" id="catalog-search-input" placeholder="Cari nomor surah, nama, atau arti..." oninput="handleCatalogSearch(this.value)" />
+          </div>
+        </div>
+
+        <!-- 114 Surah Cards Grid -->
+        <div class="catalog-grid" id="catalog-grid">
+          <!-- Populated dynamically by JS -->
         </div>
       </div>
     </section>
@@ -639,6 +747,16 @@
   <div class="modal-box" id="modal-box">
     <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
     <div class="modal-content" id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════ REVELATION (MAKKIYYAH/MADANIYYAH) MODAL ═══════════════════ -->
+<div class="rev-modal-backdrop" id="rev-modal-backdrop" onclick="closeRevelationModal(event)">
+  <div class="rev-modal-content" onclick="event.stopPropagation()">
+    <button class="rev-modal-close" onclick="closeRevelationModal()" aria-label="Tutup">✕</button>
+    <div id="rev-modal-body">
+      <!-- Populated dynamically by JS -->
+    </div>
   </div>
 </div>
 

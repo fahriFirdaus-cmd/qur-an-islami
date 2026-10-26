@@ -685,24 +685,38 @@ function initGlobalSearch() {
       }
     }
 
-    // Search Surahs
-    const matches = ALL_SURAHS.filter(s =>
-      s.name.toLowerCase().includes(q) ||
-      s.id.toString() === q ||
-      s.ar.includes(q) ||
-      s.arTitle.includes(q)
-    ).slice(0, 6);
+    // Search Surahs (name, number, arti, arabic, or makkiyyah/madaniyyah)
+    const matches = ALL_SURAHS.filter(s => {
+      const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+      const revText = isMakk ? 'makkiyyah mekah meccan' : 'madaniyyah madinah medinan';
+
+      return s.name.toLowerCase().includes(q) ||
+        (s.arti && s.arti.toLowerCase().includes(q)) ||
+        s.id.toString() === q ||
+        s.ar.includes(q) ||
+        (s.arTitle && s.arTitle.includes(q)) ||
+        revText.includes(q);
+    }).slice(0, 8);
 
     if (matches.length > 0) {
-      dropdown.innerHTML = matches.map(s => `
-        <div class="search-result-item" onclick="loadSurah(${s.id}); navigateTo('quran'); hideSearchDropdown();">
-          <div>
-            <strong>${s.id}. ${s.name}</strong>
-            <div style="font-size:0.75rem; color:var(--text-muted);">${s.type} • ${s.ayat} Verses</div>
+      dropdown.innerHTML = matches.map(s => {
+        const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+        const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
+        const revBadgeText = isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah';
+
+        return `
+          <div class="search-result-item" onclick="loadSurah(${s.id}); navigateTo('quran'); switchQuranView('reader'); hideSearchDropdown();">
+            <div>
+              <strong>${s.id}. ${s.name} ${s.arti ? `<span style="font-weight:normal; color:var(--text-muted);">(${s.arti})</span>` : ''}</strong>
+              <div style="font-size:0.75rem; color:var(--text-muted); display:flex; align-items:center; gap:6px; margin-top:2px;">
+                <span class="badge-mini-rev ${revBadgeClass}">${revBadgeText}</span>
+                <span>• ${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+              </div>
+            </div>
+            <span style="font-family:var(--font-arabic); font-size:1.1rem; color:var(--sage-700);">${s.arTitle || s.ar}</span>
           </div>
-          <span style="font-family:var(--font-arabic); font-size:1.1rem; color:var(--sage-700);">${s.arTitle}</span>
-        </div>
-      `).join('');
+        `;
+      }).join('');
       dropdown.style.display = 'block';
     } else {
       dropdown.innerHTML = `
@@ -787,6 +801,7 @@ function jumpToVerse(surahId, verseNum) {
 let currentSidebarFilterType = 'all';
 
 function initSidebarSurahList() {
+  updateSidebarCounts();
   renderSidebarSurahList();
 
   const searchInput = document.getElementById('sidebar-surah-search');
@@ -805,36 +820,84 @@ function initSidebarSurahList() {
   });
 }
 
+function updateSidebarCounts() {
+  const makkCount = ALL_SURAHS.filter(s => s.type === 'Makkiyyah' || s.revelation === 'Mekah').length;
+  const madanCount = ALL_SURAHS.filter(s => s.type === 'Madaniyyah' || s.revelation === 'Madinah').length;
+  const countAllEl = document.getElementById('s-count-all');
+  const countMakkEl = document.getElementById('s-count-makk');
+  const countMadanEl = document.getElementById('s-count-madan');
+  if (countAllEl) countAllEl.textContent = ALL_SURAHS.length;
+  if (countMakkEl) countMakkEl.textContent = makkCount;
+  if (countMadanEl) countMadanEl.textContent = madanCount;
+
+  // Also update catalog pill counts if present
+  const catAll = document.getElementById('cat-count-all');
+  const catMakk = document.getElementById('cat-count-makk');
+  const catMadan = document.getElementById('cat-count-madan');
+  if (catAll) catAll.textContent = ALL_SURAHS.length;
+  if (catMakk) catMakk.textContent = makkCount;
+  if (catMadan) catMadan.textContent = madanCount;
+}
+
 function renderSidebarSurahList(filter = '', typeFilter = 'all') {
   const container = document.getElementById('sidebar-surah-list');
   if (!container) return;
 
+  const q = filter.trim().toLowerCase();
+
   const filtered = ALL_SURAHS.filter(s => {
-    const matchText = s.name.toLowerCase().includes(filter.toLowerCase()) ||
-      s.ar.includes(filter) ||
-      (s.arTitle && s.arTitle.includes(filter)) ||
-      s.id.toString().includes(filter);
+    const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+    const isMadan = s.type === 'Madaniyyah' || s.revelation === 'Madinah';
+
+    const matchText = !q ||
+      s.name.toLowerCase().includes(q) ||
+      (s.arti && s.arti.toLowerCase().includes(q)) ||
+      s.ar.includes(q) ||
+      (s.arTitle && s.arTitle.includes(q)) ||
+      s.id.toString() === q ||
+      s.id.toString().includes(q);
 
     const matchType = typeFilter === 'all' ||
-      (typeFilter === 'Makkiyyah' && s.type.toLowerCase().includes('makk')) ||
-      (typeFilter === 'Madaniyyah' && s.type.toLowerCase().includes('madan'));
+      (typeFilter === 'Makkiyyah' && isMakk) ||
+      (typeFilter === 'Madaniyyah' && isMadan);
 
     return matchText && matchType;
   });
 
-  container.innerHTML = filtered.map(s => `
-    <div class="surah-item ${s.id === state.currentSurah ? 'active' : ''}" 
-         id="sidebar-surah-${s.id}"
-         onclick="loadSurah(${s.id}); navigateTo('quran')" 
-         role="button" tabindex="0">
-      <div class="surah-num">${s.id}</div>
-      <div class="surah-info">
-        <div class="surah-item-name">${s.name}</div>
-        <div class="surah-item-sub">${s.type} • ${s.ayat} ${state.language === 'en' ? 'VERSES' : 'AYAT'}</div>
+  if (filtered.length === 0) {
+    container.innerHTML = `
+      <div style="padding: 24px 12px; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+        Tidak ada surah yang cocok dengan filter.
       </div>
-      <div class="surah-item-ar">${s.arTitle || ('سُوْرَةُ ' + s.ar)}</div>
-    </div>
-  `).join('');
+    `;
+    return;
+  }
+
+  container.innerHTML = filtered.map(s => {
+    const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+    const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
+    const revBadgeText = isMakk ? '🕋 Makk' : '🕌 Madan';
+
+    return `
+      <div class="surah-item ${s.id === state.currentSurah ? 'active' : ''}" 
+           id="sidebar-surah-${s.id}"
+           onclick="loadSurah(${s.id}); navigateTo('quran'); switchQuranView('reader');" 
+           role="button" tabindex="0">
+        <div class="surah-num">${s.id}</div>
+        <div class="surah-info">
+          <div class="surah-item-name">
+            ${s.name}
+            ${s.arti ? `<span class="surah-item-meaning">(${s.arti})</span>` : ''}
+          </div>
+          <div class="surah-item-sub">
+            <span class="badge-mini-rev ${revBadgeClass}">${revBadgeText}</span>
+            <span>${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+          </div>
+        </div>
+        <div class="surah-item-ar">${s.arTitle || ('سُوْرَةُ ' + s.ar)}</div>
+      </div>
+    `;
+  }).join('');
 }
 
 // ══════════════════════════════════════════
@@ -897,6 +960,187 @@ function initQuranPage() {
       ? `🎵 Playing custom audio for Surah ${surah?.name}` 
       : `🎵 Memutar audio kustom untuk Surah ${surah?.name}`, 'success');
   });
+
+  // Initialize the 114 Surah Catalog & Revelation feature
+  initQuranCatalog();
+}
+
+// ══════════════════════════════════════════
+// 114 SURAH CATALOG & MAKKIYYAH/MADANIYYAH
+// ══════════════════════════════════════════
+let currentCatalogFilterType = 'all';
+let currentCatalogSearchQuery = '';
+
+function initQuranCatalog() {
+  renderQuranCatalog();
+}
+
+function switchQuranView(view) {
+  const readerEl = document.getElementById('quran-reader-layout');
+  const catalogEl = document.getElementById('quran-catalog-view');
+  const btnReader = document.getElementById('btn-view-reader');
+  const btnCatalog = document.getElementById('btn-view-catalog');
+
+  if (view === 'catalog') {
+    if (readerEl) readerEl.style.display = 'none';
+    if (catalogEl) catalogEl.style.display = 'block';
+    btnReader?.classList.remove('active');
+    btnCatalog?.classList.add('active');
+    renderQuranCatalog(currentCatalogSearchQuery, currentCatalogFilterType);
+  } else {
+    if (readerEl) readerEl.style.display = 'flex';
+    if (catalogEl) catalogEl.style.display = 'none';
+    btnReader?.classList.add('active');
+    btnCatalog?.classList.remove('active');
+  }
+}
+
+function filterCatalog(type) {
+  currentCatalogFilterType = type;
+  document.querySelectorAll('#catalog-filter-tabs .c-filter-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.type === type);
+  });
+  renderQuranCatalog(currentCatalogSearchQuery, currentCatalogFilterType);
+}
+
+function handleCatalogSearch(query) {
+  currentCatalogSearchQuery = query;
+  renderQuranCatalog(currentCatalogSearchQuery, currentCatalogFilterType);
+}
+
+function renderQuranCatalog(filter = '', typeFilter = 'all') {
+  const grid = document.getElementById('catalog-grid');
+  if (!grid) return;
+
+  const q = filter.trim().toLowerCase();
+
+  const filtered = ALL_SURAHS.filter(s => {
+    const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+    const isMadan = s.type === 'Madaniyyah' || s.revelation === 'Madinah';
+
+    const matchText = !q ||
+      s.name.toLowerCase().includes(q) ||
+      (s.arti && s.arti.toLowerCase().includes(q)) ||
+      s.ar.includes(q) ||
+      (s.arTitle && s.arTitle.includes(q)) ||
+      s.id.toString() === q ||
+      s.id.toString().includes(q);
+
+    const matchType = typeFilter === 'all' ||
+      (typeFilter === 'Makkiyyah' && isMakk) ||
+      (typeFilter === 'Madaniyyah' && isMadan);
+
+    return matchText && matchType;
+  });
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column: 1 / -1; padding: 48px 24px; text-align: center; color: var(--text-muted);">
+        <div style="font-size: 2.2rem; margin-bottom: 8px;">🔍</div>
+        <div style="font-weight: 600; font-size: 1rem; color: var(--text-primary);">Tidak ada surah yang cocok</div>
+        <div style="font-size: 0.85rem; margin-top: 4px;">Coba gunakan kata kunci pencarian lain atau pilih tab filter "Semua Surah".</div>
+      </div>
+    `;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(s => {
+    const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
+    const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
+    const revBadgeText = isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah';
+
+    return `
+      <div class="catalog-card" onclick="loadSurah(${s.id}); switchQuranView('reader');">
+        <div class="catalog-card-top">
+          <div class="c-num-box">${s.id}</div>
+          <div class="c-surah-title-wrap">
+            <div class="c-surah-name">${s.name}</div>
+            <div class="c-surah-meaning">Arti: "${s.arti || s.name}"</div>
+          </div>
+          <div class="c-surah-arabic">${s.arTitle || s.ar}</div>
+        </div>
+        <div class="catalog-card-bottom">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span class="c-badge-rev ${revBadgeClass}">${revBadgeText}</span>
+            <span class="c-ayat-count">${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+          </div>
+          <div class="c-card-actions" onclick="event.stopPropagation()">
+            <button class="c-btn-action" onclick="loadSurah(${s.id}); switchQuranView('reader');" title="Baca Surah">
+              📖 Baca
+            </button>
+            <button class="c-btn-action" onclick="playSurahAudio(${s.id})" title="Putar Audio Surah">
+              ▶ Audio
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function openRevelationModal(surahId) {
+  const surah = ALL_SURAHS.find(s => s.id === surahId);
+  if (!surah) return;
+
+  const isMakk = surah.type === 'Makkiyyah' || surah.revelation === 'Mekah';
+  const modal = document.getElementById('rev-modal-backdrop');
+  const body = document.getElementById('rev-modal-body');
+  if (!modal || !body) return;
+
+  body.innerHTML = `
+    <div style="text-align: center; margin-bottom: 20px;">
+      <div style="display: inline-flex; width: 54px; height: 54px; border-radius: 16px; background: ${isMakk ? 'rgba(45, 106, 79, 0.12)' : 'rgba(217, 119, 6, 0.12)'}; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 12px;">
+        ${isMakk ? '🕋' : '🕌'}
+      </div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--text-primary); margin: 0 0 4px 0;">
+        ${surah.id}. ${surah.name} (${surah.arTitle || surah.ar})
+      </h3>
+      <div style="display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 700; background: ${isMakk ? 'rgba(45, 106, 79, 0.15)' : 'rgba(217, 119, 6, 0.15)'}; color: ${isMakk ? '#1b4332' : '#b45309'}; margin-top: 6px;">
+        ${isMakk ? '🕋 Golongan Surah Makkiyyah' : '🕌 Golongan Surah Madaniyyah'}
+      </div>
+    </div>
+
+    <div style="background: var(--bg-input); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; font-size: 0.86rem; line-height: 1.6; color: var(--text-primary);">
+      <div style="margin-bottom: 6px;">
+        <strong>Arti Nama:</strong> "${surah.arti || '-'}"
+      </div>
+      <div style="margin-bottom: 6px;">
+        <strong>Jumlah Ayat:</strong> ${surah.ayat} Ayat
+      </div>
+      <div>
+        <strong>Masa & Tempat Pewahyuan:</strong> ${isMakk ? 'Diturunkan di Makkah al-Mukarramah sebelum Nabi Muhammad ﷺ hijrah ke Madinah (periode 610 – 622 M).' : 'Diturunkan di Madinah al-Munawwarah setelah Nabi Muhammad ﷺ hijrah dari Makkah (periode 622 – 632 M).'}
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid var(--border); padding-top: 14px;">
+      <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px 0;">
+        Karakteristik & Hikmah Utama Surah ${isMakk ? 'Makkiyyah' : 'Madaniyyah'}:
+      </h4>
+      <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.55; margin: 0;">
+        ${isMakk 
+          ? 'Surah ini diturunkan pada fase fondasi dakwah Islam. Pokok ajarannya memusatkan perhatian pada pemurnian aqidah, ketauhidan kepada Allah SWT, kepastian Hari Kiamat dan Hari Pembalasan, serta penempaan akhlak dan ketabahan spiritual kaum beriman menghadapi intimidasi kaum Quraisy.'
+          : 'Surah ini diturunkan pada fase pembangunan peradaban dan tatanan masyarakat berkeadilan di Madinah. Memuat pedoman hukum syariat, tatanan keluarga & peradilan, muamalah ekonomi, hubungan diplomasi internasional, serta pembinaan ukhuwah antara Muhajirin dan Anshar.'
+        }
+      </p>
+    </div>
+
+    <div style="margin-top: 22px; display: flex; gap: 10px; justify-content: flex-end;">
+      <button class="btn-secondary" onclick="closeRevelationModal()" style="padding: 8px 18px; font-size: 0.84rem;">Tutup</button>
+      <button class="btn-primary" onclick="closeRevelationModal(); switchQuranView('catalog'); filterCatalog('${surah.type}');" style="padding: 8px 18px; font-size: 0.84rem;">
+        Lihat Semua Surah ${surah.type} →
+      </button>
+    </div>
+  `;
+
+  modal.classList.add('open');
+}
+
+function closeRevelationModal(event) {
+  if (event && event.target !== event.currentTarget && !event.target.classList.contains('rev-modal-close')) {
+    return;
+  }
+  const modal = document.getElementById('rev-modal-backdrop');
+  if (modal) modal.classList.remove('open');
 }
 
 function updateFontSizeUI() {
@@ -990,11 +1234,23 @@ async function loadSurah(surahId, targetVerse = null) {
   const nameId = document.getElementById('surah-name-id');
   const metaSub = document.getElementById('surah-meta-sub');
   const nameAr = document.getElementById('surah-name-ar');
+  const revBadge = document.getElementById('surah-revelation-badge');
+
+  const isMakk = surah.type === 'Makkiyyah' || surah.revelation === 'Mekah';
 
   if (badge) badge.textContent = surahId;
   if (nameId) nameId.textContent = surah.name;
-  if (metaSub) metaSub.textContent = `${surah.type} • ${surah.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}`;
+  if (metaSub) metaSub.textContent = `${surah.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'} • ${state.language === 'en' ? 'Meaning' : 'Arti'}: "${surah.arti || surah.name}"`;
   if (nameAr) nameAr.textContent = surah.arTitle || ('سُوْرَةُ ' + surah.ar);
+
+  if (revBadge) {
+    revBadge.className = `surah-revelation-tag ${isMakk ? 'makk' : 'madan'}`;
+    revBadge.innerHTML = `
+      <span>${isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah'}</span>
+      <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    `;
+    revBadge.title = `Klik untuk info lengkap Surah ${surah.name} (${surah.type})`;
+  }
 
   // Update Prev / Next buttons state
   const prevBtn = document.getElementById('prev-surah-btn');

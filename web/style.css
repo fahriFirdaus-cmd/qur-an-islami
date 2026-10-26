@@ -3158,3 +3158,599 @@ body.theme-dark .btn-choose-surah {
   border-color: var(--sage-200);
   color: var(--text-primary);
 }
+
+/* ══════════════════════════════════════════════
+   MAKKIYYAH & MADANIYYAH AND 114 SURAH CATALOG
+══════════════════════════════════════════════ */
+/* Sidebar Filter Tabs */
+.sidebar-filter-tabs {
+  display: flex;
+  padding: 8px 12px;
+  gap: 6px;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border);
+}
+
+.s-filter-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.s-filter-btn:hover {
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border-color: var(--sage-300);
+}
+
+.s-filter-btn.active {
+  background: var(--sage-700);
+  color: #ffffff;
+  border-color: var(--sage-700);
+  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.25);
+}
+
+.s-filter-btn .badge-count {
+  display: inline-block;
+  padding: 1px 5px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.08);
+  color: inherit;
+}
+
+.s-filter-btn.active .badge-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Sidebar surah item enhanced */
+.badge-mini-rev {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.badge-mini-rev.rev-makkiyyah {
+  background: rgba(34, 139, 34, 0.12);
+  color: #1b4332;
+  border: 1px solid rgba(34, 139, 34, 0.2);
+}
+
+.badge-mini-rev.rev-madaniyyah {
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+body.theme-dark .badge-mini-rev.rev-makkiyyah {
+  background: rgba(45, 106, 79, 0.3);
+  color: #74c69d;
+  border-color: rgba(116, 198, 157, 0.3);
+}
+
+body.theme-dark .badge-mini-rev.rev-madaniyyah {
+  background: rgba(217, 119, 6, 0.25);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.surah-item-meaning {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+/* Quran View Switch Bar */
+.quran-view-switch-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.view-switch-pills {
+  display: inline-flex;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.v-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 9px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.v-switch-btn:hover {
+  color: var(--text-primary);
+}
+
+.v-switch-btn.active {
+  background: var(--bg-card);
+  color: var(--sage-700);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body.theme-dark .v-switch-btn.active {
+  background: var(--sage-700);
+  color: #ffffff;
+}
+
+/* Makkiyyah & Madaniyyah Explanation Hero in Catalog */
+.catalog-edu-banner {
+  background: linear-gradient(135deg, rgba(27, 67, 50, 0.04) 0%, rgba(217, 119, 6, 0.04) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.catalog-edu-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.catalog-edu-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.catalog-edu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .catalog-edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.edu-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.edu-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.edu-card-makk {
+  border-left: 4px solid #2d6a4f;
+}
+
+.edu-card-madan {
+  border-left: 4px solid #d97706;
+}
+
+.edu-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.edu-card-title h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.edu-tag-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+.edu-tag-count.makk {
+  background: rgba(45, 106, 79, 0.12);
+  color: #2d6a4f;
+}
+
+.edu-tag-count.madan {
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+}
+
+.edu-card p {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0 0 8px 0;
+}
+
+.edu-card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+/* Catalog Filter & Search Bar */
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.catalog-tabs {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.c-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.c-filter-btn:hover {
+  border-color: var(--sage-400);
+  color: var(--text-primary);
+}
+
+.c-filter-btn.active {
+  background: var(--sage-700);
+  color: #ffffff;
+  border-color: var(--sage-700);
+  box-shadow: 0 2px 8px rgba(27, 67, 50, 0.25);
+}
+
+.c-filter-btn .c-pill-count {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+}
+
+.c-filter-btn.active .c-pill-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.catalog-search-wrap {
+  position: relative;
+  min-width: 260px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.catalog-search-wrap input {
+  width: 100%;
+  padding: 9px 14px 9px 36px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.catalog-search-wrap input:focus {
+  border-color: var(--sage-500);
+}
+
+.catalog-search-wrap svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+}
+
+/* 114 Surah Cards Grid */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.catalog-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.catalog-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--sage-300);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.catalog-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.c-num-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--bg-input);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--sage-800);
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.catalog-card:hover .c-num-box {
+  background: var(--sage-700);
+  color: #ffffff;
+  border-color: var(--sage-700);
+}
+
+.c-surah-title-wrap {
+  flex: 1;
+}
+
+.c-surah-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.c-surah-meaning {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.c-surah-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.45rem;
+  color: var(--sage-800);
+  text-align: right;
+  line-height: 1.2;
+}
+
+.catalog-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.c-badge-rev {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.c-badge-rev.rev-makkiyyah {
+  background: rgba(45, 106, 79, 0.1);
+  color: #1b4332;
+  border: 1px solid rgba(45, 106, 79, 0.2);
+}
+
+.c-badge-rev.rev-madaniyyah {
+  background: rgba(217, 119, 6, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+body.theme-dark .c-badge-rev.rev-makkiyyah {
+  background: rgba(45, 106, 79, 0.3);
+  color: #74c69d;
+  border-color: rgba(116, 198, 157, 0.3);
+}
+
+body.theme-dark .c-badge-rev.rev-madaniyyah {
+  background: rgba(217, 119, 6, 0.25);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.c-ayat-count {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.c-card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.c-btn-action {
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.c-btn-action:hover {
+  background: var(--sage-700);
+  color: #ffffff;
+  border-color: var(--sage-700);
+}
+
+/* Surah Revelation Tag in Header */
+.surah-revelation-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.surah-revelation-tag.makk {
+  background: rgba(45, 106, 79, 0.12);
+  color: #1b4332;
+  border-color: rgba(45, 106, 79, 0.25);
+}
+
+.surah-revelation-tag.madan {
+  background: rgba(217, 119, 6, 0.12);
+  color: #b45309;
+  border-color: rgba(217, 119, 6, 0.25);
+}
+
+.surah-revelation-tag:hover {
+  transform: scale(1.05);
+}
+
+body.theme-dark .surah-revelation-tag.makk {
+  background: rgba(45, 106, 79, 0.3);
+  color: #74c69d;
+  border-color: rgba(116, 198, 157, 0.3);
+}
+
+body.theme-dark .surah-revelation-tag.madan {
+  background: rgba(217, 119, 6, 0.25);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+/* Revelation Modal */
+.rev-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.rev-modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.rev-modal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  max-width: 520px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+}
+
+.rev-modal-backdrop.open .rev-modal-content {
+  transform: translateY(0);
+}
+
+.rev-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-input);
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+

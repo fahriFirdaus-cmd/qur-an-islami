@@ -6,915 +6,2169 @@
 const ALL_SURAHS = [
   {
     "id": 1,
-    "name": "Al-Faatiha",
-    "arTitle": "سُوْرَةُ الفَاتِحَةِ",
+    "name": "Al-Fatihah",
+    "arti": "Pembukaan",
     "ar": "الفَاتِحَة",
-    "type": "MECCAN",
-    "ayat": 7
+    "arTitle": "سُوْرَةُ الفَاتِحَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 7,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/001.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/001.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/001.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/001.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/001.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/001.mp3"
+    }
   },
   {
     "id": 2,
-    "name": "Al-Baqara",
-    "arTitle": "سُوْرَةُ البَقَرَةِ",
+    "name": "Al-Baqarah",
+    "arti": "Sapi",
     "ar": "البَقَرَة",
-    "type": "MEDINAN",
-    "ayat": 286
+    "arTitle": "سُوْرَةُ البَقَرَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 286,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/002.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/002.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/002.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/002.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/002.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/002.mp3"
+    }
   },
   {
     "id": 3,
-    "name": "Aal-i-Imraan",
-    "arTitle": "سُوْرَةُ آلِ عِمْرَانَ",
+    "name": "Ali 'Imran",
+    "arti": "Keluarga Imran",
     "ar": "آلِ عِمْرَان",
-    "type": "MEDINAN",
-    "ayat": 200
+    "arTitle": "سُوْرَةُ آلِ عِمْرَانَ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 200,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/003.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/003.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/003.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/003.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/003.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/003.mp3"
+    }
   },
   {
     "id": 4,
-    "name": "An-Nisaa",
-    "arTitle": "سُوْرَةُ النِّسَاءِ",
+    "name": "An-Nisa'",
+    "arti": "Wanita",
     "ar": "النِّسَاء",
-    "type": "MEDINAN",
-    "ayat": 176
+    "arTitle": "سُوْرَةُ النِّسَاءِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 176,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/004.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/004.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/004.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/004.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/004.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/004.mp3"
+    }
   },
   {
     "id": 5,
-    "name": "Al-Maaida",
-    "arTitle": "سُوْرَةُ المَائِدَةِ",
+    "name": "Al-Ma'idah",
+    "arti": "Hidangan",
     "ar": "المَائِدَة",
-    "type": "MEDINAN",
-    "ayat": 120
+    "arTitle": "سُوْرَةُ المَائِدَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 120,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/005.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/005.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/005.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/005.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/005.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/005.mp3"
+    }
   },
   {
     "id": 6,
-    "name": "Al-An'aam",
-    "arTitle": "سُوْرَةُ الأَنْعَامِ",
+    "name": "Al-An'am",
+    "arti": "Binatang Ternak",
     "ar": "الأَنْعَام",
-    "type": "MECCAN",
-    "ayat": 165
+    "arTitle": "سُوْرَةُ الأَنْعَامِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 165,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/006.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/006.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/006.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/006.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/006.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/006.mp3"
+    }
   },
   {
     "id": 7,
-    "name": "Al-A'raaf",
-    "arTitle": "سُوْرَةُ الأَعْرَافِ",
+    "name": "Al-A'raf",
+    "arti": "Tempat Tertinggi",
     "ar": "الأَعْرَاف",
-    "type": "MECCAN",
-    "ayat": 206
+    "arTitle": "سُوْرَةُ الأَعْرَافِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 206,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/007.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/007.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/007.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/007.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/007.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/007.mp3"
+    }
   },
   {
     "id": 8,
-    "name": "Al-Anfaal",
-    "arTitle": "سُوْرَةُ الأَنْفَالِ",
+    "name": "Al-Anfal",
+    "arti": "Rampasan Perang",
     "ar": "الأَنْفَال",
-    "type": "MEDINAN",
-    "ayat": 75
+    "arTitle": "سُوْرَةُ الأَنْفَالِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 75,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/008.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/008.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/008.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/008.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/008.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/008.mp3"
+    }
   },
   {
     "id": 9,
-    "name": "At-Tawba",
-    "arTitle": "سُوْرَةُ التَّوْبَةِ",
+    "name": "At-Taubah",
+    "arti": "Pengampunan",
     "ar": "التَّوْبَة",
-    "type": "MEDINAN",
-    "ayat": 129
+    "arTitle": "سُوْرَةُ التَّوْبَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 129,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/009.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/009.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/009.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/009.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/009.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/009.mp3"
+    }
   },
   {
     "id": 10,
     "name": "Yunus",
-    "arTitle": "سُوْرَةُ يُوْنُسَ",
+    "arti": "Yunus",
     "ar": "يُوْنُس",
-    "type": "MECCAN",
-    "ayat": 109
+    "arTitle": "سُوْرَةُ يُوْنُسَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 109,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/010.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/010.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/010.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/010.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/010.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/010.mp3"
+    }
   },
   {
     "id": 11,
     "name": "Hud",
-    "arTitle": "سُوْرَةُ هُوْدٍ",
+    "arti": "Hud",
     "ar": "هُوْد",
-    "type": "MECCAN",
-    "ayat": 123
+    "arTitle": "سُوْرَةُ هُوْدٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 123,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/011.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/011.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/011.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/011.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/011.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/011.mp3"
+    }
   },
   {
     "id": 12,
     "name": "Yusuf",
-    "arTitle": "سُوْرَةُ يُوْسُفَ",
+    "arti": "Yusuf",
     "ar": "يُوْسُف",
-    "type": "MECCAN",
-    "ayat": 111
+    "arTitle": "سُوْرَةُ يُوْسُفَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 111,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/012.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/012.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/012.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/012.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/012.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/012.mp3"
+    }
   },
   {
     "id": 13,
     "name": "Ar-Ra'd",
-    "arTitle": "سُوْرَةُ الرَّعْدِ",
+    "arti": "Guruh",
     "ar": "الرَّعْد",
-    "type": "MEDINAN",
-    "ayat": 43
+    "arTitle": "سُوْرَةُ الرَّعْدِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 43,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/013.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/013.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/013.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/013.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/013.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/013.mp3"
+    }
   },
   {
     "id": 14,
     "name": "Ibrahim",
-    "arTitle": "سُوْرَةُ إِبْرَاهِيمَ",
+    "arti": "Ibrahim",
     "ar": "إِبْرَاهِيم",
-    "type": "MECCAN",
-    "ayat": 52
+    "arTitle": "سُوْرَةُ إِبْرَاهِيمَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 52,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/014.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/014.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/014.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/014.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/014.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/014.mp3"
+    }
   },
   {
     "id": 15,
     "name": "Al-Hijr",
-    "arTitle": "سُوْرَةُ الحِجْرِ",
+    "arti": "Hijr",
     "ar": "الحِجْر",
-    "type": "MECCAN",
-    "ayat": 99
+    "arTitle": "سُوْرَةُ الحِجْرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 99,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/015.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/015.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/015.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/015.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/015.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/015.mp3"
+    }
   },
   {
     "id": 16,
     "name": "An-Nahl",
-    "arTitle": "سُوْرَةُ النَّحْلِ",
+    "arti": "Lebah",
     "ar": "النَّحْل",
-    "type": "MECCAN",
-    "ayat": 128
+    "arTitle": "سُوْرَةُ النَّحْلِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 128,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/016.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/016.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/016.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/016.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/016.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/016.mp3"
+    }
   },
   {
     "id": 17,
-    "name": "Al-Israa",
-    "arTitle": "سُوْرَةُ الإِسْرَاءِ",
+    "name": "Al-Isra'",
+    "arti": "Memperjalankan Malam Hari",
     "ar": "الإِسْرَاء",
-    "type": "MECCAN",
-    "ayat": 111
+    "arTitle": "سُوْرَةُ الإِسْرَاءِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 111,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/017.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/017.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/017.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/017.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/017.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/017.mp3"
+    }
   },
   {
     "id": 18,
     "name": "Al-Kahf",
-    "arTitle": "سُوْرَةُ الكَهْفِ",
+    "arti": "Goa",
     "ar": "الكَهْف",
-    "type": "MECCAN",
-    "ayat": 110
+    "arTitle": "سُوْرَةُ الكَهْفِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 110,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/018.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/018.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/018.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/018.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/018.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/018.mp3"
+    }
   },
   {
     "id": 19,
     "name": "Maryam",
-    "arTitle": "سُوْرَةُ مَرْيَمَ",
+    "arti": "Maryam",
     "ar": "مَرْيَم",
-    "type": "MECCAN",
-    "ayat": 98
+    "arTitle": "سُوْرَةُ مَرْيَمَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 98,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/019.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/019.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/019.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/019.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/019.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/019.mp3"
+    }
   },
   {
     "id": 20,
-    "name": "Taa-Haa",
-    "arTitle": "سُوْرَةُ طٰهٰ",
+    "name": "Taha",
+    "arti": "Taha",
     "ar": "طٰهٰ",
-    "type": "MECCAN",
-    "ayat": 135
+    "arTitle": "سُوْرَةُ طٰهٰ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 135,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/020.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/020.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/020.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/020.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/020.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/020.mp3"
+    }
   },
   {
     "id": 21,
-    "name": "Al-Anbiyaa",
-    "arTitle": "سُوْرَةُ الأَنْبِيَاءِ",
+    "name": "Al-Anbiya'",
+    "arti": "Para Nabi",
     "ar": "الأَنْبِيَاء",
-    "type": "MECCAN",
-    "ayat": 112
+    "arTitle": "سُوْرَةُ الأَنْبِيَاءِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 112,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/021.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/021.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/021.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/021.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/021.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/021.mp3"
+    }
   },
   {
     "id": 22,
     "name": "Al-Hajj",
-    "arTitle": "سُوْرَةُ الحَجِّ",
+    "arti": "Haji",
     "ar": "الحَجّ",
-    "type": "MEDINAN",
-    "ayat": 78
+    "arTitle": "سُوْرَةُ الحَجِّ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 78,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/022.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/022.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/022.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/022.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/022.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/022.mp3"
+    }
   },
   {
     "id": 23,
-    "name": "Al-Mu'minoon",
-    "arTitle": "سُوْرَةُ المُؤْمِنُونَ",
+    "name": "Al-Mu'minun",
+    "arti": "Orang-Orang Mukmin",
     "ar": "المُؤْمِنُون",
-    "type": "MECCAN",
-    "ayat": 118
+    "arTitle": "سُوْرَةُ المُؤْمِنُونَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 118,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/023.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/023.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/023.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/023.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/023.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/023.mp3"
+    }
   },
   {
     "id": 24,
-    "name": "An-Noor",
-    "arTitle": "سُوْرَةُ النُّورِ",
+    "name": "An-Nur",
+    "arti": "Cahaya",
     "ar": "النُّور",
-    "type": "MEDINAN",
-    "ayat": 64
+    "arTitle": "سُوْرَةُ النُّورِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 64,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/024.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/024.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/024.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/024.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/024.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/024.mp3"
+    }
   },
   {
     "id": 25,
-    "name": "Al-Furqaan",
-    "arTitle": "سُوْرَةُ الفُرْقَانِ",
+    "name": "Al-Furqan",
+    "arti": "Pembeda",
     "ar": "الفُرْقَان",
-    "type": "MECCAN",
-    "ayat": 77
+    "arTitle": "سُوْرَةُ الفُرْقَانِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 77,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/025.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/025.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/025.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/025.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/025.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/025.mp3"
+    }
   },
   {
     "id": 26,
-    "name": "Ash-Shu'araa",
-    "arTitle": "سُوْرَةُ الشُّعَرَاءِ",
+    "name": "Asy-Syu'ara'",
+    "arti": "Para Penyair",
     "ar": "الشُّعَرَاء",
-    "type": "MECCAN",
-    "ayat": 227
+    "arTitle": "سُوْرَةُ الشُّعَرَاءِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 227,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/026.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/026.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/026.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/026.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/026.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/026.mp3"
+    }
   },
   {
     "id": 27,
     "name": "An-Naml",
-    "arTitle": "سُوْرَةُ النَّمْلِ",
+    "arti": "Semut-semut",
     "ar": "النَّمْل",
-    "type": "MECCAN",
-    "ayat": 93
+    "arTitle": "سُوْرَةُ النَّمْلِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 93,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/027.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/027.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/027.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/027.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/027.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/027.mp3"
+    }
   },
   {
     "id": 28,
     "name": "Al-Qasas",
-    "arTitle": "سُوْرَةُ القَصَصِ",
+    "arti": "Kisah-Kisah",
     "ar": "القَصَص",
-    "type": "MECCAN",
-    "ayat": 88
+    "arTitle": "سُوْرَةُ القَصَصِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 88,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/028.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/028.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/028.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/028.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/028.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/028.mp3"
+    }
   },
   {
     "id": 29,
-    "name": "Al-Ankaboot",
-    "arTitle": "سُوْرَةُ العَنْكَبُوتِ",
+    "name": "Al-'Ankabut",
+    "arti": "Laba-Laba",
     "ar": "العَنْكَبُوت",
-    "type": "MECCAN",
-    "ayat": 69
+    "arTitle": "سُوْرَةُ العَنْكَبُوتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 69,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/029.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/029.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/029.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/029.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/029.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/029.mp3"
+    }
   },
   {
     "id": 30,
-    "name": "Ar-Room",
-    "arTitle": "سُوْرَةُ الرُّومِ",
+    "name": "Ar-Rum",
+    "arti": "Romawi",
     "ar": "الرُّوم",
-    "type": "MECCAN",
-    "ayat": 60
+    "arTitle": "سُوْرَةُ الرُّومِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 60,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/030.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/030.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/030.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/030.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/030.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/030.mp3"
+    }
   },
   {
     "id": 31,
     "name": "Luqman",
-    "arTitle": "سُوْرَةُ لُقْمَانَ",
+    "arti": "Luqman",
     "ar": "لُقْمَان",
-    "type": "MECCAN",
-    "ayat": 34
+    "arTitle": "سُوْرَةُ لُقْمَانَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 34,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/031.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/031.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/031.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/031.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/031.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/031.mp3"
+    }
   },
   {
     "id": 32,
-    "name": "As-Sajda",
-    "arTitle": "سُوْرَةُ السَّجْدَةِ",
+    "name": "As-Sajdah",
+    "arti": "Sajdah",
     "ar": "السَّجْدَة",
-    "type": "MECCAN",
-    "ayat": 30
+    "arTitle": "سُوْرَةُ السَّجْدَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 30,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/032.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/032.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/032.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/032.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/032.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/032.mp3"
+    }
   },
   {
     "id": 33,
-    "name": "Al-Ahzaab",
-    "arTitle": "سُوْرَةُ الأَحْزَابِ",
+    "name": "Al-Ahzab",
+    "arti": "Golongan Yang Bersekutu",
     "ar": "الأَحْزَاب",
-    "type": "MEDINAN",
-    "ayat": 73
+    "arTitle": "سُوْرَةُ الأَحْزَابِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 73,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/033.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/033.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/033.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/033.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/033.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/033.mp3"
+    }
   },
   {
     "id": 34,
-    "name": "Saba",
-    "arTitle": "سُوْرَةُ سَبَإٍ",
+    "name": "Saba'",
+    "arti": "Saba'",
     "ar": "سَبَأ",
-    "type": "MECCAN",
-    "ayat": 54
+    "arTitle": "سُوْرَةُ سَبَإٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 54,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/034.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/034.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/034.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/034.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/034.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/034.mp3"
+    }
   },
   {
     "id": 35,
-    "name": "Faatir",
-    "arTitle": "سُوْرَةُ فَاطِرٍ",
+    "name": "Fatir",
+    "arti": "Maha Pencipta",
     "ar": "فَاطِر",
-    "type": "MECCAN",
-    "ayat": 45
+    "arTitle": "سُوْرَةُ فَاطِرٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 45,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/035.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/035.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/035.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/035.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/035.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/035.mp3"
+    }
   },
   {
     "id": 36,
-    "name": "Yaa-Seen",
-    "arTitle": "سُوْرَةُ يٰسٓ",
+    "name": "Yasin",
+    "arti": "Yasin",
     "ar": "يسٓ",
-    "type": "MECCAN",
-    "ayat": 83
+    "arTitle": "سُوْرَةُ يٰسٓ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 83,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/036.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/036.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/036.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/036.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/036.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/036.mp3"
+    }
   },
   {
     "id": 37,
-    "name": "As-Saaffaat",
-    "arTitle": "سُوْرَةُ الصَّافَّاتِ",
+    "name": "As-Saffat",
+    "arti": "Barisan-Barisan",
     "ar": "الصَّافَّات",
-    "type": "MECCAN",
-    "ayat": 182
+    "arTitle": "سُوْرَةُ الصَّافَّاتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 182,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/037.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/037.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/037.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/037.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/037.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/037.mp3"
+    }
   },
   {
     "id": 38,
-    "name": "Saad",
-    "arTitle": "سُوْرَةُ صٓ",
+    "name": "Sad",
+    "arti": "Sad",
     "ar": "صٓ",
-    "type": "MECCAN",
-    "ayat": 88
+    "arTitle": "سُوْرَةُ صٓ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 88,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/038.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/038.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/038.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/038.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/038.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/038.mp3"
+    }
   },
   {
     "id": 39,
     "name": "Az-Zumar",
-    "arTitle": "سُوْرَةُ الزُّمَرِ",
+    "arti": "Rombongan",
     "ar": "الزُّمَر",
-    "type": "MECCAN",
-    "ayat": 75
+    "arTitle": "سُوْرَةُ الزُّمَرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 75,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/039.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/039.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/039.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/039.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/039.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/039.mp3"
+    }
   },
   {
     "id": 40,
     "name": "Ghafir",
-    "arTitle": "سُوْرَةُ غَافِرٍ",
+    "arti": "Maha Pengampun",
     "ar": "غَافِر",
-    "type": "MECCAN",
-    "ayat": 85
+    "arTitle": "سُوْرَةُ غَافِرٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 85,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/040.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/040.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/040.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/040.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/040.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/040.mp3"
+    }
   },
   {
     "id": 41,
     "name": "Fussilat",
-    "arTitle": "سُوْرَةُ فُصِّلَتْ",
+    "arti": "Yang Dijelaskan",
     "ar": "فُصِّلَت",
-    "type": "MECCAN",
-    "ayat": 54
+    "arTitle": "سُوْرَةُ فُصِّلَتْ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 54,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/041.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/041.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/041.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/041.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/041.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/041.mp3"
+    }
   },
   {
     "id": 42,
-    "name": "Ash-Shoora",
-    "arTitle": "سُوْرَةُ الشُّورَىٰ",
+    "name": "Asy-Syura",
+    "arti": "Musyawarah",
     "ar": "الشُّورَى",
-    "type": "MECCAN",
-    "ayat": 53
+    "arTitle": "سُوْرَةُ الشُّورَىٰ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 53,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/042.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/042.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/042.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/042.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/042.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/042.mp3"
+    }
   },
   {
     "id": 43,
     "name": "Az-Zukhruf",
-    "arTitle": "سُوْرَةُ الزُّخْرُفِ",
+    "arti": "Perhiasan",
     "ar": "الزُّخْرُف",
-    "type": "MECCAN",
-    "ayat": 89
+    "arTitle": "سُوْرَةُ الزُّخْرُفِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 89,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/043.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/043.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/043.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/043.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/043.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/043.mp3"
+    }
   },
   {
     "id": 44,
-    "name": "Ad-Dukhaan",
-    "arTitle": "سُوْرَةُ الدُّخَانِ",
+    "name": "Ad-Dukhan",
+    "arti": "Kabut",
     "ar": "الدُّخَان",
-    "type": "MECCAN",
-    "ayat": 59
+    "arTitle": "سُوْرَةُ الدُّخَانِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 59,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/044.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/044.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/044.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/044.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/044.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/044.mp3"
+    }
   },
   {
     "id": 45,
-    "name": "Al-Jaathiya",
-    "arTitle": "سُوْرَةُ الجَاثِيَةِ",
+    "name": "Al-Jasiyah",
+    "arti": "Berlutut",
     "ar": "الجَاثِيَة",
-    "type": "MECCAN",
-    "ayat": 37
+    "arTitle": "سُوْرَةُ الجَاثِيَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 37,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/045.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/045.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/045.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/045.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/045.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/045.mp3"
+    }
   },
   {
     "id": 46,
     "name": "Al-Ahqaf",
-    "arTitle": "سُوْرَةُ الأَحْقَافِ",
+    "arti": "Bukit Pasir",
     "ar": "الأَحْقَاف",
-    "type": "MECCAN",
-    "ayat": 35
+    "arTitle": "سُوْرَةُ الأَحْقَافِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 35,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/046.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/046.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/046.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/046.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/046.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/046.mp3"
+    }
   },
   {
     "id": 47,
     "name": "Muhammad",
-    "arTitle": "سُوْرَةُ مُحَمَّدٍ",
+    "arti": "Muhammad",
     "ar": "مُحَمَّد",
-    "type": "MEDINAN",
-    "ayat": 38
+    "arTitle": "سُوْرَةُ مُحَمَّدٍ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 38,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/047.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/047.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/047.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/047.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/047.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/047.mp3"
+    }
   },
   {
     "id": 48,
-    "name": "Al-Fat-h",
-    "arTitle": "سُوْرَةُ الفَتْحِ",
+    "name": "Al-Fath",
+    "arti": "Kemenangan",
     "ar": "الفَتْح",
-    "type": "MEDINAN",
-    "ayat": 29
+    "arTitle": "سُوْرَةُ الفَتْحِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 29,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/048.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/048.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/048.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/048.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/048.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/048.mp3"
+    }
   },
   {
     "id": 49,
-    "name": "Al-Hujuraat",
-    "arTitle": "سُوْرَةُ الحُجُرَاتِ",
+    "name": "Al-Hujurat",
+    "arti": "Kamar-Kamar",
     "ar": "الحُجُرَات",
-    "type": "MEDINAN",
-    "ayat": 18
+    "arTitle": "سُوْرَةُ الحُجُرَاتِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 18,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/049.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/049.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/049.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/049.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/049.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/049.mp3"
+    }
   },
   {
     "id": 50,
-    "name": "Qaaf",
-    "arTitle": "سُوْرَةُ قٓ",
+    "name": "Qaf",
+    "arti": "Qaf",
     "ar": "قٓ",
-    "type": "MECCAN",
-    "ayat": 45
+    "arTitle": "سُوْرَةُ قٓ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 45,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/050.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/050.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/050.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/050.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/050.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/050.mp3"
+    }
   },
   {
     "id": 51,
-    "name": "Adh-Dhaariyaat",
-    "arTitle": "سُوْرَةُ الذَّارِيَاتِ",
+    "name": "Az-Zariyat",
+    "arti": "Angin yang Menerbangkan",
     "ar": "الذَّارِيَات",
-    "type": "MECCAN",
-    "ayat": 60
+    "arTitle": "سُوْرَةُ الذَّارِيَاتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 60,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/051.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/051.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/051.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/051.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/051.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/051.mp3"
+    }
   },
   {
     "id": 52,
-    "name": "At-Toor",
-    "arTitle": "سُوْرَةُ الطُّورِ",
+    "name": "At-Tur",
+    "arti": "Bukit Tursina",
     "ar": "الطُّور",
-    "type": "MECCAN",
-    "ayat": 49
+    "arTitle": "سُوْرَةُ الطُّورِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 49,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/052.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/052.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/052.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/052.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/052.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/052.mp3"
+    }
   },
   {
     "id": 53,
     "name": "An-Najm",
-    "arTitle": "سُوْرَةُ النَّجْمِ",
+    "arti": "Bintang",
     "ar": "النَّجْم",
-    "type": "MECCAN",
-    "ayat": 62
+    "arTitle": "سُوْرَةُ النَّجْمِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 62,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/053.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/053.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/053.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/053.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/053.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/053.mp3"
+    }
   },
   {
     "id": 54,
     "name": "Al-Qamar",
-    "arTitle": "سُوْرَةُ القَمَرِ",
+    "arti": "Bulan",
     "ar": "القَمَر",
-    "type": "MECCAN",
-    "ayat": 55
+    "arTitle": "سُوْرَةُ القَمَرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 55,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/054.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/054.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/054.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/054.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/054.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/054.mp3"
+    }
   },
   {
     "id": 55,
-    "name": "Ar-Rahmaan",
-    "arTitle": "سُوْرَةُ الرَّحْمَٰنِ",
+    "name": "Ar-Rahman",
+    "arti": "Maha Pengasih",
     "ar": "الرَّحْمٰن",
-    "type": "MEDINAN",
-    "ayat": 78
+    "arTitle": "سُوْرَةُ الرَّحْمَٰنِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 78,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/055.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/055.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/055.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/055.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/055.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/055.mp3"
+    }
   },
   {
     "id": 56,
-    "name": "Al-Waaqia",
-    "arTitle": "سُوْرَةُ الوَاقِعَةِ",
+    "name": "Al-Waqi'ah",
+    "arti": "Hari Kiamat",
     "ar": "الوَاقِعَة",
-    "type": "MECCAN",
-    "ayat": 96
+    "arTitle": "سُوْرَةُ الوَاقِعَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 96,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/056.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/056.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/056.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/056.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/056.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/056.mp3"
+    }
   },
   {
     "id": 57,
-    "name": "Al-Hadeed",
-    "arTitle": "سُوْرَةُ الحَدِيدِ",
+    "name": "Al-Hadid",
+    "arti": "Besi",
     "ar": "الحَدِيد",
-    "type": "MEDINAN",
-    "ayat": 29
+    "arTitle": "سُوْرَةُ الحَدِيدِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 29,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/057.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/057.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/057.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/057.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/057.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/057.mp3"
+    }
   },
   {
     "id": 58,
-    "name": "Al-Mujaadila",
-    "arTitle": "سُوْرَةُ المُجَادَلَةِ",
+    "name": "Al-Mujadilah",
+    "arti": "Gugatan",
     "ar": "المُجَادَلَة",
-    "type": "MEDINAN",
-    "ayat": 22
+    "arTitle": "سُوْرَةُ المُجَادَلَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 22,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/058.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/058.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/058.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/058.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/058.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/058.mp3"
+    }
   },
   {
     "id": 59,
-    "name": "Al-Hashr",
-    "arTitle": "سُوْرَةُ الحَشْرِ",
+    "name": "Al-Hasyr",
+    "arti": "Pengusiran",
     "ar": "الحَشْر",
-    "type": "MEDINAN",
-    "ayat": 24
+    "arTitle": "سُوْرَةُ الحَشْرِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 24,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/059.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/059.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/059.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/059.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/059.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/059.mp3"
+    }
   },
   {
     "id": 60,
-    "name": "Al-Mumtahana",
-    "arTitle": "سُوْرَةُ المُمْتَحَنَةِ",
+    "name": "Al-Mumtahanah",
+    "arti": "Wanita Yang Diuji",
     "ar": "المُمْتَحَنَة",
-    "type": "MEDINAN",
-    "ayat": 13
+    "arTitle": "سُوْرَةُ المُمْتَحَنَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 13,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/060.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/060.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/060.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/060.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/060.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/060.mp3"
+    }
   },
   {
     "id": 61,
     "name": "As-Saff",
-    "arTitle": "سُوْرَةُ الصَّفِّ",
+    "arti": "Barisan",
     "ar": "الصَّفّ",
-    "type": "MEDINAN",
-    "ayat": 14
+    "arTitle": "سُوْرَةُ الصَّفِّ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 14,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/061.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/061.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/061.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/061.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/061.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/061.mp3"
+    }
   },
   {
     "id": 62,
-    "name": "Al-Jumu'a",
-    "arTitle": "سُوْرَةُ الجُمُعَةِ",
+    "name": "Al-Jumu'ah",
+    "arti": "Jumat",
     "ar": "الجُمُعَة",
-    "type": "MEDINAN",
-    "ayat": 11
+    "arTitle": "سُوْرَةُ الجُمُعَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 11,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/062.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/062.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/062.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/062.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/062.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/062.mp3"
+    }
   },
   {
     "id": 63,
-    "name": "Al-Munaafiqoon",
-    "arTitle": "سُوْرَةُ المُنَافِقُونَ",
+    "name": "Al-Munafiqun",
+    "arti": "Orang-Orang Munafik",
     "ar": "المُنَافِقُون",
-    "type": "MEDINAN",
-    "ayat": 11
+    "arTitle": "سُوْرَةُ المُنَافِقُونَ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 11,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/063.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/063.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/063.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/063.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/063.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/063.mp3"
+    }
   },
   {
     "id": 64,
-    "name": "At-Taghaabun",
-    "arTitle": "سُوْرَةُ التَّغَابُنِ",
+    "name": "At-Tagabun",
+    "arti": "Pengungkapan Kesalahan",
     "ar": "التَّغَابُن",
-    "type": "MEDINAN",
-    "ayat": 18
+    "arTitle": "سُوْرَةُ التَّغَابُنِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 18,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/064.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/064.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/064.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/064.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/064.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/064.mp3"
+    }
   },
   {
     "id": 65,
-    "name": "At-Talaaq",
-    "arTitle": "سُوْرَةُ الطَّلَاقِ",
+    "name": "At-Talaq",
+    "arti": "Talak",
     "ar": "الطَّلَاق",
-    "type": "MEDINAN",
-    "ayat": 12
+    "arTitle": "سُوْرَةُ الطَّلَاقِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 12,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/065.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/065.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/065.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/065.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/065.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/065.mp3"
+    }
   },
   {
     "id": 66,
-    "name": "At-Tahreem",
-    "arTitle": "سُوْرَةُ التَّحْرِيمِ",
+    "name": "At-Tahrim",
+    "arti": "Pengharaman",
     "ar": "التَّحْرِيم",
-    "type": "MEDINAN",
-    "ayat": 12
+    "arTitle": "سُوْرَةُ التَّحْرِيمِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 12,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/066.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/066.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/066.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/066.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/066.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/066.mp3"
+    }
   },
   {
     "id": 67,
     "name": "Al-Mulk",
-    "arTitle": "سُوْرَةُ المُلْكِ",
+    "arti": "Kerajaan",
     "ar": "المُلْك",
-    "type": "MECCAN",
-    "ayat": 30
+    "arTitle": "سُوْرَةُ المُلْكِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 30,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/067.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/067.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/067.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/067.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/067.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/067.mp3"
+    }
   },
   {
     "id": 68,
     "name": "Al-Qalam",
-    "arTitle": "سُوْرَةُ القَلَمِ",
+    "arti": "Pena",
     "ar": "القَلَم",
-    "type": "MECCAN",
-    "ayat": 52
+    "arTitle": "سُوْرَةُ القَلَمِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 52,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/068.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/068.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/068.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/068.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/068.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/068.mp3"
+    }
   },
   {
     "id": 69,
-    "name": "Al-Haaqqa",
-    "arTitle": "سُوْرَةُ الحَاقَّةِ",
+    "name": "Al-Haqqah",
+    "arti": "Hari Kiamat",
     "ar": "الحَاقَّة",
-    "type": "MECCAN",
-    "ayat": 52
+    "arTitle": "سُوْرَةُ الحَاقَّةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 52,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/069.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/069.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/069.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/069.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/069.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/069.mp3"
+    }
   },
   {
     "id": 70,
-    "name": "Al-Ma'aarij",
-    "arTitle": "سُوْرَةُ المَعَارِجِ",
+    "name": "Al-Ma'arij",
+    "arti": "Tempat Naik",
     "ar": "المَعَارِج",
-    "type": "MECCAN",
-    "ayat": 44
+    "arTitle": "سُوْرَةُ المَعَارِجِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 44,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/070.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/070.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/070.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/070.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/070.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/070.mp3"
+    }
   },
   {
     "id": 71,
-    "name": "Nooh",
-    "arTitle": "سُوْرَةُ نُوحٍ",
+    "name": "Nuh",
+    "arti": "Nuh",
     "ar": "نُوح",
-    "type": "MECCAN",
-    "ayat": 28
+    "arTitle": "سُوْرَةُ نُوحٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 28,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/071.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/071.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/071.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/071.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/071.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/071.mp3"
+    }
   },
   {
     "id": 72,
     "name": "Al-Jinn",
-    "arTitle": "سُوْرَةُ الجِنِّ",
+    "arti": "Jin",
     "ar": "الجِنّ",
-    "type": "MECCAN",
-    "ayat": 28
+    "arTitle": "سُوْرَةُ الجِنِّ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 28,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/072.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/072.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/072.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/072.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/072.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/072.mp3"
+    }
   },
   {
     "id": 73,
     "name": "Al-Muzzammil",
-    "arTitle": "سُوْرَةُ المُزَّمِّلِ",
+    "arti": "Orang Yang Berselimut",
     "ar": "المُزَّمِّل",
-    "type": "MECCAN",
-    "ayat": 20
+    "arTitle": "سُوْرَةُ المُزَّمِّلِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 20,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/073.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/073.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/073.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/073.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/073.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/073.mp3"
+    }
   },
   {
     "id": 74,
-    "name": "Al-Muddath-thir",
-    "arTitle": "سُوْرَةُ المُدَّثِّرِ",
+    "name": "Al-Muddassir",
+    "arti": "Orang Yang Berkemul",
     "ar": "المُدَّثِّر",
-    "type": "MECCAN",
-    "ayat": 56
+    "arTitle": "سُوْرَةُ المُدَّثِّرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 56,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/074.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/074.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/074.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/074.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/074.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/074.mp3"
+    }
   },
   {
     "id": 75,
-    "name": "Al-Qiyaama",
-    "arTitle": "سُوْرَةُ القِيَامَةِ",
+    "name": "Al-Qiyamah",
+    "arti": "Hari Kiamat",
     "ar": "القِيَامَة",
-    "type": "MECCAN",
-    "ayat": 40
+    "arTitle": "سُوْرَةُ القِيَامَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 40,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/075.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/075.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/075.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/075.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/075.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/075.mp3"
+    }
   },
   {
     "id": 76,
-    "name": "Al-Insaan",
-    "arTitle": "سُوْرَةُ الإِنْسَانِ",
+    "name": "Al-Insan",
+    "arti": "Manusia",
     "ar": "الإِنْسَان",
-    "type": "MEDINAN",
-    "ayat": 31
+    "arTitle": "سُوْرَةُ الإِنْسَانِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 31,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/076.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/076.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/076.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/076.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/076.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/076.mp3"
+    }
   },
   {
     "id": 77,
-    "name": "Al-Mursalaat",
-    "arTitle": "سُوْرَةُ المُرْسَلَاتِ",
+    "name": "Al-Mursalat",
+    "arti": "Malaikat Yang Diutus",
     "ar": "المُرْسَلَات",
-    "type": "MECCAN",
-    "ayat": 50
+    "arTitle": "سُوْرَةُ المُرْسَلَاتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 50,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/077.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/077.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/077.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/077.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/077.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/077.mp3"
+    }
   },
   {
     "id": 78,
-    "name": "An-Naba",
-    "arTitle": "سُوْرَةُ النَّبَإِ",
+    "name": "An-Naba'",
+    "arti": "Berita Besar",
     "ar": "النَّبَأ",
-    "type": "MECCAN",
-    "ayat": 40
+    "arTitle": "سُوْرَةُ النَّبَإِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 40,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/078.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/078.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/078.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/078.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/078.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/078.mp3"
+    }
   },
   {
     "id": 79,
-    "name": "An-Naazi'aat",
-    "arTitle": "سُوْرَةُ النَّازِعَاتِ",
+    "name": "An-Nazi'at",
+    "arti": "Malaikat Yang Mencabut",
     "ar": "النَّازِعَات",
-    "type": "MECCAN",
-    "ayat": 46
+    "arTitle": "سُوْرَةُ النَّازِعَاتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 46,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/079.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/079.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/079.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/079.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/079.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/079.mp3"
+    }
   },
   {
     "id": 80,
-    "name": "Abasa",
-    "arTitle": "سُوْرَةُ عَبَسَ",
+    "name": "'Abasa",
+    "arti": "Bermuka Masam",
     "ar": "عَبَس",
-    "type": "MECCAN",
-    "ayat": 42
+    "arTitle": "سُوْرَةُ عَبَسَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 42,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/080.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/080.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/080.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/080.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/080.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/080.mp3"
+    }
   },
   {
     "id": 81,
-    "name": "At-Takweer",
-    "arTitle": "سُوْرَةُ التَّكْوِيرِ",
+    "name": "At-Takwir",
+    "arti": "Penggulungan",
     "ar": "التَّكْوِير",
-    "type": "MECCAN",
-    "ayat": 29
+    "arTitle": "سُوْرَةُ التَّكْوِيرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 29,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/081.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/081.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/081.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/081.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/081.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/081.mp3"
+    }
   },
   {
     "id": 82,
-    "name": "Al-Infitaar",
-    "arTitle": "سُوْرَةُ الإِنْفِطَارِ",
+    "name": "Al-Infitar",
+    "arti": "Terbelah",
     "ar": "الإِنْفِطَار",
-    "type": "MECCAN",
-    "ayat": 19
+    "arTitle": "سُوْرَةُ الإِنْفِطَارِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 19,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/082.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/082.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/082.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/082.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/082.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/082.mp3"
+    }
   },
   {
     "id": 83,
-    "name": "Al-Mutaffifeen",
-    "arTitle": "سُوْرَةُ المُطَفِّفِينَ",
+    "name": "Al-Mutaffifin",
+    "arti": "Orang-Orang Curang",
     "ar": "المُطَفِّفِين",
-    "type": "MECCAN",
-    "ayat": 36
+    "arTitle": "سُوْرَةُ المُطَفِّفِينَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 36,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/083.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/083.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/083.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/083.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/083.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/083.mp3"
+    }
   },
   {
     "id": 84,
-    "name": "Al-Inshiqaaq",
-    "arTitle": "سُوْرَةُ الإِنْشِقَاقِ",
+    "name": "Al-Insyiqaq",
+    "arti": "Terbelah",
     "ar": "الإِنْشِقَاق",
-    "type": "MECCAN",
-    "ayat": 25
+    "arTitle": "سُوْرَةُ الإِنْشِقَاقِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 25,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/084.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/084.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/084.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/084.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/084.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/084.mp3"
+    }
   },
   {
     "id": 85,
-    "name": "Al-Burooj",
-    "arTitle": "سُوْرَةُ البُرُوجِ",
+    "name": "Al-Buruj",
+    "arti": "Gugusan Bintang",
     "ar": "البُرُوج",
-    "type": "MECCAN",
-    "ayat": 22
+    "arTitle": "سُوْرَةُ البُرُوجِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 22,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/085.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/085.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/085.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/085.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/085.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/085.mp3"
+    }
   },
   {
     "id": 86,
-    "name": "At-Taariq",
-    "arTitle": "سُوْرَةُ الطَّارِقِ",
+    "name": "At-Tariq",
+    "arti": "Yang Datang Di Malam Hari",
     "ar": "الطَّارِق",
-    "type": "MECCAN",
-    "ayat": 17
+    "arTitle": "سُوْرَةُ الطَّارِقِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 17,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/086.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/086.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/086.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/086.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/086.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/086.mp3"
+    }
   },
   {
     "id": 87,
-    "name": "Al-A'laa",
-    "arTitle": "سُوْرَةُ الأَعْلَىٰ",
+    "name": "Al-A'la",
+    "arti": "Maha Tinggi",
     "ar": "الأَعْلَى",
-    "type": "MECCAN",
-    "ayat": 19
+    "arTitle": "سُوْرَةُ الأَعْلَىٰ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 19,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/087.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/087.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/087.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/087.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/087.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/087.mp3"
+    }
   },
   {
     "id": 88,
-    "name": "Al-Ghaashiya",
-    "arTitle": "سُوْرَةُ الغَاشِيَةِ",
+    "name": "Al-Gasyiyah",
+    "arti": "Hari Kiamat",
     "ar": "الغَاشِيَة",
-    "type": "MECCAN",
-    "ayat": 26
+    "arTitle": "سُوْرَةُ الغَاشِيَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 26,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/088.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/088.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/088.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/088.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/088.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/088.mp3"
+    }
   },
   {
     "id": 89,
     "name": "Al-Fajr",
-    "arTitle": "سُوْرَةُ الفَجْرِ",
+    "arti": "Fajar",
     "ar": "الفَجْر",
-    "type": "MECCAN",
-    "ayat": 30
+    "arTitle": "سُوْرَةُ الفَجْرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 30,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/089.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/089.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/089.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/089.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/089.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/089.mp3"
+    }
   },
   {
     "id": 90,
     "name": "Al-Balad",
-    "arTitle": "سُوْرَةُ البَلَدِ",
+    "arti": "Negeri",
     "ar": "البَلَد",
-    "type": "MECCAN",
-    "ayat": 20
+    "arTitle": "سُوْرَةُ البَلَدِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 20,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/090.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/090.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/090.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/090.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/090.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/090.mp3"
+    }
   },
   {
     "id": 91,
-    "name": "Ash-Shams",
-    "arTitle": "سُوْرَةُ الشَّمْسِ",
+    "name": "Asy-Syams",
+    "arti": "Matahari",
     "ar": "الشَّمْس",
-    "type": "MECCAN",
-    "ayat": 15
+    "arTitle": "سُوْرَةُ الشَّمْسِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 15,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/091.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/091.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/091.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/091.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/091.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/091.mp3"
+    }
   },
   {
     "id": 92,
     "name": "Al-Lail",
-    "arTitle": "سُوْرَةُ اللَّيْلِ",
+    "arti": "Malam",
     "ar": "اللَّيْل",
-    "type": "MECCAN",
-    "ayat": 21
+    "arTitle": "سُوْرَةُ اللَّيْلِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 21,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/092.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/092.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/092.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/092.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/092.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/092.mp3"
+    }
   },
   {
     "id": 93,
-    "name": "Ad-Dhuhaa",
-    "arTitle": "سُوْرَةُ الضُّحَىٰ",
+    "name": "Ad-Duha",
+    "arti": "Duha",
     "ar": "الضُّحَى",
-    "type": "MECCAN",
-    "ayat": 11
+    "arTitle": "سُوْرَةُ الضُّحَىٰ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 11,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/093.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/093.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/093.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/093.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/093.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/093.mp3"
+    }
   },
   {
     "id": 94,
-    "name": "Ash-Sharh",
-    "arTitle": "سُوْرَةُ الشَّرْحِ",
+    "name": "Al-Insyirah",
+    "arti": "Lapang",
     "ar": "الشَّرْح",
-    "type": "MECCAN",
-    "ayat": 8
+    "arTitle": "سُوْرَةُ الشَّرْحِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 8,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/094.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/094.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/094.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/094.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/094.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/094.mp3"
+    }
   },
   {
     "id": 95,
-    "name": "At-Teen",
-    "arTitle": "سُوْرَةُ التِّينِ",
+    "name": "At-Tin",
+    "arti": "Buah Tin",
     "ar": "التِّين",
-    "type": "MECCAN",
-    "ayat": 8
+    "arTitle": "سُوْرَةُ التِّينِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 8,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/095.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/095.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/095.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/095.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/095.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/095.mp3"
+    }
   },
   {
     "id": 96,
-    "name": "Al-Alaq",
-    "arTitle": "سُوْرَةُ العَلَقِ",
+    "name": "Al-'Alaq",
+    "arti": "Segumpal Darah",
     "ar": "العَلَق",
-    "type": "MECCAN",
-    "ayat": 19
+    "arTitle": "سُوْرَةُ العَلَقِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 19,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/096.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/096.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/096.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/096.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/096.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/096.mp3"
+    }
   },
   {
     "id": 97,
     "name": "Al-Qadr",
-    "arTitle": "سُوْرَةُ القَدْرِ",
+    "arti": "Kemuliaan",
     "ar": "القَدْر",
-    "type": "MECCAN",
-    "ayat": 5
+    "arTitle": "سُوْرَةُ القَدْرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 5,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/097.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/097.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/097.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/097.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/097.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/097.mp3"
+    }
   },
   {
     "id": 98,
-    "name": "Al-Bayyina",
-    "arTitle": "سُوْرَةُ البَيِّنَةِ",
+    "name": "Al-Bayyinah",
+    "arti": "Bukti Nyata",
     "ar": "البَيِّنَة",
-    "type": "MEDINAN",
-    "ayat": 8
+    "arTitle": "سُوْرَةُ البَيِّنَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 8,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/098.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/098.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/098.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/098.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/098.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/098.mp3"
+    }
   },
   {
     "id": 99,
-    "name": "Az-Zalzala",
-    "arTitle": "سُوْرَةُ الزَّلْزَلَةِ",
+    "name": "Az-Zalzalah",
+    "arti": "Guncangan",
     "ar": "الزَّلْزَلَة",
-    "type": "MEDINAN",
-    "ayat": 8
+    "arTitle": "سُوْرَةُ الزَّلْزَلَةِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 8,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/099.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/099.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/099.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/099.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/099.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/099.mp3"
+    }
   },
   {
     "id": 100,
-    "name": "Al-Aadiyaat",
-    "arTitle": "سُوْرَةُ العَادِيَاتِ",
+    "name": "Al-'Adiyat",
+    "arti": "Kuda Yang Berlari Kencang",
     "ar": "العَادِيَات",
-    "type": "MECCAN",
-    "ayat": 11
+    "arTitle": "سُوْرَةُ العَادِيَاتِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 11,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/100.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/100.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/100.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/100.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/100.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/100.mp3"
+    }
   },
   {
     "id": 101,
-    "name": "Al-Qaari'a",
-    "arTitle": "سُوْرَةُ القَارِعَةِ",
+    "name": "Al-Qari'ah",
+    "arti": "Hari Kiamat",
     "ar": "القَارِعَة",
-    "type": "MECCAN",
-    "ayat": 11
+    "arTitle": "سُوْرَةُ القَارِعَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 11,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/101.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/101.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/101.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/101.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/101.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/101.mp3"
+    }
   },
   {
     "id": 102,
-    "name": "At-Takaathur",
-    "arTitle": "سُوْرَةُ التَّكَاثُرِ",
+    "name": "At-Takasur",
+    "arti": "Bermegah-Megahan",
     "ar": "التَّكَاثُر",
-    "type": "MECCAN",
-    "ayat": 8
+    "arTitle": "سُوْرَةُ التَّكَاثُرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 8,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/102.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/102.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/102.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/102.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/102.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/102.mp3"
+    }
   },
   {
     "id": 103,
-    "name": "Al-Asr",
-    "arTitle": "سُوْرَةُ العَصْرِ",
+    "name": "Al-'Asr",
+    "arti": "Masa",
     "ar": "العَصْر",
-    "type": "MECCAN",
-    "ayat": 3
+    "arTitle": "سُوْرَةُ العَصْرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 3,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/103.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/103.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/103.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/103.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/103.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/103.mp3"
+    }
   },
   {
     "id": 104,
-    "name": "Al-Humaza",
-    "arTitle": "سُوْرَةُ الهُمَزَةِ",
+    "name": "Al-Humazah",
+    "arti": "Pengumpat",
     "ar": "الهُمَزَة",
-    "type": "MECCAN",
-    "ayat": 9
+    "arTitle": "سُوْرَةُ الهُمَزَةِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 9,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/104.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/104.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/104.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/104.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/104.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/104.mp3"
+    }
   },
   {
     "id": 105,
-    "name": "Al-Feel",
-    "arTitle": "سُوْرَةُ الفِيلِ",
+    "name": "Al-Fil",
+    "arti": "Gajah",
     "ar": "الفِيل",
-    "type": "MECCAN",
-    "ayat": 5
+    "arTitle": "سُوْرَةُ الفِيلِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 5,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/105.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/105.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/105.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/105.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/105.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/105.mp3"
+    }
   },
   {
     "id": 106,
-    "name": "Quraish",
-    "arTitle": "سُوْرَةُ قُرَيْشٍ",
+    "name": "Quraisy",
+    "arti": "Quraisy",
     "ar": "قُرَيْش",
-    "type": "MECCAN",
-    "ayat": 4
+    "arTitle": "سُوْرَةُ قُرَيْشٍ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 4,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/106.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/106.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/106.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/106.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/106.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/106.mp3"
+    }
   },
   {
     "id": 107,
-    "name": "Al-Maa'oon",
-    "arTitle": "سُوْرَةُ المَاعُونِ",
+    "name": "Al-Ma'un",
+    "arti": "Barang Yang Berguna",
     "ar": "المَاعُون",
-    "type": "MECCAN",
-    "ayat": 7
+    "arTitle": "سُوْرَةُ المَاعُونِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 7,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/107.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/107.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/107.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/107.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/107.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/107.mp3"
+    }
   },
   {
     "id": 108,
-    "name": "Al-Kawthar",
-    "arTitle": "سُوْرَةُ الكَوْثَرِ",
+    "name": "Al-Kausar",
+    "arti": "Pemberian Yang Banyak",
     "ar": "الكَوْثَر",
-    "type": "MECCAN",
-    "ayat": 3
+    "arTitle": "سُوْرَةُ الكَوْثَرِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 3,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/108.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/108.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/108.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/108.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/108.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/108.mp3"
+    }
   },
   {
     "id": 109,
-    "name": "Al-Kaafiroon",
-    "arTitle": "سُوْرَةُ الكَافِرُونَ",
+    "name": "Al-Kafirun",
+    "arti": "Orang-Orang kafir",
     "ar": "الكَاَفِرُون",
-    "type": "MECCAN",
-    "ayat": 6
+    "arTitle": "سُوْرَةُ الكَافِرُونَ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 6,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/109.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/109.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/109.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/109.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/109.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/109.mp3"
+    }
   },
   {
     "id": 110,
     "name": "An-Nasr",
-    "arTitle": "سُوْرَةُ النَّصْرِ",
+    "arti": "Pertolongan",
     "ar": "النَّصْر",
-    "type": "MEDINAN",
-    "ayat": 3
+    "arTitle": "سُوْرَةُ النَّصْرِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 3,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/110.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/110.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/110.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/110.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/110.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/110.mp3"
+    }
   },
   {
     "id": 111,
-    "name": "Al-Masad",
-    "arTitle": "سُوْرَةُ المَسَدِ",
+    "name": "Al-Lahab",
+    "arti": "Api Yang Bergejolak",
     "ar": "المَسَد",
-    "type": "MECCAN",
-    "ayat": 5
+    "arTitle": "سُوْرَةُ المَسَدِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 5,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/111.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/111.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/111.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/111.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/111.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/111.mp3"
+    }
   },
   {
     "id": 112,
-    "name": "Al-Ikhlaas",
-    "arTitle": "سُوْرَةُ الإِخْلَاصِ",
+    "name": "Al-Ikhlas",
+    "arti": "Ikhlas",
     "ar": "الإِخْلَاص",
-    "type": "MECCAN",
-    "ayat": 4
+    "arTitle": "سُوْرَةُ الإِخْلَاصِ",
+    "type": "Makkiyyah",
+    "typeEn": "Meccan",
+    "revelation": "Mekah",
+    "ayat": 4,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/112.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/112.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/112.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/112.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/112.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/112.mp3"
+    }
   },
   {
     "id": 113,
     "name": "Al-Falaq",
-    "arTitle": "سُوْرَةُ الفَلَقِ",
+    "arti": "Subuh",
     "ar": "الفَلَق",
-    "type": "MECCAN",
-    "ayat": 5
+    "arTitle": "سُوْرَةُ الفَلَقِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 5,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/113.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/113.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/113.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/113.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/113.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/113.mp3"
+    }
   },
   {
     "id": 114,
-    "name": "An-Naas",
-    "arTitle": "سُوْرَةُ النَّاسِ",
+    "name": "An-Nas",
+    "arti": "Manusia",
     "ar": "النَّاس",
-    "type": "MECCAN",
-    "ayat": 6
+    "arTitle": "سُوْرَةُ النَّاسِ",
+    "type": "Madaniyyah",
+    "typeEn": "Medinan",
+    "revelation": "Madinah",
+    "ayat": 6,
+    "audio_full": {
+      "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/114.mp3",
+      "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/114.mp3",
+      "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/114.mp3",
+      "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/114.mp3",
+      "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/114.mp3",
+      "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/114.mp3"
+    }
   }
 ];
 
@@ -1831,8 +3085,7 @@ const HISTORY = {
         focus: 'Evolusi metodologi verifikasi riwayat dari era klasik ke pendekatan akademik kontemporer.'
       }
     }
-  ]
-};
+  ],
   // ─── PERIODE MAKKAH (570 - 622 M) ───
   makkah: [
     {
