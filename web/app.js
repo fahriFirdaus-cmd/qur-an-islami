@@ -2709,6 +2709,13 @@ const NATGEO_GALLERY_DATA = [
     source: 'Rujukan: QS. Ali \'Imran: 96-97; Sahih Bukhari Kitab Haji; Arsip Sejarah Kota Makkah Al-Mukarramah.'
   },
   {
+    image: 'images/history/card_hira.jpg',
+    tag: '610 M • AWAL RISALAH & WAHYU',
+    title: 'Gua Hira & Permulaan Wahyu Al-Qur\'an',
+    desc: 'Terletak di puncak Jabal An-Nur, di gua hening inilah Nabi Muhammad ﷺ menerima wahyu pertama "Iqra\'" melalui Malaikat Jibril. Peristiwa agung ini menandai dimulainya era kenabian dan transformasi peradaban manusia dari masa jahiliyah menuju cahaya ilmu dan tauhid.',
+    source: 'Rujukan: QS. Al-\'Alaq: 1-5; Sahih Bukhari no. 3; Sirah Ibnu Hisyam.'
+  },
+  {
     image: 'images/history/card_umayyah.jpg',
     tag: '705 M • ERA DINASTI UMAYYAH',
     title: 'Kemegahan Masjid Agung Damaskus (Masjid Umayyah)',
@@ -2716,11 +2723,11 @@ const NATGEO_GALLERY_DATA = [
     source: 'Rujukan: Ibn Asakir, Tarikh Dimashq; K.A.C. Creswell, Early Muslim Architecture.'
   },
   {
-    image: 'images/history/card_manuscript.jpg',
-    tag: 'KODIKOLOGI & ARSIP SEJARAH',
-    title: 'Khazanah Manuskrip & Mushaf Emas Kuno',
-    desc: 'Seni mushaf dan kaligrafi Islam kuno mencerminkan dedikasi tertinggi terhadap pelestarian Al-Qur\'an dan khazanah ilmu pengetahuan. Dari mushaf era Utsmani, perkamen Kufik awal di Samarkand dan Topkapi, hingga manuskrip sains bertinta emas di era keemasan Islam.',
-    source: 'Rujukan: Sheila Blair, Islamic Calligraphy; Arsip Perpustakaan Nasional & Museum Topkapi Istanbul.'
+    image: 'images/history/card_cordoba.jpg',
+    tag: '784 M • PERADABAN ANDALUSIA',
+    title: 'Hutan Lengkungan Masjid Agung Cordoba (Mezquita)',
+    desc: 'Dibangun oleh Abdurrahman I di semenanjung Iberia (Spanyol), Masjid Cordoba menampilkan 856 pilar marmer dan batu jasper dengan lengkungan bergaris merah-putih ganda yang revolusioner. Menjadi simbol puncak kejayaan sains, filsafat, dan toleransi peradaban Islam di Eropa.',
+    source: 'Rujukan: Jerrilynn Dodds, Architecture and Ideology in Early Medieval Spain; Ibn Hayyan, Al-Muqtabis.'
   },
   {
     image: 'images/history/card_abbasiyah.jpg',
@@ -2735,6 +2742,13 @@ const NATGEO_GALLERY_DATA = [
     title: 'Para Astronom Muslim & Presisi Astrolab',
     desc: 'Para ilmuwan seperti Al-Battani, Az-Zarqali, Al-Tusi, dan Al-Biruni menyempurnakan instrumen astrolab, mengoreksi data Ptolemaeus, menghitung kemiringan ekliptika bumi secara akurat, serta memetakan posisi rasi bintang yang nama-namanya masih digunakan dalam astronomi internasional hari ini.',
     source: 'Rujukan: David A. King, In Synchrony with the Heavens (Studies in Astronomical Timekeeping in Islam).'
+  },
+  {
+    image: 'images/history/card_manuscript.jpg',
+    tag: 'KODIKOLOGI & ARSIP SEJARAH',
+    title: 'Khazanah Manuskrip & Mushaf Emas Kuno',
+    desc: 'Seni mushaf dan kaligrafi Islam kuno mencerminkan dedikasi tertinggi terhadap pelestarian Al-Qur\'an dan khazanah ilmu pengetahuan. Dari mushaf era Utsmani, perkamen Kufik awal di Samarkand dan Topkapi, hingga manuskrip sains bertinta emas di era keemasan Islam.',
+    source: 'Rujukan: Sheila Blair, Islamic Calligraphy; Arsip Perpustakaan Nasional & Museum Topkapi Istanbul.'
   }
 ];
 

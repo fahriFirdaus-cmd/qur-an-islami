@@ -6165,48 +6165,43 @@ body.theme-sepia .surah-card-search {
   padding: 0 0 100px;
 }
 
-/* ── Hero Banner ── */
+/* ── Hero Banner (NatGeo Editorial Style) ── */
 .sejarah-hero-banner {
   position: relative;
-  min-height: 480px;
+  min-height: 250px;
   background:
-    linear-gradient(160deg, #0d2b1e 0%, #1a4a30 40%, #0b2318 100%);
+    linear-gradient(135deg, rgba(8, 28, 20, 0.92) 0%, rgba(14, 46, 34, 0.86) 50%, rgba(6, 20, 15, 0.92) 100%),
+    url('images/history/hero_madinah.jpg') center 32% / cover no-repeat;
   overflow: hidden;
   display: flex;
   align-items: center;
+  border-bottom: 2px solid rgba(255, 204, 0, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-/* decorative Islamic geometric pattern overlay */
 .sejarah-hero-banner::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(212,175,55,0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(212,175,55,0.08) 0%, transparent 40%),
-    repeating-conic-gradient(rgba(255,255,255,0.025) 0deg, transparent 10deg, transparent 20deg, rgba(255,255,255,0.025) 30deg);
-  background-size: cover, cover, 80px 80px;
+    radial-gradient(circle at 15% 50%, rgba(255, 204, 0, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 40%);
   pointer-events: none;
 }
 
-/* golden accent strip at top */
 .sejarah-hero-banner::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #d4af37, #f0c040, #d4af37);
-}
-
-.sejarah-hero-overlay {
-  display: none; /* handled by ::before now */
+  background: linear-gradient(90deg, #ffcc00, #d4af37, #ffcc00);
 }
 
 .sejarah-hero-content {
   position: relative;
   z-index: 2;
-  padding: 52px 48px 48px;
-  max-width: 900px;
+  padding: 32px 36px 28px;
+  max-width: 980px;
 }
 
 .sejarah-badge-row {
@@ -6214,74 +6209,80 @@ body.theme-sepia .surah-card-search {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .sejarah-pill-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   color: #e2f0e8;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 5px 14px;
+  padding: 4px 12px;
   border-radius: 50px;
   backdrop-filter: blur(4px);
 }
 
 .sejarah-pill-badge.gold {
-  background: rgba(212,175,55,0.2);
-  border-color: rgba(212,175,55,0.45);
-  color: #f0c040;
+  background: rgba(255, 204, 0, 0.18);
+  border-color: rgba(255, 204, 0, 0.4);
+  color: #ffcc00;
 }
 
 .sejarah-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
   font-weight: 800;
   color: #ffffff;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  line-height: 1.25;
+  margin-bottom: 10px;
+  border-left: 5px solid #ffcc00;
+  padding-left: 14px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .sejarah-hero-desc {
-  font-size: 0.97rem;
-  line-height: 1.75;
-  color: rgba(210,235,220,0.88);
-  max-width: 680px;
-  margin-bottom: 32px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(215, 235, 225, 0.88);
+  max-width: 720px;
+  margin-bottom: 18px;
+  padding-left: 14px;
 }
 
 /* Stats Grid */
 .sejarah-stats-grid {
   display: flex;
-  gap: 14px;
+  gap: 10px;
   flex-wrap: wrap;
+  padding-left: 14px;
 }
 
 .sejarah-stat-card {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 12px;
-  padding: 12px 18px;
+  gap: 9px;
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 7px 14px;
   backdrop-filter: blur(6px);
   transition: all 0.25s ease;
 }
+
 .sejarah-stat-card:hover {
-  background: rgba(255,255,255,0.14);
+  background: rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 204, 0, 0.4);
   transform: translateY(-2px);
 }
 
 .stat-icon-wrap {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   line-height: 1;
 }
 
@@ -6293,15 +6294,15 @@ body.theme-sepia .surah-card-search {
 
 .stat-number {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
-  color: #f0c040;
+  color: #ffcc00;
   line-height: 1.2;
 }
 
 .stat-label {
-  font-size: 0.7rem;
-  color: rgba(200,230,210,0.75);
+  font-size: 0.68rem;
+  color: rgba(200, 230, 210, 0.8);
   font-weight: 600;
   letter-spacing: 0.3px;
 }
@@ -6758,195 +6759,39 @@ body.theme-sepia .surah-card-search {
   color: #f0c040;
 }
 
-/* ── Era Filter Tabs ── */
-.sejarah-filter-tabs {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 24px 32px 0;
+/* ── Gallery Secondary Row ── */
+.natgeo-secondary-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
 }
 
-.era-tab-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  padding: 8px 18px;
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: all 0.22s ease;
-}
-
-.era-tab-btn:hover {
-  background: var(--sage-50);
-  border-color: var(--sage-200);
-  color: var(--sage-700);
-}
-
-.era-tab-btn.active {
-  background: var(--sage-700);
-  border-color: var(--sage-700);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(45,80,70,0.25);
-}
-
-.era-tab-icon { font-size: 0.95rem; }
-
-.era-tab-count {
-  background: rgba(255,255,255,0.2);
-  border-radius: 50px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  padding: 1px 7px;
-  min-width: 20px;
-  text-align: center;
-}
-
-.era-tab-btn:not(.active) .era-tab-count {
-  background: var(--bg-input);
-  color: var(--text-muted);
-}
-
-/* Era Context Card */
-.era-context-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--sage-500);
+.natgeo-secondary-row .natgeo-card {
+  height: 220px;
   border-radius: 12px;
-  padding: 18px 22px;
-  margin: 16px 32px 0;
 }
 
-.era-context-icon { font-size: 1.8rem; line-height: 1; }
-
-.era-context-body { flex: 1; }
-
-.era-context-title {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 6px;
-}
-
-.era-context-desc {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-}
-
-/* ── Timeline ── */
+/* ── Container Alignments for History Page ── */
+.sejarah-controls-bar,
+.era-tabs,
+.era-context-card,
 .timeline-container {
-  padding: 24px 32px 0;
-  display: grid;
-  gap: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
-.timeline-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 24px;
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 20px;
-  align-items: start;
-  transition: all 0.25s ease;
-  cursor: pointer;
+.timeline-container {
+  position: relative;
+  padding-left: 36px;
+  margin-top: 10px;
 }
 
-.timeline-card:hover {
-  border-color: var(--sage-300);
-  box-shadow: var(--shadow-md);
-  transform: translateX(4px);
-}
-
-.timeline-year-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.timeline-year-badge {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--sage-600);
-  background: var(--sage-50);
-  border: 1px solid var(--sage-200);
-  border-radius: 8px;
-  padding: 6px 10px;
-  text-align: center;
-  line-height: 1.4;
-  width: 100%;
-}
-
-.timeline-icon-big {
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.timeline-body { flex: 1; }
-
-.timeline-era-tag {
-  display: inline-block;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--sage-600);
-  background: var(--sage-50);
-  border-radius: 4px;
-  padding: 2px 8px;
-  margin-bottom: 8px;
-}
-
-.timeline-title {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.35;
-  margin-bottom: 8px;
-}
-
-.timeline-desc {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: 12px;
-}
-
-.timeline-tags {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.timeline-tag {
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--bg-input);
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  padding: 3px 10px;
-}
-
-/* ── Responsive ── */
+/* ── Responsive Rules for History Page ── */
 @media (max-width: 900px) {
   .natgeo-mosaic-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 260px 200px 200px;
+    grid-template-rows: 240px 180px 180px;
   }
   .natgeo-card-lead {
     grid-column: 1 / 3;
@@ -6956,15 +6801,24 @@ body.theme-sepia .surah-card-search {
     grid-column: 1 / 3;
     grid-row: auto;
   }
+  .natgeo-secondary-row {
+    grid-template-columns: 1fr;
+  }
   .sejarah-hero-content {
-    padding: 36px 24px 32px;
+    padding: 28px 22px 24px;
   }
   .natgeo-gallery-container,
-  .sejarah-filter-tabs,
+  .sejarah-controls-bar,
+  .era-tabs,
   .era-context-card,
   .timeline-container {
-    padding-left: 18px;
-    padding-right: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .timeline-container {
+    padding-left: 32px;
   }
 }
 
@@ -6978,27 +6832,27 @@ body.theme-sepia .surah-card-search {
     grid-column: auto;
     grid-row: auto;
   }
-  .sejarah-stats-grid { gap: 10px; }
-  .sejarah-stat-card { padding: 10px 14px; }
-  .timeline-card {
-    grid-template-columns: 70px 1fr;
-    gap: 14px;
+  .natgeo-secondary-row {
+    grid-template-columns: 1fr;
   }
+  .sejarah-stats-grid { gap: 8px; }
+  .sejarah-stat-card { padding: 8px 12px; }
 }
 
-/* Dark / Malam theme adjustments */
+/* ── Dark / Malam theme adjustments ── */
 body.theme-malam .sejarah-hero-banner,
 body.theme-dark .sejarah-hero-banner {
-  background: linear-gradient(160deg, #060e14 0%, #0c1e2c 40%, #040c12 100%);
+  background:
+    linear-gradient(135deg, rgba(6, 14, 20, 0.92) 0%, rgba(12, 30, 44, 0.86) 50%, rgba(4, 12, 18, 0.92) 100%),
+    url('images/history/hero_madinah.jpg') center 32% / cover no-repeat;
+  border-bottom-color: rgba(56, 189, 248, 0.35);
 }
 
 body.theme-malam .sejarah-hero-banner::before,
 body.theme-dark .sejarah-hero-banner::before {
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(56,189,248,0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(56,189,248,0.05) 0%, transparent 40%),
-    repeating-conic-gradient(rgba(255,255,255,0.015) 0deg, transparent 10deg, transparent 20deg, rgba(255,255,255,0.015) 30deg);
-  background-size: cover, cover, 80px 80px;
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 40%);
 }
 
 body.theme-malam .sejarah-hero-banner::after,
@@ -7018,6 +6872,6 @@ body.theme-dark .era-context-title {
 
 body.theme-malam .timeline-card:hover,
 body.theme-dark .timeline-card:hover {
-  border-color: rgba(56,189,248,0.4);
+  border-color: rgba(56, 189, 248, 0.4);
 }
 
