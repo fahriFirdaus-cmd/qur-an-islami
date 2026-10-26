@@ -1,0 +1,146 @@
+{
+  "number": 95,
+  "name": "At-Tin",
+  "name_arabic": "التين",
+  "name_translation": "Buah Tin",
+  "revelation": "Mekah",
+  "numberOfAyahs": 8,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/095.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/095.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/095.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/095.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/095.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/095.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلتِّينِ وَٱلزَّيْتُونِ",
+      "arab_kemenag": "وَالتِّيْنِ وَالزَّيْتُوْنِۙ",
+      "latin": "Wat-tīni waz-zaitūn(i).",
+      "translation_id": "Demi (buah) tin dan (buah) zaitun,",
+      "translation_en": "By the fig and the olive",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَطُورِ سِينِينَ",
+      "arab_kemenag": "وَطُوْرِ سِيْنِيْنَۙ",
+      "latin": "Wa ṭūri sīnīn(a).",
+      "translation_id": "demi gunung Sinai,",
+      "translation_en": "And [by] Mount Sinai",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "وَهَٰذَا ٱلْبَلَدِ ٱلْأَمِينِ",
+      "arab_kemenag": "وَهٰذَا الْبَلَدِ الْاَمِيْنِۙ",
+      "latin": "Wa hāżal-baladil-amīn(i).",
+      "translation_id": "dan demi negeri (Makkah) yang aman ini,",
+      "translation_en": "And [by] this secure city [Makkah],",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِىٓ أَحْسَنِ تَقْوِيمٍۢ",
+      "arab_kemenag": "لَقَدْ خَلَقْنَا الْاِنْسَانَ فِيْٓ اَحْسَنِ تَقْوِيْمٍۖ",
+      "latin": "Laqad khalaqnal-insāna fī aḥsani taqwīm(in).",
+      "translation_id": "sungguh, Kami benar-benar telah menciptakan manusia dalam bentuk yang sebaik-baiknya.",
+      "translation_en": "We have certainly created man in the best of stature;",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "ثُمَّ رَدَدْنَٰهُ أَسْفَلَ سَٰفِلِينَ",
+      "arab_kemenag": "ثُمَّ رَدَدْنٰهُ اَسْفَلَ سٰفِلِيْنَۙ",
+      "latin": "Ṡumma radadnāhu asfala sāfilīn(a).",
+      "translation_id": "Kemudian, kami kembalikan dia ke tempat yang serendah-rendahnya,",
+      "translation_en": "Then We return him to the lowest of the low,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۢ",
+      "arab_kemenag": "اِلَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ فَلَهُمْ اَجْرٌ غَيْرُ مَمْنُوْنٍۗ",
+      "latin": "Illal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti falahum ajrun gairu mamnūn(in).",
+      "translation_id": "kecuali orang-orang yang beriman dan mengerjakan kebajikan. Maka, mereka akan mendapat pahala yang tidak putus-putusnya.",
+      "translation_en": "Except for those who believe and do righteous deeds, for they will have a reward uninterrupted.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "فَمَا يُكَذِّبُكَ بَعْدُ بِٱلدِّينِ",
+      "arab_kemenag": "فَمَا يُكَذِّبُكَ بَعْدُ بِالدِّيْنِۗ",
+      "latin": "Famā yukażżibuka ba‘du bid-dīn(i).",
+      "translation_id": "Maka, apa alasanmu (wahai orang kafir) mendustakan hari Pembalasan setelah (adanya bukti-bukti) itu?",
+      "translation_en": "So what yet causes you to deny the Recompense?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "أَلَيْسَ ٱللَّهُ بِأَحْكَمِ ٱلْحَٰكِمِينَ",
+      "arab_kemenag": "اَلَيْسَ اللّٰهُ بِاَحْكَمِ الْحٰكِمِيْنَ ࣖ",
+      "latin": "Alaisallāhu bi'aḥkamil-ḥākimīn(a).",
+      "translation_id": "Bukankah Allah hakim yang paling adil?",
+      "translation_en": "Is not Allah the most just of judges?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/095008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/095008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/095008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/095008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/095008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/095008.mp3"
+      }
+    }
+  ]
+}

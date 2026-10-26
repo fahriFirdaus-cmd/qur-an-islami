@@ -1,0 +1,258 @@
+{
+  "number": 91,
+  "name": "Asy-Syams",
+  "name_arabic": "الشمس",
+  "name_translation": "Matahari",
+  "revelation": "Mekah",
+  "numberOfAyahs": 15,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/091.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/091.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/091.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/091.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/091.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/091.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "arab_kemenag": "وَالشَّمْسِ وَضُحٰىهَاۖ",
+      "latin": "Wasy-syamsi wa ḍuḥāhā.",
+      "translation_id": "Demi matahari dan sinarnya pada waktu duha (ketika matahari naik sepenggalah),",
+      "translation_en": "By the sun and its brightness",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+      "arab_kemenag": "وَالْقَمَرِ اِذَا تَلٰىهَاۖ",
+      "latin": "Wal-qamari iżā talāhā.",
+      "translation_id": "demi bulan saat mengiringinya,",
+      "translation_en": "And [by] the moon when it follows it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+      "arab_kemenag": "وَالنَّهَارِ اِذَا جَلّٰىهَاۖ",
+      "latin": "Wan-nahāri iżā jallāhā.",
+      "translation_id": "demi siang saat menampakkannya,",
+      "translation_en": "And [by] the day when it displays it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+      "arab_kemenag": "وَالَّيْلِ اِذَا يَغْشٰىهَاۖ",
+      "latin": "Wal-laili iżā yagsyāhā.",
+      "translation_id": "demi malam saat menutupinya (gelap gulita),",
+      "translation_en": "And [by] the night when it covers it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+      "arab_kemenag": "وَالسَّمَاۤءِ وَمَا بَنٰىهَاۖ",
+      "latin": "Was-samā'i wa mā banāhā.",
+      "translation_id": "demi langit serta pembuatannya,",
+      "translation_en": "And [by] the sky and He who constructed it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+      "arab_kemenag": "وَالْاَرْضِ وَمَا طَحٰىهَاۖ",
+      "latin": "Wal-arḍi wa mā ṭaḥāhā.",
+      "translation_id": "demi bumi serta penghamparannya,",
+      "translation_en": "And [by] the earth and He who spread it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "وَنَفْسٍۢ وَمَا سَوَّىٰهَا",
+      "arab_kemenag": "وَنَفْسٍ وَّمَا سَوّٰىهَاۖ",
+      "latin": "Wa nafsiw wa mā sawwāhā.",
+      "translation_id": "dan demi jiwa serta penyempurnaan (ciptaan)-nya,",
+      "translation_en": "And [by] the soul and He who proportioned it",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
+      "arab_kemenag": "فَاَلْهَمَهَا فُجُوْرَهَا وَتَقْوٰىهَاۖ",
+      "latin": "Fa alhamahā fujūrahā wa taqwāhā.",
+      "translation_id": "lalu Dia mengilhamkan kepadanya (jalan) kejahatan dan ketakwaannya,",
+      "translation_en": "And inspired it [with discernment of] its wickedness and its righteousness,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+      "arab_kemenag": "قَدْ اَفْلَحَ مَنْ زَكّٰىهَاۖ",
+      "latin": "Qad aflaḥa man zakkāhā.",
+      "translation_id": "sungguh beruntung orang yang menyucikannya (jiwa itu)",
+      "translation_en": "He has succeeded who purifies it,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
+      "arab_kemenag": "وَقَدْ خَابَ مَنْ دَسّٰىهَاۗ",
+      "latin": "Wa qad khāba man dassāhā.",
+      "translation_id": "dan sungguh rugi orang yang mengotorinya.",
+      "translation_en": "And he has failed who instills it [with corruption].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+      "arab_kemenag": "كَذَّبَتْ ثَمُوْدُ بِطَغْوٰىهَآ  ۖ",
+      "latin": "Każżabat ṡamūdu biṭagwāhā.",
+      "translation_id": "(Kaum) Samud telah mendustakan (rasulnya) karena mereka melampaui batas",
+      "translation_en": "Thamud denied [their prophet] by reason of their transgression,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091011.mp3"
+      }
+    },
+    {
+      "number": 12,
+      "arab": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
+      "arab_kemenag": "اِذِ انْۢبَعَثَ اَشْقٰىهَاۖ",
+      "latin": "Iżimba‘aṡa asyqāhā.",
+      "translation_id": "ketika orang yang paling celaka di antara mereka bangkit (untuk menyembelih unta betina Allah).",
+      "translation_en": "When the most wretched of them was sent forth.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091012.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091012.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091012.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091012.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091012.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091012.mp3"
+      }
+    },
+    {
+      "number": 13,
+      "arab": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَٰهَا",
+      "arab_kemenag": "فَقَالَ لَهُمْ رَسُوْلُ اللّٰهِ نَاقَةَ اللّٰهِ وَسُقْيٰهَاۗ",
+      "latin": "Fa qāla lahum rasūlullāhi nāqatallāhi wa suqyāhā.",
+      "translation_id": "Rasul Allah (Saleh) lalu berkata kepada mereka, “(Biarkanlah) unta betina Allah ini beserta minumannya.”",
+      "translation_en": "And the messenger of Allah [Salih] said to them, \"[Do not harm] the she-camel of Allah or [prevent her from] her drink.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091013.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091013.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091013.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091013.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091013.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091013.mp3"
+      }
+    },
+    {
+      "number": 14,
+      "arab": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
+      "arab_kemenag": "فَكَذَّبُوْهُ فَعَقَرُوْهَاۖ فَدَمْدَمَ عَلَيْهِمْ رَبُّهُمْ بِذَنْۢبِهِمْ فَسَوّٰىهَاۖ",
+      "latin": "Fa każżabūhu fa ‘aqarūhā fa damdama ‘alaihim rabbuhum biżambihim fa sawwāhā.",
+      "translation_id": "Namun, mereka kemudian mendustakannya (Saleh) dan menyembelih (unta betina) itu. Maka, Tuhan membinasakan mereka karena dosa-dosanya, lalu meratakan mereka (dengan tanah).",
+      "translation_en": "But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal [upon all of them].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091014.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091014.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091014.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091014.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091014.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091014.mp3"
+      }
+    },
+    {
+      "number": 15,
+      "arab": "وَلَا يَخَافُ عُقْبَٰهَا",
+      "arab_kemenag": "وَلَا يَخَافُ عُقْبٰهَا ࣖ",
+      "latin": "Wa lā yakhāfu ‘uqbāhā.",
+      "translation_id": "Dia tidak takut terhadap akibatnya.",
+      "translation_en": "And He does not fear the consequence thereof.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/091015.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/091015.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/091015.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/091015.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/091015.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/091015.mp3"
+      }
+    }
+  ]
+}

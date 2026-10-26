@@ -1,0 +1,66 @@
+{
+  "number": 110,
+  "name": "An-Nasr",
+  "name_arabic": "النصر",
+  "name_translation": "Pertolongan",
+  "revelation": "Madinah",
+  "numberOfAyahs": 3,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/110.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/110.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/110.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/110.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/110.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/110.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "arab_kemenag": "اِذَا جَاۤءَ نَصْرُ اللّٰهِ وَالْفَتْحُۙ",
+      "latin": "Iżā jā'a naṣrullāhi wal-fatḥ(u).",
+      "translation_id": "Apabila telah datang pertolongan Allah dan kemenangan",
+      "translation_en": "When the victory of Allah has come and the conquest,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/110001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/110001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/110001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/110001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/110001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/110001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًۭا",
+      "arab_kemenag": "وَرَاَيْتَ النَّاسَ يَدْخُلُوْنَ فِيْ دِيْنِ اللّٰهِ اَفْوَاجًاۙ",
+      "latin": "Wa ra'aitan-nāsa yadkhulūna fī dīnillāhi afwājā(n).",
+      "translation_id": "dan engkau melihat manusia berbondong-bondong masuk agama Allah,",
+      "translation_en": "And you see the people entering into the religion of Allah in multitudes,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/110002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/110002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/110002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/110002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/110002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/110002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "arab_kemenag": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُۗ اِنَّهٗ كَانَ تَوَّابًا ࣖ",
+      "latin": "Fasabbiḥ biḥamdi rabbika wastagfirh(u), innahū kāna tawwābā(n).",
+      "translation_id": "bertasbihlah dengan memuji Tuhanmu dan mohonlah ampun kepada-Nya. Sesungguhnya Dia Maha Penerima tobat.",
+      "translation_en": "Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/110003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/110003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/110003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/110003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/110003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/110003.mp3"
+      }
+    }
+  ]
+}

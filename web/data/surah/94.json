@@ -1,0 +1,146 @@
+{
+  "number": 94,
+  "name": "Al-Insyirah",
+  "name_arabic": "الشرح",
+  "name_translation": "Lapang",
+  "revelation": "Mekah",
+  "numberOfAyahs": 8,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/094.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/094.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/094.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/094.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/094.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/094.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "arab_kemenag": "اَلَمْ نَشْرَحْ لَكَ صَدْرَكَۙ",
+      "latin": "Alam nasyraḥ laka ṣadrak(a).",
+      "translation_id": "Bukankah Kami telah melapangkan dadamu (Nabi Muhammad),",
+      "translation_en": "Did We not expand for you, [O Muhammad], your breast?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+      "arab_kemenag": "وَوَضَعْنَا عَنْكَ وِزْرَكَۙ",
+      "latin": "Wa waḍa‘nā ‘anka wizrak(a).",
+      "translation_id": "meringankan beban (tugas-tugas kenabian) darimu",
+      "translation_en": "And We removed from you your burden",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+      "arab_kemenag": "الَّذِيْٓ اَنْقَضَ ظَهْرَكَۙ",
+      "latin": "Allażī anqaḍa ẓahrak(a).",
+      "translation_id": "yang memberatkan punggungmu,",
+      "translation_en": "Which had weighed upon your back",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "arab_kemenag": "وَرَفَعْنَا لَكَ ذِكْرَكَۗ",
+      "latin": "Wa rafa‘nā laka żikrak(a).",
+      "translation_id": "dan meninggikan (derajat)-mu (dengan selalu) menyebut-nyebut (nama)-mu?",
+      "translation_en": "And raised high for you your repute.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "arab_kemenag": "فَاِنَّ مَعَ الْعُسْرِ يُسْرًاۙ",
+      "latin": "Fa'inna ma‘al-‘usri yusrā(n).",
+      "translation_id": "Maka, sesungguhnya beserta kesulitan ada kemudahan.",
+      "translation_en": "For indeed, with hardship [will be] ease.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
+      "arab_kemenag": "اِنَّ مَعَ الْعُسْرِ يُسْرًاۗ",
+      "latin": "Inna ma‘al-‘usri yusrā(n).",
+      "translation_id": "Sesungguhnya beserta kesulitan ada kemudahan.",
+      "translation_en": "Indeed, with hardship [will be] ease.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "arab_kemenag": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
+      "latin": "Fa iżā faragta fanṣab.",
+      "translation_id": "Apabila engkau telah selesai (dengan suatu kebajikan), teruslah bekerja keras (untuk kebajikan yang lain)",
+      "translation_en": "So when you have finished [your duties], then stand up [for worship].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "arab_kemenag": "وَاِلٰى رَبِّكَ فَارْغَبْ ࣖ",
+      "latin": "Wa ilā rabbika fargab.",
+      "translation_id": "dan hanya kepada Tuhanmu berharaplah!",
+      "translation_en": "And to your Lord direct [your] longing.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/094008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/094008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/094008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/094008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/094008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/094008.mp3"
+      }
+    }
+  ]
+}

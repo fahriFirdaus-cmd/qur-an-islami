@@ -1,0 +1,82 @@
+{
+  "number": 112,
+  "name": "Al-Ikhlas",
+  "name_arabic": "الاخلاص",
+  "name_translation": "Ikhlas",
+  "revelation": "Mekah",
+  "numberOfAyahs": 4,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/112.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/112.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/112.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/112.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/112.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/112.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "arab_kemenag": "قُلْ هُوَ اللّٰهُ اَحَدٌۚ",
+      "latin": "Qul huwallāhu aḥad(un).",
+      "translation_id": "Katakanlah (Nabi Muhammad), “Dialah Allah Yang Maha Esa.",
+      "translation_en": "Say, \"He is Allah, [who is] One,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/112001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/112001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/112001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/112001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/112001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/112001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "ٱللَّهُ ٱلصَّمَدُ",
+      "arab_kemenag": "اَللّٰهُ الصَّمَدُۚ",
+      "latin": "Allāhuṣ-ṣamad(u).",
+      "translation_id": "Allah tempat meminta segala sesuatu.",
+      "translation_en": "Allah, the Eternal Refuge.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/112002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/112002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/112002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/112002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/112002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/112002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "arab_kemenag": "لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ",
+      "latin": "Lam yalid wa lam yūlad.",
+      "translation_id": "Dia tidak beranak dan tidak pula diperanakkan",
+      "translation_en": "He neither begets nor is born,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/112003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/112003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/112003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/112003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/112003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/112003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "arab_kemenag": "وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ ࣖ",
+      "latin": "Wa lam yakul lahū kufuwan aḥad(un).",
+      "translation_id": "serta tidak ada sesuatu pun yang setara dengan-Nya.”",
+      "translation_en": "Nor is there to Him any equivalent.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/112004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/112004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/112004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/112004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/112004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/112004.mp3"
+      }
+    }
+  ]
+}

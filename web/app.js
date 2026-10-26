@@ -19,6 +19,7 @@ const state = {
   speed: 1.0,
   language: localStorage.getItem('qh_lang') || 'en',
   translation: localStorage.getItem('qh_trans') || 'sahih',
+  rasm: localStorage.getItem('qh_rasm') || 'madinah',
   bookmarks: JSON.parse(localStorage.getItem('qh_bookmarks') || '[]'),
 };
 
@@ -86,6 +87,8 @@ const I18N = {
     settingsSecTypography: 'Typography & Text',
     settingNameAppLang: 'Application Language',
     settingDescAppLang: 'Choose interface & translation language',
+    settingNameRasm: 'Mushaf & Rasm Standard',
+    settingDescRasm: 'Choose Rasm Uthmani script standard',
     settingNameFont: 'Arabic Font',
     settingDescFont: 'Choose Uthmani script style',
     settingNameTrans: 'Translation',
@@ -122,6 +125,18 @@ const I18N = {
     cauAssignLabel: 'Link to Surah:',
     cauPlayNow: '▶ Play Now',
     cauClear: '✕ Reset',
+    lastReadBadge: 'LAST READ',
+    lastReadBtnText: 'Continue',
+    btnChooseSurah: 'Choose Surah ▾',
+    mQuickQuran: 'Al-Qur\'an',
+    mQuickAudio: 'Audio Qori',
+    mQuickJejak: 'Revelations',
+    mQuickSejarah: 'History',
+    mobLabelBeranda: 'Home',
+    mobLabelQuran: 'Quran',
+    mobLabelAudio: 'Audio',
+    mobLabelSejarah: 'History',
+    mobLabelPengaturan: 'Settings',
   },
   id: {
     navBeranda: 'Beranda',
@@ -179,6 +194,8 @@ const I18N = {
     settingsSecTypography: 'Tipografi & Teks',
     settingNameAppLang: 'Bahasa Aplikasi',
     settingDescAppLang: 'Pilih bahasa antarmuka & terjemahan ayat',
+    settingNameRasm: 'Standar Rasm / Mushaf',
+    settingDescRasm: 'Pilih kaidah teks Rasm Utsmani mushaf',
     settingNameFont: 'Huruf Arab',
     settingDescFont: 'Pilih gaya penulisan rasm Utsmani',
     settingNameTrans: 'Versi Terjemahan',
@@ -215,6 +232,18 @@ const I18N = {
     cauAssignLabel: 'Hubungkan ke Surah:',
     cauPlayNow: '▶ Putar Sekarang',
     cauClear: '✕ Reset',
+    lastReadBadge: 'TERAKHIR DIBACA',
+    lastReadBtnText: 'Lanjutkan',
+    btnChooseSurah: 'Pilih Surah ▾',
+    mQuickQuran: 'Al-Qur\'an',
+    mQuickAudio: 'Audio Qori',
+    mQuickJejak: 'Asbabun Nuzul',
+    mQuickSejarah: 'Sejarah',
+    mobLabelBeranda: 'Beranda',
+    mobLabelQuran: 'Al-Qur\'an',
+    mobLabelAudio: 'Audio',
+    mobLabelSejarah: 'Sejarah',
+    mobLabelPengaturan: 'Setelan',
   }
 };
 
@@ -327,6 +356,8 @@ function applyLanguage(lang, notify = true) {
   setText('settings-sec-typography', dict.settingsSecTypography);
   setText('setting-name-app-lang', dict.settingNameAppLang);
   setText('setting-desc-app-lang', dict.settingDescAppLang);
+  setText('setting-name-rasm', dict.settingNameRasm);
+  setText('setting-desc-rasm', dict.settingDescRasm);
   setText('setting-name-font', dict.settingNameFont);
   setText('setting-desc-font', dict.settingDescFont);
   setText('setting-name-trans', dict.settingNameTrans);
@@ -362,6 +393,9 @@ function applyLanguage(lang, notify = true) {
   const appLangSelect = document.getElementById('app-lang-select');
   if (appLangSelect) appLangSelect.value = lang;
 
+  const rasmSelect = document.getElementById('rasm-select');
+  if (rasmSelect) rasmSelect.value = state.rasm;
+
   const transSelect = document.getElementById('trans-select');
   if (transSelect) transSelect.value = (lang === 'en' ? 'sahih' : 'kemenag');
 
@@ -373,6 +407,22 @@ function applyLanguage(lang, notify = true) {
   }
   renderSidebarSurahList();
   renderVerses(state.currentSurah);
+
+  // Last Read & Mobile Elements
+  setText('last-read-badge', dict.lastReadBadge);
+  setText('last-read-btn-text', dict.lastReadBtnText);
+  const chooseSurahSpan = document.querySelector('#btn-choose-surah span');
+  if (chooseSurahSpan) chooseSurahSpan.textContent = dict.btnChooseSurah.replace(' ▾', '');
+  setText('m-quick-quran', dict.mQuickQuran);
+  setText('m-quick-audio', dict.mQuickAudio);
+  setText('m-quick-jejak', dict.mQuickJejak);
+  setText('m-quick-sejarah', dict.mQuickSejarah);
+  setText('mob-label-beranda', dict.mobLabelBeranda);
+  setText('mob-label-quran', dict.mobLabelQuran);
+  setText('mob-label-audio', dict.mobLabelAudio);
+  setText('mob-label-sejarah', dict.mobLabelSejarah);
+  setText('mob-label-pengaturan', dict.mobLabelPengaturan);
+  renderLastReadCard();
 
   if (notify) {
     showToast(dict.langChangedToast, 'success');
@@ -458,11 +508,36 @@ document.addEventListener('DOMContentLoaded', () => {
 // NAVIGATION & HEADER CONTROLS
 // ══════════════════════════════════════════
 function initNavigation() {
-  // Mobile Hamburger
   const hamburger = document.getElementById('hamburger-btn');
   const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  const closeBtn = document.getElementById('sidebar-close-btn');
+
+  // Mobile Hamburger Toggle
   hamburger?.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
+    const isOpen = sidebar?.classList.toggle('open');
+    if (isOpen) {
+      overlay?.classList.add('open');
+    } else {
+      overlay?.classList.remove('open');
+    }
+  });
+
+  // Sidebar Close Button & Backdrop Overlay
+  closeBtn?.addEventListener('click', () => {
+    sidebar?.classList.remove('open');
+    overlay?.classList.remove('open');
+  });
+
+  overlay?.addEventListener('click', () => {
+    sidebar?.classList.remove('open');
+    overlay?.classList.remove('open');
+  });
+
+  // Quick Surah Picker button in Reader Header on Mobile
+  document.getElementById('btn-choose-surah')?.addEventListener('click', () => {
+    sidebar?.classList.add('open');
+    overlay?.classList.add('open');
   });
 
   // Language Switcher Toggle Button
@@ -471,17 +546,16 @@ function initNavigation() {
     applyLanguage(nextLang, true);
   });
 
-  // Close sidebar on outside click on mobile
-  document.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768 && sidebar?.classList.contains('open')) {
-      if (!sidebar.contains(e.target) && e.target !== hamburger) {
-        sidebar.classList.remove('open');
-      }
-    }
+  // Topbar Navigation Tabs (Desktop)
+  document.querySelectorAll('.nav-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const page = btn.dataset.page;
+      if (page) navigateTo(page);
+    });
   });
 
-  // Topbar Navigation Tabs
-  document.querySelectorAll('.nav-pill').forEach(btn => {
+  // Mobile Bottom Navigation Tabs (HP / Smartphone)
+  document.querySelectorAll('.mobile-nav-item').forEach(btn => {
     btn.addEventListener('click', () => {
       const page = btn.dataset.page;
       if (page) navigateTo(page);
@@ -555,17 +629,23 @@ function navigateTo(page) {
   const target = document.getElementById(`page-${page}`);
   if (target) target.classList.add('active');
 
-  // Update nav pills in topbar
+  // Update nav pills in topbar (Desktop)
   document.querySelectorAll('.nav-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.page === page);
+  });
+
+  // Update mobile bottom nav items (HP)
+  document.querySelectorAll('.mobile-nav-item').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.page === page);
   });
 
   // Scroll main container to top smoothly
   document.querySelector('.content-area')?.scrollTo({ top: 0, behavior: 'smooth' });
 
-  // Close sidebar on mobile
+  // Close sidebar drawer & overlay on mobile
   if (window.innerWidth <= 768) {
     document.getElementById('sidebar')?.classList.remove('open');
+    document.getElementById('sidebar-overlay')?.classList.remove('open');
   }
 }
 
@@ -704,25 +784,43 @@ function jumpToVerse(surahId, verseNum) {
 // ══════════════════════════════════════════
 // SIDEBAR SURAH LIST
 // ══════════════════════════════════════════
+let currentSidebarFilterType = 'all';
+
 function initSidebarSurahList() {
   renderSidebarSurahList();
 
   const searchInput = document.getElementById('sidebar-surah-search');
   searchInput?.addEventListener('input', (e) => {
-    renderSidebarSurahList(e.target.value);
+    renderSidebarSurahList(e.target.value, currentSidebarFilterType);
+  });
+
+  // Filter tabs: Semua, Makkiyyah, Madaniyyah
+  document.querySelectorAll('.s-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.s-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSidebarFilterType = btn.dataset.type || 'all';
+      renderSidebarSurahList(searchInput?.value || '', currentSidebarFilterType);
+    });
   });
 }
 
-function renderSidebarSurahList(filter = '') {
+function renderSidebarSurahList(filter = '', typeFilter = 'all') {
   const container = document.getElementById('sidebar-surah-list');
   if (!container) return;
 
-  const filtered = ALL_SURAHS.filter(s =>
-    s.name.toLowerCase().includes(filter.toLowerCase()) ||
-    s.ar.includes(filter) ||
-    (s.arTitle && s.arTitle.includes(filter)) ||
-    s.id.toString().includes(filter)
-  );
+  const filtered = ALL_SURAHS.filter(s => {
+    const matchText = s.name.toLowerCase().includes(filter.toLowerCase()) ||
+      s.ar.includes(filter) ||
+      (s.arTitle && s.arTitle.includes(filter)) ||
+      s.id.toString().includes(filter);
+
+    const matchType = typeFilter === 'all' ||
+      (typeFilter === 'Makkiyyah' && s.type.toLowerCase().includes('makk')) ||
+      (typeFilter === 'Madaniyyah' && s.type.toLowerCase().includes('madan'));
+
+    return matchText && matchType;
+  });
 
   container.innerHTML = filtered.map(s => `
     <div class="surah-item ${s.id === state.currentSurah ? 'active' : ''}" 
@@ -745,14 +843,21 @@ function renderSidebarSurahList(filter = '') {
 function initQuranPage() {
   loadSurah(1);
 
-  // Font Slider
+  // Font Slider & Steppers
   const slider = document.getElementById('font-slider');
   slider?.addEventListener('input', (e) => {
     state.fontSize = parseInt(e.target.value);
-    document.getElementById('font-size-label').textContent = `${state.fontSize}px`;
-    document.querySelectorAll('.verse-arabic').forEach(el => {
-      el.style.fontSize = `${state.fontSize}px`;
-    });
+    updateFontSizeUI();
+  });
+
+  document.getElementById('font-dec-btn')?.addEventListener('click', () => {
+    state.fontSize = Math.max(24, state.fontSize - 2);
+    updateFontSizeUI();
+  });
+
+  document.getElementById('font-inc-btn')?.addEventListener('click', () => {
+    state.fontSize = Math.min(54, state.fontSize + 2);
+    updateFontSizeUI();
   });
 
   // Play All Button in Reader Header
@@ -794,11 +899,83 @@ function initQuranPage() {
   });
 }
 
+function updateFontSizeUI() {
+  const slider = document.getElementById('font-slider');
+  if (slider) slider.value = state.fontSize;
+  const label = document.getElementById('font-size-label');
+  if (label) label.textContent = `${state.fontSize}px`;
+  document.querySelectorAll('.verse-arabic').forEach(el => {
+    el.style.fontSize = `${state.fontSize}px`;
+  });
+}
+
+// ─── Last Read Storage & Functions ───
+function saveLastRead(surahId, verseNum = 1) {
+  const surah = ALL_SURAHS.find(s => s.id === surahId);
+  if (!surah) return;
+  const data = {
+    surahId,
+    verseNum,
+    name: surah.name,
+    ar: surah.ar,
+    type: surah.type,
+    time: Date.now()
+  };
+  localStorage.setItem('qh_last_read', JSON.stringify(data));
+  renderLastReadCard();
+}
+
+function renderLastReadCard() {
+  const card = document.getElementById('last-read-card');
+  if (!card) return;
+  const raw = localStorage.getItem('qh_last_read');
+  if (!raw) {
+    // Show default recommendation if not read yet
+    const titleEl = document.getElementById('last-read-title');
+    const subEl = document.getElementById('last-read-sub');
+    if (titleEl) titleEl.textContent = `Al-Fatihah : ${state.language === 'en' ? 'Verse' : 'Ayat'} 1`;
+    if (subEl) subEl.textContent = state.language === 'en' ? 'Start your daily tilawah' : 'Mulai tilawah harian Anda';
+    card.style.display = 'block';
+    return;
+  }
+  try {
+    const data = JSON.parse(raw);
+    const titleEl = document.getElementById('last-read-title');
+    const subEl = document.getElementById('last-read-sub');
+    if (titleEl) titleEl.textContent = `${data.name} : ${state.language === 'en' ? 'Verse' : 'Ayat'} ${data.verseNum}`;
+    if (subEl) {
+      const minutesAgo = Math.floor((Date.now() - data.time) / 60000);
+      const timeStr = minutesAgo <= 1 ? (state.language === 'en' ? 'Just now' : 'Baru saja') : (state.language === 'en' ? `${minutesAgo} mins ago` : `${minutesAgo} menit yang lalu`);
+      subEl.textContent = `${data.type} • ${timeStr}`;
+    }
+    card.style.display = 'block';
+  } catch (e) {
+    card.style.display = 'none';
+  }
+}
+
+function continueLastRead() {
+  const raw = localStorage.getItem('qh_last_read');
+  if (raw) {
+    try {
+      const data = JSON.parse(raw);
+      loadSurah(data.surahId, data.verseNum);
+      navigateTo('quran');
+      return;
+    } catch (e) {}
+  }
+  loadSurah(1, 1);
+  navigateTo('quran');
+}
+
 async function loadSurah(surahId, targetVerse = null) {
   if (surahId < 1 || surahId > 114) return;
   state.currentSurah = surahId;
   const surah = ALL_SURAHS.find(s => s.id === surahId);
   if (!surah) return;
+
+  // Save to Last Read
+  saveLastRead(surahId, targetVerse || 1);
 
   // Update sidebar active indicator
   document.querySelectorAll('.surah-item').forEach(item => item.classList.remove('active'));
@@ -841,27 +1018,11 @@ async function renderVerses(surahId, targetVerse = null) {
 
   const isEn = state.language === 'en' || state.translation === 'sahih';
 
-  // Check local cache
+  const expectedCount = ALL_SURAHS[surahId - 1]?.ayat || 0;
   let verses = VERSES[surahId];
 
-  // If cached verses don't have English translation yet and user is in English mode, fetch Sahih International
-  if (verses && verses.length > 0 && isEn && (!verses[0].en || verses[0].en === '')) {
-    try {
-      const enRes = await fetch(`https://api.alquran.cloud/v1/surah/${surahId}/en.sahih`);
-      if (enRes.ok) {
-        const enJson = await enRes.json();
-        if (enJson?.data?.ayahs) {
-          enJson.data.ayahs.forEach((a, idx) => {
-            if (verses[idx]) verses[idx].en = a.text;
-          });
-        }
-      }
-    } catch (err) {
-      console.warn("Could not fetch English Sahih International translation:", err);
-    }
-  }
-
-  if (!verses || verses.length === 0) {
+  // If verses not loaded or only partial, load from the dedicated per-surah JSON file (1-114)
+  if (!verses || verses.length < expectedCount) {
     container.innerHTML = `
       <div style="text-align:center; padding: 48px 24px; color: var(--text-secondary);">
         <div style="font-size: 2.5rem; margin-bottom: 12px; animation: spin 1s infinite linear;">⌛</div>
@@ -869,37 +1030,76 @@ async function renderVerses(surahId, targetVerse = null) {
       </div>
     `;
 
-    // Try fetching from public Quran API (both ID and EN)
+    // 1. Load from local per-surah file: data/surah/${surahId}.json
     try {
-      const [resId, resEn] = await Promise.allSettled([
-        fetch(`https://equran.id/api/v2/surat/${surahId}`),
-        fetch(`https://api.alquran.cloud/v1/surah/${surahId}/en.sahih`)
-      ]);
-
-      let jsonId = null;
-      let jsonEn = null;
-
-      if (resId.status === 'fulfilled' && resId.value.ok) {
-        jsonId = await resId.value.json();
+      const localRes = await fetch(`data/surah/${surahId}.json`);
+      if (localRes.ok) {
+        const surahData = await localRes.json();
+        if (surahData && surahData.ayahs && surahData.ayahs.length > 0) {
+          VERSES[surahId] = surahData.ayahs.map(a => {
+            const histId = getHistoryId(surahId, a.number);
+            return {
+              num: a.number,
+              ar: a.arab,
+              ar_uthmani: a.arab,
+              ar_kemenag: a.arab_kemenag || a.arab,
+              latin: a.latin,
+              id: a.translation_id,
+              en: a.translation_en,
+              audio: a.audio,
+              hasHistory: !!histId,
+              historyId: histId
+            };
+          });
+          verses = VERSES[surahId];
+        }
       }
-      if (resEn.status === 'fulfilled' && resEn.value.ok) {
-        jsonEn = await resEn.value.json();
-      }
+    } catch (localErr) {
+      console.warn("Could not load local surah file, falling back to network APIs:", localErr);
+    }
 
-      if (jsonId?.data?.ayat) {
-        const enAyahs = jsonEn?.data?.ayahs || [];
-        VERSES[surahId] = jsonId.data.ayat.map((a, idx) => ({
-          num: a.nomorAyat,
-          ar: a.teksArab,
-          latin: a.teksLatin,
-          id: a.teksIndonesia,
-          en: enAyahs[idx]?.text || a.teksIndonesia,
-          hasHistory: false
-        }));
-        verses = VERSES[surahId];
+    // 2. Fallback to public Quran APIs if local file is missing or blocked
+    if (!verses || verses.length === 0) {
+      try {
+        const [resId, resEn, resUth] = await Promise.allSettled([
+          fetch(`https://equran.id/api/v2/surat/${surahId}`),
+          fetch(`https://api.alquran.cloud/v1/surah/${surahId}/en.sahih`),
+          fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`)
+        ]);
+
+        let jsonId = null;
+        let jsonEn = null;
+        let jsonUth = null;
+
+        if (resId.status === 'fulfilled' && resId.value.ok) jsonId = await resId.value.json();
+        if (resEn.status === 'fulfilled' && resEn.value.ok) jsonEn = await resEn.value.json();
+        if (resUth.status === 'fulfilled' && resUth.value.ok) jsonUth = await resUth.value.json();
+
+        if (jsonId?.data?.ayat) {
+          const enAyahs = jsonEn?.data?.ayahs || [];
+          const uthAyahs = jsonUth?.data?.ayahs || [];
+          VERSES[surahId] = jsonId.data.ayat.map((a, idx) => {
+            const textUthmani = uthAyahs[idx]?.text || a.teksArab;
+            const textKemenag = a.teksArab;
+            const histId = getHistoryId(surahId, a.nomorAyat);
+            return {
+              num: a.nomorAyat,
+              ar: textUthmani,
+              ar_uthmani: textUthmani,
+              ar_kemenag: textKemenag,
+              latin: a.teksLatin,
+              id: a.teksIndonesia,
+              en: enAyahs[idx]?.text || a.teksIndonesia,
+              audio: a.audio,
+              hasHistory: !!histId,
+              historyId: histId
+            };
+          });
+          verses = VERSES[surahId];
+        }
+      } catch (e) {
+        console.warn("API fetch error, using generated fallback:", e);
       }
-    } catch (e) {
-      console.warn("API fetch error, using generated fallback:", e);
     }
 
     // Secondary fallback generator
@@ -909,6 +1109,8 @@ async function renderVerses(surahId, targetVerse = null) {
         {
           num: 1,
           ar: surahInfo.arTitle,
+          ar_uthmani: surahInfo.arTitle,
+          ar_kemenag: surahInfo.arTitle,
           latin: `${surahInfo.name} - Verse 1`,
           id: `Dengan nama Allah Yang Maha Pengasih, Maha Penyayang. Pembukaan Surah ${surahInfo.name}.`,
           en: `In the name of Allah, the Entirely Merciful, the Especially Merciful. Opening of Surah ${surahInfo.name}.`,
@@ -917,6 +1119,8 @@ async function renderVerses(surahId, targetVerse = null) {
         {
           num: 2,
           ar: 'الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ عَلَىٰ عَبْدِهِ الْكِتَابَ',
+          ar_uthmani: 'ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَٰبَ',
+          ar_kemenag: 'الْحَمْدُ لِلَّهِ الَّذِي أَنزَلَ عَلَىٰ عَبْدِهِ الْكِتَابَ',
           latin: 'Al-hamdu lillahil-ladzi anzala \'ala \'abdihil-kitab',
           id: 'Segala puji bagi Allah yang telah menurunkan Kitab Suci kepada hamba-Nya sebagai petunjuk bagi seluruh alam.',
           en: '[All] praise is [due] to Allah, who has sent down upon His Servant the Book and has not made therein any deviance.',
@@ -930,6 +1134,7 @@ async function renderVerses(surahId, targetVerse = null) {
   container.innerHTML = verses.map(v => {
     const isBookmarked = state.bookmarks.some(b => b.surah === surahId && b.verse === v.num);
     const transText = isEn ? (v.en || v.id) : (v.id || v.en);
+    const arabicText = state.rasm === 'madinah' ? (v.ar_uthmani || v.ar) : (v.ar_kemenag || v.ar);
     return `
       <div class="verse-card ${targetVerse === v.num ? 'highlighted' : ''}" id="verse-${surahId}-${v.num}">
         <div class="verse-top">
@@ -939,11 +1144,11 @@ async function renderVerses(surahId, targetVerse = null) {
             <button class="verse-btn ${isBookmarked ? 'active' : ''}" title="${isEn ? 'Bookmark Verse' : 'Tandai Ayat'}" onclick="bookmarkVerse(${surahId}, ${v.num})">
               ${isBookmarked ? '⭐' : '🔖'}
             </button>
-            <button class="verse-btn" title="${isEn ? 'Copy Verse' : 'Salin Ayat'}" onclick="copyVerse(this, '${escapeStr(v.ar)}', '${escapeStr(transText)}')">📋</button>
+            <button class="verse-btn" title="${isEn ? 'Copy Verse' : 'Salin Ayat'}" onclick="copyVerse(this, '${escapeStr(arabicText)}', '${escapeStr(transText)}')">📋</button>
             ${v.hasHistory ? `<button class="verse-btn has-history" title="Asbabun Nuzul" onclick="openHistoryModal('${v.historyId}')">🏛️</button>` : ''}
           </div>
         </div>
-        <div class="verse-arabic" style="font-size: ${state.fontSize}px">${v.ar}</div>
+        <div class="verse-arabic" style="font-size: ${state.fontSize}px">${arabicText}</div>
         <div class="verse-latin" style="display: ${state.transliterasi ? 'block' : 'none'};">${v.latin}</div>
         <div class="verse-translation">${transText}</div>
         ${v.hasHistory ? `
@@ -965,6 +1170,30 @@ async function renderVerses(surahId, targetVerse = null) {
       }
     }, 150);
   }
+}
+
+function getHistoryId(surahId, verseNum) {
+  const map = {
+    '2:183': 'puasa',
+    '8:1': 'badar',
+    '8:9': 'badar',
+    '8:17': 'badar',
+    '3:121': 'uhud',
+    '3:152': 'uhud',
+    '9:40': 'hijrah',
+    '33:9': 'khandaq',
+    '48:1': 'hudaibiyah',
+    '48:27': 'hudaibiyah',
+    '110:1': 'fathMakkah',
+    '110:2': 'fathMakkah',
+    '110:3': 'fathMakkah',
+    '96:1': 'nuzul',
+    '96:2': 'nuzul',
+    '96:3': 'nuzul',
+    '105:1': 'fil',
+    '17:1': 'israMiraj'
+  };
+  return map[`${surahId}:${verseNum}`] || null;
 }
 
 function escapeStr(str) {
@@ -1029,8 +1258,25 @@ function playVerse(surahId, verseNum) {
   state.isPlaying = true;
 
   const surah = ALL_SURAHS.find(s => s.id === surahId);
-  const reciterConfig = RECITER_URLS[state.currentQori] || RECITER_URLS.mishary;
-  const audioUrl = reciterConfig.verse(surahId, verseNum);
+  const verseData = VERSES[surahId]?.find(v => v.num === verseNum);
+
+  let audioUrl = null;
+  const qoriMap = {
+    'juhany': '01',
+    'al-qasim': '02',
+    'sudais': '03',
+    'dossari': '04',
+    'mishary': '05',
+    'al-dosari': '06'
+  };
+  const qCode = qoriMap[state.currentQori] || '05';
+
+  if (verseData?.audio && verseData.audio[qCode]) {
+    audioUrl = verseData.audio[qCode];
+  } else {
+    const reciterConfig = RECITER_URLS[state.currentQori] || RECITER_URLS.mishary;
+    audioUrl = reciterConfig.verse(surahId, verseNum);
+  }
 
   audioPlayer.src = audioUrl;
   audioPlayer.playbackRate = state.speed;
@@ -1412,6 +1658,20 @@ function renderJejakGrid() {
 // READER SETTINGS PAGE
 // ══════════════════════════════════════════
 function initSettings() {
+  // Rasm / Mushaf Standard Selector
+  const rasmSelect = document.getElementById('rasm-select');
+  if (rasmSelect) {
+    rasmSelect.value = state.rasm;
+    rasmSelect.addEventListener('change', (e) => {
+      state.rasm = e.target.value;
+      localStorage.setItem('qh_rasm', state.rasm);
+      renderVerses(state.currentSurah);
+      showToast(state.language === 'en' 
+        ? `📖 Mushaf Standard: ${e.target.options[e.target.selectedIndex].text}`
+        : `📖 Standar Mushaf: ${e.target.options[e.target.selectedIndex].text}`, 'success');
+    });
+  }
+
   // Arabic Font Selector
   const fontSelect = document.getElementById('font-select');
   fontSelect?.addEventListener('change', (e) => {

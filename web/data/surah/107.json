@@ -1,0 +1,130 @@
+{
+  "number": 107,
+  "name": "Al-Ma'un",
+  "name_arabic": "الماعون",
+  "name_translation": "Barang Yang Berguna",
+  "revelation": "Mekah",
+  "numberOfAyahs": 7,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/107.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/107.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/107.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/107.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/107.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/107.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "arab_kemenag": "اَرَءَيْتَ الَّذِيْ يُكَذِّبُ بِالدِّيْنِۗ",
+      "latin": "Ara'aital-lażī yukażżibu bid-dīn(i).",
+      "translation_id": "Tahukah kamu (orang) yang mendustakan agama?",
+      "translation_en": "Have you seen the one who denies the Recompense?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+      "arab_kemenag": "فَذٰلِكَ الَّذِيْ يَدُعُّ الْيَتِيْمَۙ",
+      "latin": "Fa żālikal-lażī yadu‘‘ul-yatīm(a).",
+      "translation_id": "Itulah orang yang menghardik anak yatim",
+      "translation_en": "For that is the one who drives away the orphan",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "arab_kemenag": "وَلَا يَحُضُّ عَلٰى طَعَامِ الْمِسْكِيْنِۗ",
+      "latin": "Wa lā yaḥuḍḍu ‘alā ṭa‘āmil-miskīn(i).",
+      "translation_id": "dan tidak menganjurkan untuk memberi makan orang miskin.",
+      "translation_en": "And does not encourage the feeding of the poor.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "فَوَيْلٌۭ لِّلْمُصَلِّينَ",
+      "arab_kemenag": "فَوَيْلٌ لِّلْمُصَلِّيْنَۙ",
+      "latin": "Fawailul lil-muṣallīn(a).",
+      "translation_id": "Celakalah orang-orang yang melaksanakan salat,",
+      "translation_en": "So woe to those who pray",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "arab_kemenag": "الَّذِيْنَ هُمْ عَنْ صَلَاتِهِمْ سَاهُوْنَۙ",
+      "latin": "Allażīna hum ‘an ṣalātihim sāhūn(a).",
+      "translation_id": "(yaitu) yang lalai terhadap salatnya,",
+      "translation_en": "[But] who are heedless of their prayer -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+      "arab_kemenag": "الَّذِيْنَ هُمْ يُرَاۤءُوْنَۙ",
+      "latin": "Allażīna hum yurā'ūn(a).",
+      "translation_id": "yang berbuat riya,",
+      "translation_en": "Those who make show [of their deeds]",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+      "arab_kemenag": "وَيَمْنَعُوْنَ الْمَاعُوْنَ ࣖ",
+      "latin": "Wa yamna‘ūnal-mā‘ūn(a).",
+      "translation_id": "dan enggan (memberi) bantuan.",
+      "translation_en": "And withhold [simple] assistance.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/107007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/107007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/107007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/107007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/107007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/107007.mp3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "number": 103,
+  "name": "Al-'Asr",
+  "name_arabic": "العصر",
+  "name_translation": "Masa",
+  "revelation": "Mekah",
+  "numberOfAyahs": 3,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/103.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/103.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/103.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/103.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/103.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/103.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+      "arab_kemenag": "وَالْعَصْرِۙ",
+      "latin": "Wal-‘aṣr(i).",
+      "translation_id": "Demi masa,",
+      "translation_en": "By time,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/103001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/103001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/103001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/103001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/103001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/103001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "إِنَّ ٱلْإِنسَٰنَ لَفِى خُسْرٍ",
+      "arab_kemenag": "اِنَّ الْاِنْسَانَ لَفِيْ خُسْرٍۙ",
+      "latin": "Innal-insāna lafī khusr(in).",
+      "translation_id": "sesungguhnya manusia benar-benar berada dalam kerugian,",
+      "translation_en": "Indeed, mankind is in loss,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/103002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/103002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/103002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/103002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/103002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/103002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "arab_kemenag": "اِلَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ وَتَوَاصَوْا بِالْحَقِّ ەۙ وَتَوَاصَوْا بِالصَّبْرِ ࣖ",
+      "latin": "Illal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqq(i), wa tawāṣau biṣ-ṣabr(i).",
+      "translation_id": "kecuali orang-orang yang beriman dan beramal saleh serta saling menasihati untuk kebenaran dan kesabaran.",
+      "translation_en": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/103003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/103003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/103003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/103003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/103003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/103003.mp3"
+      }
+    }
+  ]
+}

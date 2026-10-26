@@ -1,0 +1,338 @@
+{
+  "number": 90,
+  "name": "Al-Balad",
+  "name_arabic": "البلد",
+  "name_translation": "Negeri",
+  "revelation": "Mekah",
+  "numberOfAyahs": 20,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/090.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/090.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/090.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/090.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/090.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/090.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ لَآ أُقْسِمُ بِهَٰذَا ٱلْبَلَدِ",
+      "arab_kemenag": "لَآ اُقْسِمُ بِهٰذَا الْبَلَدِۙ",
+      "latin": "Lā uqsimu bihāżal-balad(i).",
+      "translation_id": "Aku bersumpah demi negeri ini (Makkah),",
+      "translation_en": "I swear by this city, Makkah -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَأَنتَ حِلٌّۢ بِهَٰذَا ٱلْبَلَدِ",
+      "arab_kemenag": "وَاَنْتَ حِلٌّۢ بِهٰذَا الْبَلَدِۙ",
+      "latin": "Wa anta ḥillum bihāżal-balad(i).",
+      "translation_id": "sedangkan engkau (Nabi Muhammad) bertempat tinggal di negeri (Makkah) ini.",
+      "translation_en": "And you, [O Muhammad], are free of restriction in this city -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "وَوَالِدٍۢ وَمَا وَلَدَ",
+      "arab_kemenag": "وَوَالِدٍ وَّمَا وَلَدَۙ",
+      "latin": "Wa wālidiw wa mā walad(a).",
+      "translation_id": "(Aku juga bersumpah) demi bapak dan anaknya,",
+      "translation_en": "And [by] the father and that which was born [of him],",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "لَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ فِى كَبَدٍ",
+      "arab_kemenag": "لَقَدْ خَلَقْنَا الْاِنْسَانَ فِيْ كَبَدٍۗ",
+      "latin": "Laqad khalaqnal-insāna fī kabad(in).",
+      "translation_id": "sungguh, Kami benar-benar telah menciptakan manusia dalam keadaan susah payah.",
+      "translation_en": "We have certainly created man into hardship.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "أَيَحْسَبُ أَن لَّن يَقْدِرَ عَلَيْهِ أَحَدٌۭ",
+      "arab_kemenag": "اَيَحْسَبُ اَنْ لَّنْ يَّقْدِرَ عَلَيْهِ اَحَدٌ ۘ",
+      "latin": "Ayaḥsabu allay yaqdira ‘alaihi  aḥad(un).",
+      "translation_id": "Apakah dia (manusia) itu mengira bahwa tidak ada seorang pun yang berkuasa atasnya?",
+      "translation_en": "Does he think that never will anyone overcome him?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "يَقُولُ أَهْلَكْتُ مَالًۭا لُّبَدًا",
+      "arab_kemenag": "يَقُوْلُ اَهْلَكْتُ مَالًا لُّبَدًاۗ",
+      "latin": "Yaqūlu ahlaktu mālal lubadā(n).",
+      "translation_id": "Dia mengatakan, “Aku telah menghabiskan harta yang banyak.”",
+      "translation_en": "He says, \"I have spent wealth in abundance.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "أَيَحْسَبُ أَن لَّمْ يَرَهُۥٓ أَحَدٌ",
+      "arab_kemenag": "اَيَحْسَبُ اَنْ لَّمْ يَرَهٗٓ اَحَدٌۗ",
+      "latin": "Ayaḥsabu allam yarahū aḥad(un).",
+      "translation_id": "Apakah dia mengira bahwa tidak ada seorang pun yang melihatnya?",
+      "translation_en": "Does he think that no one has seen him?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "أَلَمْ نَجْعَل لَّهُۥ عَيْنَيْنِ",
+      "arab_kemenag": "اَلَمْ نَجْعَلْ لَّهٗ عَيْنَيْنِۙ",
+      "latin": "Alam naj‘al lahū ‘ainain(i).",
+      "translation_id": "Bukankah Kami telah menjadikan untuknya sepasang mata,",
+      "translation_en": "Have We not made for him two eyes?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "وَلِسَانًۭا وَشَفَتَيْنِ",
+      "arab_kemenag": "وَلِسَانًا وَّشَفَتَيْنِۙ",
+      "latin": "Wa lisānaw wa syafatain(i).",
+      "translation_id": "lidah, dan sepasang bibir,",
+      "translation_en": "And a tongue and two lips?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "وَهَدَيْنَٰهُ ٱلنَّجْدَيْنِ",
+      "arab_kemenag": "وَهَدَيْنٰهُ النَّجْدَيْنِۙ",
+      "latin": "Wa hadaināhun-najdain(i).",
+      "translation_id": "serta Kami juga telah menunjukkan kepadanya dua jalan (kebajikan dan kejahatan)?",
+      "translation_en": "And have shown him the two ways?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "فَلَا ٱقْتَحَمَ ٱلْعَقَبَةَ",
+      "arab_kemenag": "فَلَا اقْتَحَمَ الْعَقَبَةَ ۖ",
+      "latin": "Falaqtaḥamal-‘aqabah(ta).",
+      "translation_id": "Maka, tidakkah sebaiknya dia menempuh jalan (kebajikan) yang mendaki dan sukar?",
+      "translation_en": "But he has not broken through the difficult pass.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090011.mp3"
+      }
+    },
+    {
+      "number": 12,
+      "arab": "وَمَآ أَدْرَىٰكَ مَا ٱلْعَقَبَةُ",
+      "arab_kemenag": "وَمَآ اَدْرٰىكَ مَا الْعَقَبَةُ ۗ",
+      "latin": "Wa mā adrāka mal-‘aqabah(tu).",
+      "translation_id": "Tahukah kamu apakah jalan yang mendaki dan sukar itu?",
+      "translation_en": "And what can make you know what is [breaking through] the difficult pass?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090012.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090012.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090012.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090012.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090012.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090012.mp3"
+      }
+    },
+    {
+      "number": 13,
+      "arab": "فَكُّ رَقَبَةٍ",
+      "arab_kemenag": "فَكُّ رَقَبَةٍۙ",
+      "latin": "Fakku raqabah(tin).",
+      "translation_id": "(Itulah upaya) melepaskan perbudakan",
+      "translation_en": "It is the freeing of a slave",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090013.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090013.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090013.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090013.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090013.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090013.mp3"
+      }
+    },
+    {
+      "number": 14,
+      "arab": "أَوْ إِطْعَٰمٌۭ فِى يَوْمٍۢ ذِى مَسْغَبَةٍۢ",
+      "arab_kemenag": "اَوْ اِطْعَامٌ فِيْ يَوْمٍ ذِيْ مَسْغَبَةٍۙ",
+      "latin": "Au iṭ‘āmun fī yaumin żī masgabah(tin).",
+      "translation_id": "atau memberi makan pada hari terjadi kelaparan",
+      "translation_en": "Or feeding on a day of severe hunger",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090014.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090014.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090014.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090014.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090014.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090014.mp3"
+      }
+    },
+    {
+      "number": 15,
+      "arab": "يَتِيمًۭا ذَا مَقْرَبَةٍ",
+      "arab_kemenag": "يَّتِيْمًا ذَا مَقْرَبَةٍۙ",
+      "latin": "Yatīman żā maqrabah(tin).",
+      "translation_id": "(kepada) anak yatim yang memiliki hubungan kekerabatan",
+      "translation_en": "An orphan of near relationship",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090015.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090015.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090015.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090015.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090015.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090015.mp3"
+      }
+    },
+    {
+      "number": 16,
+      "arab": "أَوْ مِسْكِينًۭا ذَا مَتْرَبَةٍۢ",
+      "arab_kemenag": "اَوْ مِسْكِيْنًا ذَا مَتْرَبَةٍۗ",
+      "latin": "Au miskīnan żā matrabah(tin).",
+      "translation_id": "atau orang miskin yang sangat membutuhkan.",
+      "translation_en": "Or a needy person in misery",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090016.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090016.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090016.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090016.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090016.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090016.mp3"
+      }
+    },
+    {
+      "number": 17,
+      "arab": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُوا۟ وَتَوَاصَوْا۟ بِٱلصَّبْرِ وَتَوَاصَوْا۟ بِٱلْمَرْحَمَةِ",
+      "arab_kemenag": "ثُمَّ كَانَ مِنَ الَّذِيْنَ اٰمَنُوْا وَتَوَاصَوْا بِالصَّبْرِ وَتَوَاصَوْا بِالْمَرْحَمَةِۗ",
+      "latin": "Ṡumma kāna minal-lażīna āmanū wa tawāṣau biṣ-ṣabri wa tawāṣau bil-marḥamah(ti). ",
+      "translation_id": "Kemudian, dia juga termasuk orang-orang yang beriman dan saling berpesan untuk bersabar serta saling berpesan untuk berkasih sayang.",
+      "translation_en": "And then being among those who believed and advised one another to patience and advised one another to compassion.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090017.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090017.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090017.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090017.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090017.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090017.mp3"
+      }
+    },
+    {
+      "number": 18,
+      "arab": "أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْمَيْمَنَةِ",
+      "arab_kemenag": "اُولٰۤىِٕكَ اَصْحٰبُ الْمَيْمَنَةِۗ",
+      "latin": "Ulā'ika aṣḥābul-maimanah(ti).",
+      "translation_id": "Mereka itulah golongan kanan.",
+      "translation_en": "Those are the companions of the right.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090018.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090018.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090018.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090018.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090018.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090018.mp3"
+      }
+    },
+    {
+      "number": 19,
+      "arab": "وَٱلَّذِينَ كَفَرُوا۟ بِـَٔايَٰتِنَا هُمْ أَصْحَٰبُ ٱلْمَشْـَٔمَةِ",
+      "arab_kemenag": "وَالَّذِيْنَ كَفَرُوْا بِاٰيٰتِنَا هُمْ اَصْحٰبُ الْمَشْـَٔمَةِۗ",
+      "latin": "Wal-lażīna kafarū bi'āyātinā hum aṣḥābul-masy'amah(ti).",
+      "translation_id": "Adapun orang-orang yang kufur pada ayat-ayat Kami, merekalah golongan kiri.",
+      "translation_en": "But they who disbelieved in Our signs - those are the companions of the left.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090019.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090019.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090019.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090019.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090019.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090019.mp3"
+      }
+    },
+    {
+      "number": 20,
+      "arab": "عَلَيْهِمْ نَارٌۭ مُّؤْصَدَةٌۢ",
+      "arab_kemenag": "عَلَيْهِمْ نَارٌ مُّؤْصَدَةٌ ࣖ",
+      "latin": "‘Alaihim nārum mu'ṣadah(tun).",
+      "translation_id": "Mereka berada dalam neraka yang ditutup rapat.",
+      "translation_en": "Over them will be fire closed in.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/090020.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/090020.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/090020.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/090020.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/090020.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/090020.mp3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "number": 1,
+  "name": "Al-Fatihah",
+  "name_arabic": "الفاتحة",
+  "name_translation": "Pembukaan",
+  "revelation": "Mekah",
+  "numberOfAyahs": 7,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/001.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/001.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/001.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/001.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/001.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/001.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "﻿بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "arab_kemenag": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "translation_id": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "translation_en": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "arab_kemenag": "اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ",
+      "latin": "Al-ḥamdu lillāhi rabbil-‘ālamīn(a). ",
+      "translation_id": "Segala puji bagi Allah, Tuhan semesta alam",
+      "translation_en": "[All] praise is [due] to Allah, Lord of the worlds -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "arab_kemenag": "الرَّحْمٰنِ الرَّحِيْمِۙ",
+      "latin": "Ar-raḥmānir-raḥīm(i). ",
+      "translation_id": "Yang Maha Pengasih lagi Maha Penyayang,",
+      "translation_en": "The Entirely Merciful, the Especially Merciful,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "arab_kemenag": "مٰلِكِ يَوْمِ الدِّيْنِۗ",
+      "latin": "Māliki yaumid-dīn(i). ",
+      "translation_id": "Pemilik hari Pembalasan.",
+      "translation_en": "Sovereign of the Day of Recompense.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "arab_kemenag": "اِيَّاكَ نَعْبُدُ وَاِيَّاكَ نَسْتَعِيْنُۗ",
+      "latin": "Iyyāka na‘budu wa iyyāka nasta‘īn(u), ",
+      "translation_id": "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami memohon pertolongan.",
+      "translation_en": "It is You we worship and You we ask for help.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "arab_kemenag": "اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَۙ",
+      "latin": "Ihdinaṣ-ṣirāṭal-mustaqīm(a). ",
+      "translation_id": "Bimbinglah kami ke jalan yang lurus,",
+      "translation_en": "Guide us to the straight path -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "arab_kemenag": "صِرَاطَ الَّذِيْنَ اَنْعَمْتَ عَلَيْهِمْ ەۙ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ",
+      "latin": "Ṣirāṭal-lażīna an‘amta ‘alaihim, gairil-magḍūbi ‘alaihim wa laḍ-ḍāllīn(a). ",
+      "translation_id": "(yaitu) jalan orang-orang yang telah Engkau beri nikmat, bukan (jalan) mereka yang dimurkai dan bukan (pula jalan) orang-orang yang sesat.",
+      "translation_en": "The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/001007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/001007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/001007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/001007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/001007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/001007.mp3"
+      }
+    }
+  ]
+}

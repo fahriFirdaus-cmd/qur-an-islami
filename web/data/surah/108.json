@@ -1,0 +1,66 @@
+{
+  "number": 108,
+  "name": "Al-Kausar",
+  "name_arabic": "الكوثر",
+  "name_translation": "Pemberian Yang Banyak",
+  "revelation": "Mekah",
+  "numberOfAyahs": 3,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/108.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/108.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/108.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/108.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/108.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/108.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ",
+      "arab_kemenag": "اِنَّآ اَعْطَيْنٰكَ الْكَوْثَرَۗ",
+      "latin": "Innā a‘ṭainākal-kauṡar(a).",
+      "translation_id": "Sesungguhnya Kami telah memberimu (Nabi Muhammad) nikmat yang banyak.",
+      "translation_en": "Indeed, We have granted you, [O Muhammad], al-Kawthar.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/108001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/108001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/108001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/108001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/108001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/108001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "arab_kemenag": "فَصَلِّ لِرَبِّكَ وَانْحَرْۗ",
+      "latin": "Faṣalli lirabbika wanḥar.",
+      "translation_id": "Maka, laksanakanlah salat karena Tuhanmu dan berkurbanlah!",
+      "translation_en": "So pray to your Lord and sacrifice [to Him alone].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/108002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/108002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/108002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/108002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/108002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/108002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "arab_kemenag": "اِنَّ شَانِئَكَ هُوَ الْاَبْتَرُ ࣖ",
+      "latin": "Inna syāni'aka huwal-abtar(u).",
+      "translation_id": "Sesungguhnya orang yang membencimu, dialah yang terputus (dari rahmat Allah).",
+      "translation_en": "Indeed, your enemy is the one cut off.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/108003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/108003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/108003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/108003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/108003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/108003.mp3"
+      }
+    }
+  ]
+}

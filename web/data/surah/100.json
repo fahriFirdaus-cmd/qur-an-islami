@@ -1,0 +1,194 @@
+{
+  "number": 100,
+  "name": "Al-'Adiyat",
+  "name_arabic": "العٰديٰت",
+  "name_translation": "Kuda Yang Berlari Kencang",
+  "revelation": "Mekah",
+  "numberOfAyahs": 11,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/100.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/100.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/100.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/100.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/100.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/100.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلْعَٰدِيَٰتِ ضَبْحًۭا",
+      "arab_kemenag": "وَالْعٰدِيٰتِ ضَبْحًاۙ ",
+      "latin": "Wal-‘ādiyāti ḍabḥā(n). ",
+      "translation_id": "Demi kuda-kuda perang yang berlari kencang terengah-engah,",
+      "translation_en": "By the racers, panting,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "فَٱلْمُورِيَٰتِ قَدْحًۭا",
+      "arab_kemenag": "فَالْمُوْرِيٰتِ قَدْحًاۙ",
+      "latin": "Fal-mūriyāti qadḥā(n).",
+      "translation_id": "yang memercikkan bunga api (dengan entakan kakinya),",
+      "translation_en": "And the producers of sparks [when] striking",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "فَٱلْمُغِيرَٰتِ صُبْحًۭا",
+      "arab_kemenag": "فَالْمُغِيْرٰتِ صُبْحًاۙ",
+      "latin": "Fal-mugīrāti ṣubḥā(n).",
+      "translation_id": "yang menyerang (dengan tiba-tiba) pada waktu pagi",
+      "translation_en": "And the chargers at dawn,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "فَأَثَرْنَ بِهِۦ نَقْعًۭا",
+      "arab_kemenag": "فَاَثَرْنَ بِهٖ نَقْعًاۙ",
+      "latin": "Fa'aṡarna bihī naq‘ā(n).",
+      "translation_id": "sehingga menerbangkan debu,",
+      "translation_en": "Stirring up thereby [clouds of] dust,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+      "arab_kemenag": "فَوَسَطْنَ بِهٖ جَمْعًاۙ",
+      "latin": "Fawasaṭna bihī jam‘ā(n).",
+      "translation_id": "lalu menyerbu ke tengah-tengah kumpulan musuh,",
+      "translation_en": "Arriving thereby in the center collectively,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "إِنَّ ٱلْإِنسَٰنَ لِرَبِّهِۦ لَكَنُودٌۭ",
+      "arab_kemenag": "اِنَّ الْاِنْسَانَ لِرَبِّهٖ لَكَنُوْدٌ ۚ",
+      "latin": "Innal-insāna lirabbihī lakanūd(un).",
+      "translation_id": "sesungguhnya manusia itu sangatlah ingkar kepada Tuhannya.",
+      "translation_en": "Indeed mankind, to his Lord, is ungrateful.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌۭ",
+      "arab_kemenag": "وَاِنَّهٗ عَلٰى ذٰلِكَ لَشَهِيْدٌۚ",
+      "latin": "Wa innahū ‘alā żālika lasyahīd(un).",
+      "translation_id": "Sesungguhnya dia benar-benar menjadi saksi atas hal itu (keingkarannya).",
+      "translation_en": "And indeed, he is to that a witness.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+      "arab_kemenag": "وَاِنَّهٗ لِحُبِّ الْخَيْرِ لَشَدِيْدٌ ۗ",
+      "latin": "Wa innahū liḥubbil-khairi lasyadīd(un).",
+      "translation_id": "Sesungguhnya cintanya pada harta benar-benar berlebihan.",
+      "translation_en": "And indeed he is, in love of wealth, intense.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+      "arab_kemenag": "۞ اَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِى الْقُبُوْرِۙ",
+      "latin": "Afalā ya‘lamu iżā bu‘ṡira mā fil-qubūr(i).",
+      "translation_id": "Maka, tidakkah dia mengetahui (apa yang akan dialaminya) apabila dikeluarkan apa yang ada di dalam kubur",
+      "translation_en": "But does he not know that when the contents of the graves are scattered",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+      "arab_kemenag": "وَحُصِّلَ مَا فِى الصُّدُوْرِۙ",
+      "latin": "Wa ḥuṣṣila mā fiṣ-ṣudūr(i).",
+      "translation_id": "dan ditampakkan apa yang tersimpan di dalam dada?",
+      "translation_en": "And that within the breasts is obtained,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍۢ لَّخَبِيرٌۢ",
+      "arab_kemenag": "اِنَّ رَبَّهُمْ بِهِمْ يَوْمَىِٕذٍ لَّخَبِيْرٌ ࣖ",
+      "latin": "Inna rabbahum bihim yauma'iżil lakhabīr(un).",
+      "translation_id": "Sesungguhnya Tuhan mereka pada hari itu benar-benar Maha Teliti terhadap (keadaan) mereka.",
+      "translation_en": "Indeed, their Lord with them, that Day, is [fully] Acquainted.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/100011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/100011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/100011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/100011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/100011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/100011.mp3"
+      }
+    }
+  ]
+}

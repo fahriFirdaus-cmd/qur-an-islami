@@ -1,0 +1,114 @@
+{
+  "number": 114,
+  "name": "An-Nas",
+  "name_arabic": "الناس",
+  "name_translation": "Manusia",
+  "revelation": "Madinah",
+  "numberOfAyahs": 6,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/114.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/114.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/114.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/114.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/114.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/114.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "arab_kemenag": "قُلْ اَعُوْذُ بِرَبِّ النَّاسِۙ",
+      "latin": "Qul a‘ūżu birabbin-nās(i).",
+      "translation_id": "Katakanlah (Nabi Muhammad), “Aku berlindung kepada Tuhan manusia,",
+      "translation_en": "Say, \"I seek refuge in the Lord of mankind,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "مَلِكِ ٱلنَّاسِ",
+      "arab_kemenag": "مَلِكِ النَّاسِۙ",
+      "latin": "Malikin-nās(i).",
+      "translation_id": "raja manusia,",
+      "translation_en": "The Sovereign of mankind.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "إِلَٰهِ ٱلنَّاسِ",
+      "arab_kemenag": "اِلٰهِ النَّاسِۙ",
+      "latin": "Ilāhin-nās(i).",
+      "translation_id": "sembahan manusia",
+      "translation_en": "The God of mankind,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "arab_kemenag": "مِنْ شَرِّ الْوَسْوَاسِ ەۙ الْخَنَّاسِۖ",
+      "latin": "Min syarril-waswāsil-khannās(i).",
+      "translation_id": "dari kejahatan (setan) pembisik yang bersembunyi",
+      "translation_en": "From the evil of the retreating whisperer -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "arab_kemenag": "الَّذِيْ يُوَسْوِسُ فِيْ صُدُوْرِ النَّاسِۙ",
+      "latin": "Allażī yuwaswisu fī ṣudūrin-nās(i).",
+      "translation_id": "yang membisikkan (kejahatan) ke dalam dada manusia,",
+      "translation_en": "Who whispers [evil] into the breasts of mankind -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "arab_kemenag": "مِنَ الْجِنَّةِ وَالنَّاسِ ࣖ ",
+      "latin": "Minal jinnati wan-nās(i).",
+      "translation_id": "dari (golongan) jin dan manusia.”",
+      "translation_en": "From among the jinn and mankind.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/114006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/114006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/114006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/114006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/114006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/114006.mp3"
+      }
+    }
+  ]
+}

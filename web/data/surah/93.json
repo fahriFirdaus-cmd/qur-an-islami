@@ -1,0 +1,194 @@
+{
+  "number": 93,
+  "name": "Ad-Duha",
+  "name_arabic": "الضحى",
+  "name_translation": "Duha",
+  "revelation": "Mekah",
+  "numberOfAyahs": 11,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/093.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/093.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/093.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/093.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/093.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/093.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ وَٱلضُّحَىٰ",
+      "arab_kemenag": "وَالضُّحٰىۙ",
+      "latin": "Waḍ-ḍuḥā.",
+      "translation_id": "Demi waktu duha",
+      "translation_en": "By the morning brightness",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+      "arab_kemenag": "وَالَّيْلِ اِذَا سَجٰىۙ",
+      "latin": "Wal-laili iżā sajā.",
+      "translation_id": "dan demi waktu malam apabila telah sunyi,",
+      "translation_en": "And [by] the night when it covers with darkness,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "arab_kemenag": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۗ",
+      "latin": "Mā wadda‘aka rabbuka wa mā qalā.",
+      "translation_id": "Tuhanmu (Nabi Muhammad) tidak meninggalkan dan tidak (pula) membencimu.",
+      "translation_en": "Your Lord has not taken leave of you, [O Muhammad], nor has He detested [you].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَلَلْءَاخِرَةُ خَيْرٌۭ لَّكَ مِنَ ٱلْأُولَىٰ",
+      "arab_kemenag": "وَلَلْاٰخِرَةُ خَيْرٌ لَّكَ مِنَ الْاُوْلٰىۗ",
+      "latin": "Wa lal-ākhiratu khairul laka minal-ūlā.",
+      "translation_id": "Sungguh, akhirat itu lebih baik bagimu daripada yang permulaan (dunia).",
+      "translation_en": "And the Hereafter is better for you than the first [life].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "arab_kemenag": "وَلَسَوْفَ يُعْطِيْكَ رَبُّكَ فَتَرْضٰىۗ",
+      "latin": "Wa lasaufa yu‘ṭīka rabbuka fa tarḍā.",
+      "translation_id": "Sungguh, kelak (di akhirat nanti) Tuhanmu pasti memberikan karunia-Nya kepadamu sehingga engkau rida.",
+      "translation_en": "And your Lord is going to give you, and you will be satisfied.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "أَلَمْ يَجِدْكَ يَتِيمًۭا فَـَٔاوَىٰ",
+      "arab_kemenag": "اَلَمْ يَجِدْكَ يَتِيْمًا فَاٰوٰىۖ",
+      "latin": "Alam yajidka yatīman fa āwā.",
+      "translation_id": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(-mu);",
+      "translation_en": "Did He not find you an orphan and give [you] refuge?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "وَوَجَدَكَ ضَآلًّۭا فَهَدَىٰ",
+      "arab_kemenag": "وَوَجَدَكَ ضَاۤلًّا فَهَدٰىۖ",
+      "latin": "Wa wajadaka ḍāllan fa hadā.",
+      "translation_id": "mendapatimu sebagai seorang yang tidak tahu (tentang syariat), lalu Dia memberimu petunjuk (wahyu);",
+      "translation_en": "And He found you lost and guided [you],",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "وَوَجَدَكَ عَآئِلًۭا فَأَغْنَىٰ",
+      "arab_kemenag": "وَوَجَدَكَ عَاۤىِٕلًا فَاَغْنٰىۗ",
+      "latin": "Wa wajadaka ‘ā'ilan fa agnā.",
+      "translation_id": "dan mendapatimu sebagai seorang yang fakir, lalu Dia memberimu kecukupan?",
+      "translation_en": "And He found you poor and made [you] self-sufficient.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "arab_kemenag": "فَاَمَّا الْيَتِيْمَ فَلَا تَقْهَرْۗ",
+      "latin": "Fa ammal-yatīma falā taqhar.",
+      "translation_id": "Terhadap anak yatim, janganlah engkau berlaku sewenang-wenang.",
+      "translation_en": "So as for the orphan, do not oppress [him].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+      "arab_kemenag": "وَاَمَّا السَّاۤىِٕلَ فَلَا تَنْهَرْ",
+      "latin": "Wa ammas-sā'ila falā tanhar.",
+      "translation_id": "Terhadap orang yang meminta-minta, janganlah engkau menghardik.",
+      "translation_en": "And as for the petitioner, do not repel [him].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "arab_kemenag": "وَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ ࣖ",
+      "latin": "Wa ammā bini‘mati rabbika fa ḥaddiṡ.",
+      "translation_id": "Terhadap nikmat Tuhanmu, nyatakanlah (dengan bersyukur).",
+      "translation_en": "But as for the favor of your Lord, report [it].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/093011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/093011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/093011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/093011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/093011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/093011.mp3"
+      }
+    }
+  ]
+}

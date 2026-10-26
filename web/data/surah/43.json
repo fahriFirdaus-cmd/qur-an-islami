@@ -1,0 +1,1442 @@
+{
+  "number": 43,
+  "name": "Az-Zukhruf",
+  "name_arabic": "الزخرف",
+  "name_translation": "Perhiasan",
+  "revelation": "Mekah",
+  "numberOfAyahs": 89,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/043.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/043.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/043.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/043.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/043.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/043.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ حمٓ",
+      "arab_kemenag": "حٰمۤ  ۚ ",
+      "latin": "Ḥā mīm.",
+      "translation_id": "Ḥā Mīm.",
+      "translation_en": "Ha, Meem.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَٱلْكِتَٰبِ ٱلْمُبِينِ",
+      "arab_kemenag": "وَالْكِتٰبِ الْمُبِيْنِ ۙ ",
+      "latin": "Wal-kitābil-mubīn(i).",
+      "translation_id": "Demi Kitab (Al-Qur’an) yang jelas,",
+      "translation_en": "By the clear Book,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "إِنَّا جَعَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّۭا لَّعَلَّكُمْ تَعْقِلُونَ",
+      "arab_kemenag": "اِنَّا جَعَلْنٰهُ قُرْاٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُوْنَۚ ",
+      "latin": "Innā ja‘alnāhu qur'ānan ‘arabiyyal la‘allakum ta‘qilūn(a).",
+      "translation_id": "sesungguhnya Kami menjadikannya sebagai Al-Qur’an yang berbahasa Arab agar kamu mengerti",
+      "translation_en": "Indeed, We have made it an Arabic Qur'an that you might understand.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَإِنَّهُۥ فِىٓ أُمِّ ٱلْكِتَٰبِ لَدَيْنَا لَعَلِىٌّ حَكِيمٌ",
+      "arab_kemenag": "وَاِنَّهٗ فِيْٓ اُمِّ الْكِتٰبِ لَدَيْنَا لَعَلِيٌّ حَكِيْمٌ ۗ ",
+      "latin": "Wa innahū fī ummil-kitābi ladainā la‘aliyyun ḥakīm(un).",
+      "translation_id": "dan sesungguhnya (Al-Qur’an) itu berada di dalam Ummul Kitāb (Lauhulmahfuz) di sisi Kami, benar-benar (bernilai) tinggi, dan penuh hikmah.",
+      "translation_en": "And indeed it is, in the Mother of the Book with Us, exalted and full of wisdom.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "أَفَنَضْرِبُ عَنكُمُ ٱلذِّكْرَ صَفْحًا أَن كُنتُمْ قَوْمًۭا مُّسْرِفِينَ",
+      "arab_kemenag": "اَفَنَضْرِبُ عَنْكُمُ الذِّكْرَ صَفْحًا اَنْ كُنْتُمْ قَوْمًا مُّسْرِفِيْنَ",
+      "latin": "Afa naḍribu ‘ankumuż-żikra ṣafḥan an kuntum qaumam musrifīn(a).",
+      "translation_id": "Apakah Kami akan menahan (turunnya) Al-Qur’an dan mengabaikanmu (hanya) karena kamu kaum yang melampaui batas?",
+      "translation_en": "Then should We turn the message away, disregarding you, because you are a transgressing people?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "وَكَمْ أَرْسَلْنَا مِن نَّبِىٍّۢ فِى ٱلْأَوَّلِينَ",
+      "arab_kemenag": "وَكَمْ اَرْسَلْنَا مِنْ نَّبِيٍّ فِى الْاَوَّلِيْنَ ",
+      "latin": "Wa kam arsalnā min nabiyyin fil-awwalīn(a).",
+      "translation_id": "Betapa banyak nabi yang telah Kami utus kepada umat-umat yang terdahulu.",
+      "translation_en": "And how many a prophet We sent among the former peoples,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "وَمَا يَأْتِيهِم مِّن نَّبِىٍّ إِلَّا كَانُوا۟ بِهِۦ يَسْتَهْزِءُونَ",
+      "arab_kemenag": "وَمَا يَأْتِيْهِمْ مِّنْ نَّبِيٍّ اِلَّا كَانُوْا بِهٖ يَسْتَهْزِءُوْنَ ",
+      "latin": "Wa mā ya'tīhim min nabiyyin illā kānū bihī yastahzi'ūn(a).",
+      "translation_id": "Setiap kali seorang nabi datang kepada mereka, mereka selalu memperolok-olokkannya.",
+      "translation_en": "But there would not come to them a prophet except that they used to ridicule him.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "فَأَهْلَكْنَآ أَشَدَّ مِنْهُم بَطْشًۭا وَمَضَىٰ مَثَلُ ٱلْأَوَّلِينَ",
+      "arab_kemenag": "فَاَهْلَكْنَآ اَشَدَّ مِنْهُمْ بَطْشًا وَّمَضٰى مَثَلُ الْاَوَّلِيْنَ",
+      "latin": "Fa ahlaknā asyadda minhum baṭsyaw wa maḍā maṡalul-awwalīn(a).",
+      "translation_id": "Oleh karena itu, Kami membinasakan orang-orang yang lebih kuat dari mereka (kaum musyrik Quraisy) dan telah berlalu contoh (kehancuran) umat-umat terdahulu.",
+      "translation_en": "And We destroyed greater than them in [striking] power, and the example of the former peoples has preceded.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ لَيَقُولُنَّ خَلَقَهُنَّ ٱلْعَزِيزُ ٱلْعَلِيمُ",
+      "arab_kemenag": "وَلَىِٕنْ سَاَلْتَهُمْ مَّنْ خَلَقَ السَّمٰوٰتِ وَالْاَرْضَ لَيَقُوْلُنَّ خَلَقَهُنَّ الْعَزِيْزُ الْعَلِيْمُۙ",
+      "latin": "Wa la'in sa'altahum man khalaqas-samāwāti wal-arḍa layaqūlunna khalaqahunnal-‘azīzul-‘alīm(u).",
+      "translation_id": "Jika kamu menanyakan kepada mereka, “Siapakah yang menciptakan langit dan bumi,” pastilah mereka akan menjawab, “Yang menciptakannya adalah Zat Yang Maha Perkasa lagi Maha Mengetahui.",
+      "translation_en": "And if you should ask them, \"Who has created the heavens and the earth?\" they would surely say, \"They were created by the Exalted in Might, the Knowing.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ مَهْدًۭا وَجَعَلَ لَكُمْ فِيهَا سُبُلًۭا لَّعَلَّكُمْ تَهْتَدُونَ",
+      "arab_kemenag": "الَّذِيْ جَعَلَ لَكُمُ الْاَرْضَ مَهْدًا وَّجَعَلَ لَكُمْ فِيْهَا سُبُلًا لَّعَلَّكُمْ تَهْتَدُوْنَ ۚ ",
+      "latin": "Allażī ja‘ala lakumul-arḍa mahdaw wa ja‘ala lakum fīhā subulal la‘allakum tahtadūn(a).",
+      "translation_id": "(Dialah) yang menjadikan bumi sebagai tempat menetap bagimu dan menjadikan jalan-jalan di atasnya untukmu agar kamu mendapat petunjuk.",
+      "translation_en": "[The one] who has made for you the earth a bed and made for you upon it roads that you might be guided",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "وَٱلَّذِى نَزَّلَ مِنَ ٱلسَّمَآءِ مَآءًۢ بِقَدَرٍۢ فَأَنشَرْنَا بِهِۦ بَلْدَةًۭ مَّيْتًۭا ۚ كَذَٰلِكَ تُخْرَجُونَ",
+      "arab_kemenag": "وَالَّذِيْ نَزَّلَ مِنَ السَّمَاۤءِ مَاۤءًۢ بِقَدَرٍۚ فَاَنْشَرْنَا بِهٖ بَلْدَةً مَّيْتًا ۚ كَذٰلِكَ تُخْرَجُوْنَ ",
+      "latin": "Wal-lażī nazzala minas-samā'i mā'am biqadar(in), fa'ansyarnā bihī baldatam maitā(n), każālika tukhrajūn(a). ",
+      "translation_id": "Yang menurunkan air dari langit dengan suatu ukuran, lalu dengan air itu Kami menghidupkan negeri yang mati (tandus). Seperti itulah kamu akan dikeluarkan (dari kubur).",
+      "translation_en": "And who sends down rain from the sky in measured amounts, and We revive thereby a dead land - thus will you be brought forth -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043011.mp3"
+      }
+    },
+    {
+      "number": 12,
+      "arab": "وَٱلَّذِى خَلَقَ ٱلْأَزْوَٰجَ كُلَّهَا وَجَعَلَ لَكُم مِّنَ ٱلْفُلْكِ وَٱلْأَنْعَٰمِ مَا تَرْكَبُونَ",
+      "arab_kemenag": "وَالَّذِيْ خَلَقَ الْاَزْوَاجَ كُلَّهَا وَجَعَلَ لَكُمْ مِّنَ الْفُلْكِ وَالْاَنْعَامِ مَا تَرْكَبُوْنَۙ ",
+      "latin": "Wal-lażī khalaqal-azwāja kullahā wa ja‘ala lakum minal-fulki wal-an‘āmi mā tarkabūn(a).",
+      "translation_id": "(Dialah) yang menciptakan semua makhluk berpasang-pasangan dan menjadikan kapal laut untukmu serta hewan ternak untuk kamu tunggangi",
+      "translation_en": "And who created the species, all of them, and has made for you of ships and animals those which you mount.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043012.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043012.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043012.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043012.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043012.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043012.mp3"
+      }
+    },
+    {
+      "number": 13,
+      "arab": "لِتَسْتَوُۥا۟ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذْكُرُوا۟ نِعْمَةَ رَبِّكُمْ إِذَا ٱسْتَوَيْتُمْ عَلَيْهِ وَتَقُولُوا۟ سُبْحَٰنَ ٱلَّذِى سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ",
+      "arab_kemenag": "لِتَسْتَوٗا عَلٰى ظُهُوْرِهٖ ثُمَّ تَذْكُرُوْا نِعْمَةَ رَبِّكُمْ اِذَا اسْتَوَيْتُمْ عَلَيْهِ وَتَقُوْلُوْا سُبْحٰنَ الَّذِيْ سَخَّرَ لَنَا هٰذَا وَمَا كُنَّا لَهٗ مُقْرِنِيْنَۙ ",
+      "latin": "Litastawū ‘alā ẓuhūrihī ṡumma tażkurū ni‘mata rabbikum iżastawaitum ‘alaihi wa taqūlū subḥānal-lażī sakhkhara lanā hāżā wa mā kunnā lahū muqrinīn(a).",
+      "translation_id": "agar kamu dapat duduk di atas punggungnya. Kemudian jika kamu sudah duduk (di atas punggung)-nya, kamu akan mengingat nikmat Tuhanmu dan mengucapkan, “Maha Suci Zat yang telah menundukkan (semua) ini bagi kami, padahal kami sebelumnya tidak mampu menguasainya.",
+      "translation_en": "That you may settle yourselves upon their backs and then remember the favor of your Lord when you have settled upon them and say. \"Exalted is He who has subjected this to us, and we could not have [otherwise] subdued it.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043013.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043013.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043013.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043013.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043013.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043013.mp3"
+      }
+    },
+    {
+      "number": 14,
+      "arab": "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
+      "arab_kemenag": "وَاِنَّآ اِلٰى رَبِّنَا لَمُنْقَلِبُوْنَ ",
+      "latin": "Wa innā ilā rabbinā lamunqalibūn(a).",
+      "translation_id": "Sesungguhnya kami pasti akan kembali kepada Tuhan kami.”",
+      "translation_en": "And indeed we, to our Lord, will [surely] return.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043014.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043014.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043014.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043014.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043014.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043014.mp3"
+      }
+    },
+    {
+      "number": 15,
+      "arab": "وَجَعَلُوا۟ لَهُۥ مِنْ عِبَادِهِۦ جُزْءًا ۚ إِنَّ ٱلْإِنسَٰنَ لَكَفُورٌۭ مُّبِينٌ",
+      "arab_kemenag": "وَجَعَلُوْا لَهٗ مِنْ عِبَادِهٖ جُزْءًا ۗاِنَّ الْاِنْسَانَ لَكَفُوْرٌ مُّبِيْنٌ ۗ ࣖ ",
+      "latin": "Wa ja‘alū lahū min ‘ibādihī juz'ā(n), innal-insāna lakafūrum mubīn(un).",
+      "translation_id": "Mereka menjadikan sebagian dari hamba-hamba-Nya sebagai bagian dari-Nya. Sesungguhnya manusia itu benar-benar pengingkar (nikmat Tuhan) yang nyata.",
+      "translation_en": "But they have attributed to Him from His servants a portion. Indeed, man is clearly ungrateful.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043015.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043015.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043015.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043015.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043015.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043015.mp3"
+      }
+    },
+    {
+      "number": 16,
+      "arab": "أَمِ ٱتَّخَذَ مِمَّا يَخْلُقُ بَنَاتٍۢ وَأَصْفَىٰكُم بِٱلْبَنِينَ",
+      "arab_kemenag": "اَمِ اتَّخَذَ مِمَّا يَخْلُقُ بَنٰتٍ وَّاَصْفٰىكُمْ بِالْبَنِيْنَ ۗ ",
+      "latin": "Amittakhażū mimmā yakhluqu banātiw wa aṣfākum bil-banīn(a).",
+      "translation_id": "Patutkah Dia mengambil anak perempuan dari sebagian yang telah Dia ciptakan dan memilihkan anak laki-laki untukmu?",
+      "translation_en": "Or has He taken, out of what He has created, daughters and chosen you for [having] sons?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043016.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043016.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043016.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043016.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043016.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043016.mp3"
+      }
+    },
+    {
+      "number": 17,
+      "arab": "وَإِذَا بُشِّرَ أَحَدُهُم بِمَا ضَرَبَ لِلرَّحْمَٰنِ مَثَلًۭا ظَلَّ وَجْهُهُۥ مُسْوَدًّۭا وَهُوَ كَظِيمٌ",
+      "arab_kemenag": "وَاِذَا بُشِّرَ اَحَدُهُمْ بِمَا ضَرَبَ لِلرَّحْمٰنِ مَثَلًا ظَلَّ وَجْهُهٗ مُسْوَدًّا وَّهُوَ كَظِيْمٌ ",
+      "latin": "Wa iżā busysyira aḥaduhum bimā ḍaraba lir-raḥmāni maṡalan ẓalla wajhuhū muswaddaw wa huwa kaẓīm(un).",
+      "translation_id": "Apabila salah seorang di antara mereka diberi kabar gembira tentang sesuatu (kelahiran anak perempuan) yang dijadikan sebagai perumpamaan bagi (Allah) Yang Maha Pengasih, jadilah wajahnya merah padam karena menahan sedih (dan marah).",
+      "translation_en": "And when one of them is given good tidings of that which he attributes to the Most Merciful in comparison, his face becomes dark, and he suppresses grief.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043017.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043017.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043017.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043017.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043017.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043017.mp3"
+      }
+    },
+    {
+      "number": 18,
+      "arab": "أَوَمَن يُنَشَّؤُا۟ فِى ٱلْحِلْيَةِ وَهُوَ فِى ٱلْخِصَامِ غَيْرُ مُبِينٍۢ",
+      "arab_kemenag": "اَوَمَنْ يُّنَشَّؤُا فِى الْحِلْيَةِ وَهُوَ فِى الْخِصَامِ غَيْرُ مُبِيْنٍ ",
+      "latin": "Awamay yunasysya'u fil-ḥilyati wa huwa fil-khiṣāmi gairu mubīn(in).",
+      "translation_id": "Apakah patut (menjadi anak Allah) orang yang tumbuh dan berkembang (dengan tabiat) selalu berhias diri, sedangkan dia tidak mampu memberi alasan yang tegas dan jelas dalam pertengkaran.",
+      "translation_en": "So is one brought up in ornaments while being during conflict unevident [attributed to Allah]?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043018.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043018.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043018.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043018.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043018.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043018.mp3"
+      }
+    },
+    {
+      "number": 19,
+      "arab": "وَجَعَلُوا۟ ٱلْمَلَٰٓئِكَةَ ٱلَّذِينَ هُمْ عِبَٰدُ ٱلرَّحْمَٰنِ إِنَٰثًا ۚ أَشَهِدُوا۟ خَلْقَهُمْ ۚ سَتُكْتَبُ شَهَٰدَتُهُمْ وَيُسْـَٔلُونَ",
+      "arab_kemenag": "وَجَعَلُوا الْمَلٰۤىِٕكَةَ الَّذِيْنَ هُمْ عِبٰدُ الرَّحْمٰنِ اِنَاثًا ۗ اَشَهِدُوْا خَلْقَهُمْ ۗسَتُكْتَبُ شَهَادَتُهُمْ وَيُسْـَٔلُوْنَ",
+      "latin": "Wa ja‘alul-malā'ikatal-lażīna hum ‘ibādur raḥmāni ināṡā(n), asyahidū khalqahum, satuktabu syahādatuhum wa yus'alūn(a).",
+      "translation_id": "Mereka menganggap para malaikat, hamba-hamba (Allah) Yang Maha Pengasih itu, berjenis perempuan. Apakah mereka menyaksikan penciptaannya? Kelak kesaksian (yang mereka karang sendiri itu) akan dituliskan dan akan dimintakan pertanggungjawaban.",
+      "translation_en": "And they have made the angels, who are servants of the Most Merciful, females. Did they witness their creation? Their testimony will be recorded, and they will be questioned.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043019.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043019.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043019.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043019.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043019.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043019.mp3"
+      }
+    },
+    {
+      "number": 20,
+      "arab": "وَقَالُوا۟ لَوْ شَآءَ ٱلرَّحْمَٰنُ مَا عَبَدْنَٰهُم ۗ مَّا لَهُم بِذَٰلِكَ مِنْ عِلْمٍ ۖ إِنْ هُمْ إِلَّا يَخْرُصُونَ",
+      "arab_kemenag": "وَقَالُوْا لَوْ شَاۤءَ الرَّحْمٰنُ مَا عَبَدْنٰهُمْ ۗمَا لَهُمْ بِذٰلِكَ مِنْ عِلْمٍ اِنْ هُمْ اِلَّا يَخْرُصُوْنَۗ ",
+      "latin": "Wa qālū lau syā'ar-raḥmānu mā ‘abadnāhum, mā lahum biżālika min ‘ilm(in), in hum illā yakhruṣūn(a).",
+      "translation_id": "Mereka berkata, “Sekiranya (Allah) Yang Maha Pengasih menghendaki, tentulah kami tidak menyembah mereka (malaikat).” Mereka tidak mempunyai pengetahuan sedikit pun tentang itu. Mereka hanyalah menduga-duga belaka.",
+      "translation_en": "And they said, \"If the Most Merciful had willed, we would not have worshipped them.\" They have of that no knowledge. They are not but falsifying.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043020.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043020.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043020.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043020.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043020.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043020.mp3"
+      }
+    },
+    {
+      "number": 21,
+      "arab": "أَمْ ءَاتَيْنَٰهُمْ كِتَٰبًۭا مِّن قَبْلِهِۦ فَهُم بِهِۦ مُسْتَمْسِكُونَ",
+      "arab_kemenag": "اَمْ اٰتَيْنٰهُمْ كِتٰبًا مِّنْ قَبْلِهٖ فَهُمْ بِهٖ مُسْتَمْسِكُوْنَ ",
+      "latin": "Am ātaināhum kitābam min qablihī fahum bihī mustamsikūn(a).",
+      "translation_id": "Apakah kami pernah memberikan sebuah kitab kepada mereka sebelumnya (Al-Qur’an), lalu mereka berpegang teguh (pada kitab itu)?",
+      "translation_en": "Or have We given them a book before the Qur'an to which they are adhering?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043021.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043021.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043021.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043021.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043021.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043021.mp3"
+      }
+    },
+    {
+      "number": 22,
+      "arab": "بَلْ قَالُوٓا۟ إِنَّا وَجَدْنَآ ءَابَآءَنَا عَلَىٰٓ أُمَّةٍۢ وَإِنَّا عَلَىٰٓ ءَاثَٰرِهِم مُّهْتَدُونَ",
+      "arab_kemenag": "بَلْ قَالُوْٓا اِنَّا وَجَدْنَآ اٰبَاۤءَنَا عَلٰٓى اُمَّةٍ وَّاِنَّا عَلٰٓى اٰثٰرِهِمْ مُّهْتَدُوْنَ ",
+      "latin": "Bal qālū innā wajadnā ābā'anā ‘alā ummatiw wa innā ‘alā āṡārihim muhtadūn(a).",
+      "translation_id": "Bahkan, mereka berkata, “Sesungguhnya kami telah mendapati nenek moyang kami menganut suatu agama dan kami hanya mengikuti jejak mereka.”",
+      "translation_en": "Rather, they say, \"Indeed, we found our fathers upon a religion, and we are in their footsteps [rightly] guided.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043022.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043022.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043022.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043022.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043022.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043022.mp3"
+      }
+    },
+    {
+      "number": 23,
+      "arab": "وَكَذَٰلِكَ مَآ أَرْسَلْنَا مِن قَبْلِكَ فِى قَرْيَةٍۢ مِّن نَّذِيرٍ إِلَّا قَالَ مُتْرَفُوهَآ إِنَّا وَجَدْنَآ ءَابَآءَنَا عَلَىٰٓ أُمَّةٍۢ وَإِنَّا عَلَىٰٓ ءَاثَٰرِهِم مُّقْتَدُونَ",
+      "arab_kemenag": "وَكَذٰلِكَ مَآ اَرْسَلْنَا مِنْ قَبْلِكَ فِيْ قَرْيَةٍ مِّنْ نَّذِيْرٍۙ اِلَّا قَالَ مُتْرَفُوْهَآ  ۙاِنَّا وَجَدْنَآ اٰبَاۤءَنَا عَلٰٓى اُمَّةٍ وَّاِنَّا عَلٰٓى اٰثٰرِهِمْ مُّقْتَدُوْنَ",
+      "latin": "Wa każālika mā arsalnā min qablika fī qaryatim min nażīr(in), illā qāla mutrafūhā, innā wajadnā ābā'anā ‘alā ummatiw wa innā ‘alā āṡārihim muqtadūn(a).",
+      "translation_id": "Demikian juga ketika Kami mengutus seorang pemberi peringatan sebelum engkau (Nabi Muhammad) ke suatu negeri. Orang-orang yang hidup mewah (di negeri itu) selalu berkata, “Sesungguhnya kami mendapati nenek moyang kami menganut suatu (agama) dan kami hanya mencontoh jejak mereka.”",
+      "translation_en": "And similarly, We did not send before you any warner into a city except that its affluent said, \"Indeed, we found our fathers upon a religion, and we are, in their footsteps, following.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043023.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043023.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043023.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043023.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043023.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043023.mp3"
+      }
+    },
+    {
+      "number": 24,
+      "arab": "۞ قَٰلَ أَوَلَوْ جِئْتُكُم بِأَهْدَىٰ مِمَّا وَجَدتُّمْ عَلَيْهِ ءَابَآءَكُمْ ۖ قَالُوٓا۟ إِنَّا بِمَآ أُرْسِلْتُم بِهِۦ كَٰفِرُونَ",
+      "arab_kemenag": "۞ قٰلَ اَوَلَوْ جِئْتُكُمْ بِاَهْدٰى مِمَّا وَجَدْتُّمْ عَلَيْهِ اٰبَاۤءَكُمْۗ قَالُوْٓا اِنَّا بِمَآ اُرْسِلْتُمْ بِهٖ كٰفِرُوْنَ ",
+      "latin": "Qāla awalau ji'tukum bi'ahdā mimmā wajattum ‘alaihi ābā'akum, qālū innā bimā ursiltum bihī kāfirūn(a).",
+      "translation_id": "Dia (pemberi peringatan) berkata, “Masihkah kamu (mengikuti jejak nenek moyangmu), sekalipun aku membawa (agama) yang lebih baik panduannya daripada apa yang kamu peroleh dari nenek moyangmu itu?” Mereka menjawab, “Sesungguhnya kami (tetap) mengingkari kerasulanmu.”",
+      "translation_en": "[Each warner] said, \"Even if I brought you better guidance than that [religion] upon which you found your fathers?\" They said, \"Indeed we, in that with which you were sent, are disbelievers.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043024.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043024.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043024.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043024.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043024.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043024.mp3"
+      }
+    },
+    {
+      "number": 25,
+      "arab": "فَٱنتَقَمْنَا مِنْهُمْ ۖ فَٱنظُرْ كَيْفَ كَانَ عَٰقِبَةُ ٱلْمُكَذِّبِينَ",
+      "arab_kemenag": "فَانْتَقَمْنَا مِنْهُمْ فَانْظُرْ كَيْفَ كَانَ عَاقِبَةُ الْمُكَذِّبِيْنَ ࣖ",
+      "latin": "Fantaqamnā minhum fanẓur kaifa kāna ‘āqibatul-mukażżibīn(a).",
+      "translation_id": "Lalu kami membinasakan mereka. Maka, perhatikanlah bagaimana kesudahan orang-orang yang mendustakan (kebenaran).",
+      "translation_en": "So we took retribution from them; then see how was the end of the deniers.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043025.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043025.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043025.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043025.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043025.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043025.mp3"
+      }
+    },
+    {
+      "number": 26,
+      "arab": "وَإِذْ قَالَ إِبْرَٰهِيمُ لِأَبِيهِ وَقَوْمِهِۦٓ إِنَّنِى بَرَآءٌۭ مِّمَّا تَعْبُدُونَ",
+      "arab_kemenag": "وَاِذْ قَالَ اِبْرٰهِيْمُ لِاَبِيْهِ وَقَوْمِهٖٓ اِنَّنِيْ بَرَاۤءٌ مِّمَّا تَعْبُدُوْنَۙ",
+      "latin": "Wa iż qāla ibrāhīmu li'abīhi wa qaumihī innanī barā'um mimmā ta‘budūn(a).",
+      "translation_id": "(Ingatlah) ketika Ibrahim berkata kepada ayahnya dan kaumnya, “Sesungguhnya aku berlepas diri dari apa yang kamu sembah,",
+      "translation_en": "And [mention, O Muhammad], when Abraham said to his father and his people, \"Indeed, I am disassociated from that which you worship",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043026.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043026.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043026.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043026.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043026.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043026.mp3"
+      }
+    },
+    {
+      "number": 27,
+      "arab": "إِلَّا ٱلَّذِى فَطَرَنِى فَإِنَّهُۥ سَيَهْدِينِ",
+      "arab_kemenag": "اِلَّا الَّذِيْ فَطَرَنِيْ فَاِنَّهٗ سَيَهْدِيْنِ ",
+      "latin": "Illāl-lażī faṭaranī fa'innahū sayahdīn(i).",
+      "translation_id": "kecuali (kamu menyembah) Allah yang menciptakanku. Sesungguhnya Dia akan memberi petunjuk kepadaku.”",
+      "translation_en": "Except for He who created me; and indeed, He will guide me.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043027.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043027.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043027.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043027.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043027.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043027.mp3"
+      }
+    },
+    {
+      "number": 28,
+      "arab": "وَجَعَلَهَا كَلِمَةًۢ بَاقِيَةًۭ فِى عَقِبِهِۦ لَعَلَّهُمْ يَرْجِعُونَ",
+      "arab_kemenag": "وَجَعَلَهَا كَلِمَةً ۢ بَاقِيَةً فِيْ عَقِبِهٖ لَعَلَّهُمْ يَرْجِعُوْنَۗ ",
+      "latin": "Wa ja‘alahā kalimatam bāqiyatan fī ‘aqibihī la‘allahum yarji‘ūn(a).",
+      "translation_id": "Dia (Ibrahim) menjadikannya (kalimat tauhid) perkataan yang kekal pada keturunannya agar mereka kembali (kepadanya).",
+      "translation_en": "And he made it a word remaining among his descendants that they might return [to it].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043028.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043028.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043028.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043028.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043028.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043028.mp3"
+      }
+    },
+    {
+      "number": 29,
+      "arab": "بَلْ مَتَّعْتُ هَٰٓؤُلَآءِ وَءَابَآءَهُمْ حَتَّىٰ جَآءَهُمُ ٱلْحَقُّ وَرَسُولٌۭ مُّبِينٌۭ",
+      "arab_kemenag": "بَلْ مَتَّعْتُ هٰٓؤُلَاۤءِ وَاٰبَاۤءَهُمْ حَتّٰى جَاۤءَهُمُ الْحَقُّ وَرَسُوْلٌ مُّبِيْنٌ",
+      "latin": "Bal matta‘tu hā'ulā'i wa ābā'ahum ḥattā jā'ahumul-ḥaqqu wa rasūlum mubīn(un).",
+      "translation_id": "Bahkan Aku telah memberikan kenikmatan hidup kepada mereka dan nenek moyang mereka sampai kebenaran (Al-Qur’an) datang kepada mereka beserta seorang Rasul yang memberi penjelasan.",
+      "translation_en": "However, I gave enjoyment to these [people of Makkah] and their fathers until there came to them the truth and a clear Messenger.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043029.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043029.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043029.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043029.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043029.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043029.mp3"
+      }
+    },
+    {
+      "number": 30,
+      "arab": "وَلَمَّا جَآءَهُمُ ٱلْحَقُّ قَالُوا۟ هَٰذَا سِحْرٌۭ وَإِنَّا بِهِۦ كَٰفِرُونَ",
+      "arab_kemenag": "وَلَمَّا جَاۤءَهُمُ الْحَقُّ قَالُوْا هٰذَا سِحْرٌ وَّاِنَّا بِهٖ كٰفِرُوْنَ ",
+      "latin": "Wa lammā jā'ahumul-ḥaqqu qālū hāżā siḥruw wa innā bihī kāfirūn(a).",
+      "translation_id": "Ketika kebenaran (Al-Qur’an) itu datang kepada mereka, mereka berkata, “Ini adalah sihir dan sesungguhnya kami mengingkarinya.”",
+      "translation_en": "But when the truth came to them, they said, \"This is magic, and indeed we are, concerning it, disbelievers.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043030.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043030.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043030.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043030.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043030.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043030.mp3"
+      }
+    },
+    {
+      "number": 31,
+      "arab": "وَقَالُوا۟ لَوْلَا نُزِّلَ هَٰذَا ٱلْقُرْءَانُ عَلَىٰ رَجُلٍۢ مِّنَ ٱلْقَرْيَتَيْنِ عَظِيمٍ",
+      "arab_kemenag": "وَقَالُوْا لَوْلَا نُزِّلَ هٰذَا الْقُرْاٰنُ عَلٰى رَجُلٍ مِّنَ الْقَرْيَتَيْنِ عَظِيْمٍ",
+      "latin": "Wa qālū lau lā nuzzila hāżal-qur'ānu ‘alā rajulim minal-qaryataini ‘aẓīm(in).",
+      "translation_id": "Mereka (juga) berkata, “Mengapa Al-Qur’an ini tidak diturunkan kepada (salah satu) pembesar dari dua negeri ini (Makkah dan Taif)?”",
+      "translation_en": "And they said, \"Why was this Qur'an not sent down upon a great man from [one of] the two cities?\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043031.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043031.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043031.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043031.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043031.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043031.mp3"
+      }
+    },
+    {
+      "number": 32,
+      "arab": "أَهُمْ يَقْسِمُونَ رَحْمَتَ رَبِّكَ ۚ نَحْنُ قَسَمْنَا بَيْنَهُم مَّعِيشَتَهُمْ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا ۚ وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍۢ دَرَجَٰتٍۢ لِّيَتَّخِذَ بَعْضُهُم بَعْضًۭا سُخْرِيًّۭا ۗ وَرَحْمَتُ رَبِّكَ خَيْرٌۭ مِّمَّا يَجْمَعُونَ",
+      "arab_kemenag": "اَهُمْ يَقْسِمُوْنَ رَحْمَتَ رَبِّكَۗ نَحْنُ قَسَمْنَا بَيْنَهُمْ مَّعِيْشَتَهُمْ فِى الْحَيٰوةِ الدُّنْيَاۙ وَرَفَعْنَا بَعْضَهُمْ فَوْقَ بَعْضٍ دَرَجٰتٍ لِّيَتَّخِذَ بَعْضُهُمْ بَعْضًا سُخْرِيًّا ۗوَرَحْمَتُ رَبِّكَ خَيْرٌ مِّمَّا يَجْمَعُوْنَ ",
+      "latin": "Ahum yaqsimūna raḥmata rabbik(a), naḥnu qasamnā bainahum ma‘īsyatahum fil-ḥayātid-dun-yā, wa rafa‘nā ba‘ḍahum fauqa ba‘ḍin darajātil liyattakhiża ba‘ḍuhum ba‘ḍan sukhriyyā(n), wa raḥmatu rabbika khairum mimmā yajma‘ūn(a).",
+      "translation_id": "Apakah mereka yang membagi-bagi rahmat Tuhanmu? Kamilah yang menentukan penghidupan mereka dalam kehidupan dunia dan Kami telah meninggikan sebagian mereka atas sebagian yang lain beberapa derajat, agar sebagian mereka dapat memanfaatkan sebagian yang lain. Rahmat Tuhanmu lebih baik dari apa yang mereka kumpulkan.",
+      "translation_en": "Do they distribute the mercy of your Lord? It is We who have apportioned among them their livelihood in the life of this world and have raised some of them above others in degrees [of rank] that they may make use of one another for service. But the mercy of your Lord is better than whatever they accumulate.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043032.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043032.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043032.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043032.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043032.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043032.mp3"
+      }
+    },
+    {
+      "number": 33,
+      "arab": "وَلَوْلَآ أَن يَكُونَ ٱلنَّاسُ أُمَّةًۭ وَٰحِدَةًۭ لَّجَعَلْنَا لِمَن يَكْفُرُ بِٱلرَّحْمَٰنِ لِبُيُوتِهِمْ سُقُفًۭا مِّن فِضَّةٍۢ وَمَعَارِجَ عَلَيْهَا يَظْهَرُونَ",
+      "arab_kemenag": "وَلَوْلَآ اَنْ يَّكُوْنَ النَّاسُ اُمَّةً وَّاحِدَةً لَّجَعَلْنَا لِمَنْ يَّكْفُرُ بِالرَّحْمٰنِ لِبُيُوْتِهِمْ سُقُفًا مِّنْ فِضَّةٍ وَّمَعَارِجَ عَلَيْهَا يَظْهَرُوْنَۙ ",
+      "latin": "Wa lau lā ay yakūnan-nāsu ummataw wāḥidatal laja‘alnā limay yakfuru bir-raḥmāni libuyūtihim suqufam min fiḍḍatiw wa ma‘ārija ‘alaihā yaẓharūn(a).",
+      "translation_id": "Seandainya bukan karena (Kami tidak menghendaki) manusia menjadi satu umat (yang kufur), pastilah sudah Kami buatkan bagi orang-orang yang ingkar kepada (Allah) Yang Maha Pengasih, loteng-loteng rumah mereka dan tangga-tangga yang mereka naiki dari perak.",
+      "translation_en": "And if it were not that the people would become one community [of disbelievers], We would have made for those who disbelieve in the Most Merciful - for their houses - ceilings and stairways of silver upon which to mount",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043033.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043033.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043033.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043033.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043033.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043033.mp3"
+      }
+    },
+    {
+      "number": 34,
+      "arab": "وَلِبُيُوتِهِمْ أَبْوَٰبًۭا وَسُرُرًا عَلَيْهَا يَتَّكِـُٔونَ",
+      "arab_kemenag": "وَلِبُيُوْتِهِمْ اَبْوَابًا وَّسُرُرًا عَلَيْهَا يَتَّكِـُٔوْنَۙ ",
+      "latin": "Wa libuyūtihim abwābaw wa sururan ‘alaihā yattaki'ūn(a).",
+      "translation_id": "Bagi rumah-rumah mereka (Kami buatkan) pintu-pintu (perak) dan dipan-dipan tempat mereka bersandar.",
+      "translation_en": "And for their houses - doors and couches [of silver] upon which to recline",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043034.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043034.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043034.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043034.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043034.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043034.mp3"
+      }
+    },
+    {
+      "number": 35,
+      "arab": "وَزُخْرُفًۭا ۚ وَإِن كُلُّ ذَٰلِكَ لَمَّا مَتَٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۚ وَٱلْءَاخِرَةُ عِندَ رَبِّكَ لِلْمُتَّقِينَ",
+      "arab_kemenag": "وَزُخْرُفًاۗ وَاِنْ كُلُّ ذٰلِكَ لَمَّا مَتَاعُ الْحَيٰوةِ الدُّنْيَا ۗوَالْاٰخِرَةُ عِنْدَ رَبِّكَ لِلْمُتَّقِيْنَ ࣖ ",
+      "latin": "Wa zukhrufā(n), wa in kullu żālika lammā matā‘ul-ḥayātid-dun-yā, wal-ākhiratu ‘inda rabbika lil-muttaqīn(a).",
+      "translation_id": "(Kami buatkan pula) perhiasan-perhiasan dari emas. Semuanya itu tidak lain hanyalah kesenangan hidup dunia, sedangkan (kenikmatan hidup) akhirat di sisi Tuhanmu (dikhususkan) bagi orang-orang bertakwa.",
+      "translation_en": "And gold ornament. But all that is not but the enjoyment of worldly life. And the Hereafter with your Lord is for the righteous.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043035.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043035.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043035.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043035.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043035.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043035.mp3"
+      }
+    },
+    {
+      "number": 36,
+      "arab": "وَمَن يَعْشُ عَن ذِكْرِ ٱلرَّحْمَٰنِ نُقَيِّضْ لَهُۥ شَيْطَٰنًۭا فَهُوَ لَهُۥ قَرِينٌۭ",
+      "arab_kemenag": "وَمَنْ يَّعْشُ عَنْ ذِكْرِ الرَّحْمٰنِ نُقَيِّضْ لَهٗ شَيْطٰنًا فَهُوَ لَهٗ قَرِيْنٌ ",
+      "latin": "Wa may ya‘syu ‘an żikrir-raḥmāni nuqayyiḍ lahū syaiṭānan fahuwa lahū qarīn(un).",
+      "translation_id": "Siapa yang berpaling dari pengajaran (Allah) Yang Maha Pengasih (Al-Qur’an), Kami biarkan setan (menyesatkannya). Maka, ia (setan) selalu menemaninya.",
+      "translation_en": "And whoever is blinded from remembrance of the Most Merciful - We appoint for him a devil, and he is to him a companion.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043036.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043036.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043036.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043036.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043036.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043036.mp3"
+      }
+    },
+    {
+      "number": 37,
+      "arab": "وَإِنَّهُمْ لَيَصُدُّونَهُمْ عَنِ ٱلسَّبِيلِ وَيَحْسَبُونَ أَنَّهُم مُّهْتَدُونَ",
+      "arab_kemenag": "وَاِنَّهُمْ لَيَصُدُّوْنَهُمْ عَنِ السَّبِيْلِ وَيَحْسَبُوْنَ اَنَّهُمْ مُّهْتَدُوْنَ ",
+      "latin": "Wa innahum layaṣuddūnahum ‘anis-sabīli wa yaḥsabūna annahum muhtadūn(a).",
+      "translation_id": "Sesungguhnya mereka (setan-setan itu) benar-benar menghalangi mereka (manusia) dari jalan (yang benar), sedangkan mereka (manusia yang sesat itu) mengira bahwa mereka adalah orang-orang yang mendapat petunjuk.",
+      "translation_en": "And indeed, the devils avert them from the way [of guidance] while they think that they are [rightly] guided",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043037.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043037.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043037.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043037.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043037.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043037.mp3"
+      }
+    },
+    {
+      "number": 38,
+      "arab": "حَتَّىٰٓ إِذَا جَآءَنَا قَالَ يَٰلَيْتَ بَيْنِى وَبَيْنَكَ بُعْدَ ٱلْمَشْرِقَيْنِ فَبِئْسَ ٱلْقَرِينُ",
+      "arab_kemenag": "حَتّٰىٓ اِذَا جَاۤءَنَا قَالَ يٰلَيْتَ بَيْنِيْ وَبَيْنَكَ بُعْدَ الْمَشْرِقَيْنِ فَبِئْسَ الْقَرِيْنُ",
+      "latin": "Ḥattā iżā jā'anā qāla yā laita bainī wa bainaka bu‘dal-masyriqaini fa bi'sal-qarīn(u).",
+      "translation_id": "Sehingga, apabila dia (orang yang berpaling itu) datang kepada Kami (pada hari Kiamat) dia berkata, “Aduhai, sekiranya (jarak) antara aku dan kamu seperti jarak antara timur dan barat! Memang (setan itu) teman yang paling buruk (bagi manusia).”",
+      "translation_en": "Until, when he comes to Us [at Judgement], he says [to his companion], \"Oh, I wish there was between me and you the distance between the east and west - how wretched a companion.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043038.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043038.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043038.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043038.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043038.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043038.mp3"
+      }
+    },
+    {
+      "number": 39,
+      "arab": "وَلَن يَنفَعَكُمُ ٱلْيَوْمَ إِذ ظَّلَمْتُمْ أَنَّكُمْ فِى ٱلْعَذَابِ مُشْتَرِكُونَ",
+      "arab_kemenag": "وَلَنْ يَّنْفَعَكُمُ الْيَوْمَ اِذْ ظَّلَمْتُمْ اَنَّكُمْ فِى الْعَذَابِ مُشْتَرِكُوْنَ ",
+      "latin": "Wa lay yanfa‘akumul-yauma iẓ ẓalamtum annakum fil-‘ażābi musytarikūn(a).",
+      "translation_id": "(Harapanmu itu) sekali-kali tidak akan memberi manfaat kepadamu pada hari itu karena kamu telah menzalimi (dirimu sendiri). Sesungguhnya kamu (orang yang berpaling dan setan) adalah bersekutu dalam azab itu.",
+      "translation_en": "And never will it benefit you that Day, when you have wronged, that you are [all] sharing in the punishment.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043039.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043039.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043039.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043039.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043039.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043039.mp3"
+      }
+    },
+    {
+      "number": 40,
+      "arab": "أَفَأَنتَ تُسْمِعُ ٱلصُّمَّ أَوْ تَهْدِى ٱلْعُمْىَ وَمَن كَانَ فِى ضَلَٰلٍۢ مُّبِينٍۢ",
+      "arab_kemenag": "اَفَاَنْتَ تُسْمِعُ الصُّمَّ اَوْ تَهْدِى الْعُمْيَ وَمَنْ كَانَ فِيْ ضَلٰلٍ مُّبِيْنٍ ",
+      "latin": "Afa anta tusmi‘uṣ-ṣumma au tahdil-‘umya  wa man kāna fī ḍalālim mubīn(in).",
+      "translation_id": "Maka, apakah engkau (Nabi Muhammad) dapat menjadikan orang-orang yang tuli bisa mendengar (kebenaran) atau (dapatkah) engkau memberi petunjuk kepada orang-orang yang buta (hatinya) dan kepada orang yang tetap dalam kesesatan yang nyata?",
+      "translation_en": "Then will you make the deaf hear, [O Muhammad], or guide the blind or he who is in clear error?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043040.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043040.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043040.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043040.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043040.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043040.mp3"
+      }
+    },
+    {
+      "number": 41,
+      "arab": "فَإِمَّا نَذْهَبَنَّ بِكَ فَإِنَّا مِنْهُم مُّنتَقِمُونَ",
+      "arab_kemenag": "فَاِمَّا نَذْهَبَنَّ بِكَ فَاِنَّا مِنْهُمْ مُّنْتَقِمُوْنَۙ ",
+      "latin": "Fa immā nażhabanna bika fa innā minhum muntaqimūn(a).",
+      "translation_id": "Maka, sungguh jika Kami benar-benar mewafatkanmu (sebelum engkau mencapai kemenangan), sesungguhnya kepada mereka Kami akan (tetap) memberikan balasan.",
+      "translation_en": "And whether [or not] We take you away [in death], indeed, We will take retribution upon them.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043041.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043041.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043041.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043041.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043041.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043041.mp3"
+      }
+    },
+    {
+      "number": 42,
+      "arab": "أَوْ نُرِيَنَّكَ ٱلَّذِى وَعَدْنَٰهُمْ فَإِنَّا عَلَيْهِم مُّقْتَدِرُونَ",
+      "arab_kemenag": "اَوْ نُرِيَنَّكَ الَّذِيْ وَعَدْنٰهُمْ فَاِنَّا عَلَيْهِمْ مُّقْتَدِرُوْنَ ",
+      "latin": "Au nuriyannakal-lażī wa‘adnāhum fa'innā ‘alaihim muqtadirūn(a).",
+      "translation_id": "Atau, benar-benar Kami perlihatkan kepadamu (azab) yang telah Kami ancamkan kepada mereka. Sesungguhnya Kami Maha Berkuasa atas mereka.",
+      "translation_en": "Or whether [or not] We show you that which We have promised them, indeed, We are Perfect in Ability.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043042.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043042.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043042.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043042.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043042.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043042.mp3"
+      }
+    },
+    {
+      "number": 43,
+      "arab": "فَٱسْتَمْسِكْ بِٱلَّذِىٓ أُوحِىَ إِلَيْكَ ۖ إِنَّكَ عَلَىٰ صِرَٰطٍۢ مُّسْتَقِيمٍۢ",
+      "arab_kemenag": "فَاسْتَمْسِكْ بِالَّذِيْٓ اُوْحِيَ اِلَيْكَ ۚاِنَّكَ عَلٰى صِرَاطٍ مُّسْتَقِيْمٍ ",
+      "latin": "Fastamsik bil-lażī ūḥiya ilaik(a), innaka ‘alā ṣirāṭim mustaqīm(in).",
+      "translation_id": "Maka, berpegang teguhlah pada (Al-Qur’an) yang telah diwahyukan kepadamu. Sesungguhnya engkau berada di jalan yang lurus.",
+      "translation_en": "So adhere to that which is revealed to you. Indeed, you are on a straight path.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043043.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043043.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043043.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043043.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043043.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043043.mp3"
+      }
+    },
+    {
+      "number": 44,
+      "arab": "وَإِنَّهُۥ لَذِكْرٌۭ لَّكَ وَلِقَوْمِكَ ۖ وَسَوْفَ تُسْـَٔلُونَ",
+      "arab_kemenag": "وَاِنَّهٗ لَذِكْرٌ لَّكَ وَلِقَوْمِكَ ۚوَسَوْفَ تُسْـَٔلُوْنَ",
+      "latin": "Wa innahū lażikrul laka wa liqaumik(a), wa saufa tus'alūn(a).",
+      "translation_id": "Sesungguhnya ia (Al-Qur’an) benar-benar merupakan kemuliaan bagimu dan bagi kaummu dan kelak kamu akan dimintai pertanggungjawaban.",
+      "translation_en": "And indeed, it is a remembrance for you and your people, and you [all] are going to be questioned.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043044.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043044.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043044.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043044.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043044.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043044.mp3"
+      }
+    },
+    {
+      "number": 45,
+      "arab": "وَسْـَٔلْ مَنْ أَرْسَلْنَا مِن قَبْلِكَ مِن رُّسُلِنَآ أَجَعَلْنَا مِن دُونِ ٱلرَّحْمَٰنِ ءَالِهَةًۭ يُعْبَدُونَ",
+      "arab_kemenag": "وَسْـَٔلْ مَنْ اَرْسَلْنَا مِنْ قَبْلِكَ مِنْ رُّسُلِنَآ  ۖ اَجَعَلْنَا مِنْ دُوْنِ الرَّحْمٰنِ اٰلِهَةً يُّعْبَدُوْنَ ࣖ",
+      "latin": "Was'al man arsalnā min qablika mir rusulinā, aja‘alnā min dūnir-raḥmāni ālihatay yu‘badūn(a).",
+      "translation_id": "Tanyakanlah (Nabi Muhammad) kepada (pengikut) rasul-rasul Kami yang telah Kami utus sebelum engkau, “Apakah Kami menjadikan selain (Allah) yang Maha Pengasih sebagai tuhan-tuhan yang disembah?”",
+      "translation_en": "And ask those We sent before you of Our messengers; have We made besides the Most Merciful deities to be worshipped?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043045.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043045.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043045.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043045.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043045.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043045.mp3"
+      }
+    },
+    {
+      "number": 46,
+      "arab": "وَلَقَدْ أَرْسَلْنَا مُوسَىٰ بِـَٔايَٰتِنَآ إِلَىٰ فِرْعَوْنَ وَمَلَإِي۟هِۦ فَقَالَ إِنِّى رَسُولُ رَبِّ ٱلْعَٰلَمِينَ",
+      "arab_kemenag": "وَلَقَدْ اَرْسَلْنَا مُوْسٰى بِاٰيٰتِنَآ اِلٰى فِرْعَوْنَ وَمَلَا۟ىِٕهٖ فَقَالَ اِنِّيْ رَسُوْلُ رَبِّ الْعٰلَمِيْنَ ",
+      "latin": "Wa laqad arsalnā mūsā bi'āyātinā ilā fir‘auna wa mala'ihī fa qāla innī rasūlu rabbil-‘ālamīn(a). ",
+      "translation_id": "Sungguh, Kami benar-benar telah mengutus Musa dengan membawa ayat-ayat (mukjizat) Kami kepada Fir‘aun dan para pemuka (kaum)-nya. Dia (Musa) berkata, “Sesungguhnya aku adalah utusan dari Tuhan semesta alam.”",
+      "translation_en": "And certainly did We send Moses with Our signs to Pharaoh and his establishment, and he said, \"Indeed, I am the messenger of the Lord of the worlds.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043046.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043046.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043046.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043046.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043046.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043046.mp3"
+      }
+    },
+    {
+      "number": 47,
+      "arab": "فَلَمَّا جَآءَهُم بِـَٔايَٰتِنَآ إِذَا هُم مِّنْهَا يَضْحَكُونَ",
+      "arab_kemenag": "فَلَمَّا جَاۤءَهُمْ بِاٰيٰتِنَآ اِذَا هُمْ مِّنْهَا يَضْحَكُوْنَ ",
+      "latin": "Falammā jā'ahum bi'āyātinā iżā hum minhā yaḍḥakūn(a).",
+      "translation_id": "Ketika dia (Musa) datang kepada mereka dengan membawa ayat-ayat (mukjizat) Kami, seketika itu mereka mentertawakannya.",
+      "translation_en": "But when he brought them Our signs, at once they laughed at them.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043047.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043047.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043047.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043047.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043047.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043047.mp3"
+      }
+    },
+    {
+      "number": 48,
+      "arab": "وَمَا نُرِيهِم مِّنْ ءَايَةٍ إِلَّا هِىَ أَكْبَرُ مِنْ أُخْتِهَا ۖ وَأَخَذْنَٰهُم بِٱلْعَذَابِ لَعَلَّهُمْ يَرْجِعُونَ",
+      "arab_kemenag": "وَمَا نُرِيْهِمْ مِّنْ اٰيَةٍ اِلَّا هِيَ اَكْبَرُ مِنْ اُخْتِهَاۗ وَاَخَذْنٰهُمْ بِالْعَذَابِ لَعَلَّهُمْ يَرْجِعُوْنَ ",
+      "latin": "Wa mā nurīhim min āyatin illā hiya akbaru min ukhtihā, wa akhażnāhum bil-‘ażābi la‘allahum yarji‘ūn(a).  ",
+      "translation_id": "Tidaklah Kami perlihatkan suatu mukjizat kepada mereka kecuali ia (mukjizat itu) lebih besar daripada mukjizat (sebelumnya) dan Kami timpakan kepada mereka azab agar mereka kembali (ke jalan yang benar).",
+      "translation_en": "And We showed them not a sign except that it was greater than its sister, and We seized them with affliction that perhaps they might return [to faith].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043048.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043048.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043048.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043048.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043048.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043048.mp3"
+      }
+    },
+    {
+      "number": 49,
+      "arab": "وَقَالُوا۟ يَٰٓأَيُّهَ ٱلسَّاحِرُ ٱدْعُ لَنَا رَبَّكَ بِمَا عَهِدَ عِندَكَ إِنَّنَا لَمُهْتَدُونَ",
+      "arab_kemenag": "وَقَالُوْا يٰٓاَيُّهَ السَّاحِرُ ادْعُ لَنَا رَبَّكَ بِمَا عَهِدَ عِنْدَكَۚ اِنَّنَا لَمُهْتَدُوْنَ ",
+      "latin": "Wa qālū yā ayyuhas-sāḥirud‘u lanā rabbaka bimā ‘ahida ‘indak(a), innanā lamuhtadūn(a).",
+      "translation_id": "Mereka berkata, “Wahai penyihir, berdoalah kepada Tuhanmu untuk (melepaskan) kami sesuai dengan apa yang telah dijanjikan-Nya kepadamu. Sesungguhnya kami benar-benar akan menjadi orang-orang yang mendapat petunjuk.”",
+      "translation_en": "And they said [to Moses], \"O magician, invoke for us your Lord by what He has promised you. Indeed, we will be guided.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043049.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043049.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043049.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043049.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043049.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043049.mp3"
+      }
+    },
+    {
+      "number": 50,
+      "arab": "فَلَمَّا كَشَفْنَا عَنْهُمُ ٱلْعَذَابَ إِذَا هُمْ يَنكُثُونَ",
+      "arab_kemenag": "فَلَمَّا كَشَفْنَا عَنْهُمُ الْعَذَابَ اِذَا هُمْ يَنْكُثُوْنَ",
+      "latin": "Falammā kasyafnā ‘anhumul-‘ażāba iżā hum yankuṡūn(a).",
+      "translation_id": "Maka, ketika Kami hilangkan azab itu dari mereka, seketika itu (juga) mereka ingkar janji.",
+      "translation_en": "But when We removed from them the affliction, at once they broke their word.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043050.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043050.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043050.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043050.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043050.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043050.mp3"
+      }
+    },
+    {
+      "number": 51,
+      "arab": "وَنَادَىٰ فِرْعَوْنُ فِى قَوْمِهِۦ قَالَ يَٰقَوْمِ أَلَيْسَ لِى مُلْكُ مِصْرَ وَهَٰذِهِ ٱلْأَنْهَٰرُ تَجْرِى مِن تَحْتِىٓ ۖ أَفَلَا تُبْصِرُونَ",
+      "arab_kemenag": "وَنَادٰى فِرْعَوْنُ فِيْ قَوْمِهٖ قَالَ يٰقَوْمِ اَلَيْسَ لِيْ مُلْكُ مِصْرَ وَهٰذِهِ الْاَنْهٰرُ تَجْرِيْ مِنْ تَحْتِيْۚ اَفَلَا تُبْصِرُوْنَۗ ",
+      "latin": "Wa nādā fir‘aunu fī qaumihī qāla yā qaumi alaisa lī mulku miṣra wa hāżihil-anhāru tajrī min taḥtī, afalā tubṣirūn(a).",
+      "translation_id": "Fir‘aun berseru kepada kaumnya (seraya) berkata, “Wahai kaumku, bukankah Kerajaan Mesir itu milikku dan (bukankah) sungai-sungai itu mengalir di bawah (istana-istana)-ku. Apakah kamu tidak melihat?",
+      "translation_en": "And Pharaoh called out among his people; he said, \"O my people, does not the kingdom of Egypt belong to me, and these rivers flowing beneath me; then do you not see?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043051.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043051.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043051.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043051.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043051.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043051.mp3"
+      }
+    },
+    {
+      "number": 52,
+      "arab": "أَمْ أَنَا۠ خَيْرٌۭ مِّنْ هَٰذَا ٱلَّذِى هُوَ مَهِينٌۭ وَلَا يَكَادُ يُبِينُ",
+      "arab_kemenag": "اَمْ اَنَا۠ خَيْرٌ مِّنْ هٰذَا الَّذِيْ هُوَ مَهِيْنٌ ەۙ وَّلَا يَكَادُ يُبِيْنُ ",
+      "latin": "Am ana khairum min hāżal-lażī huwa mahīn(un), wa lā yakādu yubīn(u).",
+      "translation_id": "Bahkan, bukankah aku lebih baik daripada orang yang hina ini (Musa) yang hampir-hampir tidak dapat menjelaskan (maksud perkataannya)?",
+      "translation_en": "Or am I [not] better than this one who is insignificant and hardly makes himself clear?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043052.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043052.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043052.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043052.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043052.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043052.mp3"
+      }
+    },
+    {
+      "number": 53,
+      "arab": "فَلَوْلَآ أُلْقِىَ عَلَيْهِ أَسْوِرَةٌۭ مِّن ذَهَبٍ أَوْ جَآءَ مَعَهُ ٱلْمَلَٰٓئِكَةُ مُقْتَرِنِينَ",
+      "arab_kemenag": "فَلَوْلَآ اُلْقِيَ عَلَيْهِ اَسْوِرَةٌ مِّنْ ذَهَبٍ اَوْ جَاۤءَ مَعَهُ الْمَلٰۤىِٕكَةُ مُقْتَرِنِيْنَ",
+      "latin": "Falau lā ulqiya ‘alaihi aswiratum min żahabin au jā'a ma‘ahul-malā'ikatu muqtarinīn(a).",
+      "translation_id": "Maka, mengapa tidak dipakaikan kepadanya (Musa) gelang dari emas atau malaikat datang bersama dia mengiringinya?”",
+      "translation_en": "Then why have there not been placed upon him bracelets of gold or come with him the angels in conjunction?\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043053.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043053.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043053.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043053.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043053.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043053.mp3"
+      }
+    },
+    {
+      "number": 54,
+      "arab": "فَٱسْتَخَفَّ قَوْمَهُۥ فَأَطَاعُوهُ ۚ إِنَّهُمْ كَانُوا۟ قَوْمًۭا فَٰسِقِينَ",
+      "arab_kemenag": "فَاسْتَخَفَّ قَوْمَهٗ فَاَطَاعُوْهُ ۗاِنَّهُمْ كَانُوْا قَوْمًا فٰسِقِيْنَ ",
+      "latin": "Fastakhaffa qaumahū fa aṭā‘ūh(u), innahum kānū qauman fāsiqīn(a).",
+      "translation_id": "Maka, dia (Fir‘aun) telah memengaruhi kaumnya sehingga mereka patuh kepadanya. Sesungguhnya mereka adalah kaum yang fasik.",
+      "translation_en": "So he bluffed his people, and they obeyed him. Indeed, they were [themselves] a people defiantly disobedient [of Allah].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043054.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043054.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043054.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043054.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043054.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043054.mp3"
+      }
+    },
+    {
+      "number": 55,
+      "arab": "فَلَمَّآ ءَاسَفُونَا ٱنتَقَمْنَا مِنْهُمْ فَأَغْرَقْنَٰهُمْ أَجْمَعِينَ",
+      "arab_kemenag": "فَلَمَّآ اٰسَفُوْنَا انْتَقَمْنَا مِنْهُمْ فَاَغْرَقْنٰهُمْ اَجْمَعِيْنَۙ ",
+      "latin": "Falammā āsafūnantaqamnā minhum fa agraqnāhum ajma‘īn(a).",
+      "translation_id": "Maka, ketika mereka telah membuat Kami murka, Kami hukum mereka, lalu Kami tenggelamkan mereka semuanya (di laut).",
+      "translation_en": "And when they angered Us, We took retribution from them and drowned them all.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043055.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043055.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043055.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043055.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043055.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043055.mp3"
+      }
+    },
+    {
+      "number": 56,
+      "arab": "فَجَعَلْنَٰهُمْ سَلَفًۭا وَمَثَلًۭا لِّلْءَاخِرِينَ",
+      "arab_kemenag": "فَجَعَلْنٰهُمْ سَلَفًا وَّمَثَلًا لِّلْاٰخِرِيْنَ ࣖ",
+      "latin": "Fa ja‘alnāhum salafaw wa maṡalal lil-ākhirīn(a).",
+      "translation_id": "Maka, Kami jadikan mereka sebagai (kaum) terdahulu dan pelajaran bagi orang-orang yang kemudian.",
+      "translation_en": "And We made them a precedent and an example for the later peoples.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043056.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043056.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043056.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043056.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043056.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043056.mp3"
+      }
+    },
+    {
+      "number": 57,
+      "arab": "۞ وَلَمَّا ضُرِبَ ٱبْنُ مَرْيَمَ مَثَلًا إِذَا قَوْمُكَ مِنْهُ يَصِدُّونَ",
+      "arab_kemenag": "۞ وَلَمَّا ضُرِبَ ابْنُ مَرْيَمَ مَثَلًا اِذَا قَوْمُكَ مِنْهُ يَصِدُّوْنَ",
+      "latin": "Wa lammā ḍuribabnu maryama maṡalan iżā qaumuka minhu yaṣiddūn(a).",
+      "translation_id": "Ketika putra Maryam (Isa) dijadikan perumpamaan, tiba-tiba kaummu (suku Quraisy) bersorak karenanya.",
+      "translation_en": "And when the son of Mary was presented as an example, immediately your people laughed aloud.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043057.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043057.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043057.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043057.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043057.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043057.mp3"
+      }
+    },
+    {
+      "number": 58,
+      "arab": "وَقَالُوٓا۟ ءَأَٰلِهَتُنَا خَيْرٌ أَمْ هُوَ ۚ مَا ضَرَبُوهُ لَكَ إِلَّا جَدَلًۢا ۚ بَلْ هُمْ قَوْمٌ خَصِمُونَ",
+      "arab_kemenag": "وَقَالُوْٓا ءَاٰلِهَتُنَا خَيْرٌ اَمْ هُوَ ۗمَا ضَرَبُوْهُ لَكَ اِلَّا جَدَلًا ۗبَلْ هُمْ قَوْمٌ خَصِمُوْنَ",
+      "latin": "Wa qālū a'ālihatunā khairun am huw(a), mā ḍarabūhu laka illā jadalā(n), bal hum qaumun khaṣimūn(a).",
+      "translation_id": "Mereka berkata, “Manakah yang lebih baik, tuhan-tuhan kami atau dia (Isa)?” Mereka tidak memberikan (perumpamaan itu) kepadamu, kecuali dengan maksud membantah saja. Sebenarnya mereka adalah kaum yang suka bertengkar.",
+      "translation_en": "And they said, \"Are your gods better, or is he?\" They did not present the comparison except for [mere] argument. But, [in fact], they are a people prone to dispute.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043058.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043058.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043058.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043058.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043058.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043058.mp3"
+      }
+    },
+    {
+      "number": 59,
+      "arab": "إِنْ هُوَ إِلَّا عَبْدٌ أَنْعَمْنَا عَلَيْهِ وَجَعَلْنَٰهُ مَثَلًۭا لِّبَنِىٓ إِسْرَٰٓءِيلَ",
+      "arab_kemenag": "اِنْ هُوَ اِلَّا عَبْدٌ اَنْعَمْنَا عَلَيْهِ وَجَعَلْنٰهُ مَثَلًا لِّبَنِيْٓ اِسْرَاۤءِيْلَ ۗ  ",
+      "latin": "In huwa illā ‘abdun an‘amnā ‘alaihi wa ja‘alnāhu maṡalal libanī isrā'īl(a).",
+      "translation_id": "Dia (Isa) tidak lain hanyalah seorang hamba yang Kami anugerahkan nikmat (kenabian) kepadanya dan Kami jadikan dia sebagai pelajaran (tanda kekuasaan Kami) bagi Bani Israil.",
+      "translation_en": "Jesus was not but a servant upon whom We bestowed favor, and We made him an example for the Children of Israel.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043059.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043059.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043059.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043059.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043059.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043059.mp3"
+      }
+    },
+    {
+      "number": 60,
+      "arab": "وَلَوْ نَشَآءُ لَجَعَلْنَا مِنكُم مَّلَٰٓئِكَةًۭ فِى ٱلْأَرْضِ يَخْلُفُونَ",
+      "arab_kemenag": "وَلَوْ نَشَاۤءُ لَجَعَلْنَا مِنْكُمْ مَّلٰۤىِٕكَةً فِى الْاَرْضِ يَخْلُفُوْنَ ",
+      "latin": "Wa lau nasyā'u laja‘alnā minkum malā'ikatan fil-arḍi yakhlufūn(a).",
+      "translation_id": "Seandainya Kami kehendaki, niscaya Kami jadikan malaikat sebagai penggantimu di bumi secara turun-temurun.",
+      "translation_en": "And if We willed, We could have made [instead] of you angels succeeding [one another] on the earth.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043060.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043060.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043060.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043060.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043060.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043060.mp3"
+      }
+    },
+    {
+      "number": 61,
+      "arab": "وَإِنَّهُۥ لَعِلْمٌۭ لِّلسَّاعَةِ فَلَا تَمْتَرُنَّ بِهَا وَٱتَّبِعُونِ ۚ هَٰذَا صِرَٰطٌۭ مُّسْتَقِيمٌۭ",
+      "arab_kemenag": "وَاِنَّهٗ لَعِلْمٌ لِّلسَّاعَةِ فَلَا تَمْتَرُنَّ بِهَا وَاتَّبِعُوْنِۗ هٰذَا صِرَاطٌ مُّسْتَقِيْمٌ ",
+      "latin": "Wa innahū la‘ilmul lis-sā‘ati falā tamtarunna bihā wattabi‘ūn(i), hāżā ṣirāṭum mustaqīm(un).",
+      "translation_id": "Sesungguhnya dia (Isa) itu benar-benar menjadi pertanda akan datangnya hari Kiamat. Oleh karena itu, janganlah sekali-kali kamu ragu tentang (kiamat) itu dan ikutilah (petunjuk)-Ku. Ini adalah jalan yang lurus.",
+      "translation_en": "And indeed, Jesus will be [a sign for] knowledge of the Hour, so be not in doubt of it, and follow Me. This is a straight path.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043061.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043061.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043061.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043061.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043061.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043061.mp3"
+      }
+    },
+    {
+      "number": 62,
+      "arab": "وَلَا يَصُدَّنَّكُمُ ٱلشَّيْطَٰنُ ۖ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ",
+      "arab_kemenag": "وَلَا يَصُدَّنَّكُمُ الشَّيْطٰنُۚ اِنَّهٗ لَكُمْ عَدُوٌّ مُّبِيْنٌ ",
+      "latin": "Wa lā yaṣuddannakumusy-syaiṭān(u), innahū lakum ‘aduwwum mubīn(un).",
+      "translation_id": "Janganlah sekali-kali kamu dipalingkan oleh setan. Sesungguhnya ia merupakan musuh yang nyata bagimu.",
+      "translation_en": "And never let Satan avert you. Indeed, he is to you a clear enemy.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043062.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043062.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043062.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043062.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043062.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043062.mp3"
+      }
+    },
+    {
+      "number": 63,
+      "arab": "وَلَمَّا جَآءَ عِيسَىٰ بِٱلْبَيِّنَٰتِ قَالَ قَدْ جِئْتُكُم بِٱلْحِكْمَةِ وَلِأُبَيِّنَ لَكُم بَعْضَ ٱلَّذِى تَخْتَلِفُونَ فِيهِ ۖ فَٱتَّقُوا۟ ٱللَّهَ وَأَطِيعُونِ",
+      "arab_kemenag": "وَلَمَّا جَاۤءَ عِيْسٰى بِالْبَيِّنٰتِ قَالَ قَدْ جِئْتُكُمْ بِالْحِكْمَةِ وَلِاُبَيِّنَ لَكُمْ بَعْضَ الَّذِيْ تَخْتَلِفُوْنَ فِيْهِۚ فَاتَّقُوا اللّٰهَ وَاَطِيْعُوْنِ ",
+      "latin": "Wa lammā jā'a ‘īsā bil-bayyināti qāla qad ji'tukum bil-ḥikmati wa li'ubayyina lakum ba‘ḍal-lażī takhtalifūna fīh(i), fattaqullāha wa aṭī‘ūn(i).",
+      "translation_id": "Ketika Isa datang membawa bukti-bukti yang nyata, dia berkata, “Sungguh, aku datang kepadamu dengan membawa hikmah dan untuk aku jelaskan kepadamu sebagian dari apa yang kamu perselisihkan. Maka, bertakwalah kepada Allah dan taatilah aku.",
+      "translation_en": "And when Jesus brought clear proofs, he said, \"I have come to you with wisdom and to make clear to you some of that over which you differ, so fear Allah and obey me.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043063.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043063.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043063.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043063.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043063.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043063.mp3"
+      }
+    },
+    {
+      "number": 64,
+      "arab": "إِنَّ ٱللَّهَ هُوَ رَبِّى وَرَبُّكُمْ فَٱعْبُدُوهُ ۚ هَٰذَا صِرَٰطٌۭ مُّسْتَقِيمٌۭ",
+      "arab_kemenag": "اِنَّ اللّٰهَ هُوَ رَبِّيْ وَرَبُّكُمْ فَاعْبُدُوْهُۗ هٰذَا صِرَاطٌ مُّسْتَقِيْمٌ ",
+      "latin": "Innallāha huwa rabbī wa rabbukum fa‘budūh(u), hāżā ṣirāṭum mustaqīm(un).",
+      "translation_id": "Sesungguhnya Allah, Dialah Tuhanku dan Tuhanmu. Sembahlah Dia! Ini adalah jalan yang lurus.”",
+      "translation_en": "Indeed, Allah is my Lord and your Lord, so worship Him. This is a straight path.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043064.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043064.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043064.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043064.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043064.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043064.mp3"
+      }
+    },
+    {
+      "number": 65,
+      "arab": "فَٱخْتَلَفَ ٱلْأَحْزَابُ مِنۢ بَيْنِهِمْ ۖ فَوَيْلٌۭ لِّلَّذِينَ ظَلَمُوا۟ مِنْ عَذَابِ يَوْمٍ أَلِيمٍ",
+      "arab_kemenag": "فَاخْتَلَفَ الْاَحْزَابُ مِنْۢ بَيْنِهِمْ ۚفَوَيْلٌ لِّلَّذِيْنَ ظَلَمُوْا مِنْ عَذَابِ يَوْمٍ اَلِيْمٍ ",
+      "latin": "Fakhtalafal-aḥzābu mim bainihim, fawailul lil-lażīna ẓalamūmin ‘ażābi yaumin alīm(in).",
+      "translation_id": "Golongan-golongan di antara mereka (Yahudi dan Nasrani) berselisih. Celakalah orang-orang yang zalim (karena) azab pada hari yang sangat pedih (kiamat).",
+      "translation_en": "But the denominations from among them differed [and separated], so woe to those who have wronged from the punishment of a painful Day.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043065.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043065.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043065.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043065.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043065.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043065.mp3"
+      }
+    },
+    {
+      "number": 66,
+      "arab": "هَلْ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأْتِيَهُم بَغْتَةًۭ وَهُمْ لَا يَشْعُرُونَ",
+      "arab_kemenag": "هَلْ يَنْظُرُوْنَ اِلَّا السَّاعَةَ اَنْ تَأْتِيَهُمْ بَغْتَةً وَّهُمْ لَا يَشْعُرُوْنَ ",
+      "latin": "Hal yanẓurūna illas-sā‘ata an ta'tiyahum bagtataw wa hum lā yasy‘urūn(a).",
+      "translation_id": "Tidaklah mereka (orang-orang kafir) menunggu, kecuali hari Kiamat yang datang kepada mereka secara tiba-tiba, sedangkan mereka tidak menyadari(-nya).",
+      "translation_en": "Are they waiting except for the Hour to come upon them suddenly while they perceive not?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043066.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043066.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043066.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043066.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043066.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043066.mp3"
+      }
+    },
+    {
+      "number": 67,
+      "arab": "ٱلْأَخِلَّآءُ يَوْمَئِذٍۭ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا ٱلْمُتَّقِينَ",
+      "arab_kemenag": "اَلْاَخِلَّاۤءُ يَوْمَىِٕذٍۢ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ اِلَّا الْمُتَّقِيْنَ ۗ ࣖ",
+      "latin": "Al-akhillā'u yauma'iżim ba‘ḍuhum liba‘ḍin ‘aduwwun illal-muttaqīn(a).",
+      "translation_id": "Teman-teman akrab pada hari itu saling bermusuhan satu sama lain, kecuali orang-orang yang bertakwa.",
+      "translation_en": "Close friends, that Day, will be enemies to each other, except for the righteous",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043067.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043067.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043067.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043067.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043067.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043067.mp3"
+      }
+    },
+    {
+      "number": 68,
+      "arab": "يَٰعِبَادِ لَا خَوْفٌ عَلَيْكُمُ ٱلْيَوْمَ وَلَآ أَنتُمْ تَحْزَنُونَ",
+      "arab_kemenag": "يٰعِبَادِ لَاخَوْفٌ عَلَيْكُمُ الْيَوْمَ وَلَآ اَنْتُمْ تَحْزَنُوْنَۚ ",
+      "latin": "Yā ‘ibādi lā khaufun ‘alaikumul-yauma wa lā antum taḥzanūn(a).",
+      "translation_id": "(Dikatakan kepada mereka,) “Wahai hamba-hamba-Ku, tidak ada ketakutan bagimu pada hari ini (kiamat) dan tidak pula kamu bersedih.",
+      "translation_en": "[To whom Allah will say], \"O My servants, no fear will there be concerning you this Day, nor will you grieve,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043068.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043068.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043068.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043068.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043068.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043068.mp3"
+      }
+    },
+    {
+      "number": 69,
+      "arab": "ٱلَّذِينَ ءَامَنُوا۟ بِـَٔايَٰتِنَا وَكَانُوا۟ مُسْلِمِينَ",
+      "arab_kemenag": "اَلَّذِيْنَ اٰمَنُوْا بِاٰيٰتِنَا وَكَانُوْا مُسْلِمِيْنَۚ ",
+      "latin": "Allażīna āmanū bi'āyātinā wa kānū muslimīn(a).",
+      "translation_id": "(Yaitu) orang-orang yang beriman kepada ayat-ayat Kami dan mereka adalah orang-orang muslim.",
+      "translation_en": "[You] who believed in Our verses and were Muslims.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043069.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043069.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043069.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043069.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043069.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043069.mp3"
+      }
+    },
+    {
+      "number": 70,
+      "arab": "ٱدْخُلُوا۟ ٱلْجَنَّةَ أَنتُمْ وَأَزْوَٰجُكُمْ تُحْبَرُونَ",
+      "arab_kemenag": "اُدْخُلُوا الْجَنَّةَ اَنْتُمْ وَاَزْوَاجُكُمْ تُحْبَرُوْنَ ",
+      "latin": "Udkhulul-jannata antum wa azwājukum tuḥbarūn(a).",
+      "translation_id": "Masuklah ke dalam surga, kamu dan pasanganmu (dalam keadaan) dibahagiakan.”",
+      "translation_en": "Enter Paradise, you and your kinds, delighted.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043070.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043070.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043070.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043070.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043070.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043070.mp3"
+      }
+    },
+    {
+      "number": 71,
+      "arab": "يُطَافُ عَلَيْهِم بِصِحَافٍۢ مِّن ذَهَبٍۢ وَأَكْوَابٍۢ ۖ وَفِيهَا مَا تَشْتَهِيهِ ٱلْأَنفُسُ وَتَلَذُّ ٱلْأَعْيُنُ ۖ وَأَنتُمْ فِيهَا خَٰلِدُونَ",
+      "arab_kemenag": "يُطَافُ عَلَيْهِمْ بِصِحَافٍ مِّنْ ذَهَبٍ وَّاَكْوَابٍ ۚوَفِيْهَا مَا تَشْتَهِيْهِ الْاَنْفُسُ وَتَلَذُّ الْاَعْيُنُ ۚوَاَنْتُمْ فِيْهَا خٰلِدُوْنَۚ ",
+      "latin": "Yuṭāfu ‘alaihim biṣiḥāfim min żahabiw wa akwāb(in), wa fīhā mā tasytahīhil-anfusu wa talażżul-a‘yun(u), wa antum fīhā khālidūn(a).",
+      "translation_id": "Kepada mereka diedarkan piring-piring dan gelas-gelas dari emas dan di dalamnya (surga) terdapat apa yang diingini oleh hati dan dipandang sedap oleh mata serta kamu kekal di dalamnya.",
+      "translation_en": "Circulated among them will be plates and vessels of gold. And therein is whatever the souls desire and [what] delights the eyes, and you will abide therein eternally.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043071.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043071.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043071.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043071.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043071.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043071.mp3"
+      }
+    },
+    {
+      "number": 72,
+      "arab": "وَتِلْكَ ٱلْجَنَّةُ ٱلَّتِىٓ أُورِثْتُمُوهَا بِمَا كُنتُمْ تَعْمَلُونَ",
+      "arab_kemenag": "وَتِلْكَ الْجَنَّةُ الَّتِيْٓ اُوْرِثْتُمُوْهَا بِمَا كُنْتُمْ تَعْمَلُوْنَ ",
+      "latin": "Wa tilkal-jannatul-latī ūriṡtumūhā bimā kuntum ta‘malūn(a).",
+      "translation_id": "Itulah surga yang diwariskan kepada kamu disebabkan apa yang selama ini kamu kerjakan.",
+      "translation_en": "And that is Paradise which you are made to inherit for what you used to do.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043072.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043072.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043072.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043072.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043072.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043072.mp3"
+      }
+    },
+    {
+      "number": 73,
+      "arab": "لَكُمْ فِيهَا فَٰكِهَةٌۭ كَثِيرَةٌۭ مِّنْهَا تَأْكُلُونَ",
+      "arab_kemenag": "لَكُمْ فِيْهَا فَاكِهَةٌ كَثِيْرَةٌ مِّنْهَا تَأْكُلُوْنَ",
+      "latin": "Lakum fīhā fākihatun kaṡīratum minhā ta'kulūn(a).",
+      "translation_id": "Untukmu di dalamnya (surga) buah-buahan yang banyak yang sebagiannya kamu makan.",
+      "translation_en": "For you therein is much fruit from which you will eat.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043073.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043073.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043073.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043073.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043073.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043073.mp3"
+      }
+    },
+    {
+      "number": 74,
+      "arab": "إِنَّ ٱلْمُجْرِمِينَ فِى عَذَابِ جَهَنَّمَ خَٰلِدُونَ",
+      "arab_kemenag": "اِنَّ الْمُجْرِمِيْنَ فِيْ عَذَابِ جَهَنَّمَ خٰلِدُوْنَۖ ",
+      "latin": "Innal-mujrimīna fī ‘ażābi jahannama khālidūn(a).",
+      "translation_id": "Sesungguhnya para pendurhaka itu kekal di dalam azab (neraka) Jahanam.",
+      "translation_en": "Indeed, the criminals will be in the punishment of Hell, abiding eternally.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043074.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043074.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043074.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043074.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043074.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043074.mp3"
+      }
+    },
+    {
+      "number": 75,
+      "arab": "لَا يُفَتَّرُ عَنْهُمْ وَهُمْ فِيهِ مُبْلِسُونَ",
+      "arab_kemenag": "لَا يُفَتَّرُ عَنْهُمْ وَهُمْ فِيْهِ مُبْلِسُوْنَ ۚ ",
+      "latin": "Lā yufattaru ‘anhum wa hum fīhi mublisūn(a).",
+      "translation_id": "Tidak diringankan (azab itu) dari mereka dan mereka berputus asa di dalamnya.",
+      "translation_en": "It will not be allowed to subside for them, and they, therein, are in despair.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043075.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043075.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043075.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043075.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043075.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043075.mp3"
+      }
+    },
+    {
+      "number": 76,
+      "arab": "وَمَا ظَلَمْنَٰهُمْ وَلَٰكِن كَانُوا۟ هُمُ ٱلظَّٰلِمِينَ",
+      "arab_kemenag": "وَمَا ظَلَمْنٰهُمْ وَلٰكِنْ كَانُوْا هُمُ الظّٰلِمِيْنَ",
+      "latin": "Wa mā ẓalamnāhum wa lākin kānū humuẓ-ẓālimīn(a).",
+      "translation_id": "Tidaklah Kami menzalimi mereka, tetapi mereka adalah orang-orang zalim (terhadap dirinya).",
+      "translation_en": "And We did not wrong them, but it was they who were the wrongdoers.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043076.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043076.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043076.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043076.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043076.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043076.mp3"
+      }
+    },
+    {
+      "number": 77,
+      "arab": "وَنَادَوْا۟ يَٰمَٰلِكُ لِيَقْضِ عَلَيْنَا رَبُّكَ ۖ قَالَ إِنَّكُم مَّٰكِثُونَ",
+      "arab_kemenag": "وَنَادَوْا يٰمٰلِكُ لِيَقْضِ عَلَيْنَا رَبُّكَۗ قَالَ اِنَّكُمْ مّٰكِثُوْنَ",
+      "latin": "Wa nādau yā māliku liyaqḍi ‘alainā rabbuk(a), qāla innakum mākiṡūn(a).",
+      "translation_id": "Mereka menyeru, “Wahai (Malaikat) Malik, hendaklah Tuhanmu mematikan kami saja.” Dia menjawab, “Sesungguhnya kamu akan tetap tinggal (di neraka ini).”",
+      "translation_en": "And they will call, \"O Malik, let your Lord put an end to us!\" He will say, \"Indeed, you will remain.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043077.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043077.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043077.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043077.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043077.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043077.mp3"
+      }
+    },
+    {
+      "number": 78,
+      "arab": "لَقَدْ جِئْنَٰكُم بِٱلْحَقِّ وَلَٰكِنَّ أَكْثَرَكُمْ لِلْحَقِّ كَٰرِهُونَ",
+      "arab_kemenag": "لَقَدْ جِئْنٰكُمْ بِالْحَقِّ وَلٰكِنَّ اَكْثَرَكُمْ لِلْحَقِّ كٰرِهُوْنَ",
+      "latin": "Laqad ji'nākum bil-ḥaqqi wa lākinna akṡarakum lil-ḥaqqi kārihūn(a).",
+      "translation_id": "Sungguh, Kami benar-benar telah datang kepada kamu dengan (membawa) kebenaran, tetapi kebanyakan kamu benci kepada kebenaran itu.",
+      "translation_en": "We had certainly brought you the truth, but most of you, to the truth, were averse.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043078.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043078.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043078.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043078.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043078.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043078.mp3"
+      }
+    },
+    {
+      "number": 79,
+      "arab": "أَمْ أَبْرَمُوٓا۟ أَمْرًۭا فَإِنَّا مُبْرِمُونَ",
+      "arab_kemenag": "اَمْ اَبْرَمُوْٓا اَمْرًا فَاِنَّا مُبْرِمُوْنَۚ",
+      "latin": "Am abramū amran fa innā mubrimūn(a).",
+      "translation_id": "Bahkan, bukankah mereka telah merencanakan suatu tipu daya (jahat)? Sesungguhnya Kami telah berencana (mengatasi tipu daya mereka).",
+      "translation_en": "Or have they devised [some] affair? But indeed, We are devising [a plan].",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043079.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043079.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043079.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043079.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043079.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043079.mp3"
+      }
+    },
+    {
+      "number": 80,
+      "arab": "أَمْ يَحْسَبُونَ أَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوَىٰهُم ۚ بَلَىٰ وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُونَ",
+      "arab_kemenag": "اَمْ يَحْسَبُوْنَ اَنَّا لَا نَسْمَعُ سِرَّهُمْ وَنَجْوٰىهُمْ ۗ بَلٰى وَرُسُلُنَا لَدَيْهِمْ يَكْتُبُوْنَ ",
+      "latin": "Am yaḥsabūna annā lā nasma‘u sirrahum wa najwāhum, balā wa rusulunā ladaihim yaktubūn(a).",
+      "translation_id": "Ataukah mereka mengira bahwa Kami tidak mendengar rahasia dan bisikan mereka? Sebenarnya (Kami mendengar) dan utusan-utusan Kami (malaikat) mencatat di sisi mereka.",
+      "translation_en": "Or do they think that We hear not their secrets and their private conversations? Yes, [We do], and Our messengers are with them recording.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043080.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043080.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043080.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043080.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043080.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043080.mp3"
+      }
+    },
+    {
+      "number": 81,
+      "arab": "قُلْ إِن كَانَ لِلرَّحْمَٰنِ وَلَدٌۭ فَأَنَا۠ أَوَّلُ ٱلْعَٰبِدِينَ",
+      "arab_kemenag": "قُلْ اِنْ كَانَ لِلرَّحْمٰنِ وَلَدٌ  ۖفَاَنَا۠ اَوَّلُ الْعٰبِدِيْنَ ",
+      "latin": "Qul in kāna lir-raḥmāni walad(un), fa ana awwalul-‘ābidīn(a).",
+      "translation_id": "Katakanlah (Nabi Muhammad), “Jika benar Tuhan Yang Maha Pengasih mempunyai anak, akulah orang pertama yang menyembah (anak itu).",
+      "translation_en": "Say, [O Muhammad], \"If the Most Merciful had a son, then I would be the first of [his] worshippers.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043081.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043081.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043081.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043081.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043081.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043081.mp3"
+      }
+    },
+    {
+      "number": 82,
+      "arab": "سُبْحَٰنَ رَبِّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ رَبِّ ٱلْعَرْشِ عَمَّا يَصِفُونَ",
+      "arab_kemenag": "سُبْحٰنَ رَبِّ السَّمٰوٰتِ وَالْاَرْضِ رَبِّ الْعَرْشِ عَمَّا يَصِفُوْنَ ",
+      "latin": "Subḥāna rabbis-samāwāti wal-arḍi rabbil-‘arsyi ‘ammā yaṣifūn(a).",
+      "translation_id": "Maha Suci Tuhan pemilik langit dan bumi, Tuhan pemilik ʻArasy, dari apa yang mereka sifatkan.”",
+      "translation_en": "Exalted is the Lord of the heavens and the earth, Lord of the Throne, above what they describe.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043082.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043082.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043082.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043082.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043082.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043082.mp3"
+      }
+    },
+    {
+      "number": 83,
+      "arab": "فَذَرْهُمْ يَخُوضُوا۟ وَيَلْعَبُوا۟ حَتَّىٰ يُلَٰقُوا۟ يَوْمَهُمُ ٱلَّذِى يُوعَدُونَ",
+      "arab_kemenag": "فَذَرْهُمْ يَخُوْضُوْا وَيَلْعَبُوْا حَتّٰى يُلٰقُوْا يَوْمَهُمُ الَّذِيْ يُوْعَدُوْنَ",
+      "latin": "Fa żarhum yakhūḍū wa yal‘abū ḥattā yulāqū yaumahumul-lażī yū‘adūn(a).",
+      "translation_id": "Maka, biarkanlah mereka tenggelam (dalam kesesatan) dan bermain-main (di dunia) sampai mereka menemui hari yang dijanjikan kepada mereka.",
+      "translation_en": "So leave them to converse vainly and amuse themselves until they meet their Day which they are promised.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043083.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043083.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043083.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043083.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043083.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043083.mp3"
+      }
+    },
+    {
+      "number": 84,
+      "arab": "وَهُوَ ٱلَّذِى فِى ٱلسَّمَآءِ إِلَٰهٌۭ وَفِى ٱلْأَرْضِ إِلَٰهٌۭ ۚ وَهُوَ ٱلْحَكِيمُ ٱلْعَلِيمُ",
+      "arab_kemenag": "وَهُوَ الَّذِيْ فِى السَّمَاۤءِ اِلٰهٌ وَّ فِى الْاَرْضِ اِلٰهٌ ۗوَهُوَ الْحَكِيْمُ الْعَلِيْمُ ",
+      "latin": "Wa huwal-lażī fis-samā'i ilāhuw wa fil-arḍi ilāh(un), wa huwal-ḥakīmul-‘alīm(u).",
+      "translation_id": "Dialah Tuhan (yang disembah) di langit dan Tuhan (yang disembah) di bumi. Dialah Yang Maha Bijaksana lagi Maha Mengetahui.",
+      "translation_en": "And it is Allah who is [the only] deity in the heaven, and on the earth [the only] deity. And He is the Wise, the Knowing.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043084.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043084.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043084.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043084.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043084.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043084.mp3"
+      }
+    },
+    {
+      "number": 85,
+      "arab": "وَتَبَارَكَ ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَا وَعِندَهُۥ عِلْمُ ٱلسَّاعَةِ وَإِلَيْهِ تُرْجَعُونَ",
+      "arab_kemenag": "وَتَبٰرَكَ الَّذِيْ لَهٗ مُلْكُ السَّمٰوٰتِ وَالْاَرْضِ وَمَا بَيْنَهُمَا ۚوَعِنْدَهٗ عِلْمُ السَّاعَةِۚ وَاِلَيْهِ تُرْجَعُوْنَ",
+      "latin": "Wa tabārakal-lażī lahū mulkus-samāwāti wal-arḍi wa mā bainahumā, wa ‘indahū ‘ilmus-sā‘ah(ti), wa ilaihi turja‘ūn(a).",
+      "translation_id": "Maha Berkah (Allah) yang memiliki kerajaan langit dan bumi serta apa yang ada di antara keduanya. Di sisi-Nyalah ilmu tentang hari Kiamat dan hanya kepada-Nyalah kamu dikembalikan.",
+      "translation_en": "And blessed is He to whom belongs the dominion of the heavens and the earth and whatever is between them and with whom is knowledge of the Hour and to whom you will be returned.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043085.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043085.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043085.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043085.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043085.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043085.mp3"
+      }
+    },
+    {
+      "number": 86,
+      "arab": "وَلَا يَمْلِكُ ٱلَّذِينَ يَدْعُونَ مِن دُونِهِ ٱلشَّفَٰعَةَ إِلَّا مَن شَهِدَ بِٱلْحَقِّ وَهُمْ يَعْلَمُونَ",
+      "arab_kemenag": "وَلَا يَمْلِكُ الَّذِيْنَ يَدْعُوْنَ مِنْ دُوْنِهِ الشَّفَاعَةَ اِلَّا مَنْ شَهِدَ بِالْحَقِّ وَهُمْ يَعْلَمُوْنَ",
+      "latin": "Wa lā yamlikul-lażīna yad‘ūna min dūnihisy-syafā‘ata illā man syahida bil-ḥaqqi wa hum ya‘lamūn(a).",
+      "translation_id": "Sembahan-sembahan mereka selain Dia tidak bisa memberi syafaat (pertolongan di akhirat), kecuali orang yang bersaksi dengan yang hak (tauhid) dan mereka meyakininya.",
+      "translation_en": "And those they invoke besides Him do not possess [power of] intercession; but only those who testify to the truth [can benefit], and they know.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043086.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043086.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043086.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043086.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043086.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043086.mp3"
+      }
+    },
+    {
+      "number": 87,
+      "arab": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ ٱللَّهُ ۖ فَأَنَّىٰ يُؤْفَكُونَ",
+      "arab_kemenag": "وَلَىِٕنْ سَاَلْتَهُمْ مَّنْ خَلَقَهُمْ لَيَقُوْلُنَّ اللّٰهُ فَاَنّٰى يُؤْفَكُوْنَۙ",
+      "latin": "Wa la'in sa'altahum man khalaqahum layaqūlunnallāhu fa annā yu'fakūn(a).",
+      "translation_id": "Jika engkau bertanya kepada mereka, siapakah yang menciptakan mereka, niscaya mereka menjawab, “Allah.” Maka, mengapa mereka bisa dipalingkan?",
+      "translation_en": "And if you asked them who created them, they would surely say, \"Allah.\" So how are they deluded?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043087.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043087.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043087.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043087.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043087.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043087.mp3"
+      }
+    },
+    {
+      "number": 88,
+      "arab": "وَقِيلِهِۦ يَٰرَبِّ إِنَّ هَٰٓؤُلَآءِ قَوْمٌۭ لَّا يُؤْمِنُونَ",
+      "arab_kemenag": "وَقِيْلِهٖ يٰرَبِّ اِنَّ هٰٓؤُلَاۤءِ قَوْمٌ لَّا يُؤْمِنُوْنَۘ",
+      "latin": "Wa qīlihī yā rabbi inna hā'ulā'i qaumul lā yu'minūn(a).",
+      "translation_id": "Demi (kebenaran) ucapannya (Nabi Muhammad), “Ya Tuhanku, sesungguhnya mereka itu adalah kaum yang tidak beriman.”",
+      "translation_en": "And [Allah acknowledges] his saying, \"O my Lord, indeed these are a people who do not believe.\"",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043088.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043088.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043088.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043088.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043088.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043088.mp3"
+      }
+    },
+    {
+      "number": 89,
+      "arab": "فَٱصْفَحْ عَنْهُمْ وَقُلْ سَلَٰمٌۭ ۚ فَسَوْفَ يَعْلَمُونَ",
+      "arab_kemenag": "فَاصْفَحْ عَنْهُمْ وَقُلْ سَلٰمٌۗ فَسَوْفَ يَعْلَمُوْنَ ࣖ",
+      "latin": "Faṣfaḥ ‘anhum wa qul salām(un), fa saufa ya‘lamūn(a).",
+      "translation_id": "Maka, berpalinglah dari mereka dan katakanlah, “Salam (selamat tinggal).” Kelak mereka akan mengetahui (nasibnya yang buruk).",
+      "translation_en": "So turn aside from them and say, \"Peace.\" But they are going to know.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/043089.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/043089.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/043089.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/043089.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/043089.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/043089.mp3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "number": 101,
+  "name": "Al-Qari'ah",
+  "name_arabic": "القارعة",
+  "name_translation": "Hari Kiamat",
+  "revelation": "Mekah",
+  "numberOfAyahs": 11,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/101.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/101.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/101.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/101.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/101.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/101.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+      "arab_kemenag": "اَلْقَارِعَةُۙ",
+      "latin": "Al-qāri‘ah(tu).",
+      "translation_id": "Al-Qāri‘ah (hari Kiamat yang menggetarkan).",
+      "translation_en": "The Striking Calamity -",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "مَا ٱلْقَارِعَةُ",
+      "arab_kemenag": "مَا الْقَارِعَةُ ۚ",
+      "latin": "Mal-qāri‘ah(tu).",
+      "translation_id": "Apakah al-Qāri‘ah itu?",
+      "translation_en": "What is the Striking Calamity?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "arab_kemenag": "وَمَآ اَدْرٰىكَ مَا الْقَارِعَةُ ۗ",
+      "latin": "Wa mā adrāka mal-qāri‘ah(tu).",
+      "translation_id": "Tahukah kamu apakah al-Qāri‘ah itu?",
+      "translation_en": "And what can make you know what is the Striking Calamity?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "arab_kemenag": "يَوْمَ يَكُوْنُ النَّاسُ كَالْفَرَاشِ الْمَبْثُوْثِۙ",
+      "latin": "Yauma yakūnun-nāsu kal-farāsyil-mabṡūṡ(i).",
+      "translation_id": "Pada hari itu manusia seperti laron yang beterbangan",
+      "translation_en": "It is the Day when people will be like moths, dispersed,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "arab_kemenag": "وَتَكُوْنُ الْجِبَالُ كَالْعِهْنِ الْمَنْفُوْشِۗ",
+      "latin": "Wa takūnul-jibālu kal-‘ihnil-manfūsy(i).",
+      "translation_id": "dan gunung-gunung seperti bulu yang berhamburan.",
+      "translation_en": "And the mountains will be like wool, fluffed up.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "arab_kemenag": "فَاَمَّا مَنْ ثَقُلَتْ مَوَازِيْنُهٗۙ ",
+      "latin": "Fa ammā man ṡaqulat mawāzīnuh(ū).",
+      "translation_id": "Siapa yang berat timbangan (kebaikan)-nya,",
+      "translation_en": "Then as for one whose scales are heavy [with good deeds],",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "فَهُوَ فِى عِيشَةٍۢ رَّاضِيَةٍۢ",
+      "arab_kemenag": "فَهُوَ فِيْ عِيْشَةٍ رَّاضِيَةٍۗ",
+      "latin": "Fa huwa fī ‘īsyatir rāḍiyah(tin).",
+      "translation_id": "dia berada dalam kehidupan yang menyenangkan.",
+      "translation_en": "He will be in a pleasant life.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "arab_kemenag": "وَاَمَّا مَنْ خَفَّتْ مَوَازِيْنُهٗۙ",
+      "latin": "Wa ammā man khaffat mawāzīnuh(ū).",
+      "translation_id": "Adapun orang yang ringan timbangan (kebaikan)-nya,",
+      "translation_en": "But as for one whose scales are light,",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101008.mp3"
+      }
+    },
+    {
+      "number": 9,
+      "arab": "فَأُمُّهُۥ هَاوِيَةٌۭ",
+      "arab_kemenag": "فَاُمُّهٗ هَاوِيَةٌ  ۗ",
+      "latin": "Fa ummuhū hāwiyah(tun).",
+      "translation_id": "tempat kembalinya adalah (neraka) Hawiyah.",
+      "translation_en": "His refuge will be an abyss.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101009.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101009.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101009.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101009.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101009.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101009.mp3"
+      }
+    },
+    {
+      "number": 10,
+      "arab": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "arab_kemenag": "وَمَآ اَدْرٰىكَ مَا هِيَهْۗ",
+      "latin": "Wa mā adrāka mā hiyah.",
+      "translation_id": "Tahukah kamu apakah (neraka Hawiyah) itu?",
+      "translation_en": "And what can make you know what that is?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101010.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101010.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101010.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101010.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101010.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101010.mp3"
+      }
+    },
+    {
+      "number": 11,
+      "arab": "نَارٌ حَامِيَةٌۢ",
+      "arab_kemenag": "نَارٌ حَامِيَةٌ ࣖ",
+      "latin": "Nārun ḥāmiyah(tun).",
+      "translation_id": "(Ia adalah) api yang sangat panas.",
+      "translation_en": "It is a Fire, intensely hot.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/101011.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/101011.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/101011.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/101011.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/101011.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/101011.mp3"
+      }
+    }
+  ]
+}

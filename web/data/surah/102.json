@@ -1,0 +1,146 @@
+{
+  "number": 102,
+  "name": "At-Takasur",
+  "name_arabic": "التكاثر",
+  "name_translation": "Bermegah-Megahan",
+  "revelation": "Mekah",
+  "numberOfAyahs": 8,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/102.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/102.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/102.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/102.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/102.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/102.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "arab_kemenag": "اَلْهٰىكُمُ التَّكَاثُرُۙ",
+      "latin": "Alhākumut-takāṡur(u). ",
+      "translation_id": "Berbangga-bangga dalam memperbanyak (dunia) telah melalaikanmu",
+      "translation_en": "Competition in [worldly] increase diverts you",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "arab_kemenag": "حَتّٰى زُرْتُمُ الْمَقَابِرَۗ",
+      "latin": "Ḥattā zurtumul-maqābir(a).",
+      "translation_id": "sampai kamu masuk ke dalam kubur.",
+      "translation_en": "Until you visit the graveyards.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "arab_kemenag": "كَلَّا سَوْفَ تَعْلَمُوْنَۙ",
+      "latin": "Kallā saufa ta‘lamūn(a).",
+      "translation_id": "Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu).",
+      "translation_en": "No! You are going to know.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "arab_kemenag": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُوْنَ ",
+      "latin": "Ṡumma kallā saufa ta‘lamūn(a).",
+      "translation_id": "Sekali-kali tidak (jangan melakukan itu)! Kelak kamu akan mengetahui (akibatnya).",
+      "translation_en": "Then no! You are going to know.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "arab_kemenag": "كَلَّا لَوْ تَعْلَمُوْنَ عِلْمَ الْيَقِيْنِۗ",
+      "latin": "Kallā lau ta‘lamūna ‘ilmal-yaqīn(i).",
+      "translation_id": "Sekali-kali tidak (jangan melakukan itu)! Sekiranya kamu mengetahui dengan pasti, (niscaya kamu tidak akan melakukannya).",
+      "translation_en": "No! If you only knew with knowledge of certainty...",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102005.mp3"
+      }
+    },
+    {
+      "number": 6,
+      "arab": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "arab_kemenag": "لَتَرَوُنَّ الْجَحِيْمَۙ",
+      "latin": "Latarawunnal-jaḥīm(a).",
+      "translation_id": "Pasti kamu benar-benar akan melihat (neraka) Jahim.",
+      "translation_en": "You will surely see the Hellfire.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102006.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102006.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102006.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102006.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102006.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102006.mp3"
+      }
+    },
+    {
+      "number": 7,
+      "arab": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "arab_kemenag": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ الْيَقِيْنِۙ",
+      "latin": "Ṡumma latarawunnahā ‘ainal-yaqīn(i).",
+      "translation_id": "Kemudian, kamu pasti benar-benar akan melihatnya dengan ainulyakin.",
+      "translation_en": "Then you will surely see it with the eye of certainty.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102007.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102007.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102007.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102007.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102007.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102007.mp3"
+      }
+    },
+    {
+      "number": 8,
+      "arab": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "arab_kemenag": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَىِٕذٍ عَنِ النَّعِيْمِ ࣖ",
+      "latin": "Ṡumma latus'alunna yauma'iżin ‘anin-na‘īm(i).",
+      "translation_id": "Kemudian, kamu pasti benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu).",
+      "translation_en": "Then you will surely be asked that Day about pleasure.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/102008.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/102008.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/102008.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/102008.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/102008.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/102008.mp3"
+      }
+    }
+  ]
+}

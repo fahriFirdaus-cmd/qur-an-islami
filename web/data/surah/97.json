@@ -1,0 +1,98 @@
+{
+  "number": 97,
+  "name": "Al-Qadr",
+  "name_arabic": "القدر",
+  "name_translation": "Kemuliaan",
+  "revelation": "Mekah",
+  "numberOfAyahs": 5,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/097.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/097.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/097.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/097.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/097.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/097.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "arab_kemenag": "اِنَّآ اَنْزَلْنٰهُ فِيْ لَيْلَةِ الْقَدْرِ ",
+      "latin": "Innā anzalnāhu fī lailatil-qadr(i).",
+      "translation_id": "Sesungguhnya Kami telah menurunkannya (Al-Qur’an) pada Lailatulqadar.",
+      "translation_en": "Indeed, We sent the Qur'an down during the Night of Decree.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/097001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/097001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/097001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/097001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/097001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/097001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "arab_kemenag": "وَمَآ اَدْرٰىكَ مَا لَيْلَةُ الْقَدْرِۗ",
+      "latin": "Wa mā adrāka mā lailatul-qadr(i).",
+      "translation_id": "Tahukah kamu apakah Lailatulqadar itu?",
+      "translation_en": "And what can make you know what is the Night of Decree?",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/097002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/097002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/097002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/097002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/097002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/097002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌۭ مِّنْ أَلْفِ شَهْرٍۢ",
+      "arab_kemenag": "لَيْلَةُ الْقَدْرِ ەۙ خَيْرٌ مِّنْ اَلْفِ شَهْرٍۗ",
+      "latin": "Lailatul-qadri khairum min alfi syahr(in).",
+      "translation_id": "Lailatulqadar itu lebih baik daripada seribu bulan.",
+      "translation_en": "The Night of Decree is better than a thousand months.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/097003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/097003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/097003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/097003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/097003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/097003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "تَنَزَّلُ ٱلْمَلَٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍۢ",
+      "arab_kemenag": "تَنَزَّلُ الْمَلٰۤىِٕكَةُ وَالرُّوْحُ فِيْهَا بِاِذْنِ رَبِّهِمْۚ مِنْ كُلِّ اَمْرٍۛ",
+      "latin": "Tanazzalul-malā'ikatu war rūḥu fīhā bi'iżni rabbihim min kulli amr(in).",
+      "translation_id": "Pada malam itu turun para malaikat dan Rūḥ (Jibril) dengan izin Tuhannya untuk mengatur semua urusan.",
+      "translation_en": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/097004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/097004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/097004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/097004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/097004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/097004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "سَلَٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "arab_kemenag": "سَلٰمٌ ۛهِيَ حَتّٰى مَطْلَعِ الْفَجْرِ ࣖ",
+      "latin": "Salāmun hiya ḥattā maṭla‘il-fajr(i). ",
+      "translation_id": "Sejahteralah (malam) itu sampai terbit fajar.",
+      "translation_en": "Peace it is until the emergence of dawn.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/097005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/097005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/097005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/097005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/097005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/097005.mp3"
+      }
+    }
+  ]
+}

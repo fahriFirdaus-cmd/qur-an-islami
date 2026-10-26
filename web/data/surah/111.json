@@ -1,0 +1,98 @@
+{
+  "number": 111,
+  "name": "Al-Lahab",
+  "name_arabic": "اللهب",
+  "name_translation": "Api Yang Bergejolak",
+  "revelation": "Mekah",
+  "numberOfAyahs": 5,
+  "audio_full": {
+    "01": "https://cdn.equran.id/audio-full/Abdullah-Al-Juhany/111.mp3",
+    "02": "https://cdn.equran.id/audio-full/Abdul-Muhsin-Al-Qasim/111.mp3",
+    "03": "https://cdn.equran.id/audio-full/Abdurrahman-as-Sudais/111.mp3",
+    "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/111.mp3",
+    "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/111.mp3",
+    "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/111.mp3"
+  },
+  "ayahs": [
+    {
+      "number": 1,
+      "arab": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍۢ وَتَبَّ",
+      "arab_kemenag": "تَبَّتْ يَدَآ اَبِيْ لَهَبٍ وَّتَبَّۗ",
+      "latin": "Tabbat yadā abī lahabiw wa tabb(a).",
+      "translation_id": "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia.",
+      "translation_en": "May the hands of Abu Lahab be ruined, and ruined is he.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/111001.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/111001.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/111001.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/111001.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/111001.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/111001.mp3"
+      }
+    },
+    {
+      "number": 2,
+      "arab": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "arab_kemenag": "مَآ اَغْنٰى عَنْهُ مَالُهٗ وَمَا كَسَبَۗ",
+      "latin": "Mā agnā ‘anhu māluhū wa mā kasab(a).",
+      "translation_id": "Tidaklah berguna baginya hartanya dan apa yang dia usahakan.",
+      "translation_en": "His wealth will not avail him or that which he gained.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/111002.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/111002.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/111002.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/111002.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/111002.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/111002.mp3"
+      }
+    },
+    {
+      "number": 3,
+      "arab": "سَيَصْلَىٰ نَارًۭا ذَاتَ لَهَبٍۢ",
+      "arab_kemenag": "سَيَصْلٰى نَارًا ذَاتَ لَهَبٍۙ",
+      "latin": "Sayaṣlā nāran żāta lahab(in).",
+      "translation_id": "Kelak dia akan memasuki api yang bergejolak (neraka),",
+      "translation_en": "He will [enter to] burn in a Fire of [blazing] flame",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/111003.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/111003.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/111003.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/111003.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/111003.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/111003.mp3"
+      }
+    },
+    {
+      "number": 4,
+      "arab": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "arab_kemenag": "وَّامْرَاَتُهٗ ۗحَمَّالَةَ الْحَطَبِۚ",
+      "latin": "Wamra'atuh(ū), ḥammālatal-ḥaṭab(i).",
+      "translation_id": "(begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).",
+      "translation_en": "And his wife [as well] - the carrier of firewood.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/111004.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/111004.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/111004.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/111004.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/111004.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/111004.mp3"
+      }
+    },
+    {
+      "number": 5,
+      "arab": "فِى جِيدِهَا حَبْلٌۭ مِّن مَّسَدٍۭ",
+      "arab_kemenag": "فِيْ جِيْدِهَا حَبْلٌ مِّنْ مَّسَدٍ ࣖ",
+      "latin": "Fī jīdihā ḥablum mim masad(in).",
+      "translation_id": "Di lehernya ada tali dari sabut yang dipintal.",
+      "translation_en": "Around her neck is a rope of [twisted] fiber.",
+      "audio": {
+        "01": "https://cdn.equran.id/audio-partial/Abdullah-Al-Juhany/111005.mp3",
+        "02": "https://cdn.equran.id/audio-partial/Abdul-Muhsin-Al-Qasim/111005.mp3",
+        "03": "https://cdn.equran.id/audio-partial/Abdurrahman-as-Sudais/111005.mp3",
+        "04": "https://cdn.equran.id/audio-partial/Ibrahim-Al-Dossari/111005.mp3",
+        "05": "https://cdn.equran.id/audio-partial/Misyari-Rasyid-Al-Afasi/111005.mp3",
+        "06": "https://cdn.equran.id/audio-partial/Yasser-Al-Dosari/111005.mp3"
+      }
+    }
+  ]
+}
