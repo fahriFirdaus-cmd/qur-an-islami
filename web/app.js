@@ -41,23 +41,85 @@ const I18N = {
     readerSettingsLabel: 'Reader Settings',
     mainSearchPlaceholder: 'Jump to surah, verse (e.g. 2:255) or page...',
     sidebarSearchPlaceholder: 'Search surah...',
-    heroQuote: '<em>"Verily, in the remembrance of Allah do hearts find rest."</em> (13:28)',
+    heroQuote: '<em>"Verily, in the remembrance of Allah do hearts find rest."</em>',
     heroBtnRead: 'Start Reading',
     heroBtnAudio: 'Explore Audio',
     featQuranTitle: 'Full Quran Text',
-    featQuranDesc: 'Access all 114 surahs with beautiful Uthmani script and translations.',
+    featQuranDesc: 'Read all 114 surahs in Arabic with a translation beside every verse.',
     featAudioTitle: 'Audio Recitations',
-    featAudioDesc: 'Listen to high-quality audio from world-renowned reciters verse by verse.',
+    featAudioDesc: 'Listen to recitations verse by verse and follow along as you read.',
     featSpiritualTitle: 'Spiritual Growth',
-    featSpiritualDesc: 'A modern, distraction-free interface designed for deep reflection and peace.',
-    dailyTitle: 'Daily Inspiration',
-    dailyBadge: 'Today',
-    dailyVerseTrans: '"In the name of Allah, the Entirely Merciful, the Especially Merciful."',
-    dailyBtnPlay: '▶ Play',
-    dailyBtnRead: '📖 Read Surah',
-    dailyBtnCopy: '📋 Copy',
+    featSpiritualDesc: 'Save bookmarks, keep a reading history and build a steady daily habit.',
+    dailyTitle: 'Verse of the Day',
+    dailyBadge: '94:5',
+    dailyVerseTrans: 'Indeed, with every hardship there is ease.',
+    dailyBtnPlay: 'Listen',
+    dailyBtnRead: 'Save',
+    dailyBtnCopy: 'Share',
     popularTitle: 'Popular Surahs',
     popularViewAll: 'View All →',
+    // Explore Catalog Banner (Beranda)
+    exploreCatalogTitle: 'Complete Catalog of 114 Surahs',
+    exploreCatalogSub: '• Explore themes & revelation chronology',
+    exploreCatalogBtnText: 'Open Catalog of 114 Surahs →',
+    exploreMakkBadge: '🕋 84 Meccan',
+    exploreMadanBadge: '🕌 30 Medinan',
+    // View switcher (Al-Qur'an page)
+    labelViewReader: 'Read Surah (Verses)',
+    labelViewCatalog: 'List of 114 Surahs (Catalog)',
+    // Educational Banner (Catalog)
+    eduBannerTitle: 'Understanding Surah Classification: Meccan & Medinan',
+    eduBannerSub: 'Understanding the context of place & time of revelation of 114 Surahs.',
+    eduMakkTitle: '🕋 Meccan Surahs',
+    eduMakkBadge: '84 Surahs',
+    eduMakkDesc: '<strong>Revealed before Hijrah:</strong> Revealed to the Prophet Muhammad ﷺ in Mecca (610–622 CE) before the migration to Medina.',
+    eduMakkP1: 'Focus on establishing Aqeedah, Tawheed, and purity of faith.',
+    eduMakkP2: 'Warnings about the Day of Judgment, recompense, Paradise & Hell.',
+    eduMakkP3: 'Verses are generally concise, firm, rhythmic, and poetic.',
+    eduMakkP4: 'Often contain the call <em>"Yā ayyuhan-nās"</em> (O mankind).',
+    eduMadanTitle: '🕌 Medinan Surahs',
+    eduMadanBadge: '30 Surahs',
+    eduMadanDesc: '<strong>Revealed after Hijrah:</strong> Revealed after the Prophet ﷺ migrated to Medina (622–632 CE) until the end of his life.',
+    eduMadanP1: 'Focus on Sharia law, social worship, and jurisprudence.',
+    eduMadanP2: 'Rules on family, inheritance, economics, and diplomacy.',
+    eduMadanP3: 'Verses tend to be long and explanatory in nature (*tashrī\').',
+    eduMadanP4: 'Often contain the call <em>"Yā ayyuhallażīna āmanū"</em> (O you who believe).',
+    // Sidebar filter tabs
+    sTabAll: 'Semua',
+    sTabMakk: 'Makkiyyah',
+    sTabMadan: 'Madaniyyah',
+    // Catalog filter tabs
+    catTabAll: '🌟 All Surahs',
+    catTabMakk: '🕋 Meccan',
+    catTabMadan: '🕌 Medinan',
+    catSearchPlaceholder: 'Search by surah number, name, or meaning...',
+    catBtnRead: '📖 Read',
+    catBtnAudio: '▶ Audio',
+    catNoResult: 'No matching surah found',
+    catNoResultSub: 'Try a different search keyword or select the "All Surahs" tab.',
+    // Surah header & meta
+    meaningPrefix: 'Meaning',
+    revTagMakk: '🕋 Meccan',
+    revTagMadan: '🕌 Medinan',
+    revModalTitleMakk: '🕋 Meccan Surah',
+    revModalTitleMadan: '🕌 Medinan Surah',
+    revModalMeaningLabel: 'Name Meaning:',
+    revModalVerseLabel: 'Number of Verses:',
+    revModalPeriodLabel: 'Period & Place of Revelation:',
+    revModalPeriodMakk: 'Revealed in Makkah al-Mukarramah before the Prophet Muhammad ﷺ migrated to Medina (610–622 CE).',
+    revModalPeriodMadan: 'Revealed in Madinah al-Munawwarah after the Prophet ﷺ migrated from Mecca (622–632 CE).',
+    revModalCharTitle_makk: 'Key Characteristics of Meccan Surahs:',
+    revModalCharTitle_madan: 'Key Characteristics of Medinan Surahs:',
+    revModalCharBody_makk: 'This surah was revealed during the foundational phase of Islamic da\u02bbwah. Its main teachings focus on purifying aqeedah, monotheism (Tawheed), certainty of the Day of Judgment, and building the moral character and spiritual resilience of the believers in the face of Qurayshi oppression.',
+    revModalCharBody_madan: 'This surah was revealed during the phase of building a just civilization and social order in Medina. It contains guidelines for Sharia law, family & judicial systems, economic transactions, international diplomacy, and fostering brotherhood between the Muhajirin and Ansar.',
+    revModalBtnClose: 'Close',
+    revModalBtnViewAll: 'View All Surahs',
+    // Sidebar empty state
+    sidebarNoResult: 'No surah matches the filter.',
+    // Search dropdown
+    searchNoResult: 'No surah or verse found for',
+    searchVerseLabel: 'Verse',
+    searchJump: 'Jump →',
     prevSurahLabel: 'Prev',
     homeSurahLabel: 'Home',
     nextSurahLabel: 'Next',
@@ -125,8 +187,8 @@ const I18N = {
     cauAssignLabel: 'Link to Surah:',
     cauPlayNow: '▶ Play Now',
     cauClear: '✕ Reset',
-    lastReadBadge: 'LAST READ',
-    lastReadBtnText: 'Continue',
+    lastReadBadge: 'CONTINUE READING',
+    lastReadBtnText: 'Resume',
     btnChooseSurah: 'Choose Surah ▾',
     mQuickQuran: 'Al-Qur\'an',
     mQuickAudio: 'Audio Qori',
@@ -148,7 +210,7 @@ const I18N = {
     readerSettingsLabel: 'Pengaturan Tampilan',
     mainSearchPlaceholder: 'Cari surah, ayat (misal: 2:255) atau topik...',
     sidebarSearchPlaceholder: 'Cari surah...',
-    heroQuote: '<em>"Ingatlah, hanya dengan mengingat Allah hati menjadi tenteram."</em> (13:28)',
+    heroQuote: '<em>"Ingatlah, hanya dengan mengingat Allah hati menjadi tenteram."</em>',
     heroBtnRead: 'Mulai Membaca',
     heroBtnAudio: 'Dengarkan Audio',
     featQuranTitle: 'Teks Al-Qur\'an Lengkap',
@@ -157,14 +219,76 @@ const I18N = {
     featAudioDesc: 'Dengarkan tilawah merdu dari para Qori terkemuka dunia ayat demi ayat.',
     featSpiritualTitle: 'Perjalanan Spiritual',
     featSpiritualDesc: 'Antarmuka modern dan tenang untuk tadabbur dan kedamaian hati.',
-    dailyTitle: 'Inspirasi Hari Ini',
-    dailyBadge: 'Hari Ini',
-    dailyVerseTrans: '"Dengan nama Allah Yang Maha Pengasih, Maha Penyayang."',
-    dailyBtnPlay: '▶ Putar',
-    dailyBtnRead: '📖 Baca Surah',
-    dailyBtnCopy: '📋 Salin',
+    dailyTitle: 'Ayat Hari Ini',
+    dailyBadge: '94:5',
+    dailyVerseTrans: 'Maka sesungguhnya bersama kesulitan ada kemudahan.',
+    dailyBtnPlay: 'Dengar',
+    dailyBtnRead: 'Simpan',
+    dailyBtnCopy: 'Bagikan',
     popularTitle: 'Surah Pilihan Populer',
     popularViewAll: 'Lihat Semua →',
+    // Explore Catalog Banner (Beranda)
+    exploreCatalogTitle: 'Katalog Lengkap 114 Surah Al-Qur\'an',
+    exploreCatalogSub: '• Telusuri tema & periodisasi wahyu',
+    exploreCatalogBtnText: 'Buka Katalog 114 Surah →',
+    exploreMakkBadge: '🕋 84 Makkiyyah',
+    exploreMadanBadge: '🕌 30 Madaniyyah',
+    // View switcher (Al-Qur'an page)
+    labelViewReader: 'Baca Surah (Ayat)',
+    labelViewCatalog: 'Daftar 114 Surah (Katalog)',
+    // Educational Banner (Catalog)
+    eduBannerTitle: 'Mengenal Klasifikasi Surah: Makkiyyah & Madaniyyah',
+    eduBannerSub: 'Memahami konteks tempat & masa pewahyuan 114 Surah Al-Qur\'an.',
+    eduMakkTitle: '🕋 Surah Makkiyyah',
+    eduMakkBadge: '84 Surah',
+    eduMakkDesc: '<strong>Diturunkan sebelum Hijrah:</strong> Diturunkan kepada Nabi Muhammad ﷺ di Makkah (610 – 622 M) sebelum berhijrah ke Madinah.',
+    eduMakkP1: 'Fokus pada penanaman Aqidah, Tauhid, dan kemurnian iman.',
+    eduMakkP2: 'Peringatan Hari Kiamat, pembalasan amal, Surga & Neraka.',
+    eduMakkP3: 'Ayat-ayatnya umumnya ringkas, tegas, ritmis, dan puitis.',
+    eduMakkP4: 'Sering memuat seruan <em>\'Yā ayyuhan-nās\'</em> (Wahai sekalian manusia).',
+    eduMadanTitle: '🕌 Surah Madaniyyah',
+    eduMadanBadge: '30 Surah',
+    eduMadanDesc: '<strong>Diturunkan setelah Hijrah:</strong> Diturunkan setelah Rasulullah ﷺ hijrah ke Madinah (622 – 632 M) hingga akhir hayat beliau.',
+    eduMadanP1: 'Fokus pada Syariat hukum, ibadah kemasyarakatan, dan peradilan.',
+    eduMadanP2: 'Aturan keluarga, waris, muamalah ekonomi, dan diplomasi politik.',
+    eduMadanP3: 'Ayat-ayatnya cenderung panjang dan bernada penjelasan hukum (*tasyrī\').',
+    eduMadanP4: 'Sering memuat seruan <em>\'Yā ayyuhallażīna āmanū\'</em> (Wahai orang beriman).',
+    // Sidebar filter tabs
+    sTabAll: 'Semua',
+    sTabMakk: 'Makkiyyah',
+    sTabMadan: 'Madaniyyah',
+    // Catalog filter tabs
+    catTabAll: '🌟 Semua Surah',
+    catTabMakk: '🕋 Makkiyyah',
+    catTabMadan: '🕌 Madaniyyah',
+    catSearchPlaceholder: 'Cari nomor surah, nama, atau arti...',
+    catBtnRead: '📖 Baca',
+    catBtnAudio: '▶ Audio',
+    catNoResult: 'Tidak ada surah yang cocok',
+    catNoResultSub: 'Coba gunakan kata kunci pencarian lain atau pilih tab filter "Semua Surah".',
+    // Surah header & meta
+    meaningPrefix: 'Arti',
+    revTagMakk: '🕋 Makkiyyah',
+    revTagMadan: '🕌 Madaniyyah',
+    revModalTitleMakk: '🕋 Golongan Surah Makkiyyah',
+    revModalTitleMadan: '🕌 Golongan Surah Madaniyyah',
+    revModalMeaningLabel: 'Arti Nama:',
+    revModalVerseLabel: 'Jumlah Ayat:',
+    revModalPeriodLabel: 'Masa & Tempat Pewahyuan:',
+    revModalPeriodMakk: 'Diturunkan di Makkah al-Mukarramah sebelum Nabi Muhammad ﷺ hijrah ke Madinah (periode 610 – 622 M).',
+    revModalPeriodMadan: 'Diturunkan di Madinah al-Munawwarah setelah Nabi Muhammad ﷺ hijrah dari Makkah (periode 622 – 632 M).',
+    revModalCharTitle_makk: 'Karakteristik & Hikmah Utama Surah Makkiyyah:',
+    revModalCharTitle_madan: 'Karakteristik & Hikmah Utama Surah Madaniyyah:',
+    revModalCharBody_makk: 'Surah ini diturunkan pada fase fondasi dakwah Islam. Pokok ajarannya memusatkan perhatian pada pemurnian aqidah, ketauhidan kepada Allah SWT, kepastian Hari Kiamat dan Hari Pembalasan, serta penempaan akhlak dan ketabahan spiritual kaum beriman menghadapi intimidasi kaum Quraisy.',
+    revModalCharBody_madan: 'Surah ini diturunkan pada fase pembangunan peradaban dan tatanan masyarakat berkeadilan di Madinah. Memuat pedoman hukum syariat, tatanan keluarga & peradilan, muamalah ekonomi, hubungan diplomasi internasional, serta pembinaan ukhuwah antara Muhajirin dan Anshar.',
+    revModalBtnClose: 'Tutup',
+    revModalBtnViewAll: 'Lihat Semua Surah',
+    // Sidebar empty state
+    sidebarNoResult: 'Tidak ada surah yang cocok dengan filter.',
+    // Search dropdown
+    searchNoResult: 'Tidak ada surah atau ayat untuk',
+    searchVerseLabel: 'Ayat',
+    searchJump: 'Buka →',
     prevSurahLabel: 'Sebelumnya',
     homeSurahLabel: 'Beranda',
     nextSurahLabel: 'Selanjutnya',
@@ -286,6 +410,8 @@ function applyLanguage(lang, notify = true) {
   setHtml('hero-quote', dict.heroQuote);
   setText('hero-btn-read-text', dict.heroBtnRead);
   setText('hero-btn-audio-text', dict.heroBtnAudio);
+  setText('last-read-badge', dict.lastReadBadge);
+  setText('last-read-btn-text', dict.lastReadBtnText);
 
   // Feature Cards
   setText('feat-quran-title', dict.featQuranTitle);
@@ -299,9 +425,9 @@ function applyLanguage(lang, notify = true) {
   setText('daily-title', dict.dailyTitle);
   setText('daily-badge', dict.dailyBadge);
   setText('daily-verse-trans', dict.dailyVerseTrans);
-  setText('daily-btn-play', dict.dailyBtnPlay);
-  setText('daily-btn-read', dict.dailyBtnRead);
-  setText('daily-btn-copy', dict.dailyBtnCopy);
+  setText('daily-btn-play-text', dict.dailyBtnPlay);
+  setText('daily-btn-read-text', dict.dailyBtnRead);
+  setText('daily-btn-copy-text', dict.dailyBtnCopy);
 
   // Popular Surahs
   setText('popular-title', dict.popularTitle);
@@ -389,6 +515,46 @@ function applyLanguage(lang, notify = true) {
   setText('notif-title-3', dict.notifTitle3);
   setText('notif-desc-3', dict.notifDesc3);
 
+  // Explore Catalog Banner (Beranda)
+  setText('explore-catalog-title', dict.exploreCatalogTitle);
+  setText('explore-catalog-sub', dict.exploreCatalogSub);
+  setText('explore-catalog-btn-text', dict.exploreCatalogBtnText);
+  setText('explore-makk-badge', dict.exploreMakkBadge);
+  setText('explore-madan-badge', dict.exploreMadanBadge);
+
+  // View Switcher
+  setText('label-view-reader', dict.labelViewReader);
+  setText('label-view-catalog', dict.labelViewCatalog);
+
+  // Educational Banner (Catalog)
+  setText('edu-banner-title', dict.eduBannerTitle);
+  setText('edu-banner-sub', dict.eduBannerSub);
+  setText('edu-makk-title', dict.eduMakkTitle);
+  setText('edu-makk-badge', dict.eduMakkBadge);
+  setHtml('edu-makk-desc', dict.eduMakkDesc);
+  setHtml('edu-makk-p1', dict.eduMakkP1);
+  setHtml('edu-makk-p2', dict.eduMakkP2);
+  setHtml('edu-makk-p3', dict.eduMakkP3);
+  setHtml('edu-makk-p4', dict.eduMakkP4);
+  setText('edu-madan-title', dict.eduMadanTitle);
+  setText('edu-madan-badge', dict.eduMadanBadge);
+  setHtml('edu-madan-desc', dict.eduMadanDesc);
+  setHtml('edu-madan-p1', dict.eduMadanP1);
+  setHtml('edu-madan-p2', dict.eduMadanP2);
+  setHtml('edu-madan-p3', dict.eduMadanP3);
+  setHtml('edu-madan-p4', dict.eduMadanP4);
+
+  // Sidebar Filter Tabs
+  setText('s-tab-all-label', dict.sTabAll);
+  setText('s-tab-makk-label', dict.sTabMakk);
+  setText('s-tab-madan-label', dict.sTabMadan);
+
+  // Catalog Filter Tabs
+  setText('cat-tab-all-label', dict.catTabAll);
+  setText('cat-tab-makk-label', dict.catTabMakk);
+  setText('cat-tab-madan-label', dict.catTabMadan);
+  setAttr('catalog-search-input', 'placeholder', dict.catSearchPlaceholder);
+
   // Sync selectors
   const appLangSelect = document.getElementById('app-lang-select');
   if (appLangSelect) appLangSelect.value = lang;
@@ -402,11 +568,35 @@ function applyLanguage(lang, notify = true) {
   // Refresh surah meta and list
   const surah = ALL_SURAHS.find(s => s.id === state.currentSurah);
   if (surah) {
+    const isMakk = surah.type === 'Makkiyyah' || surah.revelation === 'Mekah';
     const metaSub = document.getElementById('surah-meta-sub');
-    if (metaSub) metaSub.textContent = `${surah.type} • ${surah.ayat} ${lang === 'en' ? 'Verses' : 'Ayat'}`;
+    const meaningVal = lang === 'en' ? (surah.meaning || surah.arti) : (surah.arti || surah.meaning);
+    const revTypeLabel = isMakk ? (lang === 'en' ? 'Meccan' : 'Makkiyyah') : (lang === 'en' ? 'Medinan' : 'Madaniyyah');
+    if (metaSub) metaSub.textContent = `${revTypeLabel} • ${surah.ayat} ${lang === 'en' ? 'Verses' : 'Ayat'} • ${dict.meaningPrefix}: "${meaningVal}"`;
+
+    // Also update revelation badge
+    const revBadge = document.getElementById('surah-revelation-badge');
+    if (revBadge) {
+      revBadge.className = `surah-revelation-tag ${isMakk ? 'makk' : 'madan'}`;
+      revBadge.innerHTML = `
+        <span>${isMakk ? dict.revTagMakk : dict.revTagMadan}</span>
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      `;
+    }
   }
   renderSidebarSurahList();
+  renderQuranCatalog(currentCatalogSearchQuery, currentCatalogFilterType);
   renderVerses(state.currentSurah);
+
+  // Refresh Sejarah Timeline if on that page
+  if (state.currentPage === 'sejarah') {
+    renderTimeline(state.currentEra);
+  }
+
+  // Refresh Jejak grid if on that page
+  if (state.currentPage === 'jejak') {
+    renderJejakGrid();
+  }
 
   // Last Read & Mobile Elements
   setText('last-read-badge', dict.lastReadBadge);
@@ -481,6 +671,25 @@ function getGlobalVerseIndex(surahId, verseNum) {
   }
   return count + verseNum;
 }
+
+// ─── Merge English Translations into HISTORY Data ───
+function mergeHistoryTranslations() {
+  if (typeof HISTORY_EN_TRANSLATIONS === 'undefined') return;
+  
+  for (const era in HISTORY_EN_TRANSLATIONS) {
+    if (HISTORY[era]) {
+      const translations = HISTORY_EN_TRANSLATIONS[era];
+      HISTORY[era].forEach(event => {
+        if (translations[event.id]) {
+          Object.assign(event, translations[event.id]);
+        }
+      });
+    }
+  }
+}
+
+// Merge translations on load
+mergeHistoryTranslations();
 
 // ─── Initialization ───
 document.addEventListener('DOMContentLoaded', () => {
@@ -671,13 +880,14 @@ function initGlobalSearch() {
       const vNum = parseInt(verseMatch[2]);
       const surah = ALL_SURAHS.find(s => s.id === sId);
       if (surah) {
+        const d = I18N[state.language] || I18N.id;
         dropdown.innerHTML = `
           <div class="search-result-item" onclick="jumpToVerse(${sId}, ${vNum})">
             <div>
-              <strong>${surah.name} : Ayat ${vNum}</strong>
+              <strong>${surah.name} : ${d.searchVerseLabel} ${vNum}</strong>
               <div style="font-size:0.75rem; color:var(--text-muted);">${surah.arTitle}</div>
             </div>
-            <span style="font-size:0.75rem; color:var(--sage-600); font-weight:600;">Jump →</span>
+            <span style="font-size:0.75rem; color:var(--sage-600); font-weight:600;">${d.searchJump}</span>
           </div>
         `;
         dropdown.style.display = 'block';
@@ -699,18 +909,20 @@ function initGlobalSearch() {
     }).slice(0, 8);
 
     if (matches.length > 0) {
+      const isEn = state.language === 'en';
       dropdown.innerHTML = matches.map(s => {
         const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
         const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
-        const revBadgeText = isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah';
+        const revBadgeText = isMakk ? (isEn ? '🕋 Meccan' : '🕋 Makkiyyah') : (isEn ? '🕌 Medinan' : '🕌 Madaniyyah');
+        const meaningText = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
 
         return `
           <div class="search-result-item" onclick="loadSurah(${s.id}); navigateTo('quran'); switchQuranView('reader'); hideSearchDropdown();">
             <div>
-              <strong>${s.id}. ${s.name} ${s.arti ? `<span style="font-weight:normal; color:var(--text-muted);">(${s.arti})</span>` : ''}</strong>
+              <strong>${s.id}. ${s.name} ${meaningText ? `<span style="font-weight:normal; color:var(--text-muted);">(${meaningText})</span>` : ''}</strong>
               <div style="font-size:0.75rem; color:var(--text-muted); display:flex; align-items:center; gap:6px; margin-top:2px;">
                 <span class="badge-mini-rev ${revBadgeClass}">${revBadgeText}</span>
-                <span>• ${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+                <span>• ${s.ayat} ${isEn ? 'Verses' : 'Ayat'}</span>
               </div>
             </div>
             <span style="font-family:var(--font-arabic); font-size:1.1rem; color:var(--sage-700);">${s.arTitle || s.ar}</span>
@@ -719,9 +931,10 @@ function initGlobalSearch() {
       }).join('');
       dropdown.style.display = 'block';
     } else {
+      const d = I18N[state.language] || I18N.id;
       dropdown.innerHTML = `
         <div style="padding:12px; font-size:0.8rem; color:var(--text-muted); text-align:center;">
-          No surah or verse found for "${q}"
+          ${d.searchNoResult} "${q}"
         </div>
       `;
       dropdown.style.display = 'block';
@@ -865,18 +1078,26 @@ function renderSidebarSurahList(filter = '', typeFilter = 'all') {
   });
 
   if (filtered.length === 0) {
+    const d = I18N[state.language] || I18N.id;
     container.innerHTML = `
       <div style="padding: 24px 12px; text-align: center; color: var(--text-muted); font-size: 0.85rem;">
-        Tidak ada surah yang cocok dengan filter.
+        ${d.sidebarNoResult}
       </div>
     `;
     return;
   }
 
+  const isEn = state.language === 'en';
+  const shownCountEl = document.getElementById('surah-shown-count');
+  if (shownCountEl) {
+    shownCountEl.textContent = (!filter && typeFilter === 'all') ? '7 shown' : `${filtered.length} shown`;
+  }
+
   container.innerHTML = filtered.map(s => {
     const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
     const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
-    const revBadgeText = isMakk ? '🕋 Makk' : '🕌 Madan';
+    const revBadgeText = isMakk ? 'MAKKIYYAH' : 'MADANIYYAH';
+    const meaningText = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
 
     return `
       <div class="surah-item ${s.id === state.currentSurah ? 'active' : ''}" 
@@ -885,16 +1106,16 @@ function renderSidebarSurahList(filter = '', typeFilter = 'all') {
            role="button" tabindex="0">
         <div class="surah-num">${s.id}</div>
         <div class="surah-info">
-          <div class="surah-item-name">
-            ${s.name}
-            ${s.arti ? `<span class="surah-item-meaning">(${s.arti})</span>` : ''}
+          <div class="surah-item-name-row">
+            <span class="surah-item-name">${s.name}</span>
+            ${meaningText ? `<span class="surah-item-meaning">${meaningText}</span>` : ''}
           </div>
           <div class="surah-item-sub">
             <span class="badge-mini-rev ${revBadgeClass}">${revBadgeText}</span>
-            <span>${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+            <span class="surah-item-verses">${s.ayat} ${isEn ? 'verses' : 'ayat'}</span>
           </div>
         </div>
-        <div class="surah-item-ar">${s.arTitle || ('سُوْرَةُ ' + s.ar)}</div>
+        <div class="surah-item-ar">${s.ar || s.arTitle}</div>
       </div>
     `;
   }).join('');
@@ -1033,12 +1254,15 @@ function renderQuranCatalog(filter = '', typeFilter = 'all') {
     return matchText && matchType;
   });
 
+  const isEn = state.language === 'en';
+  const d = I18N[state.language] || I18N.id;
+
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 48px 24px; text-align: center; color: var(--text-muted);">
         <div style="font-size: 2.2rem; margin-bottom: 8px;">🔍</div>
-        <div style="font-weight: 600; font-size: 1rem; color: var(--text-primary);">Tidak ada surah yang cocok</div>
-        <div style="font-size: 0.85rem; margin-top: 4px;">Coba gunakan kata kunci pencarian lain atau pilih tab filter "Semua Surah".</div>
+        <div style="font-weight: 600; font-size: 1rem; color: var(--text-primary);">${d.catNoResult}</div>
+        <div style="font-size: 0.85rem; margin-top: 4px;">${d.catNoResultSub}</div>
       </div>
     `;
     return;
@@ -1047,7 +1271,8 @@ function renderQuranCatalog(filter = '', typeFilter = 'all') {
   grid.innerHTML = filtered.map(s => {
     const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
     const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
-    const revBadgeText = isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah';
+    const revBadgeText = isMakk ? (isEn ? '🕋 Meccan' : '🕋 Makkiyyah') : (isEn ? '🕌 Medinan' : '🕌 Madaniyyah');
+    const meaningVal = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
 
     return `
       <div class="catalog-card" onclick="loadSurah(${s.id}); switchQuranView('reader');">
@@ -1055,21 +1280,21 @@ function renderQuranCatalog(filter = '', typeFilter = 'all') {
           <div class="c-num-box">${s.id}</div>
           <div class="c-surah-title-wrap">
             <div class="c-surah-name">${s.name}</div>
-            <div class="c-surah-meaning">Arti: "${s.arti || s.name}"</div>
+            <div class="c-surah-meaning">${d.meaningPrefix}: "${meaningVal || s.name}"</div>
           </div>
           <div class="c-surah-arabic">${s.arTitle || s.ar}</div>
         </div>
         <div class="catalog-card-bottom">
           <div style="display:flex; align-items:center; gap:8px;">
             <span class="c-badge-rev ${revBadgeClass}">${revBadgeText}</span>
-            <span class="c-ayat-count">${s.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'}</span>
+            <span class="c-ayat-count">${s.ayat} ${isEn ? 'Verses' : 'Ayat'}</span>
           </div>
           <div class="c-card-actions" onclick="event.stopPropagation()">
-            <button class="c-btn-action" onclick="loadSurah(${s.id}); switchQuranView('reader');" title="Baca Surah">
-              📖 Baca
+            <button class="c-btn-action" onclick="loadSurah(${s.id}); switchQuranView('reader');" title="${isEn ? 'Read Surah' : 'Baca Surah'}">
+              ${d.catBtnRead}
             </button>
-            <button class="c-btn-action" onclick="playSurahAudio(${s.id})" title="Putar Audio Surah">
-              ▶ Audio
+            <button class="c-btn-action" onclick="playSurahAudio(${s.id})" title="${isEn ? 'Play Surah Audio' : 'Putar Audio Surah'}">
+              ${d.catBtnAudio}
             </button>
           </div>
         </div>
@@ -1087,6 +1312,11 @@ function openRevelationModal(surahId) {
   const body = document.getElementById('rev-modal-body');
   if (!modal || !body) return;
 
+  const d = I18N[state.language] || I18N.id;
+  const isEn = state.language === 'en';
+  const meaningVal = isEn ? (surah.meaning || surah.arti) : (surah.arti || surah.meaning);
+  const verseUnit = isEn ? 'Verses' : 'Ayat';
+
   body.innerHTML = `
     <div style="text-align: center; margin-bottom: 20px;">
       <div style="display: inline-flex; width: 54px; height: 54px; border-radius: 16px; background: ${isMakk ? 'rgba(45, 106, 79, 0.12)' : 'rgba(217, 119, 6, 0.12)'}; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 12px;">
@@ -1096,38 +1326,35 @@ function openRevelationModal(surahId) {
         ${surah.id}. ${surah.name} (${surah.arTitle || surah.ar})
       </h3>
       <div style="display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 700; background: ${isMakk ? 'rgba(45, 106, 79, 0.15)' : 'rgba(217, 119, 6, 0.15)'}; color: ${isMakk ? '#1b4332' : '#b45309'}; margin-top: 6px;">
-        ${isMakk ? '🕋 Golongan Surah Makkiyyah' : '🕌 Golongan Surah Madaniyyah'}
+        ${isMakk ? d.revModalTitleMakk : d.revModalTitleMadan}
       </div>
     </div>
 
     <div style="background: var(--bg-input); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; font-size: 0.86rem; line-height: 1.6; color: var(--text-primary);">
       <div style="margin-bottom: 6px;">
-        <strong>Arti Nama:</strong> "${surah.arti || '-'}"
+        <strong>${d.revModalMeaningLabel}</strong> "${meaningVal || '-'}"
       </div>
       <div style="margin-bottom: 6px;">
-        <strong>Jumlah Ayat:</strong> ${surah.ayat} Ayat
+        <strong>${d.revModalVerseLabel}</strong> ${surah.ayat} ${verseUnit}
       </div>
       <div>
-        <strong>Masa & Tempat Pewahyuan:</strong> ${isMakk ? 'Diturunkan di Makkah al-Mukarramah sebelum Nabi Muhammad ﷺ hijrah ke Madinah (periode 610 – 622 M).' : 'Diturunkan di Madinah al-Munawwarah setelah Nabi Muhammad ﷺ hijrah dari Makkah (periode 622 – 632 M).'}
+        <strong>${d.revModalPeriodLabel}</strong> ${isMakk ? d.revModalPeriodMakk : d.revModalPeriodMadan}
       </div>
     </div>
 
     <div style="border-top: 1px solid var(--border); padding-top: 14px;">
       <h4 style="font-size: 0.92rem; font-weight: 700; color: var(--text-primary); margin: 0 0 8px 0;">
-        Karakteristik & Hikmah Utama Surah ${isMakk ? 'Makkiyyah' : 'Madaniyyah'}:
+        ${isMakk ? d.revModalCharTitle_makk : d.revModalCharTitle_madan}
       </h4>
       <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.55; margin: 0;">
-        ${isMakk 
-          ? 'Surah ini diturunkan pada fase fondasi dakwah Islam. Pokok ajarannya memusatkan perhatian pada pemurnian aqidah, ketauhidan kepada Allah SWT, kepastian Hari Kiamat dan Hari Pembalasan, serta penempaan akhlak dan ketabahan spiritual kaum beriman menghadapi intimidasi kaum Quraisy.'
-          : 'Surah ini diturunkan pada fase pembangunan peradaban dan tatanan masyarakat berkeadilan di Madinah. Memuat pedoman hukum syariat, tatanan keluarga & peradilan, muamalah ekonomi, hubungan diplomasi internasional, serta pembinaan ukhuwah antara Muhajirin dan Anshar.'
-        }
+        ${isMakk ? d.revModalCharBody_makk : d.revModalCharBody_madan}
       </p>
     </div>
 
     <div style="margin-top: 22px; display: flex; gap: 10px; justify-content: flex-end;">
-      <button class="btn-secondary" onclick="closeRevelationModal()" style="padding: 8px 18px; font-size: 0.84rem;">Tutup</button>
+      <button class="btn-secondary" onclick="closeRevelationModal()" style="padding: 8px 18px; font-size: 0.84rem;">${d.revModalBtnClose}</button>
       <button class="btn-primary" onclick="closeRevelationModal(); switchQuranView('catalog'); filterCatalog('${surah.type}');" style="padding: 8px 18px; font-size: 0.84rem;">
-        Lihat Semua Surah ${surah.type} →
+        ${d.revModalBtnViewAll} ${isMakk ? d.sTabMakk : d.sTabMadan} →
       </button>
     </div>
   `;
@@ -1173,28 +1400,37 @@ function renderLastReadCard() {
   const card = document.getElementById('last-read-card');
   if (!card) return;
   const raw = localStorage.getItem('qh_last_read');
+  const titleEl = document.getElementById('last-read-title');
+  const arabicEl = document.getElementById('last-read-arabic');
+  const subEl = document.getElementById('last-read-sub');
+  const progressEl = document.getElementById('last-read-progress');
+
   if (!raw) {
-    // Show default recommendation if not read yet
-    const titleEl = document.getElementById('last-read-title');
-    const subEl = document.getElementById('last-read-sub');
-    if (titleEl) titleEl.textContent = `Al-Fatihah : ${state.language === 'en' ? 'Verse' : 'Ayat'} 1`;
-    if (subEl) subEl.textContent = state.language === 'en' ? 'Start your daily tilawah' : 'Mulai tilawah harian Anda';
+    // Default to Al-Baqarah (as shown in reference mockup)
+    if (titleEl) titleEl.textContent = 'Al-Baqarah';
+    if (arabicEl) arabicEl.textContent = 'البَقَرَة';
+    if (subEl) subEl.textContent = state.language === 'en' ? 'Verse 255 of 286' : 'Ayat 255 dari 286';
+    if (progressEl) progressEl.style.width = '89%';
     card.style.display = 'block';
     return;
   }
   try {
     const data = JSON.parse(raw);
-    const titleEl = document.getElementById('last-read-title');
-    const subEl = document.getElementById('last-read-sub');
-    if (titleEl) titleEl.textContent = `${data.name} : ${state.language === 'en' ? 'Verse' : 'Ayat'} ${data.verseNum}`;
+    const surahObj = ALL_SURAHS.find(s => s.id === data.surahId) || { ayat: 286, ar: 'البَقَرَة' };
+    if (titleEl) titleEl.textContent = data.name || 'Al-Baqarah';
+    if (arabicEl) arabicEl.textContent = surahObj.ar || 'البَقَرَة';
     if (subEl) {
-      const minutesAgo = Math.floor((Date.now() - data.time) / 60000);
-      const timeStr = minutesAgo <= 1 ? (state.language === 'en' ? 'Just now' : 'Baru saja') : (state.language === 'en' ? `${minutesAgo} mins ago` : `${minutesAgo} menit yang lalu`);
-      subEl.textContent = `${data.type} • ${timeStr}`;
+      subEl.textContent = state.language === 'en' 
+        ? `Verse ${data.verseNum} of ${surahObj.ayat || 286}` 
+        : `Ayat ${data.verseNum} dari ${surahObj.ayat || 286}`;
+    }
+    if (progressEl && surahObj.ayat) {
+      const pct = Math.min(100, Math.max(5, Math.round((data.verseNum / surahObj.ayat) * 100)));
+      progressEl.style.width = `${pct}%`;
     }
     card.style.display = 'block';
   } catch (e) {
-    card.style.display = 'none';
+    card.style.display = 'block';
   }
 }
 
@@ -1208,8 +1444,9 @@ function continueLastRead() {
       return;
     } catch (e) {}
   }
-  loadSurah(1, 1);
+  loadSurah(2, 255);
   navigateTo('quran');
+  switchQuranView('reader');
 }
 
 async function loadSurah(surahId, targetVerse = null) {
@@ -1237,19 +1474,23 @@ async function loadSurah(surahId, targetVerse = null) {
   const revBadge = document.getElementById('surah-revelation-badge');
 
   const isMakk = surah.type === 'Makkiyyah' || surah.revelation === 'Mekah';
+  const isEn = state.language === 'en';
+  const dict = I18N[state.language] || I18N.id;
+  const meaningVal = isEn ? (surah.meaning || surah.arti) : (surah.arti || surah.meaning);
+  const revTypeLabel = isMakk ? (isEn ? 'Meccan' : 'Makkiyyah') : (isEn ? 'Medinan' : 'Madaniyyah');
 
   if (badge) badge.textContent = surahId;
   if (nameId) nameId.textContent = surah.name;
-  if (metaSub) metaSub.textContent = `${surah.ayat} ${state.language === 'en' ? 'Verses' : 'Ayat'} • ${state.language === 'en' ? 'Meaning' : 'Arti'}: "${surah.arti || surah.name}"`;
+  if (metaSub) metaSub.textContent = `${revTypeLabel} • ${surah.ayat} ${isEn ? 'Verses' : 'Ayat'} • ${dict.meaningPrefix}: "${meaningVal || surah.name}"`;
   if (nameAr) nameAr.textContent = surah.arTitle || ('سُوْرَةُ ' + surah.ar);
 
   if (revBadge) {
     revBadge.className = `surah-revelation-tag ${isMakk ? 'makk' : 'madan'}`;
     revBadge.innerHTML = `
-      <span>${isMakk ? '🕋 Makkiyyah' : '🕌 Madaniyyah'}</span>
+      <span>${isMakk ? dict.revTagMakk : dict.revTagMadan}</span>
       <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
     `;
-    revBadge.title = `Klik untuk info lengkap Surah ${surah.name} (${surah.type})`;
+    revBadge.title = isEn ? `Click for info: ${surah.name} (${isMakk ? 'Meccan' : 'Medinan'})` : `Klik untuk info lengkap Surah ${surah.name} (${surah.type})`;
   }
 
   // Update Prev / Next buttons state
@@ -1865,23 +2106,30 @@ function renderTimeline(era) {
 
   const events = HISTORY[era] || [];
   if (events.length === 0) {
-    container.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-secondary);">Data era ini sedang dirangkum.</div>`;
+    container.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-secondary);">${state.language === 'en' ? 'Data for this era is being compiled.' : 'Data era ini sedang dirangkum.'}</div>`;
     return;
   }
 
-  container.innerHTML = events.map(ev => `
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card" onclick="openEventModal('${ev.id}', '${era}')">
-        <div class="tl-year">📅 ${ev.year}</div>
-        <div class="tl-title">${ev.title}</div>
-        <div class="tl-desc">${ev.desc}</div>
-        <div class="tl-tags">
-          ${ev.tags.map(t => `<span class="tl-tag ${t.includes('🔗') ? 'quran-ref' : ''}">${t}</span>`).join('')}
+  const isEn = state.language === 'en';
+  container.innerHTML = events.map(ev => {
+    const title = isEn && ev.titleEn ? ev.titleEn : ev.title;
+    const desc = isEn && ev.descEn ? ev.descEn : ev.desc;
+    const year = isEn && ev.yearEn ? ev.yearEn : ev.year;
+    
+    return `
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card" onclick="openEventModal('${ev.id}', '${era}')">
+          <div class="tl-year">📅 ${year}</div>
+          <div class="tl-title">${title}</div>
+          <div class="tl-desc">${desc}</div>
+          <div class="tl-tags">
+            ${ev.tags.map(t => `<span class="tl-tag ${t.includes('🔗') ? 'quran-ref' : ''}">${t}</span>`).join('')}
+          </div>
         </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 // ══════════════════════════════════════════
@@ -2075,23 +2323,30 @@ function openEventModal(eventId, era) {
   const ev = events.find(e => e.id === eventId);
   if (!ev) return;
 
+  const isEn = state.language === 'en';
+  const title = isEn && ev.titleEn ? ev.titleEn : ev.title;
+  const year = isEn && ev.yearEn ? ev.yearEn : ev.year;
+  const detail = isEn && ev.detailEn ? ev.detailEn : (ev.detail || ev.desc);
+  const relatedVerses = isEn ? 'Related Verses:' : 'Ayat Terkait:';
+  const keyFigures = isEn ? '👥 Key Figures' : '👥 Tokoh Terlibat';
+
   const html = `
     <div class="mh-header">
-      <div class="mh-event-badge">${ev.tags[0] || '📅 History'}</div>
-      <div class="mh-title">${ev.title}</div>
-      <div class="mh-year">📅 ${ev.year}</div>
+      <div class="mh-event-badge">${ev.tags[0] || (isEn ? '📅 History' : '📅 Sejarah')}</div>
+      <div class="mh-title">${title}</div>
+      <div class="mh-year">📅 ${year}</div>
     </div>
-    <p class="mh-story">${ev.detail || ev.desc}</p>
+    <p class="mh-story">${detail}</p>
     ${ev.quranRef ? `
     <div class="mh-verse-ref">
-      <div style="font-size:0.75rem; color: var(--text-muted); margin-bottom: 8px;">${state.language === 'en' ? 'Related Verses:' : 'Ayat Terkait:'}</div>
+      <div style="font-size:0.75rem; color: var(--text-muted); margin-bottom: 8px;">${relatedVerses}</div>
       <div class="mh-arabic">${ev.tags.find(t => t.includes('🔗'))?.replace('🔗 ', '') || ''}</div>
     </div>
     ` : ''}
     <div class="mh-figures">
-      <div class="mh-figures-title">${state.language === 'en' ? '👥 Key Figures' : '👥 Tokoh Terlibat'}</div>
+      <div class="mh-figures-title">${keyFigures}</div>
       <div class="mh-figure-list">
-        ${(ev.figures || ['Nabi Muhammad ﷺ', 'Sahabat RA']).map(f => `<span class="mh-figure">${f}</span>`).join('')}
+        ${(ev.figures || (isEn ? ['Prophet Muhammad ﷺ', 'Companions RA'] : ['Nabi Muhammad ﷺ', 'Sahabat RA'])).map(f => `<span class="mh-figure">${f}</span>`).join('')}
       </div>
     </div>
   `;

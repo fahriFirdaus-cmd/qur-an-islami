@@ -7,7 +7,7 @@ const ALL_SURAHS = [
   {
     "id": 1,
     "name": "Al-Fatihah",
-    "arti": "Pembukaan",
+    "arti": "Pembuka",
     "ar": "الفَاتِحَة",
     "arTitle": "سُوْرَةُ الفَاتِحَةِ",
     "type": "Makkiyyah",
@@ -21,7 +21,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/001.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/001.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/001.mp3"
-    }
+    },
+    "meaning": "The Opening"
   },
   {
     "id": 2,
@@ -40,7 +41,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/002.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/002.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/002.mp3"
-    }
+    },
+    "meaning": "The Cow"
   },
   {
     "id": 3,
@@ -59,7 +61,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/003.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/003.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/003.mp3"
-    }
+    },
+    "meaning": "Family of Imran"
   },
   {
     "id": 4,
@@ -78,7 +81,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/004.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/004.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/004.mp3"
-    }
+    },
+    "meaning": "The Women"
   },
   {
     "id": 5,
@@ -97,7 +101,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/005.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/005.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/005.mp3"
-    }
+    },
+    "meaning": "The Table Spread"
   },
   {
     "id": 6,
@@ -116,7 +121,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/006.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/006.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/006.mp3"
-    }
+    },
+    "meaning": "The Cattle"
   },
   {
     "id": 7,
@@ -135,7 +141,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/007.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/007.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/007.mp3"
-    }
+    },
+    "meaning": "The Heights"
   },
   {
     "id": 8,
@@ -154,7 +161,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/008.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/008.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/008.mp3"
-    }
+    },
+    "meaning": "The Bounties of War"
   },
   {
     "id": 9,
@@ -173,7 +181,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/009.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/009.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/009.mp3"
-    }
+    },
+    "meaning": "The Repentance"
   },
   {
     "id": 10,
@@ -192,7 +201,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/010.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/010.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/010.mp3"
-    }
+    },
+    "meaning": "Jonah"
   },
   {
     "id": 11,
@@ -211,7 +221,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/011.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/011.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/011.mp3"
-    }
+    },
+    "meaning": "Hud"
   },
   {
     "id": 12,
@@ -230,7 +241,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/012.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/012.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/012.mp3"
-    }
+    },
+    "meaning": "Joseph"
   },
   {
     "id": 13,
@@ -249,7 +261,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/013.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/013.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/013.mp3"
-    }
+    },
+    "meaning": "The Thunder"
   },
   {
     "id": 14,
@@ -268,7 +281,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/014.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/014.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/014.mp3"
-    }
+    },
+    "meaning": "Abraham"
   },
   {
     "id": 15,
@@ -287,7 +301,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/015.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/015.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/015.mp3"
-    }
+    },
+    "meaning": "The Rocky Tract"
   },
   {
     "id": 16,
@@ -306,7 +321,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/016.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/016.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/016.mp3"
-    }
+    },
+    "meaning": "The Bee"
   },
   {
     "id": 17,
@@ -325,7 +341,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/017.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/017.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/017.mp3"
-    }
+    },
+    "meaning": "The Night Journey"
   },
   {
     "id": 18,
@@ -344,7 +361,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/018.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/018.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/018.mp3"
-    }
+    },
+    "meaning": "The Cave"
   },
   {
     "id": 19,
@@ -363,7 +381,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/019.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/019.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/019.mp3"
-    }
+    },
+    "meaning": "Mary"
   },
   {
     "id": 20,
@@ -382,7 +401,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/020.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/020.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/020.mp3"
-    }
+    },
+    "meaning": "Ta-Ha"
   },
   {
     "id": 21,
@@ -401,7 +421,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/021.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/021.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/021.mp3"
-    }
+    },
+    "meaning": "The Prophets"
   },
   {
     "id": 22,
@@ -420,7 +441,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/022.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/022.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/022.mp3"
-    }
+    },
+    "meaning": "The Pilgrimage"
   },
   {
     "id": 23,
@@ -439,7 +461,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/023.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/023.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/023.mp3"
-    }
+    },
+    "meaning": "The Believers"
   },
   {
     "id": 24,
@@ -458,7 +481,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/024.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/024.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/024.mp3"
-    }
+    },
+    "meaning": "The Light"
   },
   {
     "id": 25,
@@ -477,7 +501,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/025.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/025.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/025.mp3"
-    }
+    },
+    "meaning": "The Criterion"
   },
   {
     "id": 26,
@@ -496,7 +521,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/026.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/026.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/026.mp3"
-    }
+    },
+    "meaning": "The Poets"
   },
   {
     "id": 27,
@@ -515,7 +541,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/027.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/027.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/027.mp3"
-    }
+    },
+    "meaning": "The Ant"
   },
   {
     "id": 28,
@@ -534,7 +561,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/028.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/028.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/028.mp3"
-    }
+    },
+    "meaning": "The Stories"
   },
   {
     "id": 29,
@@ -553,7 +581,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/029.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/029.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/029.mp3"
-    }
+    },
+    "meaning": "The Spider"
   },
   {
     "id": 30,
@@ -572,7 +601,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/030.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/030.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/030.mp3"
-    }
+    },
+    "meaning": "The Romans"
   },
   {
     "id": 31,
@@ -591,7 +621,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/031.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/031.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/031.mp3"
-    }
+    },
+    "meaning": "Luqman"
   },
   {
     "id": 32,
@@ -610,7 +641,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/032.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/032.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/032.mp3"
-    }
+    },
+    "meaning": "The Prostration"
   },
   {
     "id": 33,
@@ -629,7 +661,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/033.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/033.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/033.mp3"
-    }
+    },
+    "meaning": "The Combined Forces"
   },
   {
     "id": 34,
@@ -648,7 +681,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/034.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/034.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/034.mp3"
-    }
+    },
+    "meaning": "Sheba"
   },
   {
     "id": 35,
@@ -667,7 +701,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/035.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/035.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/035.mp3"
-    }
+    },
+    "meaning": "The Originator"
   },
   {
     "id": 36,
@@ -686,7 +721,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/036.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/036.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/036.mp3"
-    }
+    },
+    "meaning": "Ya-Sin"
   },
   {
     "id": 37,
@@ -705,7 +741,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/037.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/037.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/037.mp3"
-    }
+    },
+    "meaning": "Those Ranged in Ranks"
   },
   {
     "id": 38,
@@ -724,7 +761,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/038.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/038.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/038.mp3"
-    }
+    },
+    "meaning": "The Letter Saad"
   },
   {
     "id": 39,
@@ -743,7 +781,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/039.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/039.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/039.mp3"
-    }
+    },
+    "meaning": "The Crowds"
   },
   {
     "id": 40,
@@ -762,7 +801,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/040.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/040.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/040.mp3"
-    }
+    },
+    "meaning": "The Forgiver"
   },
   {
     "id": 41,
@@ -781,7 +821,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/041.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/041.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/041.mp3"
-    }
+    },
+    "meaning": "Distinguished"
   },
   {
     "id": 42,
@@ -800,7 +841,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/042.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/042.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/042.mp3"
-    }
+    },
+    "meaning": "The Consultation"
   },
   {
     "id": 43,
@@ -819,7 +861,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/043.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/043.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/043.mp3"
-    }
+    },
+    "meaning": "The Ornaments of Gold"
   },
   {
     "id": 44,
@@ -838,7 +881,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/044.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/044.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/044.mp3"
-    }
+    },
+    "meaning": "The Smoke"
   },
   {
     "id": 45,
@@ -857,7 +901,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/045.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/045.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/045.mp3"
-    }
+    },
+    "meaning": "The Crouching"
   },
   {
     "id": 46,
@@ -876,7 +921,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/046.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/046.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/046.mp3"
-    }
+    },
+    "meaning": "The Wind-Curved Sandhills"
   },
   {
     "id": 47,
@@ -895,7 +941,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/047.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/047.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/047.mp3"
-    }
+    },
+    "meaning": "Muhammad"
   },
   {
     "id": 48,
@@ -914,7 +961,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/048.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/048.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/048.mp3"
-    }
+    },
+    "meaning": "The Victory"
   },
   {
     "id": 49,
@@ -933,7 +981,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/049.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/049.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/049.mp3"
-    }
+    },
+    "meaning": "The Rooms"
   },
   {
     "id": 50,
@@ -952,7 +1001,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/050.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/050.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/050.mp3"
-    }
+    },
+    "meaning": "The Letter Qaf"
   },
   {
     "id": 51,
@@ -971,7 +1021,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/051.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/051.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/051.mp3"
-    }
+    },
+    "meaning": "The Winnowing Winds"
   },
   {
     "id": 52,
@@ -990,7 +1041,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/052.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/052.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/052.mp3"
-    }
+    },
+    "meaning": "The Mount"
   },
   {
     "id": 53,
@@ -1009,7 +1061,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/053.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/053.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/053.mp3"
-    }
+    },
+    "meaning": "The Star"
   },
   {
     "id": 54,
@@ -1028,7 +1081,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/054.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/054.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/054.mp3"
-    }
+    },
+    "meaning": "The Moon"
   },
   {
     "id": 55,
@@ -1047,7 +1101,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/055.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/055.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/055.mp3"
-    }
+    },
+    "meaning": "The Beneficent"
   },
   {
     "id": 56,
@@ -1066,7 +1121,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/056.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/056.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/056.mp3"
-    }
+    },
+    "meaning": "The Inevitable"
   },
   {
     "id": 57,
@@ -1085,7 +1141,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/057.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/057.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/057.mp3"
-    }
+    },
+    "meaning": "The Iron"
   },
   {
     "id": 58,
@@ -1104,7 +1161,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/058.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/058.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/058.mp3"
-    }
+    },
+    "meaning": "The Pleading Woman"
   },
   {
     "id": 59,
@@ -1123,7 +1181,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/059.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/059.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/059.mp3"
-    }
+    },
+    "meaning": "The Exile"
   },
   {
     "id": 60,
@@ -1142,7 +1201,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/060.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/060.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/060.mp3"
-    }
+    },
+    "meaning": "She that is to be examined"
   },
   {
     "id": 61,
@@ -1161,7 +1221,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/061.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/061.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/061.mp3"
-    }
+    },
+    "meaning": "The Ranks"
   },
   {
     "id": 62,
@@ -1180,7 +1241,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/062.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/062.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/062.mp3"
-    }
+    },
+    "meaning": "The Congregation"
   },
   {
     "id": 63,
@@ -1199,7 +1261,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/063.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/063.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/063.mp3"
-    }
+    },
+    "meaning": "The Hypocrites"
   },
   {
     "id": 64,
@@ -1218,7 +1281,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/064.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/064.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/064.mp3"
-    }
+    },
+    "meaning": "The Mutual Disillusion"
   },
   {
     "id": 65,
@@ -1237,7 +1301,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/065.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/065.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/065.mp3"
-    }
+    },
+    "meaning": "The Divorce"
   },
   {
     "id": 66,
@@ -1256,7 +1321,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/066.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/066.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/066.mp3"
-    }
+    },
+    "meaning": "The Prohibition"
   },
   {
     "id": 67,
@@ -1275,7 +1341,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/067.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/067.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/067.mp3"
-    }
+    },
+    "meaning": "The Sovereignty"
   },
   {
     "id": 68,
@@ -1294,7 +1361,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/068.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/068.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/068.mp3"
-    }
+    },
+    "meaning": "The Pen"
   },
   {
     "id": 69,
@@ -1313,7 +1381,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/069.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/069.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/069.mp3"
-    }
+    },
+    "meaning": "The Reality"
   },
   {
     "id": 70,
@@ -1332,7 +1401,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/070.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/070.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/070.mp3"
-    }
+    },
+    "meaning": "The Ascending Stairways"
   },
   {
     "id": 71,
@@ -1351,7 +1421,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/071.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/071.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/071.mp3"
-    }
+    },
+    "meaning": "Noah"
   },
   {
     "id": 72,
@@ -1370,7 +1441,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/072.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/072.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/072.mp3"
-    }
+    },
+    "meaning": "The Jinn"
   },
   {
     "id": 73,
@@ -1389,7 +1461,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/073.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/073.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/073.mp3"
-    }
+    },
+    "meaning": "The Enshrouded One"
   },
   {
     "id": 74,
@@ -1408,7 +1481,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/074.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/074.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/074.mp3"
-    }
+    },
+    "meaning": "The Cloaked One"
   },
   {
     "id": 75,
@@ -1427,7 +1501,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/075.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/075.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/075.mp3"
-    }
+    },
+    "meaning": "The Resurrection"
   },
   {
     "id": 76,
@@ -1446,7 +1521,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/076.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/076.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/076.mp3"
-    }
+    },
+    "meaning": "Man"
   },
   {
     "id": 77,
@@ -1465,7 +1541,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/077.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/077.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/077.mp3"
-    }
+    },
+    "meaning": "The Emissaries"
   },
   {
     "id": 78,
@@ -1484,7 +1561,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/078.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/078.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/078.mp3"
-    }
+    },
+    "meaning": "The Tidings"
   },
   {
     "id": 79,
@@ -1503,7 +1581,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/079.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/079.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/079.mp3"
-    }
+    },
+    "meaning": "Those Who Drag Forth"
   },
   {
     "id": 80,
@@ -1522,7 +1601,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/080.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/080.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/080.mp3"
-    }
+    },
+    "meaning": "He Frowned"
   },
   {
     "id": 81,
@@ -1541,7 +1621,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/081.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/081.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/081.mp3"
-    }
+    },
+    "meaning": "The Overthrowing"
   },
   {
     "id": 82,
@@ -1560,7 +1641,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/082.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/082.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/082.mp3"
-    }
+    },
+    "meaning": "The Cleaving"
   },
   {
     "id": 83,
@@ -1579,7 +1661,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/083.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/083.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/083.mp3"
-    }
+    },
+    "meaning": "The Defrauding"
   },
   {
     "id": 84,
@@ -1598,7 +1681,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/084.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/084.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/084.mp3"
-    }
+    },
+    "meaning": "The Splitting Open"
   },
   {
     "id": 85,
@@ -1617,7 +1701,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/085.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/085.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/085.mp3"
-    }
+    },
+    "meaning": "The Mansions of the Stars"
   },
   {
     "id": 86,
@@ -1636,7 +1721,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/086.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/086.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/086.mp3"
-    }
+    },
+    "meaning": "The Nightcomer"
   },
   {
     "id": 87,
@@ -1655,7 +1741,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/087.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/087.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/087.mp3"
-    }
+    },
+    "meaning": "The Most High"
   },
   {
     "id": 88,
@@ -1674,7 +1761,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/088.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/088.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/088.mp3"
-    }
+    },
+    "meaning": "The Overwhelming"
   },
   {
     "id": 89,
@@ -1693,7 +1781,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/089.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/089.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/089.mp3"
-    }
+    },
+    "meaning": "The Dawn"
   },
   {
     "id": 90,
@@ -1712,7 +1801,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/090.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/090.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/090.mp3"
-    }
+    },
+    "meaning": "The City"
   },
   {
     "id": 91,
@@ -1731,7 +1821,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/091.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/091.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/091.mp3"
-    }
+    },
+    "meaning": "The Sun"
   },
   {
     "id": 92,
@@ -1750,7 +1841,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/092.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/092.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/092.mp3"
-    }
+    },
+    "meaning": "The Night"
   },
   {
     "id": 93,
@@ -1769,7 +1861,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/093.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/093.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/093.mp3"
-    }
+    },
+    "meaning": "The Morning Brightness"
   },
   {
     "id": 94,
@@ -1788,7 +1881,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/094.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/094.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/094.mp3"
-    }
+    },
+    "meaning": "The Relief"
   },
   {
     "id": 95,
@@ -1807,7 +1901,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/095.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/095.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/095.mp3"
-    }
+    },
+    "meaning": "The Fig"
   },
   {
     "id": 96,
@@ -1826,7 +1921,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/096.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/096.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/096.mp3"
-    }
+    },
+    "meaning": "The Clot"
   },
   {
     "id": 97,
@@ -1845,7 +1941,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/097.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/097.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/097.mp3"
-    }
+    },
+    "meaning": "The Night of Decree"
   },
   {
     "id": 98,
@@ -1864,7 +1961,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/098.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/098.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/098.mp3"
-    }
+    },
+    "meaning": "The Clear Proof"
   },
   {
     "id": 99,
@@ -1883,7 +1981,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/099.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/099.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/099.mp3"
-    }
+    },
+    "meaning": "The Earthquake"
   },
   {
     "id": 100,
@@ -1902,7 +2001,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/100.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/100.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/100.mp3"
-    }
+    },
+    "meaning": "The Courser"
   },
   {
     "id": 101,
@@ -1921,7 +2021,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/101.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/101.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/101.mp3"
-    }
+    },
+    "meaning": "The Calamity"
   },
   {
     "id": 102,
@@ -1940,7 +2041,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/102.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/102.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/102.mp3"
-    }
+    },
+    "meaning": "Rivalry in worldly increase"
   },
   {
     "id": 103,
@@ -1959,7 +2061,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/103.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/103.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/103.mp3"
-    }
+    },
+    "meaning": "The Declining Day"
   },
   {
     "id": 104,
@@ -1978,7 +2081,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/104.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/104.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/104.mp3"
-    }
+    },
+    "meaning": "The Traducer"
   },
   {
     "id": 105,
@@ -1997,7 +2101,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/105.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/105.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/105.mp3"
-    }
+    },
+    "meaning": "The Elephant"
   },
   {
     "id": 106,
@@ -2016,7 +2121,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/106.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/106.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/106.mp3"
-    }
+    },
+    "meaning": "Quraysh"
   },
   {
     "id": 107,
@@ -2035,7 +2141,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/107.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/107.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/107.mp3"
-    }
+    },
+    "meaning": "Small Kindnesses"
   },
   {
     "id": 108,
@@ -2054,7 +2161,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/108.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/108.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/108.mp3"
-    }
+    },
+    "meaning": "Abundance"
   },
   {
     "id": 109,
@@ -2073,7 +2181,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/109.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/109.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/109.mp3"
-    }
+    },
+    "meaning": "The Disbelievers"
   },
   {
     "id": 110,
@@ -2092,7 +2201,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/110.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/110.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/110.mp3"
-    }
+    },
+    "meaning": "The Divine Support"
   },
   {
     "id": 111,
@@ -2111,7 +2221,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/111.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/111.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/111.mp3"
-    }
+    },
+    "meaning": "The Palm Fiber"
   },
   {
     "id": 112,
@@ -2130,7 +2241,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/112.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/112.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/112.mp3"
-    }
+    },
+    "meaning": "Sincerity"
   },
   {
     "id": 113,
@@ -2149,7 +2261,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/113.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/113.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/113.mp3"
-    }
+    },
+    "meaning": "The Daybreak"
   },
   {
     "id": 114,
@@ -2168,7 +2281,8 @@ const ALL_SURAHS = [
       "04": "https://cdn.equran.id/audio-full/Ibrahim-Al-Dossari/114.mp3",
       "05": "https://cdn.equran.id/audio-full/Misyari-Rasyid-Al-Afasi/114.mp3",
       "06": "https://cdn.equran.id/audio-full/Yasser-Al-Dosari/114.mp3"
-    }
+    },
+    "meaning": "Mankind"
   }
 ];
 

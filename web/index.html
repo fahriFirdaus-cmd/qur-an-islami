@@ -11,323 +11,310 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   
+  <!-- Islamic Redesign CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- ═══════════════════ LEFT SIDEBAR ═══════════════════ -->
-<aside class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <div class="logo" onclick="navigateTo('beranda')" style="cursor: pointer;" title="Kembali ke Beranda">
-      <div class="logo-icon">
-        <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="38" height="38" rx="9" fill="#1b4332"/>
-          <!-- Clean holy book outline -->
-          <rect x="10" y="8" width="18" height="22" rx="2.5" stroke="white" stroke-width="2" fill="none"/>
-          <line x1="10" y1="14" x2="28" y2="14" stroke="white" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="logo-text">
-        <span class="logo-title">Quran Harmony</span>
-        <span class="logo-subtitle">SPIRITUAL JOURNEY</span>
-      </div>
-    </div>
-    <button class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Tutup Menu">✕</button>
-  </div>
-
-  <!-- Surah Search -->
-  <div class="sidebar-search">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-    <input type="text" placeholder="Search surah..." id="sidebar-surah-search" />
-  </div>
-
-  <!-- Sidebar Surah Type Filter Tabs -->
-  <div class="sidebar-filter-tabs" id="sidebar-filter-tabs">
-    <button class="s-filter-btn active" data-type="all">Semua <span class="badge-count" id="s-count-all">114</span></button>
-    <button class="s-filter-btn" data-type="Makkiyyah">🕋 Makkiyyah <span class="badge-count" id="s-count-makk">84</span></button>
-    <button class="s-filter-btn" data-type="Madaniyyah">🕌 Madaniyyah <span class="badge-count" id="s-count-madan">30</span></button>
-  </div>
-
-  <!-- Surah List -->
-  <div class="sidebar-surah-list" id="sidebar-surah-list">
-    <!-- Populated by JS -->
-  </div>
-</aside>
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-<!-- ═══════════════════ MAIN CONTENT ═══════════════════ -->
-<div class="main-wrapper">
-  <!-- Top Bar -->
-  <header class="topbar">
-    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Sidebar" title="Buka Daftar Surah">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="mobile-brand" onclick="navigateTo('beranda')">
-      <div class="mobile-brand-icon">
-        <svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="38" height="38" rx="9" fill="#1b4332"/>
-          <rect x="10" y="8" width="18" height="22" rx="2.5" stroke="white" stroke-width="2" fill="none"/>
-          <line x1="10" y1="14" x2="28" y2="14" stroke="white" stroke-width="2"/>
-        </svg>
-      </div>
-      <div class="mobile-brand-text">
-        <span class="mobile-brand-title">Quran Harmony</span>
-      </div>
-    </div>
-    <div class="topbar-search">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-      <input type="text" placeholder="Jump to surah, verse (e.g. 2:255) or page..." id="main-search" autocomplete="off" />
-      <div class="search-dropdown" id="search-dropdown" style="display:none;"></div>
-    </div>
-
-    <!-- Navigation Pills (Desktop Only) -->
-    <nav class="topbar-nav" id="topbar-nav">
-      <button class="nav-pill active" id="nav-pill-beranda" data-page="beranda" onclick="navigateTo('beranda')">Home</button>
-      <button class="nav-pill" id="nav-pill-quran" data-page="quran" onclick="navigateTo('quran')">Quran</button>
-      <button class="nav-pill" id="nav-pill-audio" data-page="audio" onclick="navigateTo('audio')">Audio</button>
-      <button class="nav-pill" id="nav-pill-sejarah" data-page="sejarah" onclick="navigateTo('sejarah')">History</button>
-      <button class="nav-pill" id="nav-pill-jejak" data-page="jejak" onclick="navigateTo('jejak')">Revelations</button>
-    </nav>
-
-    <div class="topbar-actions">
-      <!-- Language Switcher Button -->
-      <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language / Ganti Bahasa (EN / ID)">
-        <span class="lang-flag">🌐</span>
-        <span class="lang-code" id="lang-indicator">EN</span>
-      </button>
-
-      <button class="topbar-icon-btn" id="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme (Dark / Light)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-
-      <!-- Notification Dropdown Container -->
-      <div class="notif-wrapper" style="position:relative;">
-        <button class="topbar-icon-btn" id="notification-btn" aria-label="Notifications" title="Pemberitahuan">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
-          <span class="notif-dot"></span>
-        </button>
-        <div class="notification-dropdown" id="notification-dropdown" style="display:none;">
-          <div class="notif-dropdown-header">
-            <span id="notif-title">Daily Notifications</span>
-            <button class="notif-close-btn" id="notif-close-btn">✕</button>
+<!-- ═══════════════════ APP TOPBAR & NAVIGATION ═══════════════════ -->
+<header class="app-header">
+  <div class="header-container">
+    <div class="header-main-row">
+      <!-- Left: Logo & Search -->
+      <div class="header-left">
+        <div class="brand-logo" onclick="navigateTo('beranda')" role="button" tabindex="0" title="Quran Harmony">
+          <div class="brand-icon">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="9" fill="#0d382d"/>
+              <rect x="10" y="8" width="18" height="22" rx="2.5" stroke="white" stroke-width="2" fill="none"/>
+              <line x1="10" y1="14" x2="28" y2="14" stroke="white" stroke-width="2"/>
+            </svg>
           </div>
-          <div class="notif-dropdown-list">
-            <div class="notif-item" onclick="loadSurah(18); navigateTo('quran'); toggleNotification(false);">
-              <div class="notif-item-icon">🕌</div>
-              <div class="notif-item-content">
-                <div class="notif-item-title" id="notif-title-1">Surah Al-Kahf (18)</div>
-                <div class="notif-item-desc" id="notif-desc-1">Sunnah reading and reflection on Friday</div>
-              </div>
+          <div class="brand-text">
+            <span class="brand-title">Quran Harmony</span>
+            <span class="brand-subtitle">SPIRITUAL JOURNEY</span>
+          </div>
+        </div>
+
+        <div class="header-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+          <input type="text" placeholder="Jump to surah or verse, e.g. 2:255" id="main-search" autocomplete="off" />
+          <div class="search-dropdown" id="search-dropdown" style="display:none;"></div>
+        </div>
+      </div>
+
+      <!-- Right: Main Navigation Pills -->
+      <nav class="header-nav" id="topbar-nav">
+        <button class="nav-pill active" id="nav-pill-beranda" data-page="beranda" onclick="navigateTo('beranda')">Home</button>
+        <button class="nav-pill" id="nav-pill-quran" data-page="quran" onclick="navigateTo('quran')">Quran</button>
+        <button class="nav-pill" id="nav-pill-audio" data-page="audio" onclick="navigateTo('audio')">Audio</button>
+        <button class="nav-pill" id="nav-pill-sejarah" data-page="sejarah" onclick="navigateTo('sejarah')">History</button>
+        <button class="nav-pill" id="nav-pill-jejak" data-page="jejak" onclick="navigateTo('jejak')">Revelations</button>
+      </nav>
+    </div>
+
+    <!-- Subrow: Utility Buttons (Language, Dark Mode, Notifications, Reader Settings) -->
+    <div class="header-sub-row">
+      <div class="header-utilities">
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language / Ganti Bahasa (EN / ID)">
+          <span class="lang-flag">🌐</span>
+          <span class="lang-code" id="lang-indicator">EN</span>
+        </button>
+
+        <button class="icon-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark Mode" title="Toggle Theme (Dark / Light)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <div class="notif-wrapper" style="position:relative;">
+          <button class="icon-toggle-btn" id="notification-btn" aria-label="Notifications" title="Notifications">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+            <span class="notif-dot"></span>
+          </button>
+          <div class="notification-dropdown" id="notification-dropdown" style="display:none;">
+            <div class="notif-dropdown-header">
+              <span id="notif-title">Daily Notifications</span>
+              <button class="notif-close-btn" id="notif-close-btn">✕</button>
             </div>
-            <div class="notif-item" onclick="loadSurah(36); navigateTo('quran'); toggleNotification(false);">
-              <div class="notif-item-icon">📖</div>
-              <div class="notif-item-content">
-                <div class="notif-item-title" id="notif-title-2">Daily Tilawah: Ya-Sin (36)</div>
-                <div class="notif-item-desc" id="notif-desc-2">Continue your daily Quran tilawah today</div>
+            <div class="notif-dropdown-list">
+              <div class="notif-item" onclick="loadSurah(18); navigateTo('quran'); toggleNotification(false);">
+                <div class="notif-item-icon">🕌</div>
+                <div class="notif-item-content">
+                  <div class="notif-item-title" id="notif-title-1">Surah Al-Kahf (18)</div>
+                  <div class="notif-item-desc" id="notif-desc-1">Sunnah reading and reflection on Friday</div>
+                </div>
               </div>
-            </div>
-            <div class="notif-item" onclick="navigateTo('audio'); toggleNotification(false);">
-              <div class="notif-item-icon">🎧</div>
-              <div class="notif-item-content">
-                <div class="notif-item-title" id="notif-title-3">World-Renowned Reciters</div>
-                <div class="notif-item-desc" id="notif-desc-3">Listen to sweet recitations from Al-Afasy & As-Sudais</div>
+              <div class="notif-item" onclick="loadSurah(36); navigateTo('quran'); toggleNotification(false);">
+                <div class="notif-item-icon">📖</div>
+                <div class="notif-item-content">
+                  <div class="notif-item-title" id="notif-title-2">Daily Tilawah: Ya-Sin (36)</div>
+                  <div class="notif-item-desc" id="notif-desc-2">Continue your daily Quran tilawah today</div>
+                </div>
+              </div>
+              <div class="notif-item" onclick="navigateTo('audio'); toggleNotification(false);">
+                <div class="notif-item-icon">🎧</div>
+                <div class="notif-item-content">
+                  <div class="notif-item-title" id="notif-title-3">World-Renowned Reciters</div>
+                  <div class="notif-item-desc" id="notif-desc-3">Listen to sweet recitations from Al-Afasy & As-Sudais</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <button class="reader-settings-btn" id="reader-settings-btn" title="Reader Preferences">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="21" x2="4" y2="14"/>
+            <line x1="4" y1="10" x2="4" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12" y2="3"/>
+            <line x1="20" y1="21" x2="20" y2="16"/>
+            <line x1="20" y1="12" x2="20" y2="3"/>
+            <line x1="1" y1="14" x2="7" y2="14"/>
+            <line x1="9" y1="8" x2="15" y2="8"/>
+            <line x1="17" y1="16" x2="23" y2="16"/>
+          </svg>
+          <span id="reader-settings-label">Reader Settings</span>
+        </button>
       </div>
-
-      <button class="reader-settings-btn" id="reader-settings-btn" title="Reader Preferences">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="4" y1="21" x2="4" y2="14"/>
-          <line x1="4" y1="10" x2="4" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="12"/>
-          <line x1="12" y1="8" x2="12" y2="3"/>
-          <line x1="20" y1="21" x2="20" y2="16"/>
-          <line x1="20" y1="12" x2="20" y2="3"/>
-          <line x1="1" y1="14" x2="7" y2="14"/>
-          <line x1="9" y1="8" x2="15" y2="8"/>
-          <line x1="17" y1="16" x2="23" y2="16"/>
-        </svg>
-        <span id="reader-settings-label">Reader Settings</span>
-      </button>
     </div>
-  </header>
+  </div>
+</header>
 
+<!-- ═══════════════════ MAIN CONTENT ═══════════════════ -->
+<div class="main-wrapper">
   <!-- Content Area -->
   <main class="content-area" id="content-area">
 
     <!-- ═══════ PAGE: BERANDA ═══════ -->
     <section class="page active" id="page-beranda">
-      <!-- Last Read Banner (Card Lanjutkan Membaca) -->
-      <div class="last-read-card" id="last-read-card" style="display:none;">
-        <div class="last-read-inner">
-          <div class="last-read-icon-wrap">
-            <span class="last-read-emoji">📖</span>
-          </div>
-          <div class="last-read-body">
-            <div class="last-read-badge" id="last-read-badge">TERAKHIR DIBACA</div>
-            <div class="last-read-title" id="last-read-title">Al-Baqarah : 255</div>
-            <div class="last-read-sub" id="last-read-sub">Terakhir dibaca baru saja</div>
-          </div>
-          <button class="last-read-btn" id="last-read-btn" onclick="continueLastRead()">
-            <span id="last-read-btn-text">Lanjutkan</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-        </div>
-      </div>
+      <div class="beranda-main-container">
+        <div class="beranda-top-grid">
 
-      <!-- Hero Banner with Mosque Background -->
-      <div class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <div class="hero-icon-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3c0 4.5 4.5 9 9 9-4.5 0-9 4.5-9 9 0-4.5-4.5-9-9-9 4.5 0 9-4.5 9-9z" fill="white" fill-opacity="0.25"/>
-              <path d="M19 3v4M21 5h-4" stroke-width="1.8"/>
-            </svg>
+        <!-- ── Left Column: Surah Card ── -->
+        <aside class="surah-card-panel" id="sidebar">
+          <div class="surah-card-header">
+            <h2 class="surah-card-title">Surah</h2>
+            <span class="surah-card-count" id="surah-shown-count">7 shown</span>
           </div>
-          <h1 class="hero-title">Quran Harmony</h1>
-          <p class="hero-quote" id="hero-quote"><em>"Verily, in the remembrance of Allah do hearts find rest."</em> (13:28)</p>
-          <div class="hero-cta">
-            <button class="btn-primary" onclick="navigateTo('quran')">
-              <span id="hero-btn-read-text">Start Reading</span>
-            </button>
-            <button class="btn-secondary" onclick="navigateTo('audio')" aria-label="Explore Audio">
-              <span id="hero-btn-audio-text">Explore Audio</span>
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <!-- Mobile Quick Actions Grid (Phones only) -->
-      <div class="mobile-quick-actions" id="mobile-quick-actions">
-        <button class="m-action-btn" onclick="navigateTo('quran')">
-          <div class="m-action-icon bg-green">📖</div>
-          <span class="m-action-text" id="m-quick-quran">Al-Qur'an</span>
-        </button>
-        <button class="m-action-btn" onclick="navigateTo('audio')">
-          <div class="m-action-icon bg-amber">🎧</div>
-          <span class="m-action-text" id="m-quick-audio">Audio Qori</span>
-        </button>
-        <button class="m-action-btn" onclick="navigateTo('jejak')">
-          <div class="m-action-icon bg-blue">🏛️</div>
-          <span class="m-action-text" id="m-quick-jejak">Asbabun Nuzul</span>
-        </button>
-        <button class="m-action-btn" onclick="navigateTo('sejarah')">
-          <div class="m-action-icon bg-purple">📜</div>
-          <span class="m-action-text" id="m-quick-sejarah">Sejarah</span>
-        </button>
-      </div>
+          <div class="surah-card-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+            <input type="text" placeholder="Search surah..." id="sidebar-surah-search" autocomplete="off" />
+          </div>
 
-      <!-- Feature Cards -->
-      <div class="features-grid">
-        <div class="feature-card" onclick="navigateTo('quran')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="3" width="14" height="18" rx="2.5"/>
-              <line x1="5" y1="8" x2="19" y2="8"/>
-            </svg>
+          <div class="surah-card-filter-tabs" id="sidebar-filter-tabs">
+            <button class="s-filter-btn active" data-type="all"><span id="s-tab-all-label">Semua</span> <span class="badge-count" id="s-count-all">114</span></button>
+            <button class="s-filter-btn" data-type="Makkiyyah"><span id="s-tab-makk-label">Makkiyyah</span> <span class="badge-count" id="s-count-makk">84</span></button>
+            <button class="s-filter-btn" data-type="Madaniyyah"><span id="s-tab-madan-label">Madaniyyah</span> <span class="badge-count" id="s-count-madan">30</span></button>
           </div>
-          <h3 class="feature-title" id="feat-quran-title">Full Quran Text</h3>
-          <p class="feature-desc" id="feat-quran-desc">Access all 114 surahs with beautiful Uthmani script and translations.</p>
-        </div>
-        <div class="feature-card" onclick="navigateTo('audio')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="6,4 19,12 6,20 6,4"/>
-            </svg>
-          </div>
-          <h3 class="feature-title" id="feat-audio-title">Audio Recitations</h3>
-          <p class="feature-desc" id="feat-audio-desc">Listen to high-quality audio from world-renowned reciters verse by verse.</p>
-        </div>
-        <div class="feature-card" onclick="navigateTo('jejak')">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
-            </svg>
-          </div>
-          <h3 class="feature-title" id="feat-spiritual-title">Spiritual Growth</h3>
-          <p class="feature-desc" id="feat-spiritual-desc">A modern, distraction-free interface designed for deep reflection and peace.</p>
-        </div>
-      </div>
 
-      <!-- Daily Verse Section -->
-      <div class="daily-verse-section">
-        <div class="section-header-bar">
-          <h3 class="section-title" id="daily-title">Daily Inspiration</h3>
-          <span class="section-badge" id="daily-badge">Today</span>
-        </div>
-        <div class="daily-verse-card">
-          <div class="daily-verse-arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
-          <div class="daily-verse-translation" id="daily-verse-trans">"In the name of Allah, the Most Gracious, the Most Merciful."</div>
-          <div class="daily-verse-footer">
-            <div class="daily-verse-ref" id="daily-verse-ref">— Al-Faatiha 1:1</div>
-            <div class="daily-verse-actions">
-              <button class="btn-verse-action" id="daily-btn-play" onclick="playVerse(1, 1)" title="Play Audio">▶ Play</button>
-              <button class="btn-verse-action" id="daily-btn-read" onclick="loadSurah(1); navigateTo('quran')" title="Read Full Surah">📖 Read Surah</button>
-              <button class="btn-verse-action" id="daily-btn-copy" onclick="copyVerse(this, 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ — Al-Faatiha 1:1')" title="Copy Verse">📋 Copy</button>
+          <div class="surah-card-scroll-list" id="sidebar-surah-list">
+            <!-- Populated by JS -->
+          </div>
+        </aside>
+
+        <!-- ── Right Column: Hero + VOTD + 3 Feature Cards ── -->
+        <div class="beranda-content-col">
+
+          <!-- 1. Hero Card -->
+          <div class="hero-card">
+            <!-- Geometric Islamic Star SVG Pattern Background -->
+            <div class="hero-pattern-bg"></div>
+
+            <!-- Mosque Silhouette with warm glowing crescent finials & arched windows -->
+            <div class="hero-mosque">
+              <svg viewBox="0 0 1000 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#07261c">
+                  <!-- Minaret left -->
+                  <rect x="50" y="80" width="14" height="140" rx="2"/>
+                  <rect x="46" y="110" width="22" height="6" rx="2"/>
+                  <circle cx="57" cy="74" r="8"/>
+                  <polygon points="53,66 57,48 61,66"/>
+                  <!-- Domes and Arches -->
+                  <ellipse cx="160" cy="140" rx="50" ry="40"/>
+                  <rect x="110" y="140" width="100" height="80"/>
+                  <ellipse cx="280" cy="120" rx="70" ry="55"/>
+                  <rect x="210" y="120" width="140" height="100"/>
+                  <!-- Central main dome -->
+                  <ellipse cx="500" cy="90" rx="140" ry="95"/>
+                  <rect x="360" y="90" width="280" height="130"/>
+                  <!-- Finial central -->
+                  <rect x="496" y="20" width="8" height="70"/>
+                  <circle cx="500" cy="16" r="6"/>
+                  <!-- Right Domes -->
+                  <ellipse cx="720" cy="120" rx="70" ry="55"/>
+                  <rect x="650" y="120" width="140" height="100"/>
+                  <ellipse cx="840" cy="140" rx="50" ry="40"/>
+                  <rect x="790" y="140" width="100" height="80"/>
+                  <!-- Minaret right -->
+                  <rect x="930" y="80" width="14" height="140" rx="2"/>
+                  <rect x="926" y="110" width="22" height="6" rx="2"/>
+                  <circle cx="937" cy="74" r="8"/>
+                  <polygon points="933,66 937,48 941,66"/>
+                  <!-- Ground base -->
+                  <rect x="0" y="195" width="1000" height="25"/>
+                </g>
+                <!-- Glowing Yellow Finials & Crescent Lights -->
+                <g fill="#e5c07b">
+                  <circle cx="57" cy="48" r="3.5"/>
+                  <circle cx="500" cy="14" r="4.5"/>
+                  <circle cx="937" cy="48" r="3.5"/>
+                  <!-- Windows in mosque base -->
+                  <rect x="420" y="165" width="8" height="14" rx="4"/>
+                  <rect x="450" y="165" width="8" height="14" rx="4"/>
+                  <rect x="480" y="165" width="8" height="14" rx="4"/>
+                  <rect x="512" y="165" width="8" height="14" rx="4"/>
+                  <rect x="542" y="165" width="8" height="14" rx="4"/>
+                  <rect x="572" y="165" width="8" height="14" rx="4"/>
+                  <!-- Small base lights row -->
+                  <circle cx="120" cy="188" r="2.5"/>
+                  <circle cx="160" cy="188" r="2.5"/>
+                  <circle cx="200" cy="188" r="2.5"/>
+                  <circle cx="240" cy="188" r="2.5"/>
+                  <circle cx="280" cy="188" r="2.5"/>
+                  <circle cx="720" cy="188" r="2.5"/>
+                  <circle cx="760" cy="188" r="2.5"/>
+                  <circle cx="800" cy="188" r="2.5"/>
+                  <circle cx="840" cy="188" r="2.5"/>
+                  <circle cx="880" cy="188" r="2.5"/>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Left Hero Content -->
+            <div class="hero-left-content">
+              <div class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+              <h1 class="hero-title">Quran<br>Harmony</h1>
+              <p class="hero-quote" id="hero-quote"><em>"Verily, in the remembrance of Allah do hearts find rest."</em></p>
+              <div class="hero-quote-ref">13:28</div>
+
+              <div class="hero-buttons">
+                <button class="btn-hero-white" onclick="navigateTo('quran'); switchQuranView('reader');">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2.5"/><line x1="5" y1="8" x2="19" y2="8"/></svg>
+                  <span id="hero-btn-read-text">Start Reading</span>
+                </button>
+                <button class="btn-hero-glass" onclick="navigateTo('audio')">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                  <span id="hero-btn-audio-text">Explore Audio</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Continue Reading Glass Card -->
+            <div class="continue-reading-glass" id="last-read-card">
+              <div class="cr-badge" id="last-read-badge">CONTINUE READING</div>
+              <div class="cr-title-row">
+                <span class="cr-surah-name" id="last-read-title">Al-Baqarah</span>
+                <span class="cr-surah-arabic" id="last-read-arabic">البَقَرَة</span>
+              </div>
+              <div class="cr-verse-meta" id="last-read-sub">Verse 255 of 286</div>
+              <div class="cr-progress-track">
+                <div class="cr-progress-fill" id="last-read-progress" style="width: 89%;"></div>
+              </div>
+              <button class="cr-resume-btn" id="last-read-btn" onclick="continueLastRead()">
+                <span id="last-read-btn-text">Resume</span>
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2. Verse of the Day Card -->
+          <div class="votd-clean-card">
+            <div class="votd-header-row">
+              <span class="votd-title-label">VERSE OF THE DAY</span>
+              <span class="votd-verse-badge" id="daily-badge">94:5</span>
+            </div>
+            <div class="votd-arabic-text" id="daily-verse-arabic-text">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+            <div class="votd-trans-text" id="daily-verse-trans"><em>Indeed, with every hardship there is ease.</em></div>
+            <div class="votd-btns-row">
+              <button class="votd-btn" id="daily-btn-play" onclick="playVerse(94, 5)">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+                <span id="daily-btn-play-text">Listen</span>
+              </button>
+              <button class="votd-btn" id="daily-btn-read" onclick="loadSurah(94); navigateTo('quran')">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                <span id="daily-btn-read-text">Save</span>
+              </button>
+              <button class="votd-btn" id="daily-btn-copy" onclick="copyVerse(this, 'فَإِنَّ مَعَ الْعُسْرِ يُسْرًا — Ash-Sharh 94:5')">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                <span id="daily-btn-copy-text">Share</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Quick Access Surahs -->
-      <div class="section-header-bar">
-        <h3 class="section-title" id="popular-title">Popular Surahs</h3>
-        <button class="view-all-btn" id="popular-view-all" onclick="navigateTo('quran'); switchQuranView('catalog');">Lihat Semua 114 Surah →</button>
-      </div>
-      <div class="popular-surahs-grid">
-        <div class="popular-surah-card" onclick="loadSurah(1); navigateTo('quran'); switchQuranView('reader');">
-          <div class="ps-number">1</div>
-          <div class="ps-info">
-            <div class="ps-name">Al-Fatihah</div>
-            <div class="ps-meta" id="ps-meta-1"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 7 ayat</div>
-          </div>
-          <div class="ps-arabic">الفَاتِحَة</div>
-        </div>
-        <div class="popular-surah-card" onclick="loadSurah(36); navigateTo('quran'); switchQuranView('reader');">
-          <div class="ps-number">36</div>
-          <div class="ps-info">
-            <div class="ps-name">Yasin</div>
-            <div class="ps-meta" id="ps-meta-36"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 83 ayat</div>
-          </div>
-          <div class="ps-arabic">يسٓ</div>
-        </div>
-        <div class="popular-surah-card" onclick="loadSurah(67); navigateTo('quran'); switchQuranView('reader');">
-          <div class="ps-number">67</div>
-          <div class="ps-info">
-            <div class="ps-name">Al-Mulk</div>
-            <div class="ps-meta" id="ps-meta-67"><span class="badge-mini-rev rev-makkiyyah">🕋 Makkiyyah</span> • 30 ayat</div>
-          </div>
-          <div class="ps-arabic">المُلْك</div>
-        </div>
-        <div class="popular-surah-card" onclick="loadSurah(55); navigateTo('quran'); switchQuranView('reader');">
-          <div class="ps-number">55</div>
-          <div class="ps-info">
-            <div class="ps-name">Ar-Rahman</div>
-            <div class="ps-meta" id="ps-meta-55"><span class="badge-mini-rev rev-madaniyyah">🕌 Madaniyyah</span> • 78 ayat</div>
-          </div>
-          <div class="ps-arabic">الرَّحْمٰن</div>
-        </div>
-      </div>
+      <!-- 3. Feature Cards (Grid 3 cols, Full Width) -->
+      <div class="feature-clean-grid">
+            <div class="fc-card" onclick="navigateTo('quran'); switchQuranView('reader');">
+              <div class="fc-icon-wrap fc-icon-green">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2.5"/><line x1="5" y1="8" x2="19" y2="8"/></svg>
+              </div>
+              <h3 class="fc-title" id="feat-quran-title">Full Quran Text</h3>
+              <p class="fc-desc" id="feat-quran-desc">Read all 114 surahs in Arabic with a translation beside every verse.</p>
+              <span class="fc-cta" id="feat-quran-cta">Open reader →</span>
+            </div>
 
-      <!-- Explore All 114 Surahs Banner -->
-      <div class="explore-catalog-banner" onclick="navigateTo('quran'); switchQuranView('catalog');" style="margin-top:20px; background:linear-gradient(135deg, rgba(27,67,50,0.06) 0%, rgba(217,119,6,0.06) 100%); border:1px solid var(--border); border-radius:14px; padding:18px 20px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; transition:transform 0.2s, box-shadow 0.2s;">
-        <div style="display:flex; align-items:center; gap:14px;">
-          <div style="width:44px; height:44px; border-radius:12px; background:var(--sage-700); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.4rem;">📑</div>
-          <div>
-            <h4 style="margin:0 0 2px 0; font-size:1rem; font-weight:700; color:var(--text-primary);">Katalog Lengkap 114 Surah Al-Qur'an</h4>
-            <div style="font-size:0.8rem; color:var(--text-secondary); display:flex; align-items:center; gap:8px;">
-              <span class="badge-mini-rev rev-makkiyyah">🕋 84 Makkiyyah</span>
-              <span class="badge-mini-rev rev-madaniyyah">🕌 30 Madaniyyah</span>
-              <span>• Telusuri tema & periodisasi wahyu</span>
+            <div class="fc-card" onclick="navigateTo('audio')">
+              <div class="fc-icon-wrap fc-icon-amber">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+              </div>
+              <h3 class="fc-title" id="feat-audio-title">Audio Recitations</h3>
+              <p class="fc-desc" id="feat-audio-desc">Listen to recitations verse by verse and follow along as you read.</p>
+              <span class="fc-cta" id="feat-audio-cta">Start listening →</span>
+            </div>
+
+            <div class="fc-card" onclick="navigateTo('jejak')">
+              <div class="fc-icon-wrap fc-icon-teal">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <h3 class="fc-title" id="feat-spiritual-title">Spiritual Growth</h3>
+              <p class="fc-desc" id="feat-spiritual-desc">Save bookmarks, keep a reading history and build a steady daily habit.</p>
+              <span class="fc-cta" id="feat-spiritual-cta">View progress →</span>
             </div>
           </div>
         </div>
-        <button class="btn-primary" style="padding:8px 16px; font-size:0.82rem; flex-shrink:0;">
-          <span>Buka Katalog 114 Surah →</span>
-        </button>
       </div>
     </section>
 
@@ -424,34 +411,34 @@
             <span style="font-size: 1.5rem;">📖</span>
             <div>
               <h3 class="catalog-edu-title" id="edu-banner-title">Mengenal Klasifikasi Surah: Makkiyyah & Madaniyyah</h3>
-              <p style="font-size:0.82rem; color:var(--text-secondary); margin:2px 0 0 0;">Memahami konteks tempat & masa pewahyuan 114 Surah Al-Qur'an.</p>
+              <p id="edu-banner-sub" style="font-size:0.82rem; color:var(--text-secondary); margin:2px 0 0 0;">Memahami konteks tempat & masa pewahyuan 114 Surah Al-Qur'an.</p>
             </div>
           </div>
           <div class="catalog-edu-grid">
             <div class="edu-card edu-card-makk">
               <div class="edu-card-title">
-                <h4>🕋 Surah Makkiyyah</h4>
-                <span class="edu-tag-count makk">84 Surah</span>
+                <h4 id="edu-makk-title">🕋 Surah Makkiyyah</h4>
+                <span class="edu-tag-count makk" id="edu-makk-badge">84 Surah</span>
               </div>
-              <p><strong>Diturunkan sebelum Hijrah:</strong> Diturunkan kepada Nabi Muhammad ﷺ di Makkah (610 – 622 M) sebelum berhijrah ke Madinah.</p>
+              <p id="edu-makk-desc"><strong>Diturunkan sebelum Hijrah:</strong> Diturunkan kepada Nabi Muhammad ﷺ di Makkah (610 – 622 M) sebelum berhijrah ke Madinah.</p>
               <ul>
-                <li>Fokus pada penanaman Aqidah, Tauhid, dan kemurnian iman.</li>
-                <li>Peringatan Hari Kiamat, pembalasan amal, Surga & Neraka.</li>
-                <li>Ayat-ayatnya umumnya ringkas, tegas, ritmis, dan puitis.</li>
-                <li>Sering memuat seruan <em>"Yā ayyuhan-nās"</em> (Wahai sekalian manusia).</li>
+                <li id="edu-makk-p1">Fokus pada penanaman Aqidah, Tauhid, dan kemurnian iman.</li>
+                <li id="edu-makk-p2">Peringatan Hari Kiamat, pembalasan amal, Surga & Neraka.</li>
+                <li id="edu-makk-p3">Ayat-ayatnya umumnya ringkas, tegas, ritmis, dan puitis.</li>
+                <li id="edu-makk-p4">Sering memuat seruan <em>"Yā ayyuhan-nās"</em> (Wahai sekalian manusia).</li>
               </ul>
             </div>
             <div class="edu-card edu-card-madan">
               <div class="edu-card-title">
-                <h4>🕌 Surah Madaniyyah</h4>
-                <span class="edu-tag-count madan">30 Surah</span>
+                <h4 id="edu-madan-title">🕌 Surah Madaniyyah</h4>
+                <span class="edu-tag-count madan" id="edu-madan-badge">30 Surah</span>
               </div>
-              <p><strong>Diturunkan setelah Hijrah:</strong> Diturunkan setelah Rasulullah ﷺ hijrah ke Madinah (622 – 632 M) hingga akhir hayat beliau.</p>
+              <p id="edu-madan-desc"><strong>Diturunkan setelah Hijrah:</strong> Diturunkan setelah Rasulullah ﷺ hijrah ke Madinah (622 – 632 M) hingga akhir hayat beliau.</p>
               <ul>
-                <li>Fokus pada Syariat hukum, ibadah kemasyarakatan, dan peradilan.</li>
-                <li>Aturan keluarga, waris, muamalah ekonomi, dan diplomasi politik.</li>
-                <li>Ayat-ayatnya cenderung panjang dan bernada penjelasan hukum (*tasyrī'*).</li>
-                <li>Sering memuat seruan <em>"Yā ayyuhallażīna āmanū"</em> (Wahai orang beriman).</li>
+                <li id="edu-madan-p1">Fokus pada Syariat hukum, ibadah kemasyarakatan, dan peradilan.</li>
+                <li id="edu-madan-p2">Aturan keluarga, waris, muamalah ekonomi, dan diplomasi politik.</li>
+                <li id="edu-madan-p3">Ayat-ayatnya cenderung panjang dan bernada penjelasan hukum (*tasyrī'*).</li>
+                <li id="edu-madan-p4">Sering memuat seruan <em>"Yā ayyuhallażīna āmanū"</em> (Wahai orang beriman).</li>
               </ul>
             </div>
           </div>
@@ -461,15 +448,15 @@
         <div class="catalog-toolbar">
           <div class="catalog-tabs" id="catalog-filter-tabs">
             <button class="c-filter-btn active" data-type="all" onclick="filterCatalog('all')">
-              <span>🌟 Semua Surah</span>
+              <span id="cat-tab-all-label">🌟 Semua Surah</span>
               <span class="c-pill-count" id="cat-count-all">114</span>
             </button>
             <button class="c-filter-btn" data-type="Makkiyyah" onclick="filterCatalog('Makkiyyah')">
-              <span>🕋 Makkiyyah</span>
+              <span id="cat-tab-makk-label">🕋 Makkiyyah</span>
               <span class="c-pill-count" id="cat-count-makk">84</span>
             </button>
             <button class="c-filter-btn" data-type="Madaniyyah" onclick="filterCatalog('Madaniyyah')">
-              <span>🕌 Madaniyyah</span>
+              <span id="cat-tab-madan-label">🕌 Madaniyyah</span>
               <span class="c-pill-count" id="cat-count-madan">30</span>
             </button>
           </div>
@@ -832,6 +819,7 @@
 </nav>
 
 <script src="data.js"></script>
+<script src="history-en-translations.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
