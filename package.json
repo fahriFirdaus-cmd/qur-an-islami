@@ -1,0 +1,29 @@
+{
+  "name": "qur-an-islami",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "download_surahs.js",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahriFirdaus-cmd/qur-an-islami.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fahriFirdaus-cmd/qur-an-islami/issues"
+  },
+  "homepage": "https://github.com/fahriFirdaus-cmd/qur-an-islami#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "init": "^0.1.2",
+    "npm": "^12.2.1"
+  }
+}

@@ -13,6 +13,9 @@
   
   <!-- Islamic Redesign CSS -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Leaflet Interactive Map for Global Prayer Times -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 </head>
 <body>
 
@@ -291,6 +294,9 @@
               </button>
             </div>
           </div>
+
+            <!-- Prayer Times Widget -->
+            <div id="prayer-widget-placeholder"></div>
         </div>
       </div>
 
@@ -380,6 +386,7 @@
             </div>
             <div class="surah-name-ar" id="surah-name-ar">سُوْرَةُ الفَاتِحَةِ</div>
             <div class="surah-controls">
+              <button class="mem-toggle-btn" id="mem-toggle-btn" onclick="toggleMemorizationMode()" title="Mode Hafalan (Memorization Mode)">📖 Memorize</button>
               <div class="font-control">
                 <span class="control-label" id="font-control-label">Font:</span>
                 <button class="font-step-btn" id="font-dec-btn" title="Kecilkan Huruf">A-</button>
@@ -1105,5 +1112,7 @@
 <script src="data.js"></script>
 <script src="history-en-translations.js"></script>
 <script src="app.js"></script>
+<script src="features-multilang.js"></script>
+<script src="features-global.js"></script>
 </body>
 </html>

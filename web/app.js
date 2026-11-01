@@ -1642,6 +1642,7 @@ async function renderVerses(surahId, targetVerse = null) {
               ${isBookmarked ? '⭐' : '🔖'}
             </button>
             <button class="verse-btn" title="${isEn ? 'Copy Verse' : 'Salin Ayat'}" onclick="copyVerse(this, '${escapeStr(arabicText)}', '${escapeStr(transText)}')">📋</button>
+            <button class="verse-btn" title="${isEn ? 'Share Verse' : 'Bagikan Ayat'}" onclick="shareVerseModal(${surahId}, ${v.num}, '${escapeStr(arabicText)}', '${escapeStr(transText)}')">📤</button>
             ${v.hasHistory ? `<button class="verse-btn has-history" title="Asbabun Nuzul" onclick="openHistoryModal('${v.historyId}')">🏛️</button>` : ''}
           </div>
         </div>
@@ -1658,6 +1659,10 @@ async function renderVerses(surahId, targetVerse = null) {
   }).join('');
 
   // Scroll to target verse if specified
+  if (window.state && window.state.memorizationMode && typeof window.renderMemorizationView === 'function') {
+    window.renderMemorizationView(surahId);
+  }
+
   if (targetVerse) {
     setTimeout(() => {
       const el = document.getElementById(`verse-${surahId}-${targetVerse}`);

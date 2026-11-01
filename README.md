@@ -8,7 +8,7 @@
 
 **Aplikasi Al-Qur'an digital interaktif lengkap dengan audio murottal, sejarah Islam, dan Asbabun Nuzul**
 
-[🚀 Demo](#-cara-menjalankan) • [✨ Fitur](#-fitur-utama) • [📖 Dokumentasi](#-dokumentasi) • [🛠️ Teknologi](#️-teknologi)
+[🚀 Demo](#cara-menjalankan) • [✨ Fitur](#fitur-utama) • [📖 Dokumentasi](#struktur-project) • [🛠️ Teknologi](#teknologi)
 
 </div>
 
@@ -436,8 +436,8 @@ Developed with ❤️ by the Quran Harmony Team
 
 Jika ada pertanyaan atau menemukan bug:
 - 📧 Email: support@quranharmony.com
-- 🐛 Issues: [GitHub Issues](#)
-- 💬 Discussions: [GitHub Discussions](#)
+- 🐛 Issues: [GitHub Issues](https://github.com/username/qur-an-islami/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/username/qur-an-islami/discussions)
 
 ---
 
