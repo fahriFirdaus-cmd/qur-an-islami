@@ -1,7 +1,7 @@
 /**
  * features-global.js
  * Quran Harmony — Comprehensive Global Extensions
- * 1. World Prayer Times & Interactive Leaflet Map Model
+ * 1. World Prayer Times & Interactive Leaflet Map Model (Smooth Panning, Dragging, Worldwide Presets)
  * 2. Memorization Mode / Tahfidz (Blur/Reveal, Per-verse Reveal Buttons, Progress Tracker)
  * 3. Rich Social Share & Canvas Card Generator (WhatsApp, X/Twitter, Clipboard, 16:9 PNG Card)
  * 4. Full-Text Search (Verses, Translations EN/ID/Latin, Highlighting, Instant Jump)
@@ -79,19 +79,19 @@
       gap: 5px;
     }
     .pw-map-btn {
-      background: linear-gradient(135deg, rgba(229,192,123,0.2) 0%, rgba(229,192,123,0.08) 100%);
-      border: 1px solid #e5c07b;
+      background: linear-gradient(135deg, rgba(229,192,123,0.25) 0%, rgba(229,192,123,0.1) 100%);
+      border: 1.5px solid #e5c07b;
       color: #fdf5e6;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 700;
-      padding: 5px 14px;
+      padding: 6px 15px;
       border-radius: 20px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
       transition: all 0.2s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
     .pw-map-btn:hover {
       background: #e5c07b;
@@ -217,18 +217,18 @@
     /* ── MAP MODAL ── */
     .pmm-overlay {
       position: fixed; inset: 0;
-      background: rgba(4, 16, 12, 0.82);
+      background: rgba(4, 16, 12, 0.85);
       backdrop-filter: blur(8px);
       z-index: 999999;
       display: flex; align-items: center; justify-content: center;
       animation: fadeIn 0.2s ease;
-      padding: 16px;
+      padding: 14px;
     }
     .pmm-modal {
       background: linear-gradient(165deg, #103328 0%, #071f18 100%);
       border: 1.5px solid rgba(229,192,123,0.38);
       border-radius: 20px;
-      width: min(850px, 98vw);
+      width: min(880px, 98vw);
       max-height: 94vh;
       display: flex;
       flex-direction: column;
@@ -241,7 +241,7 @@
       display: flex; justify-content: space-between; align-items: center;
       padding: 16px 22px;
       border-bottom: 1px solid rgba(229,192,123,0.18);
-      background: rgba(0,0,0,0.15);
+      background: rgba(0,0,0,0.18);
     }
     .pmm-title {
       font-size: 1.15rem;
@@ -255,23 +255,23 @@
       background: transparent;
       border: none;
       color: #a5d6a7;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       cursor: pointer;
       line-height: 1;
-      padding: 4px;
+      padding: 4px 8px;
       border-radius: 6px;
       transition: all 0.2s;
     }
     .pmm-close-btn:hover {
       color: #fff;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.12);
     }
     .pmm-body {
-      padding: 18px 22px;
+      padding: 16px 20px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 12px;
     }
     .pmm-toolbar {
       display: flex;
@@ -287,9 +287,9 @@
       background: rgba(0,0,0,0.35);
       border: 1px solid rgba(229,192,123,0.25);
       color: #fff;
-      padding: 9px 14px;
+      padding: 10px 14px;
       border-radius: 10px;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       outline: none;
       transition: border 0.2s;
     }
@@ -301,9 +301,9 @@
       background: #e5c07b;
       color: #09261f;
       border: none;
-      padding: 9px 18px;
+      padding: 10px 20px;
       border-radius: 10px;
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       font-weight: 700;
       cursor: pointer;
       transition: filter 0.2s;
@@ -338,26 +338,54 @@
       border-color: #e5c07b;
     }
 
+    /* ── MAP CONTAINER WITH FULL DRAG SUPPORT ── */
     .pmm-map-wrapper {
       position: relative;
-      border: 1px solid rgba(229,192,123,0.3);
+      border: 1.5px solid rgba(229,192,123,0.35);
       border-radius: 14px;
       overflow: hidden;
       box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+      touch-action: none !important;
     }
     #prayer-leaflet-map {
-      height: 330px;
+      height: 350px;
       width: 100%;
       background: #061913;
-      z-index: 1;
+      touch-action: none !important;
+      cursor: grab !important;
     }
+    #prayer-leaflet-map:active,
+    #prayer-leaflet-map.leaflet-drag-target {
+      cursor: grabbing !important;
+    }
+    .leaflet-container {
+      touch-action: none !important;
+      cursor: grab !important;
+      font-family: inherit !important;
+    }
+    .leaflet-container:active {
+      cursor: grabbing !important;
+    }
+    .leaflet-grab {
+      cursor: grab !important;
+    }
+    .leaflet-grabbing {
+      cursor: grabbing !important;
+    }
+    .custom-leaflet-pin {
+      cursor: grab !important;
+    }
+    .custom-leaflet-pin:active {
+      cursor: grabbing !important;
+    }
+
     .pmm-map-hint {
       position: absolute;
       bottom: 10px;
       left: 12px;
       right: 12px;
-      background: rgba(9,38,31,0.85);
-      border: 1px solid rgba(229,192,123,0.3);
+      background: rgba(9,38,31,0.9);
+      border: 1px solid rgba(229,192,123,0.35);
       backdrop-filter: blur(4px);
       padding: 6px 12px;
       border-radius: 8px;
@@ -403,8 +431,8 @@
     }
 
     .pmm-preview-box {
-      background: rgba(0,0,0,0.22);
-      border: 1px solid rgba(229,192,123,0.18);
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(229,192,123,0.2);
       border-radius: 12px;
       padding: 12px 14px;
     }
@@ -413,6 +441,8 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 4px;
     }
     .pmm-selected-loc {
       font-size: 0.95rem;
@@ -455,7 +485,8 @@
       gap: 10px;
       padding: 14px 22px;
       border-top: 1px solid rgba(229,192,123,0.18);
-      background: rgba(0,0,0,0.15);
+      background: rgba(0,0,0,0.18);
+      flex-wrap: wrap;
     }
     .pmm-btn-apply {
       background: linear-gradient(135deg, #2d6a4f, #1b4332);
@@ -819,91 +850,106 @@ function _toDeg(r) { return r * 180 / Math.PI; }
 function _fixAngle(a) { return a - 360 * Math.floor(a / 360); }
 function _fixHour(a) { return a - 24 * Math.floor(a / 24); }
 
+// Julian Day
 function _julianDay(date) {
-  const Y = date.getFullYear();
-  const M = date.getMonth() + 1;
+  let Y = date.getFullYear();
+  let M = date.getMonth() + 1;
   const D = date.getDate();
-  return Math.floor(365.25 * (Y + 4716)) + Math.floor(30.6001 * (M + 1)) + D - 1524.5
-    + (M <= 2 ? (-Math.floor((Y + 4715) / 100) + Math.floor((Y + 4715) / 400) - 1)
-              : (-Math.floor((Y + 4715) / 100) + Math.floor((Y + 4715) / 400)));
+  if (M <= 2) {
+    Y -= 1;
+    M += 12;
+  }
+  const A = Math.floor(Y / 100);
+  const B = 2 - A + Math.floor(A / 4);
+  return Math.floor(365.25 * (Y + 4716)) + Math.floor(30.6001 * (M + 1)) + D + B - 1524.5;
 }
 
+// Sun coordinates: returns declination and equation of time (in hours)
 function _sunPosition(jd) {
-  const D = jd - 2451545.0;
-  const g = _fixAngle(357.529 + 0.98560028 * D);
-  const q = _fixAngle(280.459 + 0.98564736 * D);
+  const d = jd - 2451545.0;
+  const g = _fixAngle(357.529 + 0.98560028 * d);
+  const q = _fixAngle(280.459 + 0.98564736 * d);
   const L = _fixAngle(q + 1.915 * Math.sin(_toRad(g)) + 0.020 * Math.sin(_toRad(2 * g)));
-  const e = 23.439 - 0.00000036 * D;
-  const RA = _toDeg(Math.atan2(Math.cos(_toRad(e)) * Math.sin(_toRad(L)), Math.cos(_toRad(L)))) / 15;
-  const eqT = q / 15 - _fixHour(RA);
+  const e = 23.439 - 0.00000036 * d;
+
+  let RA = _toDeg(Math.atan2(Math.cos(_toRad(e)) * Math.sin(_toRad(L)), Math.cos(_toRad(L)))) / 15;
+  RA = _fixHour(RA);
+
   const decl = _toDeg(Math.asin(Math.sin(_toRad(e)) * Math.sin(_toRad(L))));
-  return { eqT, decl };
+  const eqt = q / 15 - RA;
+
+  return { decl, eqt: _fixHour(eqt + 12) - 12 };
 }
 
-function _sunAngleTime(jd, angle, lat, direction) {
-  const { decl, eqT } = _sunPosition(jd);
-  const cosT = (Math.cos(_toRad(angle)) - Math.sin(_toRad(lat)) * Math.sin(_toRad(decl)))
-             / (Math.cos(_toRad(lat)) * Math.cos(_toRad(decl)));
-  if (Math.abs(cosT) > 1) return NaN;
-  const T = _toDeg(Math.acos(cosT)) / 15;
-  return (12 - eqT) + (direction === 'ccw' ? -T : T);
+// Hour angle H for a given altitude angle (in degrees)
+function _getHourAngle(altitude, lat, decl) {
+  const cosH = (Math.sin(_toRad(altitude)) - Math.sin(_toRad(lat)) * Math.sin(_toRad(decl))) /
+               (Math.cos(_toRad(lat)) * Math.cos(_toRad(decl)));
+  if (cosH > 1 || cosH < -1) return null;
+  return _toDeg(Math.acos(cosH)) / 15;
 }
 
-function _asrTime(jd, lat) {
-  const { decl } = _sunPosition(jd);
+// Asr hour angle (factor: 1 for Shafi'i/Maliki/Hanbali/Kemenag)
+function _getAsrHourAngle(factor, lat, decl) {
   const d = Math.abs(lat - decl);
-  const angle = -_toDeg(Math.atan(1 / (1 + Math.tan(_toRad(d)))));
-  return _sunAngleTime(jd, angle, lat, 'cw');
+  const alt = _toDeg(Math.atan(1 / (factor + Math.tan(_toRad(d)))));
+  return _getHourAngle(alt, lat, decl);
 }
 
 function _formatTime(h) {
+  if (h === null || isNaN(h)) return '--:--';
   h = _fixHour(h);
-  const hh = Math.floor(h);
-  const mm = Math.round((h - hh) * 60);
-  return `${String(hh).padStart(2,'0')}:${String(mm < 60 ? mm : 0).padStart(2,'0')}`;
+  const hours = Math.floor(h);
+  const mins = Math.round((h - hours) * 60);
+  const finalH = (hours + Math.floor(mins / 60)) % 24;
+  const finalM = mins % 60;
+  return `${String(finalH).padStart(2, '0')}:${String(finalM).padStart(2, '0')}`;
 }
 
 function calculatePrayerTimes(lat, lng, date, customTimezone = null, methodName = 'MWL') {
   const jd = _julianDay(date);
-  const { eqT } = _sunPosition(jd);
+  const { decl, eqt } = _sunPosition(jd);
 
   let timezone = customTimezone;
   if (timezone === null || typeof timezone === 'undefined') {
     timezone = -date.getTimezoneOffset() / 60;
   }
 
+  // Solar noon in local time
+  const noon = 12 - eqt - lng / 15 + timezone;
+
   const method = CALCULATION_METHODS[methodName] || CALCULATION_METHODS.MWL;
-  const fajrAngle = method.fajr || 18;
-  const ishaAngle = method.isha || 17;
-  const sunriseAngle = 0.833;
-  const maghribAngle = 0.833;
+  const fajrAngle = -(method.fajr || 18);
+  const ishaAngle = -(method.isha || 17);
+  const sunriseAngle = -0.833;
+  const maghribAngle = -0.833;
 
-  function conv(utcH) {
-    return _fixHour(utcH - lng / 15 + timezone);
-  }
+  const hSunrise = _getHourAngle(sunriseAngle, lat, decl);
+  const hSunset  = _getHourAngle(maghribAngle, lat, decl);
+  const hFajr    = _getHourAngle(fajrAngle, lat, decl);
+  const hIsha    = _getHourAngle(ishaAngle, lat, decl);
+  const hAsr     = _getAsrHourAngle(1, lat, decl);
 
-  const dhuhrLocal = _fixHour(12 - eqT - lng / 15 + timezone);
-  const fajrUTC    = _sunAngleTime(jd, -fajrAngle, lat, 'ccw');
-  const sunriseUTC = _sunAngleTime(jd, -sunriseAngle, lat, 'ccw');
-  const asrUTC     = _asrTime(jd, lat);
-  const maghribUTC = _sunAngleTime(jd, -maghribAngle, lat, 'cw');
-  const maghribLocal = conv(maghribUTC);
+  const fajr    = (hFajr !== null) ? noon - hFajr : null;
+  const sunrise = (hSunrise !== null) ? noon - hSunrise : null;
+  const dhuhr   = noon + (2 / 60); // 2 minutes ihtiyat
+  const asr     = (hAsr !== null) ? noon + hAsr : null;
+  const maghrib = (hSunset !== null) ? noon + hSunset : null;
 
-  let ishaLocal;
+  let isha;
   if (method.ishaInterval) {
-    ishaLocal = _fixHour(maghribLocal + method.ishaInterval / 60);
+    isha = (maghrib !== null) ? maghrib + (method.ishaInterval / 60) : null;
   } else {
-    const ishaUTC = _sunAngleTime(jd, -ishaAngle, lat, 'cw');
-    ishaLocal = conv(ishaUTC);
+    isha = (hIsha !== null) ? noon + hIsha : null;
   }
 
   return {
-    Fajr:    _formatTime(conv(fajrUTC)),
-    Sunrise: _formatTime(conv(sunriseUTC)),
-    Dhuhr:   _formatTime(dhuhrLocal),
-    Asr:     _formatTime(conv(asrUTC)),
-    Maghrib: _formatTime(maghribLocal),
-    Isha:    _formatTime(ishaLocal)
+    Fajr:    _formatTime(fajr),
+    Sunrise: _formatTime(sunrise),
+    Dhuhr:   _formatTime(dhuhr),
+    Asr:     _formatTime(asr),
+    Maghrib: _formatTime(maghrib),
+    Isha:    _formatTime(isha)
   };
 }
 
@@ -943,7 +989,10 @@ function initPrayerWidget() {
         </div>
         <div class="pw-meta-group">
           <span class="pw-location" id="pw-location">📍 ${_pw.locationName}</span>
-          <button class="pw-map-btn" onclick="openPrayerMapModal()" title="Pilih Lokasi dari Peta Dunia">
+          <span class="pw-clock" id="pw-clock" style="background:rgba(229,192,123,0.18); border:1px solid rgba(229,192,123,0.35); color:#ffe082; padding:4px 11px; border-radius:20px; font-weight:700; font-size:0.8rem; display:inline-flex; align-items:center; gap:5px;" title="Jam Waktu Lokal Saat Ini">
+            🕒 <span id="pw-clock-time">--:--:--</span>
+          </span>
+          <button class="pw-map-btn" onclick="openPrayerMapModal()" title="Pilih & Geser Peta Dunia">
             🗺️ ${curLang === 'id' ? 'Model Peta' : 'World Map'}
           </button>
           <span class="pw-date" id="pw-date"></span>
@@ -1055,7 +1104,7 @@ function updatePrayerDisplay() {
   const prayerKeys = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
 
   function toMinutes(hhmm) {
-    if (!hhmm) return 0;
+    if (!hhmm || hhmm.includes('-')) return 0;
     const [h, m] = hhmm.split(':').map(Number);
     return h * 60 + m;
   }
@@ -1073,7 +1122,7 @@ function updatePrayerDisplay() {
   for (let i = 0; i < prayerKeys.length; i++) {
     const k = prayerKeys[i];
     const mins = toMinutes(_pw.times[k]);
-    if (mins > curMinutes && mins < nextMins) {
+    if (mins > curMinutes) {
       nextMins = mins;
       nextKey = k;
       activeKey = i > 0 ? prayerKeys[i - 1] : 'Isha';
@@ -1106,21 +1155,36 @@ function updatePrayerDisplay() {
     const nowM = locDate.getHours() * 60 + locDate.getMinutes();
     const nowS = locDate.getSeconds();
 
+    // Update Live Digital Clock for the selected location
+    const clockEl = document.getElementById('pw-clock-time');
+    if (clockEl) {
+      const hh = String(locDate.getHours()).padStart(2, '0');
+      const mm = String(locDate.getMinutes()).padStart(2, '0');
+      const ss = String(locDate.getSeconds()).padStart(2, '0');
+      clockEl.textContent = `${hh}:${mm}:${ss}`;
+    }
+
     let targetMins = toMinutes(_pw.times[nextKey]);
     let diff = targetMins - nowM;
     if (diff <= 0) diff += 24 * 60;
 
-    const hLeft = Math.floor(diff / 60);
-    const mLeft = (diff % 60) - 1;
-    const sLeft = 60 - nowS;
+    const totalSecondsLeft = diff * 60 - nowS;
+    if (totalSecondsLeft <= 0) {
+      updatePrayerDisplay();
+      return;
+    }
+
+    const hLeft = Math.floor(totalSecondsLeft / 3600);
+    const mLeft = Math.floor((totalSecondsLeft % 3600) / 60);
+    const sLeft = totalSecondsLeft % 60;
 
     const nextDisplayName = labels[nextKey] || nextKey;
-    const nextLabel = labels.Next || 'Next Prayer';
+    const nextLabel = labels.Next || (curLang === 'id' ? 'Berikutnya' : 'Next Prayer');
 
     if (nextEl) {
       nextEl.innerHTML = `
         ${nextLabel}: <strong>${nextDisplayName} (${_pw.times[nextKey]})</strong> &nbsp;—&nbsp;
-        <span class="pw-countdown">${String(hLeft).padStart(2,'0')}h ${String(mLeft < 0 ? 0 : mLeft).padStart(2,'0')}m ${String(sLeft === 60 ? 0 : sLeft).padStart(2,'0')}s</span>
+        <span class="pw-countdown">${String(hLeft).padStart(2,'0')}h ${String(mLeft).padStart(2,'0')}m ${String(sLeft).padStart(2,'0')}s</span>
       `;
     }
   }
@@ -1130,7 +1194,7 @@ function updatePrayerDisplay() {
 }
 
 // ============================================================
-// 3. INTERACTIVE WORLD MAP MODAL (LEAFLET)
+// 3. INTERACTIVE WORLD MAP MODAL (LEAFLET - PANNABLE & DRAGGABLE)
 // ============================================================
 let _leafletMap = null;
 let _leafletMarker = null;
@@ -1146,8 +1210,7 @@ const _mapTempState = {
 };
 
 function openPrayerMapModal() {
-  const existing = document.getElementById('pmm-overlay');
-  if (existing) existing.remove();
+  closePrayerMapModal();
 
   _mapTempState.lat = _pw.lat;
   _mapTempState.lng = _pw.lng;
@@ -1172,7 +1235,7 @@ function openPrayerMapModal() {
       <div class="pmm-body">
         <div class="pmm-toolbar">
           <div class="pmm-search-row">
-            <input type="text" id="pmm-search-input" class="pmm-search-input" placeholder="Ketik nama kota dunia (contoh: Makkah, Tokyo, London, Istanbul, Surabaya)..." />
+            <input type="text" id="pmm-search-input" class="pmm-search-input" placeholder="Cari kota di dunia (contoh: Makkah, Tokyo, London, Istanbul, Kairo, New York)..." />
             <button class="pmm-search-btn" onclick="searchMapCity()">Cari 🔍</button>
           </div>
 
@@ -1194,7 +1257,7 @@ function openPrayerMapModal() {
 
         <div class="pmm-map-wrapper">
           <div id="prayer-leaflet-map"></div>
-          <div class="pmm-map-hint">💡 Klik pada sembarang titik di peta bumi untuk memindahkan pin & melihat jadwal sholat di lokasi tersebut.</div>
+          <div class="pmm-map-hint">🖐️ <strong>Geser peta</strong> bebas dengan mouse / sentuh untuk menjelajahi dunia. Klik atau geser pin <strong>🕌</strong> untuk memilih lokasi.</div>
         </div>
 
         <div class="pmm-settings-grid">
@@ -1286,10 +1349,15 @@ function openPrayerMapModal() {
 }
 
 function closePrayerMapModal() {
+  if (_leafletMap) {
+    try {
+      _leafletMap.remove();
+    } catch (_) {}
+    _leafletMap = null;
+    _leafletMarker = null;
+  }
   const overlay = document.getElementById('pmm-overlay');
   if (overlay) overlay.remove();
-  _leafletMap = null;
-  _leafletMarker = null;
 }
 
 function initLeafletMapInstance(lat, lng) {
@@ -1306,13 +1374,38 @@ function initLeafletMapInstance(lat, lng) {
     return;
   }
 
+  // Clean up any existing map instance
+  if (_leafletMap) {
+    try {
+      _leafletMap.remove();
+    } catch (_) {}
+    _leafletMap = null;
+    _leafletMarker = null;
+  }
+
+  // Prevent scroll propagation so user can drag map freely without modal jumping
+  if (L.DomEvent) {
+    L.DomEvent.disableScrollPropagation(mapContainer);
+    L.DomEvent.disableClickPropagation(mapContainer);
+  }
+
+  // Initialize map with explicit dragging, tap disabled for touch reliability
   _leafletMap = L.map('prayer-leaflet-map', {
     center: [lat, lng],
     zoom: 5,
     minZoom: 2,
     maxZoom: 18,
+    dragging: true,
+    tap: false, // Critical: tap=false prevents touch/mouse drag freezing in modern browsers
+    touchZoom: true,
+    scrollWheelZoom: true,
+    doubleClickZoom: true,
+    boxZoom: true,
+    keyboard: true,
     worldCopyJump: true
   });
+
+  _leafletMap.dragging.enable();
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors',
@@ -1322,27 +1415,44 @@ function initLeafletMapInstance(lat, lng) {
   // Gold Mosque Pin Marker
   const customIcon = L.divIcon({
     className: 'custom-leaflet-pin',
-    html: `<div style="background:#e5c07b; color:#09261f; font-size:18px; width:34px; height:34px; border-radius:50%; border:2px solid #fff; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.5); transform:translate(-50%, -50%);">🕌</div>`,
-    iconSize: [34, 34]
+    html: `<div style="background:#e5c07b; color:#09261f; font-size:18px; width:36px; height:36px; border-radius:50%; border:2px solid #fff; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,0.5); cursor:grab;">🕌</div>`,
+    iconSize: [36, 36],
+    iconAnchor: [18, 18]
   });
 
   _leafletMarker = L.marker([lat, lng], {
     icon: customIcon,
-    draggable: true
+    draggable: true,
+    autoPan: true
   }).addTo(_leafletMap);
+
+  // Marker drag handlers
+  _leafletMarker.on('drag', function(e) {
+    const pos = e.target.getLatLng();
+    updateMapLocationHeaderFast(pos.lat, pos.lng);
+  });
 
   _leafletMarker.on('dragend', function(e) {
     const pos = e.target.getLatLng();
     onMapPointSelected(pos.lat, pos.lng);
   });
 
+  // Map click places marker
   _leafletMap.on('click', function(e) {
     onMapPointSelected(e.latlng.lat, e.latlng.lng);
   });
 
-  setTimeout(() => {
-    if (_leafletMap) _leafletMap.invalidateSize();
-  }, 200);
+  // Multiple invalidateSize calls to guarantee full render during CSS animations
+  setTimeout(() => { if (_leafletMap) _leafletMap.invalidateSize(); }, 150);
+  setTimeout(() => { if (_leafletMap) _leafletMap.invalidateSize(); }, 350);
+  setTimeout(() => { if (_leafletMap) _leafletMap.invalidateSize(); }, 600);
+}
+
+function updateMapLocationHeaderFast(lat, lng) {
+  const metaEl = document.getElementById('pmm-loc-meta');
+  if (metaEl) {
+    metaEl.textContent = `Lat: ${lat.toFixed(2)}°, Lng: ${lng.toFixed(2)}° (Menggeser...)`;
+  }
 }
 
 function onMapPointSelected(lat, lng, optName = null, optTimezone = null) {
@@ -1470,11 +1580,11 @@ function searchMapCity() {
         }
         onMapPointSelected(lat, lng, name);
       } else {
-        alert('Kota tidak ditemukan. Silakan klik langsung pada peta bumi.');
+        alert('Kota tidak ditemukan. Silakan geser atau klik langsung pada peta bumi.');
       }
     })
     .catch(() => {
-      alert('Gagal mencari kota secara online. Silakan klik langsung pada peta.');
+      alert('Gagal mencari kota secara online. Silakan geser atau klik langsung pada peta.');
     });
 }
 
