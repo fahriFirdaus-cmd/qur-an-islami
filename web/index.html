@@ -60,10 +60,13 @@
     <!-- Subrow: Utility Buttons (Language, Dark Mode, Notifications, Reader Settings) -->
     <div class="header-sub-row">
       <div class="header-utilities">
-        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language / Ganti Bahasa (EN / ID)">
-          <span class="lang-flag">🌐</span>
-          <span class="lang-code" id="lang-indicator">EN</span>
-        </button>
+        <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper" style="position:relative; display:inline-flex; align-items:center;">
+          <button class="lang-toggle-btn" id="lang-toggle-btn" title="Pilih Bahasa / Switch Language" type="button" aria-haspopup="listbox" aria-expanded="false" onclick="window.toggleLangDropdown(event)">
+            <span class="lang-code" id="lang-indicator">ID</span>
+            <svg class="lang-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:2px; transition:transform 0.2s;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="listbox" style="display:none;"></div>
+        </div>
 
         <button class="icon-toggle-btn theme-phase-btn" id="theme-toggle-btn" aria-label="Toggle Theme" title="Tema Otomatis Berdasarkan Waktu (Pagi / Siang / Sore / Malam) • Klik untuk beralih">
           <span class="theme-time-icon" id="theme-time-icon">🌙</span>
@@ -874,9 +877,14 @@
               <div class="setting-desc" id="setting-desc-app-lang">Choose interface & translation language</div>
             </div>
             <select class="setting-select" id="app-lang-select">
-              <option value="en">English (US)</option>
-              <option value="id">Bahasa Indonesia</option>
-            </select>
+                <option value="en">US • English</option>
+                <option value="id">ID • Indonesia</option>
+                <option value="ur">PK • اردو (Urdu)</option>
+                <option value="tr">TR • Türkçe</option>
+                <option value="fr">FR • Français</option>
+                <option value="bn">BD • বাংলা (Bengali)</option>
+                <option value="ms">MY • Melayu</option>
+              </select>
           </div>
           <div class="setting-item">
             <div class="setting-label">
@@ -1114,5 +1122,6 @@
 <script src="app.js"></script>
 <script src="features-multilang.js"></script>
 <script src="features-global.js"></script>
+<script src="features-tajwid.js"></script>
 </body>
 </html>

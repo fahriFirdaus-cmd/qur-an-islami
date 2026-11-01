@@ -21,6 +21,7 @@ const state = {
   translation: localStorage.getItem('qh_trans') || 'sahih',
   rasm: localStorage.getItem('qh_rasm') || 'madinah',
   bookmarks: JSON.parse(localStorage.getItem('qh_bookmarks') || '[]'),
+  tajweed: JSON.parse(localStorage.getItem('qh_tajweed') || 'false'),
 };
 
 // ─── Custom User Audio Store ───
@@ -372,13 +373,17 @@ const I18N = {
 };
 
 function applyLanguage(lang, notify = true) {
-  if (!I18N[lang]) lang = 'en';
+  if (!I18N[lang]) lang = 'id';
   state.language = lang;
   state.translation = (lang === 'en' ? 'sahih' : 'kemenag');
   localStorage.setItem('qh_lang', lang);
   localStorage.setItem('qh_trans', state.translation);
+  document.documentElement.lang = lang;
 
-  const dict = I18N[lang];
+  const flagEl = document.getElementById('lang-flag-indicator');
+    if (flagEl) flagEl.textContent = '🌐';
+
+  const dict = I18N[lang] || I18N.id || I18N.en;
 
   const setHtml = (id, html) => {
     const el = document.getElementById(id);
@@ -401,7 +406,10 @@ function applyLanguage(lang, notify = true) {
   setText('nav-pill-jejak', dict.navJejak);
 
   // Topbar
-  setText('lang-indicator', dict.langIndicator);
+  setText('lang-indicator', (window.LANG_META && window.LANG_META[lang]?.code) || dict.langIndicator || lang.toUpperCase());
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.classList.toggle('lang-option--active', btn.getAttribute('data-lang') === lang);
+  });
   setText('reader-settings-label', dict.readerSettingsLabel);
   setAttr('main-search', 'placeholder', dict.mainSearchPlaceholder);
   setAttr('sidebar-surah-search', 'placeholder', dict.sidebarSearchPlaceholder);
@@ -614,6 +622,14 @@ function applyLanguage(lang, notify = true) {
   setText('mob-label-pengaturan', dict.mobLabelPengaturan);
   renderLastReadCard();
 
+  // Refresh Prayer Times widget to reflect new language
+  if (typeof window.renderCityChips === 'function') {
+    window.renderCityChips();
+  }
+  if (typeof window.updatePrayerDisplay === 'function') {
+    window.updatePrayerDisplay();
+  }
+
   if (notify) {
     showToast(dict.langChangedToast, 'success');
   }
@@ -750,11 +766,7 @@ function initNavigation() {
     overlay?.classList.add('open');
   });
 
-  // Language Switcher Toggle Button
-  document.getElementById('lang-toggle-btn')?.addEventListener('click', () => {
-    const nextLang = state.language === 'en' ? 'id' : 'en';
-    applyLanguage(nextLang, true);
-  });
+  // Language Switcher Dropdown is handled by window.toggleLangDropdown
 
   // Topbar Navigation Tabs (Desktop)
   document.querySelectorAll('.nav-pill').forEach(btn => {
@@ -1630,7 +1642,18 @@ async function renderVerses(surahId, targetVerse = null) {
 
   container.innerHTML = verses.map(v => {
     const isBookmarked = state.bookmarks.some(b => b.surah === surahId && b.verse === v.num);
-    const transText = isEn ? (v.en || v.id) : (v.id || v.en);
+    let transText;
+    if (state.language === 'id') {
+      transText = v.id || v.en;
+    } else if (state.language === 'en') {
+      transText = v.en || v.id;
+    } else if (state.language === 'ar') {
+      transText = `<span class="ar-verse-meaning" style="color:var(--gold,#e5c07b); font-family:serif;">﴿ ${v.ar_uthmani || v.ar} ﴾</span>`;
+    } else if (typeof window.getVerseTranslation === 'function') {
+      transText = window.getVerseTranslation(v, state.language);
+    } else {
+      transText = v.en || v.id;
+    }
     const arabicText = state.rasm === 'madinah' ? (v.ar_uthmani || v.ar) : (v.ar_kemenag || v.ar);
     return `
       <div class="verse-card ${targetVerse === v.num ? 'highlighted' : ''}" id="verse-${surahId}-${v.num}">
@@ -1646,7 +1669,7 @@ async function renderVerses(surahId, targetVerse = null) {
             ${v.hasHistory ? `<button class="verse-btn has-history" title="Asbabun Nuzul" onclick="openHistoryModal('${v.historyId}')">🏛️</button>` : ''}
           </div>
         </div>
-        <div class="verse-arabic" style="font-size: ${state.fontSize}px">${arabicText}</div>
+        <div class="verse-arabic ${state.tajweed ? 'tajwid-active' : ''}" style="font-size: ${state.fontSize}px">${(state.tajweed && typeof window.applyTajweedColors === 'function') ? window.applyTajweedColors(arabicText) : arabicText}</div>
         <div class="verse-latin" style="display: ${state.transliterasi ? 'block' : 'none'};">${v.latin}</div>
         <div class="verse-translation">${transText}</div>
         ${v.hasHistory ? `

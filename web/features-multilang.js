@@ -6,6 +6,143 @@
 
 // ─── TASK 1: Extra Language Translations ───────────────────────
 const EXTRA_LANGUAGES = {
+  // ── Arabic (العربية) ──────────────────────────────────────────
+  ar: {
+    navBeranda: 'الرئيسية',
+    navQuran: 'القرآن الكريم',
+    navAudio: 'التلاوات',
+    navSejarah: 'التاريخ',
+    navJejak: 'أسباب النزول',
+    langIndicator: 'عربي',
+    readerSettingsLabel: 'إعدادات القارئ',
+    mainSearchPlaceholder: 'ابحث عن سورة، آية (مثلاً 2:255) أو صفحة...',
+    sidebarSearchPlaceholder: 'ابحث عن سورة...',
+    heroQuote: '<em>«أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</em>',
+    heroBtnRead: 'ابدأ القراءة',
+    heroBtnAudio: 'استمع للتلاوات',
+    featQuranTitle: 'النص القرآني الكامل',
+    featQuranDesc: 'اقرأ جميع سور القرآن الـ 114 بالرسم العثماني المعتمد مع التفاسير والترجمات.',
+    featAudioTitle: 'تلاوات خاشعة',
+    featAudioDesc: 'استمع إلى تلاوات كبار القراء في العالم الإسلامي آية بآية بجودة عالية.',
+    featSpiritualTitle: 'ورد يومي وإيمانيات',
+    featSpiritualDesc: 'احفظ الإشارات المرجعية، وتابع وردك القرآني اليومي لبناء عادة مستمرة.',
+    dailyTitle: 'آية اليوم',
+    dailyBadge: 'تأمل وتدبر',
+    dailyVerseTrans: 'إِنَّ مَعَ الْعُسْرِ يُسْرًا',
+    dailyBtnPlay: 'استماع',
+    dailyBtnRead: 'حفظ',
+    dailyBtnCopy: 'مشاركة',
+    popularTitle: 'السور الأكثر قراءة',
+    popularViewAll: 'عرض جميع السور ←',
+    labelViewReader: 'قراءة السورة (الآيات)',
+    labelViewCatalog: 'فهرس الـ 114 سورة (الكاشف)',
+    eduBannerTitle: 'التصنيف القرآني: السور المكية والمدنية',
+    eduBannerSub: 'الفرق البلاغي والتشريعي بين فترتي التنزيل بمكة والمدينة',
+    eduMakkTitle: 'السور المكية (86 سورة)',
+    eduMakkBadge: 'فترة التأسيس العقائدي',
+    eduMakkDesc: 'نزلت قبل الهجرة النبوية الشريفة إلى المدينة المنورة.',
+    eduMakkP1: '<strong>التوحيد والعقيدة:</strong> ترسيخ وحدانية الله ونبذ الشرك والوثنية.',
+    eduMakkP2: '<strong>اليوم الآخر:</strong> وصف مشاهد القيامة والجنة والنار لدعوة القلوب.',
+    eduMakkP3: '<strong>قصص الأنبياء:</strong> قصص الأنبياء والأمم السابقة لتثبيت فؤاد النبي ﷺ.',
+    eduMakkP4: '<strong>فصاحة الأسلوب:</strong> آيات قوية وإيقاع بياني معجز يخاطب الفطرة.',
+    eduMadanTitle: 'السور المدنية (28 سورة)',
+    eduMadanBadge: 'فترة التشريع وبناء الأمة',
+    eduMadanDesc: 'نزلت بعد الهجرة المباركة للمدينة المنورة لبناء المجتمع المسلم.',
+    eduMadanP1: '<strong>التشريعات والأحكام:</strong> تفصيل أحكام الصلاة والزكاة والصيام والمعاملات.',
+    eduMadanP2: '<strong>بناء المجتمع:</strong> تنظيم العلاقات الأسرية، المواريث، والعدالة الاجتماعية.',
+    eduMadanP3: '<strong>خطاب الأمة:</strong> توجيه الخطاب بـ "يا أيها الذين آمنوا" كمنهج حياة.',
+    eduMadanP4: '<strong>الأخلاق والمعاملات:</strong> العهود والمواثيق وأسس الحكم والشورى.',
+    catTabAll: '🌟 جميع السور',
+    catTabMakk: '🕋 مكية',
+    catTabMadan: '🕌 مدنية',
+    catSearchPlaceholder: 'ابحث برقم السورة، اسمها أو معناها...',
+    catBtnRead: '📖 قراءة',
+    catBtnAudio: '▶ تلاوة',
+    catNoResult: 'لم يتم العثور على سور مطابقة',
+    meaningPrefix: 'المعنى',
+    revTagMakk: '🕋 مكية',
+    revTagMadan: '🕌 مدنية',
+    prevSurahLabel: 'السابقة',
+    nextSurahLabel: 'التالية',
+    homeSurahLabel: 'الرئيسية',
+    fontControlLabel: 'حجم الخط',
+    playAllLabel: 'تشغيل الكل',
+    readerUploadLabel: 'ملف صوتي خاص',
+    audioKicker: 'المكتبة الصوتية',
+    audioTitle: 'تلاوات القرآن الكريم',
+    audioDesc: 'استمع إلى تلاوات عطرة ومؤثرة بأصوات نخبة من مشاهير القراء في العالم الإسلامي.',
+    tabModeMurattal: 'مرتل',
+    tabModeMujawwad: 'مجود',
+    tabModeNusantara: 'عالمي',
+    cauTitle: 'تشغيل ملف صوتي من جهازك (MP3 محلي)',
+    cauDesc: 'ارفع أي تسجيل أو تلاوة من حاسوبك للاستماع إليها مباشرة أو ربطها بالسورة.',
+    cauBtnText: 'اختر ملف MP3',
+    cauAssignLabel: 'ربط بالسورة:',
+    cauPlayNow: '▶ تشغيل الآن',
+    cauClear: '✕ إلغاء',
+    sejarahKicker: 'التاريخ',
+    sejarahTitle: 'تاريخ نزول القرآن الكريم',
+    sejarahDesc: 'رحلة عبر المحطات التاريخية الكبرى للوحي والجمع والتدوين عبر العصور الإسلامية.',
+    tabEraKenabian: 'عصر النبوة',
+    tabEraKhulafa: 'الخلفاء الراشدون',
+    tabEraUmayyah: 'العصر الأموي',
+    tabEraAbbasiyah: 'العصر العباسي',
+    tabEraIlmuwan: 'علماء القرآن',
+    jejakKicker: 'أسباب النزول',
+    jejakTitle: 'تاريخ وسياق الآيات',
+    jejakDesc: 'تعرف على المناسبات والوقائع التاريخية الموثقة التي رافقت تنزيل الآيات الكريمة.',
+    jejakIntroText: 'ميزة حصرية توثق الروابط بين الآيات الكريمة ووقائع السيرة النبوية المطهرة بالاستناد إلى صحيح البخاري ومسلم وأمهات كتب التفسير.',
+    settingsKicker: 'التفضيلات',
+    settingsTitle: 'إعدادات القارئ والمصحف',
+    settingsDesc: 'خصص تجربتك القرآنية بما يضمن أقصى درجات الراحة والتركيز الإيماني.',
+    settingsSecTypography: 'الخط والرسم القرآني',
+    settingNameAppLang: 'لغة التطبيق',
+    settingDescAppLang: 'اختر لغة واجهة المستخدم وعرض المعاني',
+    settingNameRasm: 'معيار الرسم والمصحف',
+    settingDescRasm: 'اختر معيار الرسم العثماني للمصحف',
+    settingNameFont: 'نوع الخط العربي',
+    settingDescFont: 'اختر أسلوب خط الرسم العثماني',
+    settingNameTrans: 'الترجمة / التفسير',
+    settingDescTrans: 'إصدار الترجمة أو التفسير النشط',
+    settingNameLatin: 'النقحرة الصوتية (اللاتينية)',
+    settingDescLatin: 'إظهار النطق بالحروف اللاتينية للمبتدئين',
+    settingsSecAudio: 'الصوت والتشغيل التلقائي',
+    settingNameAutoplay: 'التشغيل التلقائي للتالي',
+    settingDescAutoplay: 'الانتقال للآية التالية تلقائياً عند انتهاء التلاوة',
+    settingNameRepeat: 'وضع التكرار للحفظ',
+    settingDescRepeat: 'تكرار الآيات لتسهيل الحفظ والمراجعة',
+    settingNameSpeed: 'سرعة التلاوة',
+    settingDescSpeed: 'ضبط سرعة تشغيل الصوت',
+    optRepeatNone: 'بدون تكرار',
+    optRepeat3: 'تكرار 3 مرات',
+    optRepeat5: 'تكرار 5 مرات',
+    optRepeatCont: 'تكرار مستمر',
+    optSpeedSlow: '0.75x (بطيء)',
+    optSpeedNormal: '1.0x (طبيعي)',
+    optSpeedFast: '1.25x (سريع)',
+    optSpeedVFast: '1.5x (أسرع)',
+    notifTitle: 'تنبيهات الورد اليومي',
+    notifTitle1: 'سورة الكهف (18)',
+    notifDesc1: 'سنة الجمعة وتدبر آياتها',
+    notifTitle2: 'الورد اليومي: سورة يس (36)',
+    notifDesc2: 'واصل قراءة وردك القرآني لليوم',
+    notifTitle3: 'أصوات خاشعة',
+    notifDesc3: 'استمع لتلاوة عطرة بصوت العفاسي والسديس',
+    langChangedToast: '🌐 تم تغيير لغة التطبيق إلى العربية',
+    lastReadBadge: 'متابعة القراءة',
+    lastReadBtnText: 'استئناف',
+    btnChooseSurah: 'اختر السورة ▾',
+    mQuickQuran: 'القرآن',
+    mQuickAudio: 'التلاوات',
+    mQuickJejak: 'أسباب النزول',
+    mQuickSejarah: 'التاريخ',
+    mobLabelBeranda: 'الرئيسية',
+    mobLabelQuran: 'القرآن',
+    mobLabelAudio: 'التلاوة',
+    mobLabelSejarah: 'التاريخ',
+    mobLabelPengaturan: 'الإعدادات',
+  },
+
 
   // ── Urdu (Pakistan / India) ────────────────────────────────
   ur: {
@@ -320,13 +457,13 @@ const EXTRA_LANGUAGES = {
 
 // ─── Language metadata (flag, display label, native name) ────────
 const LANG_META = {
-  en: { flag: '🇺🇸', code: 'EN',   label: 'English' },
-  id: { flag: '🇮🇩', code: 'ID',   label: 'Indonesia' },
-  ur: { flag: '🇵🇰', code: 'اردو', label: 'اردو' },
-  tr: { flag: '🇹🇷', code: 'TR',   label: 'Türkçe' },
-  fr: { flag: '🇫🇷', code: 'FR',   label: 'Français' },
-  bn: { flag: '🇧🇩', code: 'বাং',  label: 'বাংলা' },
-  ms: { flag: '🇲🇾', code: 'MS',   label: 'Melayu' },
+  en: { country: 'US', code: 'EN',   label: 'English' },
+  id: { country: 'ID', code: 'ID',   label: 'Indonesia' },
+  ur: { country: 'PK', code: 'اردو', label: 'اردو' },
+  tr: { country: 'TR', code: 'TR',   label: 'Türkçe' },
+  fr: { country: 'FR', code: 'FR',   label: 'Français' },
+  bn: { country: 'BD', code: 'বাং',  label: 'বাংলা' },
+  ms: { country: 'MY', code: 'MS',   label: 'Melayu' },
 };
 
 // Languages that do NOT yet have verse-level translations
@@ -334,118 +471,82 @@ const LANGS_WITHOUT_VERSE_TRANS = ['ur', 'tr', 'fr', 'bn', 'ms'];
 
 // ─── TASK 2: Upgrade Language Selector ──────────────────────────
 function upgradeLanguageSelector() {
-  // Inject CSS first
   injectLangDropdownCSS();
 
-  // Build the dropdown HTML
-  const currentLang = (window.state && window.state.language) || localStorage.getItem('qh_lang') || 'en';
-  const meta = LANG_META[currentLang] || LANG_META['en'];
+  const currentLang = (window.state && window.state.language) || localStorage.getItem('qh_lang') || 'id';
+  const meta = LANG_META[currentLang] || LANG_META['id'] || LANG_META['en'];
 
   const optionsHTML = Object.entries(LANG_META).map(([code, info]) => {
     const isActive = code === currentLang ? ' lang-option--active' : '';
-    return `<button class="lang-option${isActive}" data-lang="${code}" type="button">
-      <span class="lang-option-flag">${info.flag}</span>
+    return `<button class="lang-option${isActive}" data-lang="${code}" type="button" onclick="window.selectLanguage('${code}', event)">
+      <span class="lang-option-flag">${info.country}</span>
       <span class="lang-option-code">${info.code}</span>
       <span class="lang-option-label">${info.label}</span>
     </button>`;
   }).join('');
 
-  const wrapperHTML = `
-<div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
-  <button class="lang-dropdown-btn" id="lang-dropdown-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
-    <span id="lang-flag-indicator">${meta.flag}</span>
-    <span id="lang-code-indicator">${meta.code}</span>
-    <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
-  <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="listbox" style="display:none">
-    ${optionsHTML}
-  </div>
-</div>`;
-
-  // Try to replace an existing lang-toggle button in the nav
-  const existingToggle =
-    document.getElementById('lang-toggle') ||
-    document.querySelector('.lang-toggle') ||
-    document.querySelector('[data-lang-toggle]') ||
-    document.querySelector('button.lang-btn');
-
-  if (existingToggle) {
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = wrapperHTML.trim();
-    const wrapper = tempDiv.firstElementChild;
-    existingToggle.parentNode.replaceChild(wrapper, existingToggle);
-  } else {
-    // Fallback: append to nav or header
-    const nav = document.querySelector('nav') || document.querySelector('header') || document.body;
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = wrapperHTML.trim();
-    nav.appendChild(tempDiv.firstElementChild);
+  const menu = document.getElementById('lang-dropdown-menu');
+  if (menu) {
+    menu.innerHTML = optionsHTML;
   }
 
-  // Wire up toggle open/close
-  const btn  = document.getElementById('lang-dropdown-btn');
-  const menu = document.getElementById('lang-dropdown-menu');
+  const codeEl = document.getElementById('lang-indicator') || document.getElementById('lang-code-indicator');
+  if (codeEl) codeEl.textContent = meta.code;
 
-  if (btn && menu) {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = menu.style.display !== 'none';
-      menu.style.display = isOpen ? 'none' : 'block';
-      btn.setAttribute('aria-expanded', String(!isOpen));
-      btn.classList.toggle('lang-dropdown-btn--open', !isOpen);
-    });
-
-    // Close when clicking outside
+  // Global click outside to close dropdown
+  if (!window._langOutsideClickRegistered) {
     document.addEventListener('click', (e) => {
-      if (!document.getElementById('lang-dropdown-wrapper').contains(e.target)) {
-        menu.style.display = 'none';
-        btn.setAttribute('aria-expanded', 'false');
-        btn.classList.remove('lang-dropdown-btn--open');
+      const wrap = document.getElementById('lang-dropdown-wrapper');
+      const m = document.getElementById('lang-dropdown-menu');
+      const b = document.getElementById('lang-toggle-btn');
+      if (wrap && !wrap.contains(e.target) && m && m.style.display !== 'none') {
+        m.style.display = 'none';
+        if (b) {
+          b.setAttribute('aria-expanded', 'false');
+          b.classList.remove('lang-dropdown-btn--open');
+        }
       }
     });
-
-    // Wire each option
-    menu.querySelectorAll('.lang-option').forEach((optBtn) => {
-      optBtn.addEventListener('click', () => {
-        const lang = optBtn.getAttribute('data-lang');
-        selectLanguage(lang);
-        menu.style.display = 'none';
-        btn.setAttribute('aria-expanded', 'false');
-        btn.classList.remove('lang-dropdown-btn--open');
-      });
-    });
+    window._langOutsideClickRegistered = true;
   }
 }
 
-/**
- * Select a language, update UI indicators, persist, and call applyLanguage.
- * @param {string} lang - language code
- */
-function selectLanguage(lang) {
+function selectLanguage(lang, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
   if (!LANG_META[lang]) return;
   const meta = LANG_META[lang];
 
-  // Update indicator spans inside the toggle button
-  const flagEl = document.getElementById('lang-flag-indicator');
-  const codeEl = document.getElementById('lang-code-indicator');
-  if (flagEl) flagEl.textContent = meta.flag;
+  // Update button code
+  const codeEl = document.getElementById('lang-indicator') || document.getElementById('lang-code-indicator');
   if (codeEl) codeEl.textContent = meta.code;
 
-  // Mark active option
+  // Close menu
+  const menu = document.getElementById('lang-dropdown-menu');
+  const btn = document.getElementById('lang-toggle-btn');
+  if (menu) menu.style.display = 'none';
+  if (btn) {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.classList.remove('lang-dropdown-btn--open');
+  }
+
+  // Highlight active option
   document.querySelectorAll('.lang-option').forEach((el) => {
     el.classList.toggle('lang-option--active', el.getAttribute('data-lang') === lang);
   });
 
-  // Persist
+  const appLangSelect = document.getElementById('app-lang-select');
+  if (appLangSelect) appLangSelect.value = lang;
+
   localStorage.setItem('qh_lang', lang);
   if (window.state) window.state.language = lang;
 
-  // Apply via the app's own mechanism
   if (typeof window.applyLanguage === 'function') {
     window.applyLanguage(lang, true);
   }
 
-  // Notify user if the verse translation is a fallback
   if (LANGS_WITHOUT_VERSE_TRANS.includes(lang)) {
     showTranslationNote(lang);
   }
@@ -648,54 +749,51 @@ function injectLangDropdownCSS() {
 }
 
 /* ── Toggle Button ── */
-.lang-dropdown-btn {
+.lang-toggle-btn {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 6px 10px;
-  background: rgba(255,255,255,0.08);
-  border: 1.5px solid rgba(212,175,55,0.45);
-  border-radius: 8px;
-  color: #d4af37;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: #d8e5db;
   font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  transition: all 0.2s ease;
   white-space: nowrap;
-  outline: none;
 }
-.lang-dropdown-btn:hover,
-.lang-dropdown-btn--open {
-  background: rgba(212,175,55,0.15);
-  border-color: #d4af37;
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.12);
+.lang-toggle-btn:hover,
+.lang-toggle-btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(229, 192, 123, 0.4);
+  color: #e5c07b;
 }
 .lang-chevron {
-  transition: transform 0.25s ease;
-  color: #d4af37;
-  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  opacity: 0.7;
 }
-.lang-dropdown-btn--open .lang-chevron {
+.lang-toggle-btn[aria-expanded="true"] .lang-chevron {
   transform: rotate(180deg);
 }
 
-/* ── Dropdown Menu Panel ── */
+/* ── Dropdown Menu Panel (Exact Match to Reference Image) ── */
 .lang-dropdown-menu {
   position: absolute;
   top: calc(100% + 6px);
   right: 0;
   min-width: 175px;
-  background: #1a2e1a;
-  border: 1.5px solid rgba(212,175,55,0.35);
+  background: #14281e;
   border-radius: 10px;
-  box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
   overflow: hidden;
   animation: langMenuFadeIn 0.18s ease forwards;
   z-index: 1001;
+  padding: 4px;
 }
 @keyframes langMenuFadeIn {
-  from { opacity: 0; transform: translateY(-6px); }
+  from { opacity: 0; transform: translateY(-4px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
@@ -703,41 +801,55 @@ function injectLangDropdownCSS() {
 .lang-option {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 12px;
   width: 100%;
-  padding: 9px 14px;
+  padding: 7px 12px;
   background: transparent;
   border: none;
+  border-radius: 6px;
   cursor: pointer;
-  color: #d4d4c8;
-  font-size: 0.85rem;
   text-align: left;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.15s;
+  box-sizing: border-box;
 }
 .lang-option:hover {
-  background: rgba(212,175,55,0.12);
-  color: #f5e6a0;
+  background: rgba(255, 255, 255, 0.06);
 }
-.lang-option--active {
-  background: rgba(212,175,55,0.18);
-  color: #d4af37;
-  font-weight: 700;
-}
+
 .lang-option-flag {
-  font-size: 1.1em;
-  line-height: 1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #8da492;
+  min-width: 22px;
   flex-shrink: 0;
+  font-family: inherit;
 }
 .lang-option-code {
-  font-weight: 700;
-  font-size: 0.82rem;
-  min-width: 28px;
-  color: inherit;
+  font-weight: 800;
+  font-size: 14.5px;
+  min-width: 34px;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-family: inherit;
 }
 .lang-option-label {
-  font-size: 0.8rem;
-  opacity: 0.85;
-  color: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #9cb1a2;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+/* ── Active Selected Item (Highlighted row in Image) ── */
+.lang-option--active {
+  background: #23392a !important;
+}
+.lang-option--active .lang-option-flag,
+.lang-option--active .lang-option-code,
+.lang-option--active .lang-option-label {
+  color: #cca250 !important;
+  font-weight: 700 !important;
 }
 
 /* ── Toast notice ── */
@@ -746,25 +858,21 @@ function injectLangDropdownCSS() {
   bottom: 90px;
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: #1a2e1a;
-  border: 1.5px solid rgba(212,175,55,0.5);
-  color: #f5e6a0;
+  background: #14281e;
+  border: 1.5px solid rgba(229,192,123,0.4);
+  color: #e5c07b;
   font-size: 0.85rem;
-  padding: 10px 20px;
-  border-radius: 24px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+  padding: 8px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.25s, transform 0.25s;
   z-index: 9999;
-  white-space: nowrap;
-  max-width: 90vw;
-  text-align: center;
 }
 .qh-multilang-toast--visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
-  pointer-events: auto;
 }
 `;
   document.head.appendChild(style);
@@ -866,17 +974,17 @@ function injectExtraLanguages() {
   if (typeof I18N !== 'undefined') {
     Object.assign(I18N, EXTRA_LANGUAGES);
 
-    // Wrap applyLanguage to support 7 languages gracefully
-    const originalApplyLanguage = window.applyLanguage;
-    window.applyLanguage = function(lang, notify = true) {
-      if (I18N[lang]) {
-        if (typeof originalApplyLanguage === 'function') {
+    if (!window._applyLangWrapped && typeof window.applyLanguage === 'function') {
+      const originalApplyLanguage = window.applyLanguage;
+      window.applyLanguage = function(lang, notify = true) {
+        if (I18N[lang]) {
           originalApplyLanguage(lang, notify);
+        } else {
+          console.warn('[Quran Harmony] Language not found in I18N:', lang);
         }
-      } else {
-        console.warn('[Quran Harmony] Language not found in I18N:', lang);
-      }
-    };
+      };
+      window._applyLangWrapped = true;
+    }
   } else {
     console.warn('[Quran Harmony] I18N object not found. features-multilang.js loaded before app.js?');
   }
@@ -887,15 +995,34 @@ window.getVerseTranslation  = getVerseTranslation;
 window.showTranslationNote  = showTranslationNote;
 window.showToastNotice      = showToastNotice;
 window.selectLanguage       = selectLanguage;
+window.toggleLangDropdown   = window.toggleLangDropdown || function(e) {
+  if (e) { e.preventDefault(); e.stopPropagation(); }
+  const menu = document.getElementById("lang-dropdown-menu");
+  const btn = document.getElementById("lang-toggle-btn");
+  if (!menu) return;
+  const isOpen = menu.style.display !== "none";
+  menu.style.display = isOpen ? "none" : "block";
+  if (btn) {
+    btn.setAttribute("aria-expanded", String(!isOpen));
+    btn.classList.toggle("lang-dropdown-btn--open", !isOpen);
+  }
+};
+window.upgradeLanguageSelector = upgradeLanguageSelector;
 window.EXTRA_LANGUAGES      = EXTRA_LANGUAGES;
 window.LANG_META            = LANG_META;
 
 // ─── DOMContentLoaded bootstrap ─────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  // Small delay to let app.js finish its own DOMContentLoaded handlers
-  setTimeout(() => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
     injectExtraLanguages();
     upgradeLanguageSelector();
     enhanceTransliterationToggle();
-  }, 100);
-});
+  });
+} else {
+  injectExtraLanguages();
+  upgradeLanguageSelector();
+  enhanceTransliterationToggle();
+}
+
+// Eager execution so I18N is populated immediately
+injectExtraLanguages();

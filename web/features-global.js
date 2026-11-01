@@ -142,6 +142,47 @@
       font-weight: 700;
       border-color: #e5c07b;
     }
+    .pw-city-add-chip {
+      background: rgba(229,192,123,0.18);
+      border: 1px dashed #e5c07b;
+      color: #ffe082;
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .pw-city-add-chip:hover {
+      background: #e5c07b;
+      color: #09261f;
+      border-style: solid;
+      transform: translateY(-1px);
+    }
+    .pw-chip-del {
+      margin-left: 6px;
+      background: rgba(0,0,0,0.3);
+      border: none;
+      color: inherit;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      line-height: 1;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pw-chip-del:hover {
+      background: #ff5252;
+      color: #fff;
+    }
 
     .pw-times-grid {
       display: grid;
@@ -520,6 +561,150 @@
       color: #fff;
     }
 
+    /* ── ADD CITY & COUNTRY MODAL (+) ── */
+    .pacm-overlay {
+      position: fixed; inset: 0;
+      background: rgba(4, 16, 12, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 999999;
+      display: flex; align-items: center; justify-content: center;
+      animation: fadeIn 0.2s ease;
+      padding: 14px;
+    }
+    .pacm-modal {
+      background: linear-gradient(165deg, #103328 0%, #071f18 100%);
+      border: 1.5px solid rgba(229,192,123,0.38);
+      border-radius: 20px;
+      width: min(680px, 98vw);
+      max-height: 94vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+      animation: slideUp 0.25s ease;
+      color: #e8f5e9;
+      overflow: hidden;
+    }
+    .pacm-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 22px;
+      border-bottom: 1px solid rgba(229,192,123,0.18);
+      background: rgba(0,0,0,0.18);
+    }
+    .pacm-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #e5c07b;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .pacm-body {
+      padding: 18px 22px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .pacm-search-box {
+      background: rgba(229,192,123,0.08);
+      border: 1px solid rgba(229,192,123,0.28);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .pacm-search-desc {
+      font-size: 0.78rem;
+      color: #a5d6a7;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .pacm-search-row {
+      display: flex;
+      gap: 8px;
+    }
+    .pacm-input {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(229,192,123,0.25);
+      color: #fff;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+    .pacm-input:focus {
+      border-color: #e5c07b;
+      box-shadow: 0 0 8px rgba(229,192,123,0.25);
+    }
+    .pacm-search-btn {
+      background: #e5c07b;
+      color: #09261f;
+      border: none;
+      padding: 9px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: filter 0.2s;
+    }
+    .pacm-search-btn:hover { filter: brightness(1.1); }
+    .pacm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media (max-width: 550px) {
+      .pacm-grid { grid-template-columns: 1fr; }
+    }
+    .pacm-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .pacm-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #a5d6a7;
+      font-weight: 600;
+    }
+    .pacm-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 14px 22px;
+      border-top: 1px solid rgba(229,192,123,0.18);
+      background: rgba(0,0,0,0.18);
+    }
+    .pacm-btn-cancel {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #c8e6c9;
+      padding: 9px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+    .pacm-btn-cancel:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    .pacm-btn-save {
+      background: linear-gradient(135deg, #2d6a4f, #1b4332);
+      border: 1.5px solid #e5c07b;
+      color: #fdf5e6;
+      font-weight: 700;
+      padding: 9px 22px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .pacm-btn-save:hover {
+      background: #e5c07b;
+      color: #09261f;
+      transform: translateY(-1px);
+    }
+
     /* ── Memorization Mode ── */
     .memorization-active .verse-arabic {
       filter: blur(8.5px);
@@ -840,9 +1025,12 @@ const CALCULATION_METHODS = {
 const PRAYER_NAMES = {
   en: { Fajr: 'Fajr', Sunrise: 'Sunrise', Dhuhr: 'Dhuhr', Asr: 'Asr', Maghrib: 'Maghrib', Isha: 'Isha', Next: 'Next Prayer' },
   id: { Fajr: 'Subuh', Sunrise: 'Terbit', Dhuhr: 'Dzuhur', Asr: 'Ashar', Maghrib: 'Maghrib', Isha: 'Isya', Next: 'Waktu Sholat Berikutnya' },
+  ar: { Fajr: 'الفجر', Sunrise: 'الشروق', Dhuhr: 'الظهر', Asr: 'العصر', Maghrib: 'المغرب', Isha: 'العشاء', Next: 'الصلاة القادمة' },
   ur: { Fajr: 'فجر', Sunrise: 'طلوع آفتاب', Dhuhr: 'ظہر', Asr: 'عصر', Maghrib: 'مغرب', Isha: 'عشاء', Next: 'اگلی نماز' },
   tr: { Fajr: 'İmsak', Sunrise: 'Güneş', Dhuhr: 'Öğle', Asr: 'İkindi', Maghrib: 'Akşam', Isha: 'Yatsı', Next: 'Sonraki Vakit' },
-  ar: { Fajr: 'الفجر', Sunrise: 'الشروق', Dhuhr: 'الظهر', Asr: 'العصر', Maghrib: 'المغرب', Isha: 'العشاء', Next: 'الصلاة القادمة' }
+  fr: { Fajr: 'Fajr', Sunrise: 'Lever', Dhuhr: 'Dhuhr', Asr: 'Asr', Maghrib: 'Maghrib', Isha: 'Isha', Next: 'Prière suivante' },
+  bn: { Fajr: 'ফজর', Sunrise: 'সূর্যোদয়', Dhuhr: 'যোহর', Asr: 'আসর', Maghrib: 'মাগরিব', Isha: 'ইশা', Next: 'পরবর্তী নামাজ' },
+  ms: { Fajr: 'Subuh', Sunrise: 'Syuruk', Dhuhr: 'Zohor', Asr: 'Asar', Maghrib: 'Maghrib', Isha: 'Isyak', Next: 'Waktu Solat Seterusnya' }
 };
 
 function _toRad(d) { return d * Math.PI / 180; }
@@ -974,6 +1162,139 @@ try {
   }
 } catch (_) {}
 
+// Target Location Date calculation ensuring date & day reflect the selected location timezone
+function getTargetLocationDate(timezone) {
+  const now = new Date();
+  const utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+  return new Date(utcMs + (timezone * 3600000));
+}
+
+// Convert 2-letter country code to flag emoji
+function getFlagEmoji(countryCode) {
+  if (!countryCode || countryCode.length !== 2) return '📍';
+  try {
+    const codePoints = countryCode
+      .toUpperCase()
+      .split('')
+      .map(char => 127397 + char.charCodeAt(0));
+    return String.fromCodePoint(...codePoints);
+  } catch (_) {
+    return '📍';
+  }
+}
+
+// Custom Cities Storage & Management
+function getCustomCities() {
+  try {
+    const raw = localStorage.getItem('qh_custom_cities');
+    return raw ? JSON.parse(raw) : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+function saveCustomCity(cityObj) {
+  const list = getCustomCities();
+  const filtered = list.filter(c => c.id !== cityObj.id && c.name.toLowerCase() !== cityObj.name.toLowerCase());
+  filtered.push(cityObj);
+  try {
+    localStorage.setItem('qh_custom_cities', JSON.stringify(filtered));
+  } catch (_) {}
+}
+
+function removeCustomCity(cityId, e) {
+  if (e) e.stopPropagation();
+  const list = getCustomCities().filter(c => c.id !== cityId);
+  try {
+    localStorage.setItem('qh_custom_cities', JSON.stringify(list));
+  } catch (_) {}
+  if (_pw.presetKey === cityId) {
+    setPrayerPreset('jakarta');
+  } else {
+    renderCityChips();
+  }
+  if (typeof window.showToast === 'function') {
+    window.showToast('🗑️ Kota kustom berhasil dihapus.');
+  }
+}
+
+function setCustomPrayerCity(cityId) {
+  const city = getCustomCities().find(c => c.id === cityId);
+  if (!city) return;
+
+  _pw.lat = city.lat;
+  _pw.lng = city.lng;
+  _pw.timezone = city.timezone;
+  _pw.locationName = `${city.flag ? city.flag + ' ' : ''}${city.name}`;
+  _pw.presetKey = cityId;
+  _pw.method = city.method || 'MWL';
+
+  localStorage.setItem('qh_prayer_loc', JSON.stringify({
+    lat: _pw.lat,
+    lng: _pw.lng,
+    timezone: _pw.timezone,
+    locationName: _pw.locationName,
+    presetKey: _pw.presetKey,
+    method: _pw.method
+  }));
+
+  renderCityChips();
+  updatePrayerDisplay();
+
+  if (typeof window.showToast === 'function') {
+    window.showToast(`📍 Jadwal sholat dialihkan ke ${city.short || city.name}!`);
+  }
+}
+
+function renderCityChips() {
+  const container = document.getElementById('pw-quick-cities');
+  if (!container) return;
+
+  const curLang = (window.state && window.state.language) || 'en';
+  const customCities = getCustomCities();
+
+  const defaultKeys = ['makkah', 'madinah', 'jerusalem', 'jakarta', 'istanbul', 'london', 'newyork'];
+  const defaultHtml = defaultKeys.map(key => {
+    const p = WORLD_PRAYER_PRESETS[key];
+    if (!p) return '';
+    const isActive = (_pw.presetKey === key);
+    return `<button class="pw-city-chip ${isActive ? 'active' : ''}" onclick="setPrayerPreset('${key}')">${p.short}</button>`;
+  }).join('');
+
+  const customHtml = customCities.map(c => {
+    const isActive = (_pw.presetKey === c.id);
+    const flag = c.flag || '📍';
+    return `
+      <button class="pw-city-chip ${isActive ? 'active' : ''}" onclick="setCustomPrayerCity('${c.id}')" title="${c.name} (${c.timezone >= 0 ? '+' : ''}${c.timezone})">
+        ${flag} ${c.short || c.name}
+        <span class="pw-chip-del" onclick="removeCustomCity('${c.id}', event)" title="Hapus kota ini">×</span>
+      </button>
+    `;
+  }).join('');
+
+  const cityLabels = {
+    id: 'KOTA DUNIA:', en: 'WORLD CITIES:', ar: 'مدن العالم:', ur: 'عالمی شہر:', tr: 'DÜNYA ŞEHİRLERİ:', fr: 'VILLES DU MONDE:', bn: 'বিশ্বের শহরসমূহ:', ms: 'KOTA DUNIA:'
+  };
+  const addCityLabels = {
+    id: '➕ Tambah Kota (+)', en: '➕ Add City (+)', ar: '➕ إضافة مدينة (+)', ur: '➕ نیا شہر (+)', tr: '➕ Şehir Ekle (+)', fr: '➕ Ajouter Ville (+)', bn: '➕ শহর যোগ করুন (+)', ms: '➕ Tambah Kota (+)'
+  };
+  const mapBtnLabels = {
+    id: '🗺️ Buka Peta...', en: '🗺️ More on Map...', ar: '🗺️ على الخريطة...', ur: '🗺️ مزید نقشے پر...', tr: '🗺️ Haritada Gör...', fr: '🗺️ Plus sur la carte...', bn: '🗺️ মানচিত্রে আরো...', ms: '🗺️ Buka Peta...'
+  };
+
+  container.innerHTML = `
+    <span class="pw-city-label">${cityLabels[curLang] || cityLabels.en}</span>
+    ${defaultHtml}
+    ${customHtml}
+    <button class="pw-city-add-chip" onclick="openAddCityModal()" title="${addCityLabels[curLang] || addCityLabels.en}">
+      ${addCityLabels[curLang] || addCityLabels.en}
+    </button>
+    <button class="pw-city-chip" onclick="openPrayerMapModal()" style="color:#e5c07b; font-weight:700;">
+      ${mapBtnLabels[curLang] || mapBtnLabels.en}
+    </button>
+  `;
+}
+
 function initPrayerWidget() {
   const placeholder = document.getElementById('prayer-widget-placeholder');
   if (!placeholder) return;
@@ -1000,22 +1321,15 @@ function initPrayerWidget() {
       </div>
 
       <!-- Quick World City Chips -->
-      <div class="pw-quick-cities" id="pw-quick-cities">
-        <span class="pw-city-label">${curLang === 'id' ? 'Kota Dunia:' : 'World Cities:'}</span>
-        <button class="pw-city-chip ${_pw.presetKey === 'makkah' ? 'active' : ''}" onclick="setPrayerPreset('makkah')">🕋 Makkah</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'madinah' ? 'active' : ''}" onclick="setPrayerPreset('madinah')">🕌 Madinah</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'jerusalem' ? 'active' : ''}" onclick="setPrayerPreset('jerusalem')">🇵🇸 Al-Quds</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'jakarta' ? 'active' : ''}" onclick="setPrayerPreset('jakarta')">🇮🇩 Jakarta</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'istanbul' ? 'active' : ''}" onclick="setPrayerPreset('istanbul')">🇹🇷 Istanbul</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'london' ? 'active' : ''}" onclick="setPrayerPreset('london')">🇬🇧 London</button>
-        <button class="pw-city-chip ${_pw.presetKey === 'newyork' ? 'active' : ''}" onclick="setPrayerPreset('newyork')">🇺🇸 New York</button>
-        <button class="pw-city-chip" onclick="openPrayerMapModal()" style="color:#e5c07b; font-weight:700;">🗺️ ${curLang === 'id' ? 'Buka Peta...' : 'More on Map...'}</button>
-      </div>
+      <div class="pw-quick-cities" id="pw-quick-cities"></div>
 
       <div class="pw-times-grid" id="pw-times-grid"></div>
       <div class="pw-next-prayer" id="pw-next-prayer">⏳ Menghitung waktu sholat...</div>
     </div>
   `;
+
+  // Render quick chips (presets + custom cities + (+) Add button)
+  renderCityChips();
 
   // Auto-detect only if user never saved a custom location
   if (!localStorage.getItem('qh_prayer_loc') && navigator.geolocation) {
@@ -1032,14 +1346,19 @@ function initPrayerWidget() {
             const city = data.address?.city || data.address?.town || data.address?.county || `${_pw.lat.toFixed(2)}°, ${_pw.lng.toFixed(2)}°`;
             const country = data.address?.country || '';
             _pw.locationName = country ? `${city}, ${country}` : city;
+            renderCityChips();
             updatePrayerDisplay();
           })
           .catch(() => {
             _pw.locationName = `${_pw.lat.toFixed(2)}°, ${_pw.lng.toFixed(2)}°`;
+            renderCityChips();
             updatePrayerDisplay();
           });
       },
-      () => updatePrayerDisplay(),
+      () => {
+        renderCityChips();
+        updatePrayerDisplay();
+      },
       { timeout: 6000 }
     );
   }
@@ -1067,11 +1386,7 @@ function setPrayerPreset(presetKey) {
     method: _pw.method
   }));
 
-  // Update quick chip active state
-  document.querySelectorAll('.pw-city-chip').forEach(btn => {
-    btn.classList.toggle('active', btn.getAttribute('onclick')?.includes(presetKey));
-  });
-
+  renderCityChips();
   updatePrayerDisplay();
 
   if (typeof window.showToast === 'function') {
@@ -1080,8 +1395,9 @@ function setPrayerPreset(presetKey) {
 }
 
 function updatePrayerDisplay() {
-  const today = new Date();
-  _pw.times = calculatePrayerTimes(_pw.lat, _pw.lng, today, _pw.timezone, _pw.method);
+  // CRITICAL: Calculate date corresponding to the target location timezone
+  const locDate = getTargetLocationDate(_pw.timezone);
+  _pw.times = calculatePrayerTimes(_pw.lat, _pw.lng, locDate, _pw.timezone, _pw.method);
 
   const locEl  = document.getElementById('pw-location');
   const dateEl = document.getElementById('pw-date');
@@ -1095,8 +1411,24 @@ function updatePrayerDisplay() {
   const tzStr = _pw.timezone >= 0 ? `UTC+${_pw.timezone}` : `UTC${_pw.timezone}`;
   if (locEl) locEl.innerHTML = `📍 ${_pw.locationName} <span style="opacity:0.75; font-size:0.72rem;">(${tzStr})</span>`;
 
+  const widgetTitleEl = document.querySelector('.pw-title');
+  if (widgetTitleEl) {
+    const titles = {
+      id: 'Jadwal Waktu Sholat Dunia', en: 'World Prayer Times', ar: 'مواقيت الصلاة حول العالم', ur: 'دنیا بھر کے اوقات نماز', tr: 'Dünya Namaz Vakitleri', fr: 'Horaires des Prières dans le Monde', bn: 'বিশ্বের নামাজের সময়সূচী', ms: 'Waktu Solat Seluruh Dunia'
+    };
+    widgetTitleEl.textContent = titles[curLang] || titles.en;
+  }
+  const mapHeaderBtn = document.querySelector('.pw-map-btn');
+  if (mapHeaderBtn) {
+    const mapLabels = {
+      id: '🗺️ Model Peta', en: '🗺️ World Map', ar: '🗺️ خريطة العالم', ur: '🗺️ عالمی نقشہ', tr: '🗺️ Dünya Haritası', fr: '🗺️ Carte du Monde', bn: '🗺️ বিশ্ব মানচিত্র', ms: '🗺️ Peta Dunia'
+    };
+    mapHeaderBtn.textContent = mapLabels[curLang] || mapLabels.en;
+  }
+
+  // Display date following the target location calendar
   if (dateEl) {
-    dateEl.textContent = today.toLocaleDateString(curLang === 'id' ? 'id-ID' : 'en-US', {
+    dateEl.textContent = locDate.toLocaleDateString(curLang === 'id' ? 'id-ID' : 'en-US', {
       weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
     });
   }
@@ -1109,11 +1441,8 @@ function updatePrayerDisplay() {
     return h * 60 + m;
   }
 
-  // Calculate local time for the selected prayer timezone
-  const now = new Date();
-  const utcNowMs = now.getTime() + (now.getTimezoneOffset() * 60000);
-  const targetDate = new Date(utcNowMs + (_pw.timezone * 3600000));
-  const curMinutes = targetDate.getHours() * 60 + targetDate.getMinutes();
+  // Calculate minutes in target location
+  const curMinutes = locDate.getHours() * 60 + locDate.getMinutes();
 
   let nextKey = 'Fajr';
   let nextMins = Infinity;
@@ -1149,19 +1478,25 @@ function updatePrayerDisplay() {
   if (_pw.countdownInterval) clearInterval(_pw.countdownInterval);
 
   function updateCountdown() {
-    const nowDate = new Date();
-    const utcMs = nowDate.getTime() + (nowDate.getTimezoneOffset() * 60000);
-    const locDate = new Date(utcMs + (_pw.timezone * 3600000));
-    const nowM = locDate.getHours() * 60 + locDate.getMinutes();
-    const nowS = locDate.getSeconds();
+    const targetLocDate = getTargetLocationDate(_pw.timezone);
+    const nowM = targetLocDate.getHours() * 60 + targetLocDate.getMinutes();
+    const nowS = targetLocDate.getSeconds();
 
     // Update Live Digital Clock for the selected location
     const clockEl = document.getElementById('pw-clock-time');
     if (clockEl) {
-      const hh = String(locDate.getHours()).padStart(2, '0');
-      const mm = String(locDate.getMinutes()).padStart(2, '0');
-      const ss = String(locDate.getSeconds()).padStart(2, '0');
+      const hh = String(targetLocDate.getHours()).padStart(2, '0');
+      const mm = String(targetLocDate.getMinutes()).padStart(2, '0');
+      const ss = String(targetLocDate.getSeconds()).padStart(2, '0');
       clockEl.textContent = `${hh}:${mm}:${ss}`;
+    }
+
+    // Keep date updated dynamically as midnight rolls over in target location
+    const dynamicDateEl = document.getElementById('pw-date');
+    if (dynamicDateEl) {
+      dynamicDateEl.textContent = targetLocDate.toLocaleDateString(curLang === 'id' ? 'id-ID' : 'en-US', {
+        weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
+      });
     }
 
     let targetMins = toMinutes(_pw.times[nextKey]);
@@ -1252,6 +1587,7 @@ function openPrayerMapModal() {
             <button class="pmm-preset-chip" onclick="applyMapPreset('newyork')">🇺🇸 New York</button>
             <button class="pmm-preset-chip" onclick="applyMapPreset('tokyo')">🇯🇵 Tokyo</button>
             <button class="pmm-preset-chip" onclick="applyMapPreset('sydney')">🇦🇺 Sydney</button>
+            <button class="pmm-preset-chip" onclick="openAddCityModal()" style="color:#ffe082; font-weight:700; border-color:#e5c07b;">➕ Tambah...</button>
           </div>
         </div>
 
@@ -1318,6 +1654,7 @@ function openPrayerMapModal() {
 
       <div class="pmm-footer">
         <button class="pmm-btn-gps" onclick="mapUseDeviceGPS()">🎯 Gunakan GPS Saya</button>
+        <button class="pmm-btn-gps" onclick="saveCurrentMapLocationAsCustomCity()" style="border-color:#e5c07b; color:#ffe082;">➕ Simpan Kota Ini (+)</button>
         <button class="pmm-btn-apply" onclick="confirmApplyMapLocation()">✅ Terapkan Lokasi Ini ke Beranda</button>
       </div>
     </div>
@@ -1500,17 +1837,22 @@ function updateMapLocationHeader() {
   const titleEl = document.getElementById('pmm-loc-title');
   const metaEl  = document.getElementById('pmm-loc-meta');
   const tzStr   = _mapTempState.timezone >= 0 ? `UTC+${_mapTempState.timezone}` : `UTC${_mapTempState.timezone}`;
+  const locDate = getTargetLocationDate(_mapTempState.timezone);
+  const curLang = (window.state && window.state.language) || 'id';
+  const dateStr = locDate.toLocaleDateString(curLang === 'id' ? 'id-ID' : 'en-US', {
+    weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
+  });
 
   if (titleEl) titleEl.textContent = `📍 ${_mapTempState.locationName}`;
-  if (metaEl)  metaEl.textContent  = `Lat: ${_mapTempState.lat.toFixed(2)}°, Lng: ${_mapTempState.lng.toFixed(2)}° • Zona Waktu: ${tzStr}`;
+  if (metaEl)  metaEl.textContent  = `📅 ${dateStr} • Lat: ${_mapTempState.lat.toFixed(2)}°, Lng: ${_mapTempState.lng.toFixed(2)}° • Zona: ${tzStr}`;
 }
 
 function updateMapPreviewTimes() {
   const container = document.getElementById('pmm-preview-times');
   if (!container) return;
 
-  const today = new Date();
-  const times = calculatePrayerTimes(_mapTempState.lat, _mapTempState.lng, today, _mapTempState.timezone, _mapTempState.method);
+  const locDate = getTargetLocationDate(_mapTempState.timezone);
+  const times = calculatePrayerTimes(_mapTempState.lat, _mapTempState.lng, locDate, _mapTempState.timezone, _mapTempState.method);
 
   const curLang = (window.state && window.state.language) || 'id';
   const labels  = PRAYER_NAMES[curLang] || PRAYER_NAMES.id;
@@ -1643,10 +1985,320 @@ function confirmApplyMapLocation() {
   }));
 
   closePrayerMapModal();
+  renderCityChips();
   updatePrayerDisplay();
 
   if (typeof window.showToast === 'function') {
     window.showToast(`✅ Jadwal sholat berhasil diubah ke ${_pw.locationName}!`);
+  }
+}
+
+function saveCurrentMapLocationAsCustomCity() {
+  const parts = _mapTempState.locationName.split(',');
+  const cityName = parts[0].trim();
+  const countryName = parts.slice(1).join(',').trim();
+  const customCity = {
+    id: 'city_' + Date.now(),
+    name: _mapTempState.locationName,
+    short: cityName,
+    flag: '📍',
+    lat: _mapTempState.lat,
+    lng: _mapTempState.lng,
+    timezone: _mapTempState.timezone,
+    method: _mapTempState.method
+  };
+
+  saveCustomCity(customCity);
+  closePrayerMapModal();
+  setCustomPrayerCity(customCity.id);
+
+  if (typeof window.showToast === 'function') {
+    window.showToast(`✅ ${customCity.short} berhasil disimpan ke daftar kota!`);
+  }
+}
+
+// ============================================================
+// 3B. ADD NEW COUNTRY & CITY MODAL (+)
+// ============================================================
+function openAddCityModal() {
+  closeAddCityModal();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'pacm-overlay';
+  overlay.id = 'pacm-overlay';
+
+  const curLang = (window.state && window.state.language) || 'id';
+
+  overlay.innerHTML = `
+    <div class="pacm-modal" role="dialog" aria-modal="true" aria-label="Tambah Negara dan Kota">
+      <div class="pacm-header">
+        <div class="pacm-title">
+          <span>➕ ${curLang === 'id' ? 'Tambah Negara & Kota Baru' : 'Add New City & Country'}</span>
+        </div>
+        <button class="pmm-close-btn" onclick="closeAddCityModal()">✕</button>
+      </div>
+
+      <div class="pacm-body">
+        <!-- Auto Search Bar -->
+        <div class="pacm-search-box">
+          <div class="pacm-search-desc">
+            🔍 <strong>${curLang === 'id' ? 'Pencarian Otomatis:' : 'Auto Search:'}</strong> 
+            ${curLang === 'id' 
+              ? 'Ketik nama kota dan negara di dunia untuk mengisi koordinat, bendera, dan zona waktu secara otomatis.' 
+              : 'Type city and country name to automatically fill coordinates, flag emoji, and timezone.'}
+          </div>
+          <div class="pacm-search-row">
+            <input type="text" id="pacm-search-input" class="pacm-input" placeholder="${curLang === 'id' ? 'Contoh: Tokyo, Seoul, Berlin, Sydney, Bandung...' : 'Example: Tokyo, Seoul, Berlin, Sydney...'}" />
+            <button id="pacm-search-btn" class="pacm-search-btn" onclick="autoSearchAddCity()">${curLang === 'id' ? 'Cari & Isi Otomatis 🔍' : 'Search & Fill 🔍'}</button>
+          </div>
+        </div>
+
+        <!-- Form Fields -->
+        <div class="pacm-grid">
+          <div class="pacm-field">
+            <label class="pacm-label">${curLang === 'id' ? 'Nama Kota:' : 'City Name:'}</label>
+            <input type="text" id="pacm-city-name" class="pacm-input" placeholder="Tokyo / Seoul / Bandung" oninput="updateAddCityPreview()" />
+          </div>
+          <div class="pacm-field">
+            <label class="pacm-label">${curLang === 'id' ? 'Nama Negara:' : 'Country Name:'}</label>
+            <input type="text" id="pacm-country-name" class="pacm-input" placeholder="Jepang / Korea Selatan / Indonesia" oninput="updateAddCityPreview()" />
+          </div>
+          <div class="pacm-field">
+            <label class="pacm-label">${curLang === 'id' ? 'Bendera / Icon Emoji:' : 'Flag / Icon Emoji:'}</label>
+            <input type="text" id="pacm-emoji" class="pacm-input" placeholder="🇯🇵" oninput="updateAddCityPreview()" />
+          </div>
+          <div class="pacm-field">
+            <label class="pacm-label">${curLang === 'id' ? 'Zona Waktu (UTC Offset):' : 'Timezone (UTC Offset):'}</label>
+            <select id="pacm-tz" class="pmm-select" onchange="updateAddCityPreview()">
+              <option value="-12">UTC-12 (Baker Island)</option>
+              <option value="-11">UTC-11 (Samoa)</option>
+              <option value="-10">UTC-10 (Hawaii)</option>
+              <option value="-9">UTC-9 (Alaska)</option>
+              <option value="-8">UTC-8 (Pacific Time / LA)</option>
+              <option value="-7">UTC-7 (Mountain Time / Denver)</option>
+              <option value="-6">UTC-6 (Central Time / Chicago)</option>
+              <option value="-5">UTC-5 (Eastern Time / New York)</option>
+              <option value="-4">UTC-4 (Atlantic / Santiago)</option>
+              <option value="-3">UTC-3 (Buenos Aires / São Paulo)</option>
+              <option value="-2">UTC-2 (Mid-Atlantic)</option>
+              <option value="-1">UTC-1 (Azores / Cape Verde)</option>
+              <option value="0">UTC+0 (London / Casablanca / GMT)</option>
+              <option value="1">UTC+1 (Paris / Berlin / Lagos)</option>
+              <option value="2">UTC+2 (Kairo / Yerusalem / Athena)</option>
+              <option value="3">UTC+3 (Makkah / Madinah / Istanbul / Moskow)</option>
+              <option value="4">UTC+4 (Dubai / Baku)</option>
+              <option value="5">UTC+5 (Karachi / Tashkent)</option>
+              <option value="5.5">UTC+5:30 (New Delhi / India)</option>
+              <option value="6">UTC+6 (Dhaka / Almaty)</option>
+              <option value="7" selected>UTC+7 (Jakarta / Bangkok / WIB)</option>
+              <option value="8">UTC+8 (Kuala Lumpur / Singapura / WITA)</option>
+              <option value="9">UTC+9 (Tokyo / Seoul / WIT)</option>
+              <option value="10">UTC+10 (Sydney / Melbourne)</option>
+              <option value="11">UTC+11 (Solomon Islands)</option>
+              <option value="12">UTC+12 (Auckland / Fiji)</option>
+              <option value="13">UTC+13 (Tonga)</option>
+              <option value="14">UTC+14 (Line Islands)</option>
+            </select>
+          </div>
+          <div class="pacm-field">
+            <label class="pacm-label">Latitude (°):</label>
+            <input type="number" step="0.0001" id="pacm-lat" class="pacm-input" placeholder="-6.2088" oninput="updateAddCityPreview()" />
+          </div>
+          <div class="pacm-field">
+            <label class="pacm-label">Longitude (°):</label>
+            <input type="number" step="0.0001" id="pacm-lng" class="pacm-input" placeholder="106.8456" oninput="updateAddCityPreview()" />
+          </div>
+        </div>
+
+        <div class="pacm-field">
+          <label class="pacm-label">${curLang === 'id' ? 'Metode Perhitungan Sholat:' : 'Calculation Method:'}</label>
+          <select id="pacm-method" class="pmm-select" onchange="updateAddCityPreview()">
+            <option value="MWL">Muslim World League (Subuh 18°, Isya 17°)</option>
+            <option value="Kemenag" selected>Kemenag RI (Subuh 20°, Isya 18°)</option>
+            <option value="Makkah">Umm Al-Qura, Makkah (Subuh 18.5°, Isya +90m)</option>
+            <option value="ISNA">ISNA North America (Subuh 15°, Isya 15°)</option>
+            <option value="Egypt">Egyptian General Authority (Subuh 19.5°, Isya 17.5°)</option>
+            <option value="Karachi">Univ. of Islamic Sciences Karachi (Subuh 18°, Isya 18°)</option>
+            <option value="Turkey">Diyanet İşleri Turkey (Subuh 18°, Isya 17°)</option>
+          </select>
+        </div>
+
+        <!-- Live Preview Box -->
+        <div class="pmm-preview-box">
+          <div class="pmm-preview-header">
+            <span class="pmm-selected-loc" id="pacm-preview-title">📍 Pratinjau Jadwal</span>
+            <span class="pmm-selected-meta" id="pacm-preview-meta">Waktu lokal & waktu sholat</span>
+          </div>
+          <div class="pmm-preview-times" id="pacm-preview-times"></div>
+        </div>
+      </div>
+
+      <div class="pacm-footer">
+        <button class="pacm-btn-cancel" onclick="closeAddCityModal()">${curLang === 'id' ? 'Batal' : 'Cancel'}</button>
+        <button class="pacm-btn-save" onclick="confirmSaveAddCity()">💾 ${curLang === 'id' ? 'Simpan & Terapkan (+)' : 'Save & Apply (+)'}</button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // Close on backdrop click
+  overlay.onclick = (e) => { if (e.target === overlay) closeAddCityModal(); };
+
+  // Enter triggers auto-search
+  const searchInput = document.getElementById('pacm-search-input');
+  if (searchInput) {
+    searchInput.onkeydown = (e) => { if (e.key === 'Enter') autoSearchAddCity(); };
+    setTimeout(() => searchInput.focus(), 150);
+  }
+
+  // Pre-fill initial defaults (Jakarta / device)
+  if (document.getElementById('pacm-city-name')) document.getElementById('pacm-city-name').value = 'Jakarta';
+  if (document.getElementById('pacm-country-name')) document.getElementById('pacm-country-name').value = 'Indonesia';
+  if (document.getElementById('pacm-emoji')) document.getElementById('pacm-emoji').value = '🇮🇩';
+  if (document.getElementById('pacm-lat')) document.getElementById('pacm-lat').value = '-6.2088';
+  if (document.getElementById('pacm-lng')) document.getElementById('pacm-lng').value = '106.8456';
+  if (document.getElementById('pacm-tz')) document.getElementById('pacm-tz').value = '7';
+
+  updateAddCityPreview();
+}
+
+function closeAddCityModal() {
+  const overlay = document.getElementById('pacm-overlay');
+  if (overlay) overlay.remove();
+}
+
+function autoSearchAddCity() {
+  const input = document.getElementById('pacm-search-input');
+  if (!input || !input.value.trim()) return;
+
+  const btn = document.getElementById('pacm-search-btn');
+  const origText = btn ? btn.textContent : '';
+  if (btn) btn.textContent = 'Mencari... ⏳';
+
+  const q = input.value.trim();
+  fetch(`https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=${encodeURIComponent(q)}&limit=1`)
+    .then(r => r.json())
+    .then(data => {
+      if (btn) btn.textContent = origText;
+      if (!data || data.length === 0) {
+        alert('Kota tidak ditemukan. Anda dapat mengisi data koordinat secara manual.');
+        return;
+      }
+      const item = data[0];
+      const addr = item.address || {};
+      const cityName = addr.city || addr.town || addr.municipality || addr.county || addr.state || q.split(',')[0].trim();
+      const countryName = addr.country || '';
+      const countryCode = (addr.country_code || '').toUpperCase();
+      const flag = getFlagEmoji(countryCode);
+      const lat = parseFloat(item.lat);
+      const lng = parseFloat(item.lon);
+      const tz = Math.round(lng / 15);
+
+      if (document.getElementById('pacm-city-name')) document.getElementById('pacm-city-name').value = cityName;
+      if (document.getElementById('pacm-country-name')) document.getElementById('pacm-country-name').value = countryName;
+      if (document.getElementById('pacm-emoji')) document.getElementById('pacm-emoji').value = flag;
+      if (document.getElementById('pacm-lat')) document.getElementById('pacm-lat').value = lat.toFixed(4);
+      if (document.getElementById('pacm-lng')) document.getElementById('pacm-lng').value = lng.toFixed(4);
+      if (document.getElementById('pacm-tz')) document.getElementById('pacm-tz').value = String(tz);
+
+      let method = 'MWL';
+      if (countryCode === 'ID') method = 'Kemenag';
+      else if (countryCode === 'TR') method = 'Turkey';
+      else if (countryCode === 'EG') method = 'Egypt';
+      else if (countryCode === 'SA') method = 'Makkah';
+      else if (['US', 'CA'].includes(countryCode)) method = 'ISNA';
+      else if (['PK', 'IN', 'BD'].includes(countryCode)) method = 'Karachi';
+      if (document.getElementById('pacm-method')) document.getElementById('pacm-method').value = method;
+
+      updateAddCityPreview();
+    })
+    .catch(() => {
+      if (btn) btn.textContent = origText;
+      alert('Gagal mencari secara online. Anda dapat memasukkan data secara manual.');
+    });
+}
+
+function updateAddCityPreview() {
+  const cityName = document.getElementById('pacm-city-name')?.value.trim() || 'Kota';
+  const countryName = document.getElementById('pacm-country-name')?.value.trim() || 'Negara';
+  const emoji = document.getElementById('pacm-emoji')?.value.trim() || '📍';
+  const lat = parseFloat(document.getElementById('pacm-lat')?.value) || 0;
+  const lng = parseFloat(document.getElementById('pacm-lng')?.value) || 0;
+  const tz = parseFloat(document.getElementById('pacm-tz')?.value) || 0;
+  const method = document.getElementById('pacm-method')?.value || 'MWL';
+
+  const previewTitle = document.getElementById('pacm-preview-title');
+  const previewMeta = document.getElementById('pacm-preview-meta');
+  const previewTimes = document.getElementById('pacm-preview-times');
+
+  const tzStr = tz >= 0 ? `UTC+${tz}` : `UTC${tz}`;
+  if (previewTitle) previewTitle.textContent = `${emoji} ${cityName}, ${countryName} (${tzStr})`;
+
+  const locDate = getTargetLocationDate(tz);
+  const curLang = (window.state && window.state.language) || 'id';
+  const dateStr = locDate.toLocaleDateString(curLang === 'id' ? 'id-ID' : 'en-US', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  const hh = String(locDate.getHours()).padStart(2, '0');
+  const mm = String(locDate.getMinutes()).padStart(2, '0');
+  const ss = String(locDate.getSeconds()).padStart(2, '0');
+
+  if (previewMeta) {
+    previewMeta.textContent = `📅 ${dateStr} • 🕒 ${hh}:${mm}:${ss} • Lat: ${lat.toFixed(2)}°, Lng: ${lng.toFixed(2)}°`;
+  }
+
+  const times = calculatePrayerTimes(lat, lng, locDate, tz, method);
+  const labels = PRAYER_NAMES[curLang] || PRAYER_NAMES.id;
+  const keys = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
+
+  if (previewTimes) {
+    previewTimes.innerHTML = keys.map(k => `
+      <div class="pmm-pt-card">
+        <div class="pmm-pt-name">${labels[k] || k}</div>
+        <div class="pmm-pt-time">${times[k]}</div>
+      </div>
+    `).join('');
+  }
+}
+
+function confirmSaveAddCity() {
+  const cityName = document.getElementById('pacm-city-name')?.value.trim();
+  const countryName = document.getElementById('pacm-country-name')?.value.trim();
+  const emoji = document.getElementById('pacm-emoji')?.value.trim() || '📍';
+  const lat = parseFloat(document.getElementById('pacm-lat')?.value);
+  const lng = parseFloat(document.getElementById('pacm-lng')?.value);
+  const tz = parseFloat(document.getElementById('pacm-tz')?.value);
+  const method = document.getElementById('pacm-method')?.value || 'MWL';
+
+  if (!cityName) {
+    alert('Mohon masukkan nama kota.');
+    return;
+  }
+  if (isNaN(lat) || isNaN(lng) || isNaN(tz)) {
+    alert('Mohon periksa kembali Latitude, Longitude, dan Zona Waktu.');
+    return;
+  }
+
+  const customCity = {
+    id: 'city_' + Date.now(),
+    name: countryName ? `${cityName}, ${countryName}` : cityName,
+    short: cityName,
+    flag: emoji,
+    lat,
+    lng,
+    timezone: tz,
+    method
+  };
+
+  saveCustomCity(customCity);
+  closeAddCityModal();
+
+  // Switch to this new custom city immediately
+  setCustomPrayerCity(customCity.id);
+
+  if (typeof window.showToast === 'function') {
+    window.showToast(`✅ ${emoji} ${customCity.name} berhasil ditambahkan & diterapkan!`);
   }
 }
 
@@ -2178,6 +2830,19 @@ window.onMapMethodChange       = onMapMethodChange;
 window.onMapTzChange           = onMapTzChange;
 window.mapUseDeviceGPS         = mapUseDeviceGPS;
 window.confirmApplyMapLocation = confirmApplyMapLocation;
+window.saveCurrentMapLocationAsCustomCity = saveCurrentMapLocationAsCustomCity;
+
+window.openAddCityModal         = openAddCityModal;
+window.closeAddCityModal        = closeAddCityModal;
+window.autoSearchAddCity        = autoSearchAddCity;
+window.updateAddCityPreview     = updateAddCityPreview;
+window.confirmSaveAddCity       = confirmSaveAddCity;
+window.getCustomCities          = getCustomCities;
+window.saveCustomCity           = saveCustomCity;
+window.removeCustomCity         = removeCustomCity;
+window.setCustomPrayerCity      = setCustomPrayerCity;
+window.renderCityChips          = renderCityChips;
+window.getTargetLocationDate    = getTargetLocationDate;
 
 window.initMemorizationMode    = initMemorizationMode;
 window.toggleMemorizationMode  = toggleMemorizationMode;
