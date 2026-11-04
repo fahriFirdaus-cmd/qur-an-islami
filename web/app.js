@@ -404,6 +404,8 @@ function applyLanguage(lang, notify = true) {
   setText('nav-pill-audio', dict.navAudio);
   setText('nav-pill-sejarah', dict.navSejarah);
   setText('nav-pill-jejak', dict.navJejak);
+  setText('nav-pill-ibadah', lang === 'en' ? 'Worship & Prayers' : 'Ibadah & Doa');
+  setText('mob-label-ibadah', lang === 'en' ? 'Worship' : 'Ibadah');
 
   // Topbar
   setText('lang-indicator', (window.LANG_META && window.LANG_META[lang]?.code) || dict.langIndicator || lang.toUpperCase());
@@ -1453,6 +1455,7 @@ function continueLastRead() {
       const data = JSON.parse(raw);
       loadSurah(data.surahId, data.verseNum);
       navigateTo('quran');
+      switchQuranView('reader');
       return;
     } catch (e) {}
   }
@@ -1666,12 +1669,21 @@ async function renderVerses(surahId, targetVerse = null) {
             </button>
             <button class="verse-btn" title="${isEn ? 'Copy Verse' : 'Salin Ayat'}" onclick="copyVerse(this, '${escapeStr(arabicText)}', '${escapeStr(transText)}')">📋</button>
             <button class="verse-btn" title="${isEn ? 'Share Verse' : 'Bagikan Ayat'}" onclick="shareVerseModal(${surahId}, ${v.num}, '${escapeStr(arabicText)}', '${escapeStr(transText)}')">📤</button>
+            <button class="verse-btn" title="${isEn ? 'Ayah Reflection / Note' : 'Catatan Tadabbur'}" onclick="openTadabburModal(${surahId}, ${v.num})">📝</button>
             ${v.hasHistory ? `<button class="verse-btn has-history" title="Asbabun Nuzul" onclick="openHistoryModal('${v.historyId}')">🏛️</button>` : ''}
           </div>
         </div>
         <div class="verse-arabic ${state.tajweed ? 'tajwid-active' : ''}" style="font-size: ${state.fontSize}px">${(state.tajweed && typeof window.applyTajweedColors === 'function') ? window.applyTajweedColors(arabicText) : arabicText}</div>
         <div class="verse-latin" style="display: ${state.transliterasi ? 'block' : 'none'};">${v.latin}</div>
         <div class="verse-translation">${transText}</div>
+        ${(() => {
+          const notes = (typeof localStorage !== 'undefined') ? JSON.parse(localStorage.getItem('qh_ayah_notes') || '{}') : {};
+          const item = notes[`${surahId}:${v.num}`];
+          if (item && item.text) {
+            return `<div class="verse-note-badge" onclick="openTadabburModal(${surahId}, ${v.num})" title="${isEn ? 'Click to view / edit reflection' : 'Klik untuk melihat / mengubah catatan'}">📝 <em>"${item.text.substring(0, 50)}${item.text.length > 50 ? '...' : ''}"</em></div>`;
+          }
+          return '';
+        })()}
         ${v.hasHistory ? `
           <div class="verse-history-tag" onclick="openHistoryModal('${v.historyId}')">
             ${isEn ? '🏛️ Historical context available (Asbabun Nuzul) — Click to view chronicle' : '🏛️ Konteks sejarah tersedia (Asbabun Nuzul) — Klik untuk melihat telaah sejarah'}
@@ -1699,7 +1711,7 @@ async function renderVerses(surahId, targetVerse = null) {
 
 function getHistoryId(surahId, verseNum) {
   const map = {
-    '2:183': 'puasa',
+    '2:183': 'jejak8',
     '8:1': 'badar',
     '8:9': 'badar',
     '8:17': 'badar',
@@ -1715,15 +1727,20 @@ function getHistoryId(surahId, verseNum) {
     '96:1': 'nuzul',
     '96:2': 'nuzul',
     '96:3': 'nuzul',
-    '105:1': 'fil',
-    '17:1': 'israMiraj'
+    '105:1': 'kelahiran',
+    '17:1': 'isra_miraj',
+    '5:3': 'haji_wada'
   };
   return map[`${surahId}:${verseNum}`] || null;
 }
 
 function escapeStr(str) {
   if (!str) return '';
-  return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+  return String(str)
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '&quot;')
+    .replace(/\r?\n/g, ' ');
 }
 
 // ══════════════════════════════════════════
@@ -1939,7 +1956,10 @@ function bookmarkVerse(surahId, verseNum) {
 }
 
 function copyVerse(btn, arabic, translation) {
-  const textToCopy = `${arabic}\n\n"${translation}"\n(Al-Qur'an)`;
+  let textToCopy = arabic || '';
+  if (translation) {
+    textToCopy = `${arabic}\n\n"${translation}"\n(Al-Qur'an)`;
+  }
   if (navigator.clipboard) {
     navigator.clipboard.writeText(textToCopy).then(() => {
       showToast('📋 Verse copied to clipboard!', 'success');
@@ -2507,6 +2527,21 @@ function applyTheme(themeChoice, notify = true) {
     o.classList.toggle('active', o.dataset.theme === state.themeMode);
   });
 
+  // Update hero card atmosphere and time badge
+  const heroCard = document.getElementById('hero-card');
+  if (heroCard) {
+    heroCard.classList.remove('time-pagi', 'time-siang', 'time-sore', 'time-malam');
+    heroCard.classList.add(`time-${activeTheme}`);
+  }
+  const heroTimeIcon = document.getElementById('time-badge-icon');
+  const heroTimeText = document.getElementById('time-badge-text');
+  if (heroTimeIcon) heroTimeIcon.textContent = phaseMeta.icon;
+  if (heroTimeText) {
+    heroTimeText.textContent = state.themeMode === 'auto'
+      ? `${phaseMeta.label} (${isEn ? 'Auto' : 'Otomatis'})`
+      : phaseMeta.label;
+  }
+
   localStorage.setItem('qh_theme', activeTheme);
 
   if (notify) {
@@ -2523,6 +2558,11 @@ function cycleThemeMode() {
   const nextMode = modes[(curIdx + 1) % modes.length];
   applyTheme(nextMode, true);
 }
+
+function cycleTimeTheme() {
+  cycleThemeMode();
+}
+window.cycleTimeTheme = cycleTimeTheme;
 
 let themeHeartbeatTimer = null;
 function startTimeThemeHeartbeat() {
@@ -2645,6 +2685,9 @@ function openJejakModal(jejakId) {
   const j = JEJAK_DATA.find(item => item.id === jejakId);
   if (!j) return;
 
+  const targetSurah = j.surahNum || j.surahId || 1;
+  const targetVerse = j.verseNum || 1;
+
   const html = `
     <div class="mh-header">
       <div class="mh-event-badge">${j.eventName}</div>
@@ -2657,7 +2700,7 @@ function openJejakModal(jejakId) {
     </div>
     <div class="mh-story">${j.eventDetail}</div>
     <div style="margin-top:20px; display:flex; gap:10px;">
-      <button class="btn-primary" onclick="loadSurah(${j.surahId || 2}); navigateTo('quran'); closeModal();" style="font-size: 0.82rem; padding: 10px 20px;">
+      <button class="btn-primary" onclick="loadSurah(${targetSurah}, ${targetVerse}); navigateTo('quran'); switchQuranView('reader'); closeModal();" style="font-size: 0.82rem; padding: 10px 20px;">
         ${state.language === 'en' ? '📖 Open Surah' : '📖 Buka Surah'}
       </button>
       <button class="btn-secondary" onclick="navigateTo('sejarah'); closeModal();" style="font-size: 0.82rem; padding: 10px 20px; background:var(--sage-50); color:var(--sage-700); border-color:var(--sage-200);">
@@ -2849,3 +2892,15 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+
+
+window.toggleTasbihSound = function() {
+  const current = localStorage.getItem('qh_tasbih_sound') !== 'false';
+  const next = !current;
+  localStorage.setItem('qh_tasbih_sound', next ? 'true' : 'false');
+  const btn = document.getElementById('tasbih-sound-btn');
+  if (btn) btn.textContent = next ? '🔊 Suara Klik: Aktif' : '🔇 Suara Klik: Senyap';
+  if (typeof window.showToast === 'function') {
+    window.showToast(next ? '🔊 Suara tasbih diaktifkan' : '🔇 Suara tasbih dimatikan', 'info');
+  }
+};

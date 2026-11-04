@@ -54,6 +54,7 @@
         <button class="nav-pill" id="nav-pill-audio" data-page="audio" onclick="navigateTo('audio')">Audio</button>
         <button class="nav-pill" id="nav-pill-sejarah" data-page="sejarah" onclick="navigateTo('sejarah')">History</button>
         <button class="nav-pill" id="nav-pill-jejak" data-page="jejak" onclick="navigateTo('jejak')">Revelations</button>
+        <button class="nav-pill" id="nav-pill-ibadah" data-page="ibadah" onclick="navigateTo('ibadah')">Ibadah & Doa</button>
       </nav>
     </div>
 
@@ -287,11 +288,11 @@
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
                 <span id="daily-btn-play-text">Listen</span>
               </button>
-              <button class="votd-btn" id="daily-btn-read" onclick="loadSurah(94); navigateTo('quran')">
+              <button class="votd-btn" id="daily-btn-read" onclick="loadSurah(94, 5); navigateTo('quran'); switchQuranView('reader');">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
                 <span id="daily-btn-read-text">Save</span>
               </button>
-              <button class="votd-btn" id="daily-btn-copy" onclick="copyVerse(this, 'فَإِنَّ مَعَ الْعُسْرِ يُسْرًا — Ash-Sharh 94:5')">
+              <button class="votd-btn" id="daily-btn-copy" onclick="copyVerse(this, 'فَإِنَّ مَعَ الْعُسْرِ يُسْرًا', 'Indeed, with every hardship there is ease. (Ash-Sharh 94:5)')">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
                 <span id="daily-btn-copy-text">Share</span>
               </button>
@@ -330,6 +331,33 @@
               <h3 class="fc-title" id="feat-spiritual-title">Spiritual Growth</h3>
               <p class="fc-desc" id="feat-spiritual-desc">Save bookmarks, keep a reading history and build a steady daily habit.</p>
               <span class="fc-cta" id="feat-spiritual-cta">View progress →</span>
+            </div>
+
+            <div class="fc-card" onclick="navigateTo('ibadah'); switchIbadahSubTab('tasbih');">
+              <div class="fc-icon-wrap" style="background: rgba(13,56,45,0.12); color:#0d382d;">
+                📿
+              </div>
+              <h3 class="fc-title">Tasbih Digital</h3>
+              <p class="fc-desc">Dzikir harian dengan penghitung putaran, target 33/100, suara klik halus & getaran haptic.</p>
+              <span class="fc-cta" style="color:#0d382d;">Mulai berdzikir →</span>
+            </div>
+
+            <div class="fc-card" onclick="navigateTo('ibadah'); switchIbadahSubTab('doa');">
+              <div class="fc-icon-wrap" style="background: rgba(229,192,123,0.18); color:#b8860b;">
+                🤲
+              </div>
+              <h3 class="fc-title">40 Doa Rabbana</h3>
+              <p class="fc-desc">Kumpulan doa agung dari ayat-ayat Al-Qur'an lengkap teks Arab, latin, terjemahan & tautan ayat.</p>
+              <span class="fc-cta" style="color:#b8860b;">Buka koleksi doa →</span>
+            </div>
+
+            <div class="fc-card" onclick="navigateTo('ibadah'); switchIbadahSubTab('kiblat');">
+              <div class="fc-icon-wrap" style="background: rgba(45,106,79,0.15); color:#2d6a4f;">
+                🧭
+              </div>
+              <h3 class="fc-title">Arah Kiblat & Jarak Ka'bah</h3>
+              <p class="fc-desc">Kompas penunjuk arah Ka'bah presisi dengan sensor perangkat dan estimasi jarak kilometer.</p>
+              <span class="fc-cta" style="color:#2d6a4f;">Cek arah kiblat →</span>
             </div>
           </div>
         </div>
@@ -860,6 +888,198 @@
       </div>
     </section>
 
+    <!-- ═══════ PAGE: IBADAH, DZIKIR & DOA ═══════ -->
+    <section class="page" id="page-ibadah">
+      <div class="ibadah-page-container">
+        <!-- Header Showcase -->
+        <div class="ibadah-header-banner">
+          <div class="sejarah-badge-row" style="margin-bottom: 10px;">
+            <span class="sejarah-pill-badge" id="ibadah-kicker">PUSAT IBADAH & SPIRITUALITAS</span>
+            <span class="sejarah-pill-badge gold">✨ AMALAN HARIAN</span>
+          </div>
+          <h2 class="ibadah-header-title" id="ibadah-title">Pusat Ibadah, Dzikir & Koleksi Doa</h2>
+          <p class="ibadah-header-desc" id="ibadah-desc">
+            Lengkapi ibadah harian Anda dengan Tasbih Digital haptic, Kompas Arah Kiblat presisi Ka'bah, 40 Doa Rabbana Al-Qur'an, Jurnal Khatam 30 Juz, dan Catatan Tadabbur Ayat.
+          </p>
+        </div>
+
+        <!-- Sub-Navigation Pills -->
+        <div class="ibadah-nav-tabs">
+          <button class="ibadah-tab-btn active" data-sub="tasbih" onclick="switchIbadahSubTab('tasbih')">
+            <span>📿</span> <span id="ib-tab-tasbih">Tasbih Digital</span>
+          </button>
+          <button class="ibadah-tab-btn" data-sub="doa" onclick="switchIbadahSubTab('doa')">
+            <span>🤲</span> <span id="ib-tab-doa">Doa Al-Qur'an & Harian</span>
+          </button>
+          <button class="ibadah-tab-btn" data-sub="kiblat" onclick="switchIbadahSubTab('kiblat')">
+            <span>🧭</span> <span id="ib-tab-kiblat">Arah Kiblat</span>
+          </button>
+          <button class="ibadah-tab-btn" data-sub="khatam" onclick="switchIbadahSubTab('khatam')">
+            <span>🎯</span> <span id="ib-tab-khatam">Jurnal Khatam 30 Juz</span>
+          </button>
+          <button class="ibadah-tab-btn" data-sub="tadabbur" onclick="switchIbadahSubTab('tadabbur')">
+            <span>📝</span> <span id="ib-tab-tadabbur">Catatan Tadabbur</span>
+          </button>
+        </div>
+
+        <!-- 1. VIEW: TASBIH DIGITAL -->
+        <div class="ibadah-sub-view" id="ibadah-view-tasbih">
+          <div class="tasbih-wrapper">
+            <!-- Preset Selection Chips -->
+            <div class="tasbih-presets-row">
+              <button class="tasbih-chip active" data-id="subhanallah" onclick="selectTasbihPreset('subhanallah')">Subhanallah (33x)</button>
+              <button class="tasbih-chip" data-id="alhamdulillah" onclick="selectTasbihPreset('alhamdulillah')">Alhamdulillah (33x)</button>
+              <button class="tasbih-chip" data-id="allahuakbar" onclick="selectTasbihPreset('allahuakbar')">Allahu Akbar (33x)</button>
+              <button class="tasbih-chip" data-id="tahlil" onclick="selectTasbihPreset('tahlil')">Tahlil Lengkap (100x)</button>
+              <button class="tasbih-chip" data-id="istighfar" onclick="selectTasbihPreset('istighfar')">Istighfar (100x)</button>
+              <button class="tasbih-chip" data-id="shalawat" onclick="selectTasbihPreset('shalawat')">Shalawat Nabi (100x)</button>
+              <button class="tasbih-chip" data-id="hauqalah" onclick="selectTasbihPreset('hauqalah')">Hauqalah (33x)</button>
+            </div>
+
+            <!-- Active Dzikir Card -->
+            <div class="tasbih-text-card">
+              <div class="tasbih-ar" id="tasbih-text-ar">سُبْحَانَ اللَّهِ</div>
+              <div class="tasbih-latin" id="tasbih-text-latin">Subḥānallāh</div>
+              <div class="tasbih-trans" id="tasbih-text-trans">"Maha Suci Allah"</div>
+              <div style="font-size: 0.78rem; color: #2d6a4f; margin-top: 8px; font-weight: 600;" id="tasbih-text-reward">✨ Dihapus dosanya meski sebanyak buih di lautan.</div>
+            </div>
+
+            <!-- Big Circular Counter Button -->
+            <button class="tasbih-circle-btn" id="tasbih-tap-btn" onclick="incrementTasbih()" title="Ketuk di sini atau tekan Spasi untuk berdzikir">
+              <svg class="tasbih-svg-ring" viewBox="0 0 220 220">
+                <circle class="tasbih-ring-bg" cx="110" cy="110" r="100"></circle>
+                <circle class="tasbih-ring-fill" id="tasbih-progress-ring" cx="110" cy="110" r="100" stroke-dasharray="628.3" stroke-dashoffset="628.3" transform="rotate(-90 110 110)"></circle>
+              </svg>
+              <div class="tasbih-main-count" id="tasbih-count-val">0</div>
+              <div class="tasbih-target-hint" id="tasbih-target-val">/ 33</div>
+              <div class="tasbih-press-hint">Ketuk untuk Dzikir</div>
+            </button>
+
+            <!-- Metadata Stats -->
+            <div class="tasbih-meta-row">
+              <div class="tasbih-meta-item">
+                <span>Putaran Selesai</span>
+                <strong id="tasbih-laps-val">0</strong>
+              </div>
+              <div class="tasbih-meta-item">
+                <span>Total Hari Ini</span>
+                <strong id="tasbih-daily-val">0</strong>
+              </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="tasbih-controls-row">
+              <button class="btn-secondary" onclick="resetTasbih()" style="font-size:0.82rem; padding: 9px 18px;">
+                🔄 Reset Hitungan
+              </button>
+              <button class="btn-secondary" onclick="toggleTasbihSound()" id="tasbih-sound-btn" style="font-size:0.82rem; padding: 9px 18px;">
+                🔊 Suara Klik: Aktif
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. VIEW: KOLEKSI DOA -->
+        <div class="ibadah-sub-view" id="ibadah-view-doa" style="display: none;">
+          <div class="doa-search-bar">
+            <input type="text" id="doa-search-input" class="doa-search-input" placeholder="Cari doa berdasarkan judul, makna, lafadz Arab, atau nomor ayat (contoh: sapu jagad, orang tua, 2:201)..." />
+          </div>
+
+          <div class="doa-filter-row">
+            <button class="doa-filter-chip active" data-cat="all" onclick="setDoaCategoryFilter('all')">Semua Doa</button>
+            <button class="doa-filter-chip" data-cat="rabbana" onclick="setDoaCategoryFilter('rabbana')">📖 40 Doa Rabbana (Al-Qur'an)</button>
+            <button class="doa-filter-chip" data-cat="harian" onclick="setDoaCategoryFilter('harian')">🤲 Doa Pilihan Harian</button>
+            <button class="doa-filter-chip" data-cat="fav" onclick="setDoaCategoryFilter('fav')">⭐ Favorit Saya</button>
+          </div>
+
+          <div class="doa-cards-grid" id="doa-cards-grid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- 3. VIEW: ARAH KIBLAT -->
+        <div class="ibadah-sub-view" id="ibadah-view-kiblat" style="display: none;">
+          <div class="qibla-wrapper">
+            <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 6px;">🧭 Kompas Arah Kiblat Presisi Ka'bah</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto 22px; line-height: 1.5;">
+              Menghitung sudut rotasi terpendek (lingkaran besar) menuju Ka'bah di Makkah Al-Mukarramah (21.4225° N, 39.8262° E).
+            </p>
+
+            <div class="qibla-compass-container">
+              <div class="qibla-compass-dial" id="qibla-compass-dial">
+                <span class="compass-cardinal cardinal-n">U / N</span>
+                <span class="compass-cardinal cardinal-e">T / E</span>
+                <span class="compass-cardinal cardinal-s">S / S</span>
+                <span class="compass-cardinal cardinal-w">B / W</span>
+              </div>
+              <div class="qibla-needle" id="qibla-compass-needle">
+                <div class="qibla-needle-kaaba-icon">🕋</div>
+              </div>
+              <div class="qibla-needle-pivot"></div>
+            </div>
+
+            <div class="qibla-info-grid">
+              <div class="qibla-info-card">
+                <div class="q-lbl">Sudut Derajat</div>
+                <div class="q-val" id="qibla-angle-val">295.2°</div>
+              </div>
+              <div class="qibla-info-card">
+                <div class="q-lbl">Arah Mata Angin</div>
+                <div class="q-val" id="qibla-cardinal-val" style="font-size: 1rem; padding-top: 4px;">Barat Laut (NW)</div>
+              </div>
+              <div class="qibla-info-card">
+                <div class="q-lbl">Jarak ke Ka'bah</div>
+                <div class="q-val" id="qibla-distance-val">~7,912 km</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(13,56,45,0.05); padding: 12px 16px; border-radius: 12px; font-size: 0.84rem; color: var(--text-primary); margin-bottom: 18px;">
+              📍 Lokasi Rujukan: <strong id="qibla-loc-name">Jakarta, Indonesia</strong>
+            </div>
+
+            <button class="btn-primary" onclick="detectDeviceQibla()" style="font-size: 0.88rem; padding: 10px 22px;">
+              📡 Perbarui Posisi GPS Saya
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. VIEW: KHATAM 30 JUZ -->
+        <div class="ibadah-sub-view" id="ibadah-view-khatam" style="display: none;">
+          <div class="khatam-progress-banner">
+            <div class="khatam-progress-row">
+              <div>
+                <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 2px;">🎯 Target & Kemajuan Tilawah 30 Juz</h3>
+                <span style="font-size: 0.82rem; color: var(--text-muted);">Tandai setiap juz yang telah selesai dibaca untuk memantau perjalanan khatam Al-Qur'an Anda.</span>
+              </div>
+              <div style="text-align: right;">
+                <span style="font-size: 1.4rem; font-weight: 800; color: #0d382d;" id="khatam-pct-val">0%</span>
+                <div style="font-size: 0.78rem; color: #b8860b; font-weight: 700;" id="khatam-count-val">0 / 30 Juz</div>
+              </div>
+            </div>
+            <div class="khatam-progress-track">
+              <div class="khatam-progress-fill" id="khatam-progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="khatam-juz-grid" id="khatam-juz-grid">
+            <!-- Populated by JS with 30 Juz -->
+          </div>
+        </div>
+
+        <!-- 5. VIEW: CATATAN TADABBUR -->
+        <div class="ibadah-sub-view" id="ibadah-view-tadabbur" style="display: none;">
+          <div style="margin-bottom: 20px;">
+            <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 4px;">📝 Jurnal Refleksi & Catatan Tadabbur Ayat</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Kumpulan mutiara hikmah dan renungan pribadi yang Anda catat saat membaca ayat-ayat Al-Qur'an.</p>
+          </div>
+          <div id="tadabbur-notes-list">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ═══════ PAGE: PENGATURAN ═══════ -->
     <section class="page" id="page-pengaturan">
       <div class="page-header">
@@ -1096,6 +1316,17 @@
     <span class="mobile-nav-label" id="mob-label-audio">Audio</span>
   </button>
 
+  <button class="mobile-nav-item" data-page="ibadah" onclick="navigateTo('ibadah')">
+    <div class="mobile-nav-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 3v18"/>
+        <path d="M3 12h18"/>
+      </svg>
+    </div>
+    <span class="mobile-nav-label" id="mob-label-ibadah">Ibadah</span>
+  </button>
+
   <button class="mobile-nav-item" data-page="sejarah" onclick="navigateTo('sejarah')">
     <div class="mobile-nav-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1123,5 +1354,6 @@
 <script src="features-multilang.js"></script>
 <script src="features-global.js"></script>
 <script src="features-tajwid.js"></script>
+<script src="features-ibadah.js"></script>
 </body>
 </html>

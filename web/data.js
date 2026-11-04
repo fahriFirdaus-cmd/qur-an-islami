@@ -3802,33 +3802,14 @@ const JEJAK_DATA = [
     journalRef: 'Jurnal Al-Hikmah, DOI: 10.24260/al-hikmah.v19i2.1643'
   },
   {
-    id:'jejak3',
-    surahRef:'Al-Baqarah : 183',
-    surahNum:2,
-    verseNum:183,
-    eventName:'🌙 Syariat Puasa Ramadhan (2 H)',
-    arabic:'يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُتِبَ عَلَيْكُمُ الصِّيَAMُ كَمَا كُتِبَ عَلَى الَّذِيْنَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُوْنَ',
-    translation:'Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang sebelum kamu agar kamu bertakwa.',
-    eventDetail:'<strong>Asbabun Nuzul:</strong> Diturunkan di Madinah pada bulan Sya\'ban tahun ke-2 Hijriah, meresmikan kewajiban berpuasa Ramadhan selama satu bulan penuh.',
-  },
-  {
-    id:'jejak4',
-    surahRef:'At-Taubah : 40',
-    surahNum:9,
-    verseNum:40,
-    eventName:'🏔️ Hijrah & Perlindungan di Gua Tsur (1 H)',
-    arabic:'اِلَّا تَنْصُرُوْهُ فَقَدْ نَصَرَهُ اللّٰهُ اِذْ اَخْرَجَهُ الَّذِيْنَ كَفَرُوْا ثَانِيَ اثْنَيْنِ اِذْ هُمَا فِي الْغَارِ',
-    translation:'Jika kamu tidak menolongnya (Muhammad), maka sesungguhnya Allah telah menolongnya (yaitu) ketika orang-orang kafir mengusirnya (dari Makkah); sedang dia salah seorang dari dua orang ketika keduanya berada dalam gua.',
-    eventDetail:'<strong>Konteks:</strong> Merekam ketenangan Nabi ﷺ mendampingi Abu Bakar di dalam Gua Tsur: "La tahzan, innallaha ma\'ana (Jangan bersedih, sesungguhnya Allah bersama kita)."',
-  },
-  {
-    id:'jejak6',
-    surahRef:'Al-\'Alaq : 1-2',
-    surahNum:96,
-    verseNum:1,
-    eventName:'📖 Nuzulul Qur\'an di Gua Hira (610 M)',
-    arabic:'اِقْرَأْ بِاسْمِ رَبِّكَ الَّذِيْ خَلَقَ ۚ خَلَقَ الْاِنْسَانَ مِنْ عَلَقٍ',
-    translation:'Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan, Dia telah menciptakan manusia dari segumpal darah.',
-    eventDetail:'<strong>Wahyu Pertama:</strong> Wahyu pembuka yang disampaikan Malaikat Jibril kepada Nabi Muhammad ﷺ di Jabal Nur, menandai dimulainya era kenabian dan peradaban ilmu Islam.',
+    id: 'jejak8',
+    surahRef: 'Al-Baqarah : 183',
+    surahNum: 2,
+    verseNum: 183,
+    eventName: '🌙 Syariat Puasa Ramadhan (2 H / 624 M)',
+    arabic: 'يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِيْنَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُوْنَ',
+    translation: 'Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang sebelum kamu agar kamu bertakwa.',
+    eventDetail: '<strong>Asbabun Nuzul:</strong> Diturunkan di Madinah pada bulan Sya\'ban tahun ke-2 Hijriah, meresmikan kewajiban berpuasa Ramadhan selama satu bulan penuh.',
+    journalRef: 'Jurnal Studi Al-Qur\'an, DOI: 10.21111/jsq.v15i1.2314'
   }
 ];
