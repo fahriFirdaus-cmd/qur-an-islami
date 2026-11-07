@@ -1,0 +1,17 @@
+# Dependencies (diinstal ulang lewat `npm install`)
+node_modules/
+backend/node_modules/
+
+# Rahasia / konfigurasi lokal
+.env
+backend/.env
+
+# File IDE
+.idea/
+
+# Build Android (Capacitor)
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+

@@ -2341,6 +2341,13 @@ const QORIS = {
     { id:'muzammil', name:'Muzammil Hasballah', origin:'Indonesia 🇮🇩', style:'Murattal', emoji:'⭐' },
     { id:'husain', name:'Husain Bafaqih', origin:'Indonesia 🇮🇩', style:'Mujawwad', emoji:'🌙' },
   ],
+  anak: [
+    { id:'thaha_cilik', name:'Muhammad Thaha Al-Junayd (Cilik)', origin:'Bahrain 🇧🇭', style:'Qori Cilik / Anak', emoji:'👦', badge:'Favorit Anak' },
+    { id:'albarrak_cilik', name:'Muhammad Al-Barrak (Cilik)', origin:'Kuwait 🇰🇼', style:'Qori Cilik / Merdu', emoji:'🌟', badge:'Suara Jernih' },
+    { id:'ahmad_saud', name:'Ahmad Saud (Qori Cilik)', origin:'Arab Saudi 🇸🇦', style:'Qori Cilik / Lembut', emoji:'🧒', badge:'Syahdu' },
+    { id:'azazi_kids', name:'Al-Husayni Al-Azazi (مع الأطفال)', origin:'Mesir 🇪🇬', style:'Talaqqi Guru & Murid Anak', emoji:'🎈', badge:'Metode Belajar' },
+    { id:'minshawi_muallim', name:'Siddiq Al-Minshawi (Murottal Anak)', origin:'Mesir 🇪🇬', style:'Mu\'allim Bersama Anak', emoji:'🏫', badge:'Edukasi Al-Qur\'an' }
+  ]
 };
 
 // ─── Sejarah Islam Lengkap (Lini Masa & Jurnal Akademik) ───

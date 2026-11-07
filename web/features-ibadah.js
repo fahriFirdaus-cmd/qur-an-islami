@@ -335,6 +335,547 @@
     { num: 30, name: "‘Amma Yatasa’alūn", arName: "عَمَّ يَتَسَاءَلُونَ", startSurah: 78, startVerse: 1, endSurah: 114, endVerse: 6, surahName: "An-Naba' 1 s/d An-Nas 6 (Juz 'Amma)" }
   ];
 
+
+  // ============================================================
+  // MULTI-LANGUAGE (I18N) ENGINE FOR IBADAH SUITE
+  // ============================================================
+  function getCurLang() {
+    return (window.state && window.state.language) || localStorage.getItem('qh_lang') || 'id';
+  }
+
+  const IBADAH_I18N = {
+    fr: {
+      ibadahKicker: "CENTRE D'ADORATION & SPIRITUALITÉ",
+      ibadahTitle: "Centre d'Adoration, Dhikr & Invocations",
+      ibadahDesc: "Enrichissez votre pratique quotidienne avec le chapelet numérique (Tasbih) tactile, la boussole Qibla haute précision vers la Kaaba, les 40 Invocations Rabbana du Coran, le suivi de récitation des 30 Juz et vos notes de méditation (Tadabbur).",
+      tabTasbih: "Tasbih Numérique",
+      tabDoa: "Invocations du Coran & Quotidiennes",
+      tabKiblat: "Direction de la Qibla",
+      tabKhatam: "Suivi des 30 Juz",
+      tabTadabbur: "Notes de Méditation",
+      tasbihPressHint: "Appuyez pour compter",
+      tasbihLapsLabel: "Tours terminés",
+      tasbihDailyLabel: "Total aujourd'hui",
+      tasbihResetBtn: "🔄 Réinitialiser le compteur",
+      tasbihSoundOn: "🔊 Son du clic : Actif",
+      tasbihSoundOff: "🔇 Son du clic : Muet",
+      tasbihLapToast: "🎉 Objectif atteint ! Tour n°",
+      tasbihResetToast: "🔄 Compteur de tasbih réinitialisé",
+      qiblaTitle: "🧭 Boussole Qibla Haute Précision Kaaba",
+      qiblaDesc: "Calcule l'angle géodésique le plus court (orthodromie) en direction de la noble Kaaba à La Mecque (21.4225° N, 39.8262° E).",
+      qiblaLblAngle: "Angle en Degrés",
+      qiblaLblCardinal: "Direction",
+      qiblaLblDist: "Distance à la Kaaba",
+      qiblaRefLabel: "📍 Emplacement de référence :",
+      qiblaGpsBtn: "📡 Mettre à jour ma position GPS",
+      doaSearchPlaceholder: "Rechercher par titre, sens, texte arabe ou verset (ex. pardon, parents, 2:201)...",
+      doaFilterAll: "Toutes les invocations",
+      doaFilterRabbana: "📖 40 Invocations Rabbana (Coran)",
+      doaFilterHarian: "🤲 Invocations Quotidiennes",
+      doaFilterFav: "⭐ Mes Favoris",
+      doaBtnCopy: "📋 Copier",
+      doaBtnShare: "📤 Partager",
+      doaBtnOpen: "📖 Ouvrir dans le Coran",
+      doaCopiedToast: "📋 Texte de l'invocation copié !",
+      doaFavAdded: "⭐ Ajouté aux invocations favorites",
+      doaFavRemoved: "Retiré des favoris",
+      doaEmptyTitle: "Aucune invocation trouvée",
+      doaEmptyDesc: "Essayez un autre mot-clé ou filtre.",
+      khatamTitle: "🎯 Objectif & Progression des 30 Juz",
+      khatamDesc: "Cochez chaque juz lu pour suivre votre cheminement vers la récitation complète du Noble Coran.",
+      khatamBtnRead: "📖 Lire",
+      khatamBtnDone: "Terminé",
+      khatamBtnMark: "Cocher",
+      khatamToastDone: "✅ Juz marqué comme lu !",
+      khatamToastUndone: "Marquage du Juz retiré",
+      tadabburTitle: "📝 Journal de Réflexion & Méditation sur les Versets",
+      tadabburDesc: "Recueil de sagesses et réflexions personnelles consignées lors de votre lecture du Coran.",
+      tadabburEmptyTitle: "Aucune note de réflexion pour le moment",
+      tadabburEmptyDesc: "Cliquez sur l'icône 📝 à côté de n'importe quel verset dans le lecteur pour ajouter votre réflexion.",
+      tadabburBtnOpen: "📖 Ouvrir le verset",
+      tadabburBtnEdit: "✏️ Modifier",
+      tadabburModalBadge: "📝 Méditation & Réflexion sur le Verset",
+      tadabburModalIntro: "Consignez vos réflexions personnelles, sagesses et rappels tirés de ce verset. Vos notes sont enregistrées en toute confidentialité sur votre appareil.",
+      tadabburModalPlaceholder: "Écrivez votre réflexion ici...",
+      tadabburModalDelete: "🗑️ Supprimer la note",
+      tadabburModalCancel: "Annuler",
+      tadabburModalSave: "💾 Enregistrer la réflexion",
+      tadabburToastSaved: "💾 Note de réflexion enregistrée !",
+      tadabburToastDeleted: "🗑️ Note de réflexion supprimée",
+      cardinals: ['Nord (N)', 'Nord-Est (NE)', 'Est (E)', 'Sud-Est (SE)', 'Sud (S)', 'Sud-Ouest (SO)', 'Ouest (O)', 'Nord-Ouest (NO)']
+    },
+    en: {
+      ibadahKicker: "WORSHIP & SPIRITUAL SUITE",
+      ibadahTitle: "Worship Center, Dhikr & Duas Collection",
+      ibadahDesc: "Enhance your daily worship with the tactile Digital Tasbih, precision Kaaba Qibla Compass, 40 Rabbana Quran Duas, 30-Juz Tilawah Tracker, and personal Ayah Tadabbur reflections.",
+      tabTasbih: "Digital Tasbih",
+      tabDoa: "Quranic & Daily Duas",
+      tabKiblat: "Qibla Direction",
+      tabKhatam: "30-Juz Khatam Tracker",
+      tabTadabbur: "Tadabbur Notes",
+      tasbihPressHint: "Tap to Count",
+      tasbihLapsLabel: "Laps Completed",
+      tasbihDailyLabel: "Today's Total",
+      tasbihResetBtn: "🔄 Reset Count",
+      tasbihSoundOn: "🔊 Click Sound: ON",
+      tasbihSoundOff: "🔇 Click Sound: OFF",
+      tasbihLapToast: "🎉 Target completed! Lap ",
+      tasbihResetToast: "🔄 Tasbih counter reset",
+      qiblaTitle: "🧭 High-Precision Kaaba Qibla Compass",
+      qiblaDesc: "Calculates the shortest great-circle bearing towards the holy Kaaba in Makkah al-Mukarramah (21.4225° N, 39.8262° E).",
+      qiblaLblAngle: "Degree Angle",
+      qiblaLblCardinal: "Heading Direction",
+      qiblaLblDist: "Distance to Kaaba",
+      qiblaRefLabel: "📍 Reference Location:",
+      qiblaGpsBtn: "📡 Update My GPS Position",
+      doaSearchPlaceholder: "Search prayers by title, meaning, Arabic text, or verse (e.g. forgiveness, parents, 2:201)...",
+      doaFilterAll: "All Prayers",
+      doaFilterRabbana: "📖 40 Rabbana Duas (Quran)",
+      doaFilterHarian: "🤲 Daily Prayers",
+      doaFilterFav: "⭐ My Favorites",
+      doaBtnCopy: "📋 Copy",
+      doaBtnShare: "📤 Share",
+      doaBtnOpen: "📖 Open in Quran",
+      doaCopiedToast: "📋 Prayer text copied to clipboard!",
+      doaFavAdded: "⭐ Added to Favorite Prayers",
+      doaFavRemoved: "Removed from Favorites",
+      doaEmptyTitle: "No prayers found",
+      doaEmptyDesc: "Try another search keyword or filter.",
+      khatamTitle: "🎯 30-Juz Tilawah Progress & Goal",
+      khatamDesc: "Mark each completed juz to track your full Quran completion journey.",
+      khatamBtnRead: "📖 Read",
+      khatamBtnDone: "Done",
+      khatamBtnMark: "Mark",
+      khatamToastDone: "✅ Juz marked as completed!",
+      khatamToastUndone: "Juz unchecked",
+      tadabburTitle: "📝 Ayah Reflection & Tadabbur Journal",
+      tadabburDesc: "Collection of spiritual insights and life reflections recorded while reading the Quran.",
+      tadabburEmptyTitle: "No reflection notes yet",
+      tadabburEmptyDesc: "Click the 📝 icon beside any verse in the reader to write your reflection.",
+      tadabburBtnOpen: "📖 Open Verse",
+      tadabburBtnEdit: "✏️ Edit",
+      tadabburModalBadge: "📝 Ayah Reflection / Tadabbur",
+      tadabburModalIntro: "Write your personal reflections, insights, or life lessons from this verse. Your reflections are stored privately on your device.",
+      tadabburModalPlaceholder: "Write your contemplation here...",
+      tadabburModalDelete: "🗑️ Delete Note",
+      tadabburModalCancel: "Cancel",
+      tadabburModalSave: "💾 Save Note",
+      tadabburToastSaved: "💾 Reflection note saved!",
+      tadabburToastDeleted: "🗑️ Reflection note deleted",
+      cardinals: ['North (N)', 'Northeast (NE)', 'East (E)', 'Southeast (SE)', 'South (S)', 'Southwest (SW)', 'West (W)', 'Northwest (NW)']
+    },
+    id: {
+      ibadahKicker: "PUSAT IBADAH & SPIRITUALITAS",
+      ibadahTitle: "Pusat Ibadah, Dzikir & Koleksi Doa",
+      ibadahDesc: "Lengkapi ibadah harian Anda dengan Tasbih Digital haptic, Kompas Arah Kiblat presisi Ka'bah, 40 Doa Rabbana Al-Qur'an, Jurnal Khatam 30 Juz, dan Catatan Tadabbur Ayat.",
+      tabTasbih: "Tasbih Digital",
+      tabDoa: "Doa Al-Qur'an & Harian",
+      tabKiblat: "Arah Kiblat",
+      tabKhatam: "Jurnal Khatam 30 Juz",
+      tabTadabbur: "Catatan Tadabbur",
+      tasbihPressHint: "Ketuk untuk Dzikir",
+      tasbihLapsLabel: "Putaran Selesai",
+      tasbihDailyLabel: "Total Hari Ini",
+      tasbihResetBtn: "🔄 Reset Hitungan",
+      tasbihSoundOn: "🔊 Suara Klik: Aktif",
+      tasbihSoundOff: "🔇 Suara Klik: Hening",
+      tasbihLapToast: "🎉 Target tercapai! Putaran ke-",
+      tasbihResetToast: "🔄 Counter tasbih di-reset",
+      qiblaTitle: "🧭 Kompas Arah Kiblat Presisi Ka'bah",
+      qiblaDesc: "Menghitung sudut rotasi terpendek (lingkaran besar) menuju Ka'bah di Makkah Al-Mukarramah (21.4225° N, 39.8262° E).",
+      qiblaLblAngle: "Sudut Derajat",
+      qiblaLblCardinal: "Arah Mata Angin",
+      qiblaLblDist: "Jarak ke Ka'bah",
+      qiblaRefLabel: "📍 Lokasi Rujukan:",
+      qiblaGpsBtn: "📡 Perbarui Posisi GPS Saya",
+      doaSearchPlaceholder: "Cari doa berdasarkan judul, makna, lafadz Arab, atau nomor ayat (contoh: sapu jagad, orang tua, 2:201)...",
+      doaFilterAll: "Semua Doa",
+      doaFilterRabbana: "📖 40 Doa Rabbana (Al-Qur'an)",
+      doaFilterHarian: "🤲 Doa Pilihan Harian",
+      doaFilterFav: "⭐ Favorit Saya",
+      doaBtnCopy: "📋 Salin",
+      doaBtnShare: "📤 Bagikan",
+      doaBtnOpen: "📖 Buka di Al-Qur'an",
+      doaCopiedToast: "📋 Teks doa berhasil disalin!",
+      doaFavAdded: "⭐ Ditambahkan ke Doa Favorit",
+      doaFavRemoved: "Dihapus dari Favorit",
+      doaEmptyTitle: "Tidak ada doa yang cocok",
+      doaEmptyDesc: "Coba kata kunci pencarian atau kategori lain.",
+      khatamTitle: "🎯 Target & Kemajuan Tilawah 30 Juz",
+      khatamDesc: "Tandai setiap juz yang telah selesai dibaca untuk memantau perjalanan khatam Al-Qur'an Anda.",
+      khatamBtnRead: "📖 Baca",
+      khatamBtnDone: "Selesai",
+      khatamBtnMark: "Tandai",
+      khatamToastDone: "✅ Juz ditandai selesai!",
+      khatamToastUndone: "Tanda Juz dihapus",
+      tadabburTitle: "📝 Jurnal Refleksi & Catatan Tadabbur Ayat",
+      tadabburDesc: "Kumpulan mutiara hikmah dan renungan pribadi yang Anda catat saat membaca ayat-ayat Al-Qur'an.",
+      tadabburEmptyTitle: "Belum ada catatan tadabbur",
+      tadabburEmptyDesc: "Klik tombol 📝 di samping ayat mana saja di pembaca Al-Qur'an untuk menambahkan renungan Anda.",
+      tadabburBtnOpen: "📖 Buka Ayat",
+      tadabburBtnEdit: "✏️ Ubah",
+      tadabburModalBadge: "📝 Catatan Tadabbur Ayat",
+      tadabburModalIntro: "Tuliskan renungan pribadi, hikmah, atau pengingat hidup dari ayat ini. Catatan tersimpan aman di perangkat Anda.",
+      tadabburModalPlaceholder: "Tuliskan refleksi tadabbur Anda di sini...",
+      tadabburModalDelete: "🗑️ Hapus Catatan",
+      tadabburModalCancel: "Batal",
+      tadabburModalSave: "💾 Simpan Refleksi",
+      tadabburToastSaved: "💾 Catatan tadabbur berhasil disimpan!",
+      tadabburToastDeleted: "🗑️ Catatan tadabbur dihapus",
+      cardinals: ['Utara (N)', 'Timur Laut (NE)', 'Timur (E)', 'Tenggara (SE)', 'Selatan (S)', 'Barat Daya (SW)', 'Barat (W)', 'Barat Laut (NW)']
+    },
+    ar: {
+      ibadahKicker: "مركز العبادات والإيمانيات",
+      ibadahTitle: "مركز العبادات والأذكار وموسوعة الأدعية",
+      ibadahDesc: "عطّر يومك بالذكر مع المسبحة الرقمية التفاعلية، وبوصلة القبلة الدقيقة نحو الكعبة المشرفة، و40 دعاء ربنا من القرآن، ومتابعة ختمة الـ 30 جزءاً، وخواطر التدبر القرآني.",
+      tabTasbih: "المسبحة الرقمية",
+      tabDoa: "أدعية القرآن والأذكار",
+      tabKiblat: "اتجاه القبلة",
+      tabKhatam: "متابعة الختمة (30 جزء)",
+      tabTadabbur: "خواطر التدبر",
+      tasbihPressHint: "انقر للتسبيح",
+      tasbihLapsLabel: "الدورات المكتملة",
+      tasbihDailyLabel: "مجموع اليوم",
+      tasbihResetBtn: "🔄 إعادة ضبط",
+      tasbihSoundOn: "🔊 صوت النقر: مفعّل",
+      tasbihSoundOff: "🔇 صوت النقر: صامت",
+      tasbihLapToast: "🎉 اكتمل الهدف! الدورة رقم ",
+      tasbihResetToast: "🔄 تم تصفير العداد",
+      qiblaTitle: "🧭 بوصلة اتجاه القبلة الدقيقة",
+      qiblaDesc: "حساب أقصر مسار دائري عظيم باتجاه الكعبة المشرفة بمكة المكرمة.",
+      qiblaLblAngle: "درجة الزاوية",
+      qiblaLblCardinal: "الاتجاه",
+      qiblaLblDist: "المسافة إلى الكعبة",
+      qiblaRefLabel: "📍 الموقع الحالي:",
+      qiblaGpsBtn: "📡 تحديث الموقع (GPS)",
+      doaSearchPlaceholder: "ابحث عن دعاء بالعنوان، المعنى، الآية...",
+      doaFilterAll: "جميع الأدعية",
+      doaFilterRabbana: "📖 40 دعاء ربنا (القرآن)",
+      doaFilterHarian: "🤲 أدعية يومية مختارة",
+      doaFilterFav: "⭐ أدعيتي المفضلة",
+      doaBtnCopy: "📋 نسخ",
+      doaBtnShare: "📤 مشاركة",
+      doaBtnOpen: "📖 فتح في المصحف",
+      doaCopiedToast: "📋 تم نسخ نص الدعاء!",
+      doaFavAdded: "⭐ أُضيف إلى الأدعية المفضلة",
+      doaFavRemoved: "أُزيل من المفضلة",
+      doaEmptyTitle: "لم يتم العثور على أدعية",
+      doaEmptyDesc: "جرّب كلمة بحث أخرى.",
+      khatamTitle: "🎯 متابعة ختمة الـ 30 جزءاً",
+      khatamDesc: "سجّل إنجاز كل جزء لمتابعة مسيرتك المباركة في ختم كتاب الله.",
+      khatamBtnRead: "📖 قراءة",
+      khatamBtnDone: "تم",
+      khatamBtnMark: "تحديد",
+      khatamToastDone: "✅ تم تسجيل إنجاز الجزء!",
+      khatamToastUndone: "تم إلغاء التحديد",
+      tadabburTitle: "📝 سجل التأمل وتدبر الآيات",
+      tadabburDesc: "مستودعك الشخصي للفوائد والخواطر الإيمانية أثناء قراءة القرآن الكريم.",
+      tadabburEmptyTitle: "لا توجد خواطر مسجلة بعد",
+      tadabburEmptyDesc: "انقر على أيقونة 📝 بجوار أي آية لتدوين خواطرك.",
+      tadabburBtnOpen: "📖 فتح الآية",
+      tadabburBtnEdit: "✏️ تعديل",
+      tadabburModalBadge: "📝 تدبر الآية الكريمة",
+      tadabburModalIntro: "دوّن تأملاتك وخواطرك وما فتح الله عليك به من هدايات هذه الآية.",
+      tadabburModalPlaceholder: "اكتب خاطرتك الإيمانية هنا...",
+      tadabburModalDelete: "🗑️ حذف الخاطرة",
+      tadabburModalCancel: "إلغاء",
+      tadabburModalSave: "💾 حفظ التدبر",
+      tadabburToastSaved: "💾 تم حفظ خاطرة التدبر بنجاح!",
+      tadabburToastDeleted: "🗑️ تم حذف الخاطرة",
+      cardinals: ['شمال (N)', 'شمال شرقي (NE)', 'شرق (E)', 'جنوب شرقي (SE)', 'جنوب (S)', 'جنوب غربي (SW)', 'غرب (W)', 'شمال غربي (NW)']
+    },
+    tr: {
+      ibadahKicker: "İBADET VE MANEVİYAT MERKEZİ",
+      ibadahTitle: "İbadet Merkezi, Zikir ve Dualar",
+      ibadahDesc: "Dokunmatik Dijital Tesbih, hassas Kıble pusulası, 40 Kuran Rabbena duası, 30 Cüz hatim takibi ve ayet tefekkür notlarıyla ibadetinizi zenginleştirin.",
+      tabTasbih: "Dijital Tesbih",
+      tabDoa: "Kuran & Günlük Dualar",
+      tabKiblat: "Kıble Yönü",
+      tabKhatam: "30 Cüz Hatim Takibi",
+      tabTadabbur: "Tefekkür Notları",
+      tasbihPressHint: "Saymak için dokun",
+      tasbihLapsLabel: "Tamamlanan Tur",
+      tasbihDailyLabel: "Bugünkü Toplam",
+      tasbihResetBtn: "🔄 Sayacı Sıfırla",
+      tasbihSoundOn: "🔊 Tıklama Sesi: Açık",
+      tasbihSoundOff: "🔇 Tıklama Sesi: Kapalı",
+      tasbihLapToast: "🎉 Hedef tamamlandı! Tur: ",
+      tasbihResetToast: "🔄 Tesbih sayacı sıfırlandı",
+      qiblaTitle: "🧭 Hassas Kâbe Kıble Pusulası",
+      qiblaDesc: "Mekke-i Mükerreme'deki Kâbe'ye (21.4225° K, 39.8262° D) en kısa büyük daire açısını hesaplar.",
+      qiblaLblAngle: "Açı Derecesi",
+      qiblaLblCardinal: "Pusula Yönü",
+      qiblaLblDist: "Kâbe'ye Mesafe",
+      qiblaRefLabel: "📍 Konum:",
+      qiblaGpsBtn: "📡 GPS Konumumu Güncelle",
+      doaSearchPlaceholder: "Dua başlığı, anlamı veya ayet numarası ile ara...",
+      doaFilterAll: "Tüm Dualar",
+      doaFilterRabbana: "📖 40 Rabbena Duası (Kuran)",
+      doaFilterHarian: "🤲 Günlük Dualar",
+      doaFilterFav: "⭐ Favorilerim",
+      doaBtnCopy: "📋 Kopyala",
+      doaBtnShare: "📤 Paylaş",
+      doaBtnOpen: "📖 Kuran'da Aç",
+      doaCopiedToast: "📋 Dua metni kopyalandı!",
+      doaFavAdded: "⭐ Favorilere eklendi",
+      doaFavRemoved: "Favorilerden çıkarıldı",
+      doaEmptyTitle: "Dua bulunamadı",
+      doaEmptyDesc: "Farklı bir arama terimi deneyin.",
+      khatamTitle: "🎯 30 Cüz Hatim Takibi ve Hedefi",
+      khatamDesc: "Hatim yolculuğunuzu takip etmek için okuduğunuz her cüzü işaretleyin.",
+      khatamBtnRead: "📖 Oku",
+      khatamBtnDone: "Bitti",
+      khatamBtnMark: "İşaretle",
+      khatamToastDone: "✅ Cüz tamamlandı olarak işaretlendi!",
+      khatamToastUndone: "İşaret kaldırıldı",
+      tadabburTitle: "📝 Ayet Tefekkür ve Not Defteri",
+      tadabburDesc: "Kuran okurken çıkardığınız manevi dersler ve kişisel notlarınız.",
+      tadabburEmptyTitle: "Henüz tefekkür notu yok",
+      tadabburEmptyDesc: "Okuyucuda herhangi bir ayetin yanındaki 📝 simgesine tıklayarak not ekleyin.",
+      tadabburBtnOpen: "📖 Ayeti Aç",
+      tadabburBtnEdit: "✏️ Düzenle",
+      tadabburModalBadge: "📝 Ayet Tefekkürü",
+      tadabburModalIntro: "Bu ayetten çıkardığınız kişisel dersleri ve tefekkürlerinizi buraya kaydedin.",
+      tadabburModalPlaceholder: "Tefekkürünüzü buraya yazın...",
+      tadabburModalDelete: "🗑️ Notu Sil",
+      tadabburModalCancel: "İptal",
+      tadabburModalSave: "💾 Kaydet",
+      tadabburToastSaved: "💾 Tefekkür notu kaydedildi!",
+      tadabburToastDeleted: "🗑️ Tefekkür notu silindi",
+      cardinals: ['Kuzey (N)', 'Kuzeydoğu (NE)', 'Doğu (E)', 'Güneydoğu (SE)', 'Güney (S)', 'Güneybatı (SW)', 'Batı (W)', 'Kuzeybatı (NW)']
+    },
+    ms: {
+      ibadahKicker: "PUSAT IBADAH & SPIRITUAL",
+      ibadahTitle: "Pusat Ibadah, Zikir & Koleksi Doa",
+      ibadahDesc: "Lengkapkan ibadah harian anda dengan Tasbih Digital haptik, Kompas Arah Kiblat tepat Kaabah, 40 Doa Rabbana Al-Quran, Jurnal Khatam 30 Juzuk dan Catatan Tadabbur Ayat.",
+      tabTasbih: "Tasbih Digital",
+      tabDoa: "Doa Al-Quran & Harian",
+      tabKiblat: "Arah Kiblat",
+      tabKhatam: "Jurnal Khatam 30 Juzuk",
+      tabTadabbur: "Catatan Tadabbur",
+      tasbihPressHint: "Ketik untuk Berzikir",
+      tasbihLapsLabel: "Pusingan Selesai",
+      tasbihDailyLabel: "Jumlah Hari Ini",
+      tasbihResetBtn: "🔄 Set Semula Hitungan",
+      tasbihSoundOn: "🔊 Bunyi Klik: Aktif",
+      tasbihSoundOff: "🔇 Bunyi Klik: Senyap",
+      tasbihLapToast: "🎉 Sasaran tercapai! Pusingan ke-",
+      tasbihResetToast: "🔄 Kiraan tasbih diset semula",
+      qiblaTitle: "🧭 Kompas Arah Kiblat Kaabah Tepat",
+      qiblaDesc: "Mengira sudut putaran terpendek (bulatan agung) ke Kaabah di Makkah Al-Mukarramah.",
+      qiblaLblAngle: "Sudut Darjah",
+      qiblaLblCardinal: "Arah Mata Angin",
+      qiblaLblDist: "Jarak ke Kaabah",
+      qiblaRefLabel: "📍 Lokasi Rujukan:",
+      qiblaGpsBtn: "📡 Kemas Kini Posisi GPS Saya",
+      doaSearchPlaceholder: "Cari doa mengikut tajuk, makna, lafaz Arab...",
+      doaFilterAll: "Semua Doa",
+      doaFilterRabbana: "📖 40 Doa Rabbana (Al-Quran)",
+      doaFilterHarian: "🤲 Doa Pilihan Harian",
+      doaFilterFav: "⭐ Kegemaran Saya",
+      doaBtnCopy: "📋 Salin",
+      doaBtnShare: "📤 Kongsi",
+      doaBtnOpen: "📖 Buka dalam Al-Quran",
+      doaCopiedToast: "📋 Teks doa berjaya disalin!",
+      doaFavAdded: "⭐ Ditambah ke Doa Kegemaran",
+      doaFavRemoved: "Dibuang daripada Kegemaran",
+      doaEmptyTitle: "Tiada doa dijumpai",
+      doaEmptyDesc: "Cuba kata kunci pencarian yang lain.",
+      khatamTitle: "🎯 Matlamat & Kemajuan 30 Juzuk",
+      khatamDesc: "Tandakan setiap juzuk yang telah dibaca untuk memantau perjalanan khatam Al-Quran anda.",
+      khatamBtnRead: "📖 Baca",
+      khatamBtnDone: "Selesai",
+      khatamBtnMark: "Tanda",
+      khatamToastDone: "✅ Juzuk ditandakan selesai!",
+      khatamToastUndone: "Tanda juzuk dipadamkan",
+      tadabburTitle: "📝 Jurnal Refleksi & Catatan Tadabbur",
+      tadabburDesc: "Koleksi mutiara hikmah dan renungan peribadi anda semasa membaca Al-Quran.",
+      tadabburEmptyTitle: "Belum ada catatan tadabbur",
+      tadabburEmptyDesc: "Klik butang 📝 di sebelah ayat dalam pembaca untuk mencatat renungan.",
+      tadabburBtnOpen: "📖 Buka Ayat",
+      tadabburBtnEdit: "✏️ Ubah",
+      tadabburModalBadge: "📝 Catatan Tadabbur Ayat",
+      tadabburModalIntro: "Catatkan renungan peribadi dan hikmah ayat ini. Catatan disimpan secara peribadi pada peranti anda.",
+      tadabburModalPlaceholder: "Tuliskan refleksi tadabbur anda di sini...",
+      tadabburModalDelete: "🗑️ Padam Catatan",
+      tadabburModalCancel: "Batal",
+      tadabburModalSave: "💾 Simpan Refleksi",
+      tadabburToastSaved: "💾 Catatan tadabbur berjaya disimpan!",
+      tadabburToastDeleted: "🗑️ Catatan tadabbur dipadamkan",
+      cardinals: ['Utara (N)', 'Timur Laut (NE)', 'Timur (E)', 'Tenggara (SE)', 'Selatan (S)', 'Barat Daya (SW)', 'Barat (W)', 'Barat Laut (NW)']
+    }
+  };
+
+  function getI18n() {
+    const l = getCurLang();
+    return IBADAH_I18N[l] || IBADAH_I18N.en || IBADAH_I18N.id;
+  }
+
+  function getPresetText(preset, lang) {
+    const titles = {
+      subhanallah: { id: 'Subhanallah (33x)', en: 'Subhanallah (33x)', fr: 'Subhanallah (33x)', ar: 'سبحان الله (33x)', ur: 'سبحان اللہ (33x)', tr: 'Sübhanallah (33x)', bn: 'সুবহানাল্লাহ (৩৩x)', ms: 'Subhanallah (33x)' },
+      alhamdulillah: { id: 'Alhamdulillah (33x)', en: 'Alhamdulillah (33x)', fr: 'Alhamdulillah (33x)', ar: 'الحمد لله (33x)', ur: 'الحمد للہ (33x)', tr: 'Elhamdülillah (33x)', bn: 'আলহামদুলিল্লাহ (৩৩x)', ms: 'Alhamdulillah (33x)' },
+      allahuakbar: { id: 'Allahu Akbar (33x)', en: 'Allahu Akbar (33x)', fr: 'Allahu Akbar (33x)', ar: 'الله أكبر (33x)', ur: 'اللہ اکبر (33x)', tr: 'Allahu Ekber (33x)', bn: 'আল্লাহু আকবার (৩৩x)', ms: 'Allahu Akbar (33x)' },
+      tahlil: { id: 'Tahlil Lengkap (100x)', en: 'Full Tahlil (100x)', fr: 'Tahlil complet (100x)', ar: 'التهليل التام (100x)', ur: 'مکمل تہلیل (100x)', tr: 'Tam Tevhid (100x)', bn: 'পূর্ণ তাহলিল (১০০x)', ms: 'Tahlil Lengkap (100x)' },
+      istighfar: { id: 'Istighfar (100x)', en: 'Istighfar (100x)', fr: 'Istighfar (100x)', ar: 'الاستغفار (100x)', ur: 'استغفار (100x)', tr: 'İstiğfar (100x)', bn: 'ইস্তিগফার (১০০x)', ms: 'Istighfar (100x)' },
+      shalawat: { id: 'Shalawat Nabi (100x)', en: 'Salawat on Prophet (100x)', fr: 'Prière sur le Prophète (100x)', ar: 'الصلاة على النبي (100x)', ur: 'درود شریف (100x)', tr: 'Salavat-ı Şerife (100x)', bn: 'দরূদ শরীফ (১০০x)', ms: 'Selawat Nabi (100x)' },
+      hauqalah: { id: 'Hauqalah (33x)', en: 'Hauqalah (33x)', fr: 'Hauqalah (33x)', ar: 'الحوقلة (33x)', ur: 'حوقلہ (33x)', tr: 'Havkele (33x)', bn: 'হাওকালা (৩৩x)', ms: 'Hauqalah (33x)' },
+    };
+
+    const meanings = {
+      subhanallah: {
+        id: 'Maha Suci Allah',
+        en: 'Glory be to Allah',
+        fr: 'Gloire à Allah',
+        ar: 'سبحان الله وبحمده',
+        ur: 'اللہ ہر عیب سے پاک ہے',
+        tr: 'Allah her türlü noksanlıktan münezzehtir',
+        bn: 'আল্লাহ পরম পবিত্র',
+        ms: 'Maha Suci Allah'
+      },
+      alhamdulillah: {
+        id: 'Segala puji bagi Allah',
+        en: 'All praise is due to Allah',
+        fr: 'Louange à Allah',
+        ar: 'الحمد لله رب العالمين',
+        ur: 'تمام تعریفیں اللہ کے لیے ہیں',
+        tr: 'Bütün hamt ve övgüler Allah\'a aittir',
+        bn: 'সকল প্রশংসা আল্লাহর জন্য',
+        ms: 'Segala puji bagi Allah'
+      },
+      allahuakbar: {
+        id: 'Allah Maha Besar',
+        en: 'Allah is the Greatest',
+        fr: 'Allah est le Plus Grand',
+        ar: 'الله أكبر من كل شيء',
+        ur: 'اللہ سب سے بڑا ہے',
+        tr: 'Allah en büyüktür',
+        bn: 'আল্লাহ সর্বশ্রেষ্ঠ',
+        ms: 'Allah Maha Besar'
+      },
+      tahlil: {
+        id: 'Tiada tuhan selain Allah yang Maha Esa, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan segala pujian, dan Dia Maha Kuasa atas segala sesuatu.',
+        en: 'There is no deity except Allah alone, without partner. His is the dominion and to Him belongs praise, and He is over all things competent.',
+        fr: 'Il n\'y a de divinité digne d\'adoration qu\'Allah Seul, sans associé. À Lui la royauté et la louange, et Il est Omnipotent.',
+        ar: 'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.',
+        ur: 'اللہ کے سوا کوئی معبود نہیں، وہ یکتا ہے، اس کا کوئی شریک نہیں۔ اسی کی بادشاہی اور تعریف ہے، اور وہ ہر چیز پر قادر ہے۔',
+        tr: 'Allah\'tan başka ilah yoktur, O tektir ve ortağı yoktur. Mülk O\'nundur, hamd O\'nadır ve O her şeye kadirdir.',
+        bn: 'আল্লাহ ব্যতীত কোনো সত্য উপাস্য নেই, তিনি একক, তাঁর কোনো অংশীদার নেই। রাজত্ব একমাত্র তাঁরই এবং সমস্ত প্রশংসা তাঁরই।',
+        ms: 'Tiada tuhan selain Allah Yang Maha Esa, tiada sekutu bagi-Nya. Bagi-Nya kerajaan dan segala pujian, dan Dia Maha Kuasa atas segala sesuatu.'
+      },
+      istighfar: {
+        id: 'Aku memohon ampun kepada Allah yang Maha Agung dan bertobat kepada-Nya.',
+        en: 'I seek the forgiveness of Allah the Almighty and I repent unto Him.',
+        fr: 'Je demande pardon à Allah le Tout-Puissant et je me repens à Lui.',
+        ar: 'أستغفر الله العظيم وأتوب إليه.',
+        ur: 'میں اللہ عظمت والے سے بخشش مانگتا ہوں اور اسی کے حضور توبہ کرتا ہوں۔',
+        tr: 'Yüce Allah\'tan mağfiret diler ve O\'na tövbe ederim.',
+        bn: 'আমি মহান আল্লাহর কাছে ক্ষমা প্রার্থনা করছি এবং তাঁরই কাছে তওবা করছি।',
+        ms: 'Aku memohon ampun kepada Allah Yang Maha Agung dan bertaubat kepada-Nya.'
+      },
+      shalawat: {
+        id: 'Ya Allah, limpahkanlah rahmat kepada junjungan kami Nabi Muhammad dan keluarganya.',
+        en: 'O Allah, bestow Your blessings upon our Master Muhammad and upon the family of Muhammad.',
+        fr: 'Ô Allah, répands Tes bénédictions sur notre Maître Muhammad et sur la famille de Muhammad.',
+        ar: 'اللهم صلِّ على محمد وعلى آل محمد.',
+        ur: 'اے اللہ! ہمارے آقا محمد اور ان کی آل پر رحمت و درود نازل فرما۔',
+        tr: 'Allah\'ım! Efendimiz Muhammed\'e ve ailesine salât ve selâm eyle.',
+        bn: 'হে আল্লাহ! আমাদের নেতা মুহাম্মদ ﷺ এবং তাঁর পরিবারের ওপর রহমত বর্ষণ করুন।',
+        ms: 'Ya Allah, limpahkanlah rahmat ke atas junjungan kami Nabi Muhammad dan keluarganya.'
+      },
+      hauqalah: {
+        id: 'Tiada daya dan kekuatan melainkan dengan pertolongan Allah yang Maha Tinggi lagi Maha Agung.',
+        en: 'There is no power and no strength except with Allah, the Most High, the Most Supreme.',
+        fr: 'Il n\'y a de force ni de puissance que par Allah, le Très-Haut, l\'Immense.',
+        ar: 'لا حول ولا قوة إلا بالله العلي العظيم.',
+        ur: 'گناہوں سے بچنے کی طاقت اور نیکی کرنے کی قوت صرف بلند و برتر اللہ کی توفیق سے ہے۔',
+        tr: 'Güç ve kuvvet ancak Yüce ve Büyük olan Allah\'tandır.',
+        bn: 'মহীয়ান ও গরীয়ান আল্লাহর সাহায্য ছাড়া কোনো উপায় ও ক্ষমতা নেই।',
+        ms: 'Tiada daya dan kekuatan melainkan dengan pertolongan Allah Yang Maha Tinggi lagi Maha Agung.'
+      }
+    };
+
+    const rewards = {
+      subhanallah: {
+        id: 'Dihapus dosanya meski sebanyak buih di lautan.',
+        en: 'Sins are forgiven even if they are like the foam of the sea.',
+        fr: 'Les péchés sont effacés même s\'ils égalent l\'écume de la mer.',
+        ar: 'حُطَّتْ خطاياه وإن كانت مثل زبد البحر.',
+        ur: 'گناہ معاف کر دیے جاتے ہیں چاہے سمندر کے جھاگ جتنے ہوں۔',
+        tr: 'Deniz köpüğü kadar günahı olsa bağışlanır.',
+        bn: 'সমুদ্রের ফেনার মতো পাপ হলেও ক্ষমা করা হয়।',
+        ms: 'Dihapuskan dosanya walaupun sebanyak buih di lautan.'
+      },
+      alhamdulillah: {
+        id: 'Memenuhi timbangan amal kebaikan (mizan).',
+        en: 'Fills the Scale of good deeds with abundant reward.',
+        fr: 'Remplit la Balance des bonnes actions d\'immenses mérites.',
+        ar: 'تملأ الميزان بالأجر والبركة.',
+        ur: 'میزان کو نیکیوں سے بھر دیتا ہے۔',
+        tr: 'Sevabıyla mizanı doldurur.',
+        bn: 'নেকির পাল্লা পরিপূর্ণ করে।',
+        ms: 'Memenuhi timbangan amal kebaikan (mizan).'
+      },
+      allahuakbar: {
+        id: 'Mengagungkan kebesaran Allah di langit dan bumi.',
+        en: 'Magnifying the supreme grandeur of Allah in heavens and earth.',
+        fr: 'Proclame la suprématie et la grandeur d\'Allah dans les cieux et sur terre.',
+        ar: 'تعظيم لعظمة الله في السماوات والأرض.',
+        ur: 'آسمانوں اور زمین میں اللہ کی عظمت کا اقرار۔',
+        tr: 'Göklerde ve yerde Allah\'ın yüceliğini ikrar etmek.',
+        bn: 'আসমান ও জমিনে আল্লাহর শ্রেষ্ঠত্বের ঘোষণা।',
+        ms: 'Mengagungkan kebesaran Allah di langit dan bumi.'
+      },
+      tahlil: {
+        id: 'Pahalanya seperti memerdekakan 10 budak dan benteng dari setan seharian.',
+        en: 'Equal to freeing 10 slaves and serves as a shield from Shaytan all day.',
+        fr: 'Équivaut à affranchir 10 esclaves et constitue un bouclier contre Satan tout le jour.',
+        ar: 'تعدل عتق عشر رقاب وحرز من الشيطان يومه ذلك.',
+        ur: 'دس غلام آزاد کرنے کے برابر ثواب اور دن بھر شیطان سے حفاظت۔',
+        tr: 'On köle azat etmeye denk ve gün boyu şeytana karşı kalkandır.',
+        bn: '১০টি দাস মুক্ত করার সমতুল্য এবং সারাদিন শয়তান থেকে সুরক্ষা।',
+        ms: 'Pahalanya seperti memerdekakan 10 hamba dan benteng daripada syaitan seharian.'
+      },
+      istighfar: {
+        id: 'Membuka pintu rezeki yang tak disangka dan jalan keluar dari kesempitan.',
+        en: 'Opens doors of unexpected sustenance and provides relief from hardship.',
+        fr: 'Ouvre les portes d\'une subsistance inattendue et soulage de toute détresse.',
+        ar: 'فتح لأبواب الرزق من حيث لا يحتسب ومخرج من كل ضيق.',
+        ur: 'بے گمان رزق کے دروازے کھولتا ہے اور ہر تنگی سے نجات دیتا ہے۔',
+        tr: 'Beklenmedik rızık kapılarını açar ve darlıktan çıkış sağlar.',
+        bn: 'অভাবনীয় রিজিকের দ্বার উন্মুক্ত করে এবং সংকট থেকে মুক্তি দেয়।',
+        ms: 'Membuka pintu rezeki yang tidak disangka dan jalan keluar dari kesempitan.'
+      },
+      shalawat: {
+        id: 'Siapa bershalawat 1 kali, Allah membalasnya dengan 10 kebaikan dan ampunan.',
+        en: 'Whoever sends 1 blessing, Allah rewards him with 10 blessings and forgiveness.',
+        fr: 'Quiconque prie 1 fois sur le Prophète, Allah lui accorde 10 bénédictions.',
+        ar: 'من صلى عليَّ صلاة صلى الله عليه بها عشراً.',
+        ur: 'جو ایک بار درود بھیجے، اللہ اس پر دس رحمتیں نازل فرماتا ہے۔',
+        tr: 'Kim bir salavat getirirse, Allah ona on rahmet ve bağışlanma verir.',
+        bn: 'যে ১ বার দরূদ পাঠ করে, আল্লাহ তার প্রতি ১০টি রহমত বর্ষণ করেন।',
+        ms: 'Sesiapa berselawat 1 kali, Allah membalasnya dengan 10 kebaikan dan keampunan.'
+      },
+      hauqalah: {
+        id: 'Salah satu simpanan harta karun surga (kanzun min kunūzil-jannah).',
+        en: 'One of the precious treasures of Paradise (kanzun min kunooz al-Jannah).',
+        fr: 'L\'un des précieux trésors du Paradis (kanz min kunūz al-Jannah).',
+        ar: 'كنز من كنوز الجنة وباب من أبواب الخير.',
+        ur: 'جنت کے خزانوں میں سے ایک قیمتی خزانہ ہے۔',
+        tr: 'Cennet hazinelerinden paha biçilmez bir hazinedir.',
+        bn: 'জান্নাতের মূল্যবান রত্নভাণ্ডারসমূহের একটি।',
+        ms: 'Salah satu simpanan harta karun syurga (kanzun min kunuzil-jannah).'
+      }
+    };
+
+    const id = preset.id;
+    return {
+      title: (titles[id] && (titles[id][lang] || titles[id].en)) || preset.latin,
+      meaning: (meanings[id] && (meanings[id][lang] || meanings[id].en)) || preset.meaningEn || preset.meaningId,
+      reward: (rewards[id] && (rewards[id][lang] || rewards[id].en)) || preset.reward
+    };
+  }
+
   // ============================================================
   // 3. DATASET: TASBIH PRESETS
   // ============================================================
@@ -498,6 +1039,8 @@
     const rewardEl = document.getElementById('tasbih-text-reward');
 
     const curPreset = TASBIH_PRESETS.find(p => p.id === tasbihState.presetId) || TASBIH_PRESETS[0];
+    const curLang = getCurLang();
+    const pText = getPresetText(curPreset, curLang);
 
     if (countEl) countEl.textContent = tasbihState.count;
     if (targetEl) targetEl.textContent = tasbihState.target ? `/ ${tasbihState.target}` : '∞';
@@ -507,11 +1050,10 @@
     if (arabicEl) arabicEl.textContent = curPreset.arabic;
     if (latinEl) latinEl.textContent = curPreset.latin;
     if (transEl) {
-      const isEn = window.state && window.state.language === 'en';
-      transEl.textContent = `"${isEn ? curPreset.meaningEn : curPreset.meaningId}"`;
+      transEl.textContent = `"${pText.meaning}"`;
     }
     if (rewardEl) {
-      rewardEl.textContent = `✨ ${curPreset.reward}`;
+      rewardEl.textContent = `✨ ${pText.reward}`;
     }
 
     if (ringEl && tasbihState.target > 0) {
@@ -542,8 +1084,8 @@
         try { navigator.vibrate([60, 50, 100]); } catch (e) {}
       }
       if (typeof window.showToast === 'function') {
-        const isEn = window.state && window.state.language === 'en';
-        window.showToast(isEn ? `🎉 Target completed! Lap ${tasbihState.laps}` : `🎉 Target tercapai! Putaran ke-${tasbihState.laps}`, 'success');
+        const t = getI18n();
+        window.showToast(`${t.tasbihLapToast}${tasbihState.laps}`, 'success');
       }
     }
 
@@ -555,7 +1097,8 @@
     tasbihState.laps = 0;
     updateTasbihUI();
     if (typeof window.showToast === 'function') {
-      window.showToast('🔄 Counter tasbih di-reset', 'info');
+      const t = getI18n();
+      window.showToast(t.tasbihResetToast, 'info');
     }
   }
 
@@ -605,7 +1148,8 @@
   }
 
   function getCardinalDirection(angle) {
-    const directions = ['Utara (N)', 'Timur Laut (NE)', 'Timur (E)', 'Tenggara (SE)', 'Selatan (S)', 'Barat Daya (SW)', 'Barat (W)', 'Barat Laut (NW)'];
+    const t = getI18n();
+    const directions = t.cardinals || ['Utara (N)', 'Timur Laut (NE)', 'Timur (E)', 'Tenggara (SE)', 'Selatan (S)', 'Barat Daya (SW)', 'Barat (W)', 'Barat Laut (NW)'];
     const idx = Math.round(angle / 45) % 8;
     return directions[idx];
   }
@@ -734,7 +1278,7 @@
     if (textVal) textVal.textContent = `${pct}%`;
     if (countVal) countVal.textContent = `${completed.length} / 30 Juz`;
 
-    const isEn = window.state && window.state.language === 'en';
+    const t = getI18n();
 
     grid.innerHTML = JUZ_METADATA.map(j => {
       const isDone = completed.includes(j.num);
@@ -747,12 +1291,12 @@
           <div class="kj-name">${j.name}</div>
           <div class="kj-meta">${j.surahName}</div>
           <div class="kj-actions">
-            <button class="kj-read-btn" onclick="openJuzReader(${j.startSurah}, ${j.startVerse})" title="Baca Juz ${j.num}">
-              📖 ${isEn ? 'Read' : 'Baca'}
+            <button class="kj-read-btn" onclick="openJuzReader(${j.startSurah}, ${j.startVerse})" title="Juz ${j.num}">
+              ${t.khatamBtnRead}
             </button>
             <label class="kj-check-label">
               <input type="checkbox" ${isDone ? 'checked' : ''} onchange="toggleJuzCompleted(${j.num})" />
-              <span>${isDone ? (isEn ? 'Done' : 'Selesai') : (isEn ? 'Mark' : 'Tandai')}</span>
+              <span>${isDone ? t.khatamBtnDone : t.khatamBtnMark}</span>
             </label>
           </div>
         </div>
@@ -760,21 +1304,6 @@
     }).join('');
   }
 
-  function openJuzReader(surahId, verseNum) {
-    if (typeof window.loadSurah === 'function') {
-      window.loadSurah(surahId, verseNum);
-    }
-    if (typeof window.navigateTo === 'function') {
-      window.navigateTo('quran');
-    }
-    if (typeof window.switchQuranView === 'function') {
-      window.switchQuranView('reader');
-    }
-  }
-
-  // ============================================================
-  // 8. DO\'A RABBANA & DO\'A HARIAN ENGINE
-  // ============================================================
   let currentDoaFilter = 'all';
   let currentDoaSearch = '';
 
@@ -797,8 +1326,8 @@
     renderDoaGrid();
 
     if (typeof window.showToast === 'function') {
-      const isEn = window.state && window.state.language === 'en';
-      window.showToast(favs.includes(doaId) ? (isEn ? '⭐ Added to Favorite Prayers' : '⭐ Ditambahkan ke Doa Favorit') : (isEn ? 'Removed from Favorites' : 'Dihapus dari Favorit'), 'success');
+      const t = getI18n();
+      window.showToast(favs.includes(doaId) ? t.doaFavAdded : t.doaFavRemoved, 'success');
     }
   }
 
@@ -806,22 +1335,22 @@
     const container = document.getElementById('doa-cards-grid');
     if (!container) return;
 
-    const isEn = window.state && window.state.language === 'en';
+    const t = getI18n();
+    const curLang = getCurLang();
+    const isEnOrFr = curLang === 'en' || curLang === 'fr';
     const favs = getFavoriteDoaList();
 
     const filtered = DOA_DATA.filter(d => {
-      // Category filter
       if (currentDoaFilter === 'rabbana' && d.category !== 'rabbana') return false;
       if (currentDoaFilter === 'harian' && d.category !== 'harian') return false;
       if (currentDoaFilter === 'fav' && !favs.includes(d.id)) return false;
 
-      // Text search
       if (currentDoaSearch) {
         const q = currentDoaSearch.toLowerCase();
-        const title = (isEn ? d.titleEn : d.title).toLowerCase();
+        const title = (isEnOrFr ? (d.titleEn || d.title) : d.title).toLowerCase();
         const arabic = d.arabic.toLowerCase();
         const latin = d.latin.toLowerCase();
-        const trans = (isEn ? d.transEn : d.transId).toLowerCase();
+        const trans = (isEnOrFr ? (d.transEn || d.transId) : d.transId).toLowerCase();
         const ref = (d.surahRef || '').toLowerCase();
         return title.includes(q) || arabic.includes(q) || latin.includes(q) || trans.includes(q) || ref.includes(q);
       }
@@ -832,8 +1361,8 @@
       container.innerHTML = `
         <div class="doa-empty-state">
           <div style="font-size: 2.2rem; margin-bottom: 8px;">🤲</div>
-          <div style="font-weight: 700; color: var(--text-primary); font-size: 1.05rem;">${isEn ? 'No prayers found' : 'Tidak ada doa yang cocok'}</div>
-          <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">${isEn ? 'Try another search keyword or filter.' : 'Coba kata kunci pencarian atau kategori lain.'}</div>
+          <div style="font-weight: 700; color: var(--text-primary); font-size: 1.05rem;">${t.doaEmptyTitle}</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">${t.doaEmptyDesc}</div>
         </div>
       `;
       return;
@@ -841,8 +1370,8 @@
 
     container.innerHTML = filtered.map(d => {
       const isFav = favs.includes(d.id);
-      const title = isEn ? d.titleEn : d.title;
-      const trans = isEn ? d.transEn : d.transId;
+      const title = isEnOrFr ? (d.titleEn || d.title) : d.title;
+      const trans = isEnOrFr ? (d.transEn || d.transId) : d.transId;
       const hasQuran = d.surahNum !== null && d.verseNum !== null;
 
       return `
@@ -854,7 +1383,7 @@
               </span>
               <span class="doa-ref-badge">${d.surahRef}</span>
             </div>
-            <button class="doa-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavoriteDoa('${d.id}')" title="Simpan Favorit">
+            <button class="doa-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavoriteDoa('${d.id}')" title="Favorit">
               ${isFav ? '⭐' : '☆'}
             </button>
           </div>
@@ -865,18 +1394,18 @@
           <div class="doa-latin-box">${d.latin}</div>
           <div class="doa-trans-box">"${trans}"</div>
 
-          ${d.context ? `<div class="doa-context-box"><strong>Konteks & Keutamaan:</strong> ${d.context}</div>` : ''}
+          ${d.context ? `<div class="doa-context-box"><strong>${curLang === 'fr' ? 'Contexte & Mérites :' : (curLang === 'en' ? 'Context & Virtues:' : 'Konteks & Keutamaan:')}</strong> ${d.context}</div>` : ''}
 
           <div class="doa-footer-actions">
-            <button class="doa-action-btn" onclick="copyDoaText('${d.id}')" title="Salin Doa">
-              📋 ${isEn ? 'Copy' : 'Salin'}
+            <button class="doa-action-btn" onclick="copyDoaText('${d.id}')">
+              ${t.doaBtnCopy}
             </button>
-            <button class="doa-action-btn" onclick="shareDoaModal('${d.id}')" title="Bagikan Doa">
-              📤 ${isEn ? 'Share' : 'Bagikan'}
+            <button class="doa-action-btn" onclick="shareDoaModal('${d.id}')">
+              ${t.doaBtnShare}
             </button>
             ${hasQuran ? `
-              <button class="doa-action-btn highlight" onclick="openDoaInQuran(${d.surahNum}, ${d.verseNum})" title="Buka Ayat di Al-Qur'an">
-                📖 ${isEn ? 'Open in Quran' : 'Buka di Al-Qur\'an'}
+              <button class="doa-action-btn highlight" onclick="openDoaInQuran(${d.surahNum}, ${d.verseNum})">
+                ${t.doaBtnOpen}
               </button>
             ` : ''}
           </div>
@@ -899,6 +1428,18 @@
           window.showToast(isEn ? '📋 Prayer copied to clipboard!' : '📋 Teks doa berhasil disalin!', 'success');
         }
       });
+    }
+  }
+
+  function openJuzReader(surahId, verseNum) {
+    if (typeof window.loadSurah === 'function') {
+      window.loadSurah(surahId, verseNum);
+    }
+    if (typeof window.navigateTo === 'function') {
+      window.navigateTo('quran');
+    }
+    if (typeof window.switchQuranView === 'function') {
+      window.switchQuranView('reader');
     }
   }
 
@@ -944,7 +1485,7 @@
     const curNote = notes[key] || { text: '', date: '' };
 
     const surah = (window.ALL_SURAHS || []).find(s => s.id === surahId) || { name: `Surah ${surahId}` };
-    const isEn = window.state && window.state.language === 'en';
+    const t = getI18n();
 
     let overlay = document.getElementById('tadabbur-modal-overlay');
     if (overlay) overlay.remove();
@@ -958,29 +1499,29 @@
         <button class="modal-close" onclick="document.getElementById('tadabbur-modal-overlay').remove()">✕</button>
         <div class="modal-content">
           <div class="mh-header" style="margin-bottom: 16px;">
-            <div class="mh-event-badge">📝 ${isEn ? 'Ayah Reflection / Tadabbur' : 'Catatan Tadabbur Ayat'}</div>
+            <div class="mh-event-badge">${t.tadabburModalBadge}</div>
             <h2 class="mh-title" style="font-size: 1.25rem;">${surah.name} : ${verseNum}</h2>
           </div>
 
           <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.5;">
-            ${isEn ? 'Write your personal reflections, insights, or life lessons from this verse. Your reflections are stored privately on your device.' : 'Tuliskan renungan pribadi, hikmah, atau pengingat hidup dari ayat ini. Catatan tersimpan aman di perangkat Anda.'}
+            ${t.tadabburModalIntro}
           </p>
 
-          <textarea id="tadabbur-text-input" class="tadabbur-textarea" placeholder="${isEn ? 'Write your contemplation here...' : 'Tuliskan refleksi tadabbur Anda di sini...'}">${curNote.text || ''}</textarea>
+          <textarea id="tadabbur-text-input" class="tadabbur-textarea" placeholder="${t.tadabburModalPlaceholder}">${curNote.text || ''}</textarea>
 
           <div style="display:flex; justify-content:space-between; align-items:center; margin-top: 14px;">
             ${curNote.text ? `
               <button class="btn-secondary" onclick="deleteTadabburNote(${surahId}, ${verseNum})" style="color:#d9534f; border-color:rgba(217,83,79,0.3); font-size:0.8rem; padding: 7px 14px;">
-                🗑️ ${isEn ? 'Delete Note' : 'Hapus Catatan'}
+                ${t.tadabburModalDelete}
               </button>
             ` : '<span></span>'}
             
             <div style="display:flex; gap: 8px;">
               <button class="btn-secondary" onclick="document.getElementById('tadabbur-modal-overlay').remove()" style="font-size:0.8rem; padding: 7px 14px;">
-                ${isEn ? 'Cancel' : 'Batal'}
+                ${t.tadabburModalCancel}
               </button>
               <button class="btn-primary" onclick="saveTadabburNote(${surahId}, ${verseNum})" style="font-size:0.8rem; padding: 7px 18px;">
-                💾 ${isEn ? 'Save Note' : 'Simpan Refleksi'}
+                ${t.tadabburModalSave}
               </button>
             </div>
           </div>
@@ -1016,8 +1557,8 @@
     document.getElementById('tadabbur-modal-overlay')?.remove();
 
     if (typeof window.showToast === 'function') {
-      const isEn = window.state && window.state.language === 'en';
-      window.showToast(isEn ? '💾 Reflection note saved!' : '💾 Catatan tadabbur berhasil disimpan!', 'success');
+      const t = getI18n();
+      window.showToast(t.tadabburToastSaved, 'success');
     }
 
     // Update note badge in reader if visible
@@ -1711,15 +2252,15 @@
 
     const notes = getAyahNotes();
     const keys = Object.keys(notes);
-    const isEn = window.state && window.state.language === 'en';
+    const t = getI18n();
 
     if (keys.length === 0) {
       container.innerHTML = `
         <div style="text-align: center; padding: 48px 20px; background: var(--bg-card); border-radius: 16px; border: 1px dashed var(--border);">
           <div style="font-size: 2.2rem; margin-bottom: 8px;">📝</div>
-          <div style="font-weight: 700; color: var(--text-primary);">${isEn ? 'No reflection notes yet' : 'Belum ada catatan tadabbur'}</div>
+          <div style="font-weight: 700; color: var(--text-primary);">${t.tadabburEmptyTitle}</div>
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
-            ${isEn ? 'Click the 📝 button on any verse in the reader to write your reflections.' : 'Klik tombol 📝 di samping ayat mana saja di pembaca Al-Qur\'an untuk menambahkan renungan Anda.'}
+            ${t.tadabburEmptyDesc}
           </p>
         </div>
       `;
@@ -1740,15 +2281,114 @@
           <div style="font-size: 0.95rem; line-height: 1.6; color: var(--text-primary); margin: 10px 0; white-space: pre-wrap;">${item.text}</div>
           <div style="display:flex; justify-content:space-between; align-items:center; border-top: 1px solid var(--border); padding-top: 10px;">
             <button class="doa-action-btn highlight" onclick="openDoaInQuran(${surahId}, ${verseNum})">
-              📖 ${isEn ? 'Open Verse' : 'Buka Ayat'}
+              ${t.tadabburBtnOpen}
             </button>
             <button class="doa-action-btn" onclick="openTadabburModal(${surahId}, ${verseNum})">
-              ✏️ ${isEn ? 'Edit' : 'Ubah'}
+              ${t.tadabburBtnEdit}
             </button>
           </div>
         </div>
       `;
     }).join('');
+  }
+
+  // ============================================================
+  // 11. DYNAMIC LANGUAGE UPDATER
+  // ============================================================
+  function updateIbadahLanguage(lang) {
+    if (!lang) lang = getCurLang();
+    const t = IBADAH_I18N[lang] || IBADAH_I18N.en || IBADAH_I18N.id;
+
+    // Header & Tabs
+    const kickerEl = document.getElementById('ibadah-kicker');
+    if (kickerEl) kickerEl.textContent = t.ibadahKicker;
+    const titleEl = document.getElementById('ibadah-title');
+    if (titleEl) titleEl.textContent = t.ibadahTitle;
+    const descEl = document.getElementById('ibadah-desc');
+    if (descEl) descEl.textContent = t.ibadahDesc;
+
+    const tabTasbih = document.getElementById('ib-tab-tasbih');
+    if (tabTasbih) tabTasbih.textContent = t.tabTasbih;
+    const tabDoa = document.getElementById('ib-tab-doa');
+    if (tabDoa) tabDoa.textContent = t.tabDoa;
+    const tabKiblat = document.getElementById('ib-tab-kiblat');
+    if (tabKiblat) tabKiblat.textContent = t.tabKiblat;
+    const tabKhatam = document.getElementById('ib-tab-khatam');
+    if (tabKhatam) tabKhatam.textContent = t.tabKhatam;
+    const tabTadabbur = document.getElementById('ib-tab-tadabbur');
+    if (tabTadabbur) tabTadabbur.textContent = t.tabTadabbur;
+
+    // Tasbih Preset Chips
+    document.querySelectorAll('.tasbih-chip').forEach(chip => {
+      const pId = chip.dataset.id;
+      const p = TASBIH_PRESETS.find(item => item.id === pId);
+      if (p) {
+        const pText = getPresetText(p, lang);
+        chip.textContent = pText.title;
+      }
+    });
+
+    // Tasbih hints & buttons
+    const pressHint = document.getElementById('tasbih-press-hint');
+    if (pressHint) pressHint.textContent = t.tasbihPressHint;
+    const lapsLabel = document.getElementById('tasbih-laps-label');
+    if (lapsLabel) lapsLabel.textContent = t.tasbihLapsLabel;
+    const dailyLabel = document.getElementById('tasbih-daily-label');
+    if (dailyLabel) dailyLabel.textContent = t.tasbihDailyLabel;
+    const resetBtn = document.getElementById('tasbih-reset-btn');
+    if (resetBtn) resetBtn.textContent = t.tasbihResetBtn;
+    const soundBtn = document.getElementById('tasbih-sound-btn');
+    if (soundBtn) {
+      const isSoundOn = localStorage.getItem('qh_tasbih_sound') !== 'false';
+      soundBtn.textContent = isSoundOn ? t.tasbihSoundOn : t.tasbihSoundOff;
+    }
+
+    // Kiblat Texts
+    const qiblaTitle = document.getElementById('qibla-title');
+    if (qiblaTitle) qiblaTitle.textContent = t.qiblaTitle;
+    const qiblaDesc = document.getElementById('qibla-desc');
+    if (qiblaDesc) qiblaDesc.textContent = t.qiblaDesc;
+    const qiblaLblAngle = document.getElementById('qibla-lbl-angle');
+    if (qiblaLblAngle) qiblaLblAngle.textContent = t.qiblaLblAngle;
+    const qiblaLblCardinal = document.getElementById('qibla-lbl-cardinal');
+    if (qiblaLblCardinal) qiblaLblCardinal.textContent = t.qiblaLblCardinal;
+    const qiblaLblDist = document.getElementById('qibla-lbl-dist');
+    if (qiblaLblDist) qiblaLblDist.textContent = t.qiblaLblDist;
+    const qiblaRefLabel = document.getElementById('qibla-ref-label');
+    if (qiblaRefLabel) qiblaRefLabel.textContent = t.qiblaRefLabel;
+    const qiblaGpsBtn = document.getElementById('qibla-gps-btn');
+    if (qiblaGpsBtn) qiblaGpsBtn.textContent = t.qiblaGpsBtn;
+
+    // Doa Search input & Filters
+    const doaSearchInput = document.getElementById('doa-search-input');
+    if (doaSearchInput) doaSearchInput.placeholder = t.doaSearchPlaceholder;
+    const filterAll = document.getElementById('doa-filter-chip-all');
+    if (filterAll) filterAll.textContent = t.doaFilterAll;
+    const filterRabbana = document.getElementById('doa-filter-chip-rabbana');
+    if (filterRabbana) filterRabbana.textContent = t.doaFilterRabbana;
+    const filterHarian = document.getElementById('doa-filter-chip-harian');
+    if (filterHarian) filterHarian.textContent = t.doaFilterHarian;
+    const filterFav = document.getElementById('doa-filter-chip-fav');
+    if (filterFav) filterFav.textContent = t.doaFilterFav;
+
+    // Khatam Texts
+    const khatamTitle = document.getElementById('khatam-title');
+    if (khatamTitle) khatamTitle.textContent = t.khatamTitle;
+    const khatamDesc = document.getElementById('khatam-desc');
+    if (khatamDesc) khatamDesc.textContent = t.khatamDesc;
+
+    // Tadabbur Texts
+    const tadabburTitle = document.getElementById('tadabbur-title');
+    if (tadabburTitle) tadabburTitle.textContent = t.tadabburTitle;
+    const tadabburDesc = document.getElementById('tadabbur-desc');
+    if (tadabburDesc) tadabburDesc.textContent = t.tadabburDesc;
+
+    // Re-render sub components
+    updateTasbihUI();
+    updateQiblaCompassUI();
+    renderKhatamTracker();
+    renderDoaGrid();
+    renderTadabburJournalList();
   }
 
   // ============================================================
@@ -1785,15 +2425,14 @@
     window.saveTadabburNote        = saveTadabburNote;
     window.deleteTadabburNote      = deleteTadabburNote;
     window.detectDeviceQibla       = detectDeviceQibla;
+    window.updateIbadahLanguage    = updateIbadahLanguage;
     window.setDoaCategoryFilter    = function(cat) {
       currentDoaFilter = cat;
       document.querySelectorAll('.doa-filter-chip').forEach(c => c.classList.toggle('active', c.dataset.cat === cat));
       renderDoaGrid();
     };
 
-    updateTasbihUI();
-    renderKhatamTracker();
-    renderDoaGrid();
+    updateIbadahLanguage(getCurLang());
   }
 
   if (document.readyState === 'loading') {

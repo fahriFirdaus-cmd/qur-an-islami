@@ -20,7 +20,15 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let reqPath = decodeURI(req.url.split('?')[0]);
+  let reqPath;
+  try {
+    reqPath = decodeURIComponent(req.url.split('?')[0]);
+  } catch {
+    // URL rusak (mis. "%E0%A4%A") — jangan sampai server crash
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('400 Bad Request');
+    return;
+  }
   if (reqPath === '/' || reqPath === '') {
     reqPath = '/index.html';
   }
@@ -28,7 +36,7 @@ const server = http.createServer((req, res) => {
   const filePath = path.join(WEB_DIR, reqPath);
 
   // Security: prevent path traversal
-  if (!filePath.startsWith(WEB_DIR)) {
+  if (filePath !== WEB_DIR && !filePath.startsWith(WEB_DIR + path.sep)) {
     res.writeHead(403);
     res.end('Forbidden');
     return;
@@ -57,4 +65,3 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`Quran Harmony running at http://localhost:${PORT}/`);
 });
-

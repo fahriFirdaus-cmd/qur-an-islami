@@ -1,3 +1,30 @@
+
+// ─── 114 French Surah Names (Multilingual Support) ───
+const SURAH_FRENCH_NAMES = {
+  1: "L'Ouverture", 2: "La Vache", 3: "La Famille d'Imran", 4: "Les Femmes", 5: "La Table Servie",
+  6: "Les Bestiaux", 7: "Les Murailles", 8: "Le Butin", 9: "Le Repentir", 10: "Jonas",
+  11: "Houd", 12: "Joseph", 13: "Le Tonnerre", 14: "Abraham", 15: "Al-Hijr",
+  16: "Les Abeilles", 17: "Le Voyage Nocturne", 18: "La Caverne", 19: "Marie", 20: "Ta-Ha",
+  21: "Les Prophètes", 22: "Le Pèlerinage", 23: "Les Croyants", 24: "La Lumière", 25: "Le Discernement",
+  26: "Les Poètes", 27: "Les Fourmis", 28: "Le Récit", 29: "L'Araignée", 30: "Les Romains",
+  31: "Louqman", 32: "La Prosternation", 33: "Les Coalisés", 34: "Saba", 35: "Le Créateur",
+  36: "Ya-Sin", 37: "Les Rangées", 38: "Sad", 39: "Les Groupes", 40: "Le Pardonneur",
+  41: "Les Versets Détaillés", 42: "La Consultation", 43: "L'Ornement", 44: "La Fumée", 45: "L'Agenouillée",
+  46: "Les Dunes", 47: "Muhammad", 48: "La Victoire Éclatante", 49: "Les Appartements", 50: "Qaf",
+  51: "Les Vents Dispersants", 52: "Le Mont Sinaï", 53: "L'Étoile", 54: "La Lune", 55: "Le Tout Miséricordieux",
+  56: "L'Événement", 57: "Le Fer", 58: "La Discussion", 59: "L'Exode", 60: "L'Éprouvée",
+  61: "Le Rang", 62: "Le Vendredi", 63: "Les Hypocrites", 64: "La Grande Perte", 65: "Le Divorce",
+  66: "L'Interdiction", 67: "La Royauté", 68: "La Plume", 69: "L'Inévitable", 70: "Les Voies d'Ascension",
+  71: "Noé", 72: "Les Djinns", 73: "L'Enveloppé", 74: "Le Revêtu d'un Manteau", 75: "La Résurrection",
+  76: "L'Homme", 77: "Les Envoyés", 78: "La Nouvelle", 79: "Les Anges Qui Arrachent", 80: "Il S'est Renfrogné",
+  81: "L'Obscurcissement", 82: "La Rupture", 83: "Les Fraudeurs", 84: "La Déchirure", 85: "Les Constellations",
+  86: "L'Astre Nocturne", 87: "Le Très-Haut", 88: "L'Enveloppante", 89: "L'Aube", 90: "La Cité",
+  91: "Le Soleil", 92: "La Nuit", 93: "Le Jour Montant", 94: "L'Ouverture du Cœur", 95: "Le Figuier",
+  96: "L'Adhérence", 97: "La Nuit du Destin", 98: "La Preuve Évidente", 99: "La Secousse", 100: "Les Coursiers",
+  101: "Le Fracas", 102: "La Course aux Richesses", 103: "Le Temps", 104: "Le Calomniateur", 105: "L'Éléphant",
+  106: "Les Quraysh", 107: "L'Entraide", 108: "L'Abondance", 109: "Les Infidèles", 110: "Le Secours Divin",
+  111: "Les Fibres", 112: "La Pureté de la Foi", 113: "L'Aube Naissante", 114: "Les Hommes"
+};
 // ══════════════════════════════════════════════════════════════
 // APP.JS — Quran Harmony Application Logic
 // All Interactive Buttons & Dynamic Features Fully Operational
@@ -404,8 +431,17 @@ function applyLanguage(lang, notify = true) {
   setText('nav-pill-audio', dict.navAudio);
   setText('nav-pill-sejarah', dict.navSejarah);
   setText('nav-pill-jejak', dict.navJejak);
-  setText('nav-pill-ibadah', lang === 'en' ? 'Worship & Prayers' : 'Ibadah & Doa');
-  setText('mob-label-ibadah', lang === 'en' ? 'Worship' : 'Ibadah');
+
+  const ibadahPillMap = {
+    id: 'Ibadah & Doa', en: 'Worship & Prayers', fr: 'Adoration & Prières', ar: 'العبادات والأدعية',
+    ur: 'عبادات و دعائیں', tr: 'İbadet & Dualar', bn: 'ইবাদত ও দুআ', ms: 'Ibadah & Doa'
+  };
+  const mobIbadahMap = {
+    id: 'Ibadah', en: 'Worship', fr: 'Adoration', ar: 'العبادات',
+    ur: 'عبادات', tr: 'İbadet', bn: 'ইবাদত', ms: 'Ibadah'
+  };
+  setText('nav-pill-ibadah', ibadahPillMap[lang] || ibadahPillMap.en);
+  setText('mob-label-ibadah', mobIbadahMap[lang] || mobIbadahMap.en);
 
   // Topbar
   setText('lang-indicator', (window.LANG_META && window.LANG_META[lang]?.code) || dict.langIndicator || lang.toUpperCase());
@@ -430,6 +466,57 @@ function applyLanguage(lang, notify = true) {
   setText('feat-audio-desc', dict.featAudioDesc);
   setText('feat-spiritual-title', dict.featSpiritualTitle);
   setText('feat-spiritual-desc', dict.featSpiritualDesc);
+
+  const featTasbihTitleMap = { id: 'Tasbih Digital', en: 'Digital Tasbih', fr: 'Tasbih Numérique', ar: 'المسبحة الرقمية', ur: 'ڈیجیٹل تسبیح', tr: 'Dijital Tesbih', bn: 'ডিজিটাল তাসবীহ', ms: 'Tasbih Digital' };
+  const featTasbihDescMap = {
+    id: 'Dzikir harian dengan penghitung putaran, target 33/100, suara klik halus & getaran haptic.',
+    en: 'Daily remembrance with lap counter, 33/100 targets, audio clicks & haptic feedback.',
+    fr: 'Dhikr quotidien avec compteur de tours, cible 33/100, son doux et retour haptique.',
+    ar: 'أذكار يومية مع عداد دورات، وأهداف 33/100، وصوت نقر خفيف واهتزاز تفاعلي.',
+    ur: 'روزمرہ کے اذکار، 33/100 کا ہدف، نرم کلک آواز اور وائبریشن فیڈ بیک۔',
+    tr: 'Tur sayaçlı günlük zikir, 33/100 hedefi, yumuşak tıklama sesi ve titreşim.',
+    bn: 'ল্যাপ কাউন্টার, ৩৩/১০০ টার্গেট, মৃদু ক্লিক শব্দ এবং স্পর্শকাতর ভাইব্রেশনসহ যিকির।',
+    ms: 'Zikir harian dengan penghitung pusingan, sasaran 33/100, bunyi klik lembut & getaran haptik.'
+  };
+  const featTasbihCtaMap = { id: 'Mulai berdzikir →', en: 'Start Dhikr →', fr: 'Commencer le dhikr →', ar: 'ابدأ التسبيح ←', ur: 'ذکر شروع کریں ←', tr: 'Zikre Başla →', bn: 'যিকির শুরু করুন →', ms: 'Mula berzikir →' };
+
+  const featDoaTitleMap = { id: '40 Doa Rabbana', en: '40 Rabbana Duas', fr: '40 Invocations Rabbana', ar: '40 دعاء ربنا', ur: '40 ربنا دعائیں', tr: '40 Rabbena Duası', bn: '৪০টি রাব্বানা দুআ', ms: '40 Doa Rabbana' };
+  const featDoaDescMap = {
+    id: 'Kumpulan doa agung dari ayat-ayat Al-Qur\'an lengkap teks Arab, latin, terjemahan & tautan ayat.',
+    en: 'Collection of noble Quranic prayers with full Arabic text, transliteration, translations & verse links.',
+    fr: 'Recueil d\'invocations coraniques avec textes arabes, translittération, traduction et lien vers les versets.',
+    ar: 'مجموعة أدعية قرآنية عظيمة بنصوصها العربية وترجماتها وروابط الآيات المباشرة.',
+    ur: 'قرآنی دعاؤں کا مجموعہ، عربی متن، تلفظ، ترجمہ اور آیات کے براہ راست لنک کے ساتھ۔',
+    tr: 'Arapça metin, okunuş, çeviri ve ayet bağlantılarıyla Kuran\'dan mübarek dualar.',
+    bn: 'আরবি পাঠ, উচ্চারণ, অনুবাদ এবং সরাসরি আয়াতের লিংকসহ কুরআনের শ্রেষ্ঠ দুআসমূহ।',
+    ms: 'Koleksi doa agung daripada ayat-ayat Al-Quran lengkap teks Arab, rumi, terjemahan & pautan ayat.'
+  };
+  const featDoaCtaMap = { id: 'Buka koleksi doa →', en: 'Explore Duas →', fr: 'Ouvrir les invocations →', ar: 'عرض الأدعية ←', ur: 'دعائیں دیکھیں ←', tr: 'Duaları Gör →', bn: 'দুআ সংগ্রহ দেখুন →', ms: 'Buka koleksi doa →' };
+
+  const featKiblatTitleMap = { id: 'Arah Kiblat & Jarak Ka\'bah', en: 'Qibla Direction & Kaaba Distance', fr: 'Direction Qibla & Distance', ar: 'اتجاه القبلة والمسافة للكعبة', ur: 'قبلہ رخ اور کعبہ کا فاصلہ', tr: 'Kıble Yönü & Kâbe Mesafesi', bn: 'কিবলার দিক ও কাবার দূরত্ব', ms: 'Arah Kiblat & Jarak Kaabah' };
+  const featKiblatDescMap = {
+    id: 'Kompas penunjuk arah Ka\'bah presisi dengan sensor perangkat dan estimasi jarak kilometer.',
+    en: 'Precision compass indicating the Kaaba using device sensors and real-time distance estimation in kilometers.',
+    fr: 'Boussole de précision pointant vers la Kaaba avec capteurs de l\'appareil et estimation de distance en km.',
+    ar: 'بوصلة دقيقة تشير إلى الكعبة المشرفة بحساب المسافة بالكيلومترات ومستشعرات الجهاز.',
+    ur: 'ڈیوائس سینسرز کے ذریعے کعبہ کی درست سمت اور کلومیٹر میں فاصلے کا تخمینہ۔',
+    tr: 'Cihaz sensörleri ve kilometre cinsinden mesafe tahmini ile hassas Kıble pusulası.',
+    bn: 'ডিভাইস সেন্সর এবং কিলোমিটারে দূরত্ব নির্ণয়সহ নির্ভুল কিবলা কম্পাস।',
+    ms: 'Kompas penunjuk arah Kaabah tepat dengan penderia peranti dan anggaran jarak kilometer.'
+  };
+  const featKiblatCtaMap = { id: 'Cek arah kiblat →', en: 'Find Qibla →', fr: 'Trouver la Qibla →', ar: 'تحديد القبلة ←', ur: 'قبلہ رخ معلوم کریں ←', tr: 'Kıbleyi Bul →', bn: 'কিবলা দেখুন →', ms: 'Semak arah kiblat →' };
+
+  setText('feat-tasbih-title', featTasbihTitleMap[lang] || featTasbihTitleMap.en);
+  setText('feat-tasbih-desc', featTasbihDescMap[lang] || featTasbihDescMap.en);
+  setText('feat-tasbih-cta', featTasbihCtaMap[lang] || featTasbihCtaMap.en);
+
+  setText('feat-doa-title', featDoaTitleMap[lang] || featDoaTitleMap.en);
+  setText('feat-doa-desc', featDoaDescMap[lang] || featDoaDescMap.en);
+  setText('feat-doa-cta', featDoaCtaMap[lang] || featDoaCtaMap.en);
+
+  setText('feat-kiblat-title', featKiblatTitleMap[lang] || featKiblatTitleMap.en);
+  setText('feat-kiblat-desc', featKiblatDescMap[lang] || featKiblatDescMap.en);
+  setText('feat-kiblat-cta', featKiblatCtaMap[lang] || featKiblatCtaMap.en);
 
   // Daily Section
   setText('daily-title', dict.dailyTitle);
@@ -595,6 +682,19 @@ function applyLanguage(lang, notify = true) {
     }
   }
   renderSidebarSurahList();
+
+  // Update Sidebar Surah Header & Qori Anak Tab
+  const sidebarTitleEl = document.getElementById('sidebar-surah-title');
+  if (sidebarTitleEl) {
+    const sTitleMap = { id: 'Surah', en: 'Surah', fr: 'Sourates', ar: 'السور', ur: 'سورتیں', tr: 'Sureler', bn: 'সূরা', ms: 'Surah' };
+    sidebarTitleEl.textContent = sTitleMap[lang] || 'Surah';
+  }
+  const tabAnakEl = document.getElementById('tab-mode-anak');
+  if (tabAnakEl) {
+    const tabAnakMap = { id: 'Qori Anak 👦', en: 'Kids Reciters 👦', fr: 'Récitateurs Enfants 👦', ar: 'القراء الصغار 👦', ur: 'بچوں کے قراء 👦', tr: 'Çocuk Kâriler 👦', bn: 'শিশু ক্বারী 👦', ms: 'Qari Kanak-Kanak 👦' };
+    tabAnakEl.textContent = tabAnakMap[lang] || 'Qori Anak 👦';
+  }
+
   renderQuranCatalog(currentCatalogSearchQuery, currentCatalogFilterType);
   renderVerses(state.currentSurah);
 
@@ -612,7 +712,8 @@ function applyLanguage(lang, notify = true) {
   setText('last-read-badge', dict.lastReadBadge);
   setText('last-read-btn-text', dict.lastReadBtnText);
   const chooseSurahSpan = document.querySelector('#btn-choose-surah span');
-  if (chooseSurahSpan) chooseSurahSpan.textContent = dict.btnChooseSurah.replace(' ▾', '');
+  const chooseSurahText = dict.btnChooseSurah || (I18N.en && I18N.en.btnChooseSurah) || 'Choose Surah ▾';
+  if (chooseSurahSpan) chooseSurahSpan.textContent = chooseSurahText.replace(' ▾', '');
   setText('m-quick-quran', dict.mQuickQuran);
   setText('m-quick-audio', dict.mQuickAudio);
   setText('m-quick-jejak', dict.mQuickJejak);
@@ -632,6 +733,15 @@ function applyLanguage(lang, notify = true) {
     window.updatePrayerDisplay();
   }
 
+  // Refresh Ibadah Suite language
+  if (typeof window.updateIbadahLanguage === 'function') {
+    window.updateIbadahLanguage(lang);
+  if (typeof window.updateKidsLanguage === "function") window.updateKidsLanguage(lang);
+  }
+
+  // Sync atmosphere time theme badge
+  applyTheme(state.themeMode || localStorage.getItem('qh_theme_mode') || 'auto', false);
+
   if (notify) {
     showToast(dict.langChangedToast, 'success');
   }
@@ -642,6 +752,28 @@ const audioPlayer = new Audio();
 
 // ─── Reciter Audio Configuration ───
 const RECITER_URLS = {
+  thaha_cilik: {
+    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-barrak/r1/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`
+  },
+  albarrak_cilik: {
+    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-barrak/r1/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+  },
+  ahmad_saud: {
+    surah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+  },
+  azazi_kids: {
+    surah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Husary_Muallim_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+  },
+  minshawi_muallim: {
+    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-minshawi/r3/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+  },
+
   mishary: {
     surah: (id) => `https://server8.mp3quran.net/afs/${String(id).padStart(3, '0')}.mp3`,
     verse: (surah, verse) => `https://cdn.islamic.network/quran/audio/128/ar.alafasy/${getGlobalVerseIndex(surah, verse)}.mp3`,
@@ -928,7 +1060,7 @@ function initGlobalSearch() {
         const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
         const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
         const revBadgeText = isMakk ? (isEn ? '🕋 Meccan' : '🕋 Makkiyyah') : (isEn ? '🕌 Medinan' : '🕌 Madaniyyah');
-        const meaningText = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
+        const meaningText = getSurahMeaning(s, state.language || 'id');
 
         return `
           <div class="search-result-item" onclick="loadSurah(${s.id}); navigateTo('quran'); switchQuranView('reader'); hideSearchDropdown();">
@@ -1066,6 +1198,18 @@ function updateSidebarCounts() {
   if (catMadan) catMadan.textContent = madanCount;
 }
 
+
+function getSurahMeaning(s, lang) {
+  if (!s) return '';
+  if (lang === 'fr' && typeof SURAH_FRENCH_NAMES !== 'undefined' && SURAH_FRENCH_NAMES[s.id]) {
+    return SURAH_FRENCH_NAMES[s.id];
+  }
+  if (lang === 'en') {
+    return s.meaning || s.arti || '';
+  }
+  return s.arti || s.meaning || '';
+}
+
 function renderSidebarSurahList(filter = '', typeFilter = 'all') {
   const container = document.getElementById('sidebar-surah-list');
   if (!container) return;
@@ -1101,17 +1245,32 @@ function renderSidebarSurahList(filter = '', typeFilter = 'all') {
     return;
   }
 
-  const isEn = state.language === 'en';
+  const curLang = state.language || 'id';
+  const isEn = curLang === 'en';
+  const isFr = curLang === 'fr';
+
   const shownCountEl = document.getElementById('surah-shown-count');
   if (shownCountEl) {
-    shownCountEl.textContent = (!filter && typeFilter === 'all') ? '7 shown' : `${filtered.length} shown`;
+    const countVal = (!filter && typeFilter === 'all') ? 7 : filtered.length;
+    const countText = isFr ? `${countVal} affichée${countVal > 1 ? 's' : ''}`
+      : (curLang === 'id' ? `${countVal} ditampilkan`
+      : (curLang === 'ar' ? `${countVal} معروضة`
+      : (curLang === 'tr' ? `${countVal} gösteriliyor`
+      : (curLang === 'ms' ? `${countVal} dipaparkan`
+      : `${countVal} shown`))));
+    shownCountEl.textContent = countText;
   }
+
+  const versesWord = isFr ? 'versets' : (curLang === 'tr' ? 'ayet' : (curLang === 'ar' ? 'آيات' : (isEn ? 'verses' : 'ayat')));
 
   container.innerHTML = filtered.map(s => {
     const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
     const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
-    const revBadgeText = isMakk ? 'MAKKIYYAH' : 'MADANIYYAH';
-    const meaningText = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
+    const revBadgeText = isFr ? (isMakk ? 'MECQUOISE' : 'MÉDINOISE')
+      : (isEn ? (isMakk ? 'MECCAN' : 'MEDINAN')
+      : (curLang === 'tr' ? (isMakk ? 'MEKKİ' : 'MEDENİ')
+      : (isMakk ? 'MAKKIYYAH' : 'MADANIYYAH')));
+    const meaningText = getSurahMeaning(s, curLang);
 
     return `
       <div class="surah-item ${s.id === state.currentSurah ? 'active' : ''}" 
@@ -1126,7 +1285,7 @@ function renderSidebarSurahList(filter = '', typeFilter = 'all') {
           </div>
           <div class="surah-item-sub">
             <span class="badge-mini-rev ${revBadgeClass}">${revBadgeText}</span>
-            <span class="surah-item-verses">${s.ayat} ${isEn ? 'verses' : 'ayat'}</span>
+            <span class="surah-item-verses">${s.ayat} ${versesWord}</span>
           </div>
         </div>
         <div class="surah-item-ar">${s.ar || s.arTitle}</div>
@@ -1286,7 +1445,7 @@ function renderQuranCatalog(filter = '', typeFilter = 'all') {
     const isMakk = s.type === 'Makkiyyah' || s.revelation === 'Mekah';
     const revBadgeClass = isMakk ? 'rev-makkiyyah' : 'rev-madaniyyah';
     const revBadgeText = isMakk ? (isEn ? '🕋 Meccan' : '🕋 Makkiyyah') : (isEn ? '🕌 Medinan' : '🕌 Madaniyyah');
-    const meaningVal = isEn ? (s.meaning || s.arti) : (s.arti || s.meaning);
+    const meaningVal = getSurahMeaning(s, state.language || 'id');
 
     return `
       <div class="catalog-card" onclick="loadSurah(${s.id}); switchQuranView('reader');">
@@ -1328,7 +1487,7 @@ function openRevelationModal(surahId) {
 
   const d = I18N[state.language] || I18N.id;
   const isEn = state.language === 'en';
-  const meaningVal = isEn ? (surah.meaning || surah.arti) : (surah.arti || surah.meaning);
+  const meaningVal = getSurahMeaning(surah, state.language || 'id');
   const verseUnit = isEn ? 'Verses' : 'Ayat';
 
   body.innerHTML = `
@@ -1935,7 +2094,7 @@ function updatePlayerUI(title, subtitle) {
 }
 
 function getCurrentQoriName() {
-  const allQoris = [...QORIS.murattal, ...QORIS.mujawwad, ...QORIS.nusantara];
+  const allQoris = [...QORIS.murattal, ...QORIS.mujawwad, ...QORIS.nusantara, ...(QORIS.anak || [])];
   return allQoris.find(q => q.id === state.currentQori)?.name || 'Mishary Rashid Al-Afasy';
 }
 
@@ -2118,7 +2277,7 @@ function renderQoriGrid(mode) {
 
 function selectQori(qoriId) {
   state.currentQori = qoriId;
-  const allQoris = [...QORIS.murattal, ...QORIS.mujawwad, ...QORIS.nusantara];
+  const allQoris = [...QORIS.murattal, ...QORIS.mujawwad, ...QORIS.nusantara, ...(QORIS.anak || [])];
   const qori = allQoris.find(q => q.id === qoriId);
   if (!qori) return;
 
@@ -2508,17 +2667,28 @@ function applyTheme(themeChoice, notify = true) {
   const timeBadge = document.getElementById('theme-time-badge');
   const isEn = state.language === 'en';
 
+  const curLang = state.language || 'id';
+  const phaseLabels = {
+    pagi: { id: 'Pagi', en: 'Morning', fr: 'Matin', ar: 'الصباح', ur: 'صبح', tr: 'Sabah', bn: 'সকাল', ms: 'Pagi' },
+    siang: { id: 'Siang', en: 'Day', fr: 'Midi', ar: 'الظهيرة', ur: 'دوپہر', tr: 'Öğle', bn: 'দুপুর', ms: 'Tengah Hari' },
+    sore: { id: 'Sore', en: 'Sunset', fr: 'Soir', ar: 'المساء', ur: 'شام', tr: 'Akşam', bn: 'সন্ধ্যা', ms: 'Petang' },
+    malam: { id: 'Malam', en: 'Night', fr: 'Nuit', ar: 'الليل', ur: 'رات', tr: 'Gece', bn: 'রাত', ms: 'Malam' },
+  };
+  const autoWordMap = { id: 'Otomatis', en: 'Auto', fr: 'Auto', ar: 'تلقائي', ur: 'خودکار', tr: 'Otomatik', bn: 'স্বয়ংক্রিয়', ms: 'Automatik' };
+
   const phaseMeta = {
-    pagi: { icon: '🌅', label: isEn ? 'Morning' : 'Pagi' },
-    siang: { icon: '☀️', label: isEn ? 'Day' : 'Siang' },
-    sore: { icon: '🌇', label: isEn ? 'Sunset' : 'Sore' },
-    malam: { icon: '🌙', label: isEn ? 'Night' : 'Malam' },
-  }[activeTheme] || { icon: '☀️', label: 'Siang' };
+    pagi: { icon: '🌅', label: (phaseLabels.pagi && phaseLabels.pagi[curLang]) || 'Morning' },
+    siang: { icon: '☀️', label: (phaseLabels.siang && phaseLabels.siang[curLang]) || 'Day' },
+    sore: { icon: '🌇', label: (phaseLabels.sore && phaseLabels.sore[curLang]) || 'Sunset' },
+    malam: { icon: '🌙', label: (phaseLabels.malam && phaseLabels.malam[curLang]) || 'Night' },
+  }[activeTheme] || { icon: '☀️', label: (phaseLabels.siang && phaseLabels.siang[curLang]) || 'Day' };
+
+  const autoWord = autoWordMap[curLang] || 'Auto';
 
   if (timeIcon) timeIcon.textContent = phaseMeta.icon;
   if (timeBadge) {
     timeBadge.textContent = state.themeMode === 'auto' 
-      ? `${phaseMeta.label} (Auto)` 
+      ? `${phaseMeta.label} (${autoWord})` 
       : phaseMeta.label;
   }
 
@@ -2538,7 +2708,7 @@ function applyTheme(themeChoice, notify = true) {
   if (heroTimeIcon) heroTimeIcon.textContent = phaseMeta.icon;
   if (heroTimeText) {
     heroTimeText.textContent = state.themeMode === 'auto'
-      ? `${phaseMeta.label} (${isEn ? 'Auto' : 'Otomatis'})`
+      ? `${phaseMeta.label} (${autoWord})`
       : phaseMeta.label;
   }
 

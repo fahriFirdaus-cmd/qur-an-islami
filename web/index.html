@@ -142,7 +142,7 @@
         <!-- ── Left Column: Surah Card ── -->
         <aside class="surah-card-panel" id="sidebar">
           <div class="surah-card-header">
-            <h2 class="surah-card-title">Surah</h2>
+            <h2 class="surah-card-title" id="sidebar-surah-title">Surah</h2>
             <span class="surah-card-count" id="surah-shown-count">7 shown</span>
           </div>
 
@@ -337,27 +337,27 @@
               <div class="fc-icon-wrap" style="background: rgba(13,56,45,0.12); color:#0d382d;">
                 📿
               </div>
-              <h3 class="fc-title">Tasbih Digital</h3>
-              <p class="fc-desc">Dzikir harian dengan penghitung putaran, target 33/100, suara klik halus & getaran haptic.</p>
-              <span class="fc-cta" style="color:#0d382d;">Mulai berdzikir →</span>
+              <h3 class="fc-title" id="feat-tasbih-title">Tasbih Digital</h3>
+              <p class="fc-desc" id="feat-tasbih-desc">Dzikir harian dengan penghitung putaran, target 33/100, suara klik halus & getaran haptic.</p>
+              <span class="fc-cta" id="feat-tasbih-cta" style="color:#0d382d;">Mulai berdzikir →</span>
             </div>
 
             <div class="fc-card" onclick="navigateTo('ibadah'); switchIbadahSubTab('doa');">
               <div class="fc-icon-wrap" style="background: rgba(229,192,123,0.18); color:#b8860b;">
                 🤲
               </div>
-              <h3 class="fc-title">40 Doa Rabbana</h3>
-              <p class="fc-desc">Kumpulan doa agung dari ayat-ayat Al-Qur'an lengkap teks Arab, latin, terjemahan & tautan ayat.</p>
-              <span class="fc-cta" style="color:#b8860b;">Buka koleksi doa →</span>
+              <h3 class="fc-title" id="feat-doa-title">40 Doa Rabbana</h3>
+              <p class="fc-desc" id="feat-doa-desc">Kumpulan doa agung dari ayat-ayat Al-Qur'an lengkap teks Arab, latin, terjemahan & tautan ayat.</p>
+              <span class="fc-cta" id="feat-doa-cta" style="color:#b8860b;">Buka koleksi doa →</span>
             </div>
 
             <div class="fc-card" onclick="navigateTo('ibadah'); switchIbadahSubTab('kiblat');">
               <div class="fc-icon-wrap" style="background: rgba(45,106,79,0.15); color:#2d6a4f;">
                 🧭
               </div>
-              <h3 class="fc-title">Arah Kiblat & Jarak Ka'bah</h3>
-              <p class="fc-desc">Kompas penunjuk arah Ka'bah presisi dengan sensor perangkat dan estimasi jarak kilometer.</p>
-              <span class="fc-cta" style="color:#2d6a4f;">Cek arah kiblat →</span>
+              <h3 class="fc-title" id="feat-kiblat-title">Arah Kiblat & Jarak Ka'bah</h3>
+              <p class="fc-desc" id="feat-kiblat-desc">Kompas penunjuk arah Ka'bah presisi dengan sensor perangkat dan estimasi jarak kilometer.</p>
+              <span class="fc-cta" id="feat-kiblat-cta" style="color:#2d6a4f;">Cek arah kiblat →</span>
             </div>
           </div>
         </div>
@@ -596,6 +596,7 @@
         <button class="mode-tab active" data-mode="murattal" id="tab-mode-murattal">Murattal</button>
         <button class="mode-tab" data-mode="mujawwad" id="tab-mode-mujawwad">Mujawwad</button>
         <button class="mode-tab" data-mode="nusantara" id="tab-mode-nusantara">Nusantara</button>
+        <button class="mode-tab" data-mode="anak" id="tab-mode-anak">Qori Anak 👦</button>
       </div>
 
       <!-- Qori Grid -->
@@ -926,7 +927,7 @@
         <div class="ibadah-sub-view" id="ibadah-view-tasbih">
           <div class="tasbih-wrapper">
             <!-- Preset Selection Chips -->
-            <div class="tasbih-presets-row">
+            <div class="tasbih-presets-row" id="tasbih-presets-row">
               <button class="tasbih-chip active" data-id="subhanallah" onclick="selectTasbihPreset('subhanallah')">Subhanallah (33x)</button>
               <button class="tasbih-chip" data-id="alhamdulillah" onclick="selectTasbihPreset('alhamdulillah')">Alhamdulillah (33x)</button>
               <button class="tasbih-chip" data-id="allahuakbar" onclick="selectTasbihPreset('allahuakbar')">Allahu Akbar (33x)</button>
@@ -952,24 +953,24 @@
               </svg>
               <div class="tasbih-main-count" id="tasbih-count-val">0</div>
               <div class="tasbih-target-hint" id="tasbih-target-val">/ 33</div>
-              <div class="tasbih-press-hint">Ketuk untuk Dzikir</div>
+              <div class="tasbih-press-hint" id="tasbih-press-hint">Ketuk untuk Dzikir</div>
             </button>
 
             <!-- Metadata Stats -->
             <div class="tasbih-meta-row">
               <div class="tasbih-meta-item">
-                <span>Putaran Selesai</span>
+                <span id="tasbih-laps-label">Putaran Selesai</span>
                 <strong id="tasbih-laps-val">0</strong>
               </div>
               <div class="tasbih-meta-item">
-                <span>Total Hari Ini</span>
+                <span id="tasbih-daily-label">Total Hari Ini</span>
                 <strong id="tasbih-daily-val">0</strong>
               </div>
             </div>
 
             <!-- Action Controls -->
             <div class="tasbih-controls-row">
-              <button class="btn-secondary" onclick="resetTasbih()" style="font-size:0.82rem; padding: 9px 18px;">
+              <button class="btn-secondary" id="tasbih-reset-btn" onclick="resetTasbih()" style="font-size:0.82rem; padding: 9px 18px;">
                 🔄 Reset Hitungan
               </button>
               <button class="btn-secondary" onclick="toggleTasbihSound()" id="tasbih-sound-btn" style="font-size:0.82rem; padding: 9px 18px;">
@@ -986,10 +987,10 @@
           </div>
 
           <div class="doa-filter-row">
-            <button class="doa-filter-chip active" data-cat="all" onclick="setDoaCategoryFilter('all')">Semua Doa</button>
-            <button class="doa-filter-chip" data-cat="rabbana" onclick="setDoaCategoryFilter('rabbana')">📖 40 Doa Rabbana (Al-Qur'an)</button>
-            <button class="doa-filter-chip" data-cat="harian" onclick="setDoaCategoryFilter('harian')">🤲 Doa Pilihan Harian</button>
-            <button class="doa-filter-chip" data-cat="fav" onclick="setDoaCategoryFilter('fav')">⭐ Favorit Saya</button>
+            <button class="doa-filter-chip active" id="doa-filter-chip-all" data-cat="all" onclick="setDoaCategoryFilter('all')">Semua Doa</button>
+            <button class="doa-filter-chip" id="doa-filter-chip-rabbana" data-cat="rabbana" onclick="setDoaCategoryFilter('rabbana')">📖 40 Doa Rabbana (Al-Qur'an)</button>
+            <button class="doa-filter-chip" id="doa-filter-chip-harian" data-cat="harian" onclick="setDoaCategoryFilter('harian')">🤲 Doa Pilihan Harian</button>
+            <button class="doa-filter-chip" id="doa-filter-chip-fav" data-cat="fav" onclick="setDoaCategoryFilter('fav')">⭐ Favorit Saya</button>
           </div>
 
           <div class="doa-cards-grid" id="doa-cards-grid">
@@ -1020,24 +1021,24 @@
 
             <div class="qibla-info-grid">
               <div class="qibla-info-card">
-                <div class="q-lbl">Sudut Derajat</div>
+                <div class="q-lbl" id="qibla-lbl-angle">Sudut Derajat</div>
                 <div class="q-val" id="qibla-angle-val">295.2°</div>
               </div>
               <div class="qibla-info-card">
-                <div class="q-lbl">Arah Mata Angin</div>
+                <div class="q-lbl" id="qibla-lbl-cardinal">Arah Mata Angin</div>
                 <div class="q-val" id="qibla-cardinal-val" style="font-size: 1rem; padding-top: 4px;">Barat Laut (NW)</div>
               </div>
               <div class="qibla-info-card">
-                <div class="q-lbl">Jarak ke Ka'bah</div>
+                <div class="q-lbl" id="qibla-lbl-dist">Jarak ke Ka'bah</div>
                 <div class="q-val" id="qibla-distance-val">~7,912 km</div>
               </div>
             </div>
 
             <div style="background: rgba(13,56,45,0.05); padding: 12px 16px; border-radius: 12px; font-size: 0.84rem; color: var(--text-primary); margin-bottom: 18px;">
-              📍 Lokasi Rujukan: <strong id="qibla-loc-name">Jakarta, Indonesia</strong>
+              <span id="qibla-ref-label">📍 Lokasi Rujukan:</span> <strong id="qibla-loc-name">Jakarta, Indonesia</strong>
             </div>
 
-            <button class="btn-primary" onclick="detectDeviceQibla()" style="font-size: 0.88rem; padding: 10px 22px;">
+            <button class="btn-primary" id="qibla-gps-btn" onclick="detectDeviceQibla()" style="font-size: 0.88rem; padding: 10px 22px;">
               📡 Perbarui Posisi GPS Saya
             </button>
           </div>
@@ -1048,8 +1049,8 @@
           <div class="khatam-progress-banner">
             <div class="khatam-progress-row">
               <div>
-                <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 2px;">🎯 Target & Kemajuan Tilawah 30 Juz</h3>
-                <span style="font-size: 0.82rem; color: var(--text-muted);">Tandai setiap juz yang telah selesai dibaca untuk memantau perjalanan khatam Al-Qur'an Anda.</span>
+                <h3 id="khatam-title" style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 2px;">🎯 Target & Kemajuan Tilawah 30 Juz</h3>
+                <span id="khatam-desc" style="font-size: 0.82rem; color: var(--text-muted);">Tandai setiap juz yang telah selesai dibaca untuk memantau perjalanan khatam Al-Qur'an Anda.</span>
               </div>
               <div style="text-align: right;">
                 <span style="font-size: 1.4rem; font-weight: 800; color: #0d382d;" id="khatam-pct-val">0%</span>
@@ -1069,8 +1070,8 @@
         <!-- 5. VIEW: CATATAN TADABBUR -->
         <div class="ibadah-sub-view" id="ibadah-view-tadabbur" style="display: none;">
           <div style="margin-bottom: 20px;">
-            <h3 style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 4px;">📝 Jurnal Refleksi & Catatan Tadabbur Ayat</h3>
-            <p style="font-size: 0.85rem; color: var(--text-secondary);">Kumpulan mutiara hikmah dan renungan pribadi yang Anda catat saat membaca ayat-ayat Al-Qur'an.</p>
+            <h3 id="tadabbur-title" style="font-size: 1.15rem; color: var(--text-primary); margin-bottom: 4px;">📝 Jurnal Refleksi & Catatan Tadabbur Ayat</h3>
+            <p id="tadabbur-desc" style="font-size: 0.85rem; color: var(--text-secondary);">Kumpulan mutiara hikmah dan renungan pribadi yang Anda catat saat membaca ayat-ayat Al-Qur'an.</p>
           </div>
           <div id="tadabbur-notes-list">
             <!-- Populated by JS -->
@@ -1355,5 +1356,6 @@
 <script src="features-global.js"></script>
 <script src="features-tajwid.js"></script>
 <script src="features-ibadah.js"></script>
+<script src="features-kids.js"></script>
 </body>
 </html>
