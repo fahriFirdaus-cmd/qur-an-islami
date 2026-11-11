@@ -35,6 +35,14 @@ const query = async (text, params = []) => {
     return pool.query(text, params);
   }
 
+  // Auto-init SQLite jika database lokal tersedia
+  if (!sqliteDb && fs.existsSync(sqlitePath)) {
+    try {
+      sqliteDb = new DatabaseSync(sqlitePath);
+      activeEngine = 'sqlite';
+    } catch (e) {}
+  }
+
   if (activeEngine === 'sqlite' && sqliteDb) {
     // Ubah format placeholder PostgreSQL ($1, $2, ...) menjadi (?) untuk SQLite
     const sqliteSql = text.replace(/\$(\d+)/g, '?');

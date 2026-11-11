@@ -753,25 +753,29 @@ const audioPlayer = new Audio();
 // ─── Reciter Audio Configuration ───
 const RECITER_URLS = {
   thaha_cilik: {
-    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-barrak/r1/${String(id).padStart(3, '0')}.mp3`,
-    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
-    fallbackSurah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`
+    surah: (id) => id === 1 ? 'audio/kids/001_thaha.mp3' : `https://archive.org/download/muhammadthahaaljunaid/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Alafasy_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => 'audio/kids/001_thaha.mp3'
   },
   albarrak_cilik: {
-    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-barrak/r1/${String(id).padStart(3, '0')}.mp3`,
-    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+    surah: (id) => id === 1 ? 'audio/kids/001_albarrak.mp3' : `https://cdn.mp3quran.net/audio/muhammad-barrak/r1/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Muhammad_Jibreel_64kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => 'audio/kids/001_albarrak.mp3'
   },
   ahmad_saud: {
-    surah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`,
-    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+    surah: (id) => id === 1 ? 'audio/kids/001_ahmadsAud.mp3' : `https://archive.org/download/Ahmad_Saud-BacaQuran.tk/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Ghamadi_40kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => 'audio/kids/001_ahmadsAud.mp3'
   },
   azazi_kids: {
-    surah: (id) => `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`,
-    verse: (surah, verse) => `https://everyayah.com/data/Husary_Muallim_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+    surah: (id) => id === 1 ? 'audio/kids/001_azazi.mp3' : `https://cdn.islamic.network/quran/audio-surah/128/ar.alhusaynialazazichildren/${id}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Husary_Muallim_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => 'audio/kids/001_azazi.mp3'
   },
   minshawi_muallim: {
-    surah: (id) => `https://cdn.mp3quran.net/audio/muhammad-minshawi/r3/${String(id).padStart(3, '0')}.mp3`,
-    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`
+    surah: (id) => id === 1 ? 'audio/kids/001_minshawi.mp3' : `https://cdn.mp3quran.net/audio/muhammad-minshawi/r3/${String(id).padStart(3, '0')}.mp3`,
+    verse: (surah, verse) => `https://everyayah.com/data/Minshawy_Teacher_128kbps/${String(surah).padStart(3, '0')}${String(verse).padStart(3, '0')}.mp3`,
+    fallbackSurah: (id) => 'audio/kids/001_minshawi.mp3'
   },
 
   mishary: {

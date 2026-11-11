@@ -61,6 +61,18 @@
     <!-- Subrow: Utility Buttons (Language, Dark Mode, Notifications, Reader Settings) -->
     <div class="header-sub-row">
       <div class="header-utilities">
+        <!-- App Mode Switcher (Standar vs Kids) -->
+        <div class="app-mode-switcher" id="app-mode-switcher" role="radiogroup" aria-label="Mode Aplikasi">
+          <button class="mode-tab-btn active" id="btn-mode-standard" onclick="window.switchToStandardMode()" title="Mode Standar (Mushaf Al-Qur'an Lengkap)">
+            <span class="mode-tab-icon">📖</span>
+            <span class="mode-tab-label" id="lbl-mode-standard">Standar</span>
+          </button>
+          <button class="mode-tab-btn" id="btn-mode-kids" onclick="window.requestKidsMode()" title="Mode Kids Ceria (Dunia Anak Al-Qur'an)">
+            <span class="mode-tab-icon">🎈</span>
+            <span class="mode-tab-label" id="lbl-mode-kids">Kids Ceria</span>
+          </button>
+        </div>
+
         <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper" style="position:relative; display:inline-flex; align-items:center;">
           <button class="lang-toggle-btn" id="lang-toggle-btn" title="Pilih Bahasa / Switch Language" type="button" aria-haspopup="listbox" aria-expanded="false" onclick="window.toggleLangDropdown(event)">
             <span class="lang-code" id="lang-indicator">ID</span>

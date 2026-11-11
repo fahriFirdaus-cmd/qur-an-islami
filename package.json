@@ -22,8 +22,6 @@
   "dependencies": {
     "@capacitor/android": "^8.5.3",
     "@capacitor/cli": "^8.5.3",
-    "@capacitor/core": "^8.5.3",
-    "init": "^0.1.2",
-    "npm": "^12.2.1"
+    "@capacitor/core": "^8.5.3"
   }
 }
